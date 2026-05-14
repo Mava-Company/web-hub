@@ -1,0 +1,187 @@
+<!-- admin/settings.html -->
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Настройки</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      display:flex;
+    }
+
+    .sidebar{
+      width:280px;
+      height:100vh;
+      background:#111827;
+      padding:30px;
+      position:fixed;
+      left:0;
+      top:0;
+    }
+
+    .logo{
+      font-size:30px;
+      color:#8b5cf6;
+      font-weight:bold;
+      margin-bottom:50px;
+    }
+
+    .sidebar a{
+      display:block;
+      color:white;
+      text-decoration:none;
+      padding:15px;
+      margin-bottom:10px;
+      border-radius:12px;
+      transition:0.3s;
+    }
+
+    .sidebar a:hover{
+      background:#1e293b;
+    }
+
+    .main{
+      margin-left:280px;
+      width:100%;
+      padding:40px;
+    }
+
+    .title{
+      font-size:40px;
+      margin-bottom:40px;
+    }
+
+    .settings-container{
+      display:flex;
+      flex-direction:column;
+      gap:30px;
+      max-width:900px;
+    }
+
+    .settings-card{
+      background:#1e293b;
+      padding:30px;
+      border-radius:20px;
+    }
+
+    .settings-card h2{
+      margin-bottom:25px;
+      color:#8b5cf6;
+    }
+
+    .form-group{
+      margin-bottom:25px;
+    }
+
+    .form-group label{
+      display:block;
+      margin-bottom:10px;
+      color:#cbd5e1;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select{
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:12px;
+      background:#0f172a;
+      color:white;
+      font-size:16px;
+    }
+
+    textarea{
+      resize:none;
+      min-height:120px;
+    }
+
+    .save-btn{
+      padding:15px 25px;
+      border:none;
+      border-radius:12px;
+      background:#8b5cf6;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .save-btn:hover{
+      background:#7c3aed;
+    }
+
+    .danger-zone{
+      border:2px solid #ef4444;
+    }
+
+    .danger-btn{
+      background:#ef4444;
+      border:none;
+      padding:15px 25px;
+      border-radius:12px;
+      color:white;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+  <div class="logo">Admin</div>
+
+  <a href="dashboard.html">Контролен панел</a>
+  <a href="add-product.html">Добави продукт</a>
+  <a href="products.html">Продукти</a>
+  <a href="orders.html">Поръчки</a>
+  <a href="users.html">Потребители</a>
+
+</div>
+
+<div class="main">
+
+  <h1 class="title">Настройки</h1>
+
+  <div class="settings-container">
+
+    <div class="settings-card">
+
+      <h2>Информация за магазина</h2>
+     <input id="storeName" type="text">
+<textarea id="description"></textarea>
+
+<input id="email" type="email">
+<input id="phone" type="text">
+
+<input id="shippingPrice" type="number">
+<input id="shippingTime" type="text">
+
+<input id="facebook" type="text">
+<input id="instagram" type="text">
+<input id="whatsapp" type="text">
+     
+    </div>
+
+  </div>
+
+</div>
+<script type="module" src="../js/admin-settings.js"></script>
+</body>
+</html>

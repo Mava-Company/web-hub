@@ -1,0 +1,100 @@
+<!-- order-success.html -->
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поръчката е успешна</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      text-align:center;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:50px;
+      border-radius:20px;
+      max-width:600px;
+    }
+
+    .check{
+      font-size:80px;
+      color:#22c55e;
+      margin-bottom:20px;
+    }
+
+    h1{
+      margin-bottom:20px;
+    }
+
+    .code{
+      background:#0f172a;
+      padding:15px;
+      border-radius:12px;
+      margin:20px 0;
+      font-size:20px;
+      color:#8b5cf6;
+    }
+
+    p{
+      color:#cbd5e1;
+      margin-bottom:10px;
+    }
+
+    .btn{
+      margin-top:25px;
+      display:inline-block;
+      padding:15px 25px;
+      background:#8b5cf6;
+      color:white;
+      text-decoration:none;
+      border-radius:12px;
+    }
+
+    .btn:hover{
+      background:#7c3aed;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="check">✔️</div>
+
+    <h1>Поръчката е успешна</h1>
+
+    <p>Вашата поръчка беше изпратена успешно</p>
+
+    <div class="code">
+      Код на поръчка: <strong>ORD-XXXXXX</strong>
+    </div>
+
+    <p>Ще се свържем с вас чрез WhatsApp</p>
+
+    <p>Моля, запазете кода за проследяване</p>
+
+    <a class="btn" href="track-order.html">
+      Проследи поръчката
+    </a>
+
+  </div>
+
+</body>
+</html>
