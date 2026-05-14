@@ -36,7 +36,7 @@ async function loadCounts() {
   let revenue = 0;
 
   ordersSnap.forEach(doc => {
-    revenue += doc.data().totalPrice || 0;
+    revenue += doc.data().total || 0;
   });
 
   ordersCountEl.innerText = ordersSnap.size;
