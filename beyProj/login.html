@@ -1,0 +1,102 @@
+<!-- login.html -->
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .box{
+      background:#1e293b;
+      padding:40px;
+      border-radius:20px;
+      width:400px;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+    }
+
+    input{
+      width:100%;
+      padding:15px;
+      margin-bottom:15px;
+      border:none;
+      border-radius:12px;
+      background:#0f172a;
+      color:white;
+    }
+
+    button{
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:12px;
+      background:#8b5cf6;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#7c3aed;
+    }
+
+    .link{
+      margin-top:15px;
+      text-align:center;
+      color:#cbd5e1;
+    }
+
+    .link a{
+      color:#8b5cf6;
+      text-decoration:none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+
+    <h1>Вход</h1>
+
+    <form id="loginForm">
+
+      <input type="email" id="email" placeholder="Имейл" required>
+
+      <input type="password" id="password" placeholder="Парола" required>
+
+      <button type="submit">Влез</button>
+
+    </form>
+
+    <div class="link">
+      Нямаш акаунт? <a href="register.html">Регистрация</a>
+    </div>
+
+  </div>
+
+  <script type="module" src="js/auth.js"></script>
+
+</body>
+</html>
