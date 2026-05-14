@@ -1,0 +1,314 @@
+<!-- track-order.html -->
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проследяване на поръчка</title>
+
+  <style>
+   /* RESET */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+  color:#222;
+}
+
+
+/* HEADER */
+
+header{
+  background:#111;
+  color:white;
+  padding:18px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  color:#00bcd4;
+}
+
+nav{
+  display:flex;
+  gap:20px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:16px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00bcd4;
+}
+
+
+/* CONTAINER */
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:60px 20px;
+  text-align:center;
+}
+
+
+/* TITLE */
+
+.container h1{
+  font-size:36px;
+  margin-bottom:30px;
+  color:#111;
+}
+
+
+/* BOX */
+
+.box{
+  background:white;
+  padding:40px;
+  border-radius:22px;
+  box-shadow:0 8px 30px rgba(0,0,0,.08);
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  align-items:center;
+  animation:fadeIn .3s ease;
+}
+
+
+/* INPUT */
+
+.box input{
+  width:100%;
+  max-width:400px;
+  padding:14px 16px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:16px;
+  outline:none;
+  transition:0.3s;
+  background:#fafafa;
+  text-align:center;
+}
+
+.box input:focus{
+  border-color:#00bcd4;
+  background:white;
+}
+
+
+/* BUTTON */
+
+.box button{
+  width:100%;
+  max-width:220px;
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:#111;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.box button:hover{
+  background:#00bcd4;
+  transform:translateY(-2px);
+}
+
+
+/* RESULT */
+
+.result{
+  width:100%;
+  margin-top:20px;
+  padding:20px;
+  border-radius:14px;
+  background:#f7f7f7;
+  text-align:left;
+  font-size:16px;
+  color:#333;
+  min-height:60px;
+}
+
+
+/* STATUS COLORS */
+
+.status{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:8px;
+  font-size:14px;
+  margin-top:10px;
+}
+
+.status.Pending{
+  background:#ffcc00;
+  color:#111;
+}
+
+.status.Shipped{
+  background:#2196f3;
+  color:white;
+}
+
+.status.Delivered{
+  background:#4caf50;
+  color:white;
+}
+
+.status.Cancelled{
+  background:#f44336;
+  color:white;
+}
+
+
+/* FOOTER (if used later) */
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:60px;
+}
+
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(15px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  header{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+  }
+
+  nav{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .container{
+    padding:40px 15px;
+  }
+
+  .box{
+    padding:25px 15px;
+  }
+
+  .container h1{
+    font-size:28px;
+  }
+
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SmartStore</div>
+
+  <nav>
+    <a href="index.html">Начало</a>
+      <a href="products.html">Продукти</a>
+      <a href="cart.html">Количка</a>
+            <a href="track-order.html">проследяване на поръчка</a>
+
+      <a id="authLink" href="login.html">Вход</a>
+
+  </nav>
+</header>
+
+<div class="container">
+
+  <h1>Проследяване на поръчка</h1>
+
+  <div class="box">
+
+    <input type="text" id="orderId" placeholder="Въведете код на поръчката">
+
+    <button id="trackBtn">Провери</button>
+
+    <div class="result"></div>
+
+  </div>
+
+</div>
+ <script type="module">
+import { db, auth } from "./js/firebase-config.js";
+
+    import {
+      onAuthStateChanged
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    import {
+      collection,
+      getDocs
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+
+
+    const authLink = document.getElementById("authLink");
+
+    const container = document.getElementById("products");
+
+
+
+    // 🔥 auth state
+    onAuthStateChanged(auth, (user) => {
+
+      if(user){
+
+        authLink.textContent = "Профил";
+
+        authLink.href = "profile.html";
+
+      } else {
+
+        authLink.textContent = "Вход";
+
+        authLink.href = "login.html";
+
+      }
+
+    });
+    </script>
+<script type="module" src="js/track-order.js"></script>
+
+</body>
+</html>
