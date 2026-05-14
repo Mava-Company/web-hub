@@ -102,7 +102,7 @@ checkoutForm.addEventListener("submit", async (e) => {
 
       total,
 
-      status:"Pending",
+      status:"pending",
 
       createdAt:serverTimestamp()
 
