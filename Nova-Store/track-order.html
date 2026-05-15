@@ -1,5 +1,4 @@
 <!-- track-order.html -->
-
 <!DOCTYPE html>
 <html lang="bg">
 <head>
@@ -8,7 +7,6 @@
   <title>Проследяване на поръчка</title>
 
   <style>
-   /* RESET */
 
 *{
   margin:0;
@@ -22,9 +20,7 @@ body{
   color:#222;
 }
 
-
 /* HEADER */
-
 header{
   background:#111;
   color:white;
@@ -52,16 +48,13 @@ nav a{
   color:white;
   text-decoration:none;
   font-size:16px;
-  transition:0.3s;
 }
 
 nav a:hover{
   color:#00bcd4;
 }
 
-
 /* CONTAINER */
-
 .container{
   max-width:900px;
   margin:auto;
@@ -69,18 +62,13 @@ nav a:hover{
   text-align:center;
 }
 
-
-/* TITLE */
-
 .container h1{
   font-size:36px;
   margin-bottom:30px;
   color:#111;
 }
 
-
 /* BOX */
-
 .box{
   background:white;
   padding:40px;
@@ -88,35 +76,29 @@ nav a:hover{
   box-shadow:0 8px 30px rgba(0,0,0,.08);
   display:flex;
   flex-direction:column;
-  gap:20px;
+  gap:18px;
   align-items:center;
-  animation:fadeIn .3s ease;
 }
 
-
 /* INPUT */
-
 .box input{
   width:100%;
-  max-width:400px;
+  max-width:420px;
   padding:14px 16px;
   border:1px solid #ddd;
   border-radius:10px;
   font-size:16px;
+  text-align:center;
   outline:none;
   transition:0.3s;
-  background:#fafafa;
-  text-align:center;
 }
 
 .box input:focus{
   border-color:#00bcd4;
-  background:white;
+  background:#fff;
 }
 
-
 /* BUTTON */
-
 .box button{
   width:100%;
   max-width:220px;
@@ -135,24 +117,20 @@ nav a:hover{
   transform:translateY(-2px);
 }
 
-
 /* RESULT */
-
 .result{
   width:100%;
-  margin-top:20px;
-  padding:20px;
+  margin-top:10px;
+  padding:18px;
   border-radius:14px;
   background:#f7f7f7;
   text-align:left;
-  font-size:16px;
-  color:#333;
   min-height:60px;
+  font-size:15px;
+  color:#333;
 }
 
-
-/* STATUS COLORS */
-
+/* STATUS */
 .status{
   display:inline-block;
   padding:6px 12px;
@@ -161,60 +139,19 @@ nav a:hover{
   margin-top:10px;
 }
 
-.status.Pending{
-  background:#ffcc00;
-  color:#111;
-}
+.status.Pending{ background:#ffcc00; color:#111; }
+.status.Shipped{ background:#2196f3; color:white; }
+.status.Delivered{ background:#4caf50; color:white; }
+.status.Cancelled{ background:#f44336; color:white; }
 
-.status.Shipped{
-  background:#2196f3;
-  color:white;
-}
-
-.status.Delivered{
-  background:#4caf50;
-  color:white;
-}
-
-.status.Cancelled{
-  background:#f44336;
-  color:white;
-}
-
-
-/* FOOTER (if used later) */
-
-footer{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:25px;
-  margin-top:60px;
-}
-
-
-/* ANIMATION */
-
-@keyframes fadeIn{
-  from{
-    opacity:0;
-    transform:translateY(15px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
-
-/* MOBILE */
-
-@media(max-width:768px){
+/* 📱 MOBILE */
+@media (max-width: 768px){
 
   header{
     flex-direction:column;
-    gap:15px;
-    padding:20px;
+    gap:12px;
+    padding:18px;
+    text-align:center;
   }
 
   nav{
@@ -226,15 +163,37 @@ footer{
     padding:40px 15px;
   }
 
+  .container h1{
+    font-size:26px;
+  }
+
   .box{
     padding:25px 15px;
+    border-radius:16px;
   }
+
+  .box input{
+    font-size:14px;
+  }
+
+  .box button{
+    width:100%;
+    max-width:100%;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 400px){
 
   .container h1{
-    font-size:28px;
+    font-size:22px;
   }
 
+  .box{
+    padding:20px 12px;
+  }
 }
+
   </style>
 </head>
 
@@ -245,12 +204,10 @@ footer{
 
   <nav>
     <a href="index.html">Начало</a>
-      <a href="products.html">Продукти</a>
-      <a href="cart.html">Количка</a>
-            <a href="track-order.html">проследяване на поръчка</a>
-
-      <a id="authLink" href="login.html">Вход</a>
-
+    <a href="products.html">Продукти</a>
+    <a href="cart.html">Количка</a>
+    <a href="track-order.html">проследяване на поръчка</a>
+    <a id="authLink" href="login.html">Вход</a>
   </nav>
 </header>
 
@@ -269,45 +226,24 @@ footer{
   </div>
 
 </div>
- <script type="module">
-import { db, auth } from "./js/firebase-config.js";
 
-    import {
-      onAuthStateChanged
-    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+<script type="module">
+import { auth } from "./js/firebase-config.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-    import {
-      collection,
-      getDocs
-    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+const authLink = document.getElementById("authLink");
 
+onAuthStateChanged(auth, (user) => {
+  if(user){
+    authLink.textContent = "Профил";
+    authLink.href = "profile.html";
+  } else {
+    authLink.textContent = "Вход";
+    authLink.href = "login.html";
+  }
+});
+</script>
 
-
-    const authLink = document.getElementById("authLink");
-
-    const container = document.getElementById("products");
-
-
-
-    // 🔥 auth state
-    onAuthStateChanged(auth, (user) => {
-
-      if(user){
-
-        authLink.textContent = "Профил";
-
-        authLink.href = "profile.html";
-
-      } else {
-
-        authLink.textContent = "Вход";
-
-        authLink.href = "login.html";
-
-      }
-
-    });
-    </script>
 <script type="module" src="js/track-order.js"></script>
 
 </body>
