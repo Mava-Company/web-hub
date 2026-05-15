@@ -9,367 +9,364 @@
 
   <style>
 
-   /* RESET */
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
-}
-
-body{
-  background:#f5f5f5;
-  color:#222;
-}
-
-
-/* HEADER */
-
-header{
-  background:#111;
-  color:white;
-  padding:18px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:999;
-}
-
-.logo{
-  font-size:28px;
-  font-weight:bold;
-  color:#00bcd4;
-}
-
-nav{
-  display:flex;
-  gap:20px;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  font-size:16px;
-  transition:0.3s;
-}
-
-nav a:hover{
-  color:#00bcd4;
-}
-
-
-/* MAIN CONTAINER */
-
-.container{
-  display:grid;
-  grid-template-columns:280px 1fr;
-  gap:30px;
-  padding:40px;
-  max-width:1600px;
-  margin:auto;
-}
-
-
-/* SIDEBAR */
-
-.sidebar{
-  background:white;
-  padding:25px;
-  border-radius:16px;
-  height:fit-content;
-  box-shadow:0 4px 15px rgba(0,0,0,.08);
-  position:sticky;
-  top:100px;
-}
-
-.filter-group{
-  margin-bottom:35px;
-}
-
-.filter-group h3{
-  margin-bottom:18px;
-  font-size:22px;
-  color:#111;
-}
-
-.filter-group label{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-bottom:14px;
-  cursor:pointer;
-  font-size:16px;
-  color:#555;
-}
-
-.filter-group input{
-  accent-color:#00bcd4;
-}
-
-
-/* PRODUCTS SECTION */
-
-.products-section{
-  width:100%;
-}
-
-
-/* TOP BAR */
-
-.top-bar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:35px;
-  gap:20px;
-}
-
-.top-bar h1{
-  font-size:38px;
-  color:#111;
-}
-
-#search{
-  width:320px;
-  padding:14px 18px;
-  border:none;
-  border-radius:10px;
-  background:white;
-  box-shadow:0 2px 10px rgba(0,0,0,.08);
-  font-size:16px;
-  outline:none;
-}
-
-#search:focus{
-  border:2px solid #00bcd4;
-}
-
-
-/* PRODUCTS GRID */
-
-.products-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
-  gap:28px;
-}
-
-
-/* PRODUCT CARD */
-
-.product-card{
-  background:white;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 5px 18px rgba(0,0,0,.08);
-  transition:0.3s;
-}
-
-.product-card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 10px 28px rgba(0,0,0,.15);
-}
-
-
-/* IMAGE SLIDER */
-
-.product-slider{
-  width:100%;
-  overflow-x:auto;
-  display:flex;
-  scroll-snap-type:x mandatory;
-  scroll-behavior:smooth;
-  background:#eee;
-}
-
-.product-slider::-webkit-scrollbar{
-  height:8px;
-}
-
-.product-slider::-webkit-scrollbar-thumb{
-  background:#ccc;
-  border-radius:10px;
-}
-
-.slider-image{
-  min-width:100%;
-  height:260px;
-  object-fit:cover;
-  scroll-snap-align:start;
-  flex-shrink:0;
-}
-
-
-/* PRODUCT INFO */
-
-.product-info{
-  padding:20px;
-}
-
-.product-info h3{
-  font-size:22px;
-  margin-bottom:12px;
-  color:#111;
-  min-height:55px;
-}
-
-.price{
-  color:#00bcd4;
-  font-size:24px;
-  font-weight:bold;
-  margin-bottom:20px;
-}
-
-
-/* BUTTONS */
-
-.buttons{
-  display:flex;
-  gap:12px;
-}
-
-.buttons button,
-.details-btn{
-  flex:1;
-  border:none;
-  text-decoration:none;
-  text-align:center;
-  padding:12px;
-  border-radius:10px;
-  cursor:pointer;
-  font-size:15px;
-  transition:0.3s;
-}
-
-
-/* CART BUTTON */
-
-.buttons button{
-  background:#111;
-  color:white;
-}
-
-.buttons button:hover{
-  background:#00bcd4;
-}
-
-
-/* DETAILS BUTTON */
-
-.details-btn{
-  background:#00bcd4;
-  color:white;
-}
-
-.details-btn:hover{
-  background:#0097a7;
-}
-
-
-/* FOOTER */
-
-footer{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:25px;
-  margin-top:60px;
-}
-
-
-/* TABLET */
-
-@media(max-width:1100px){
-
-  .container{
-    grid-template-columns:1fr;
-  }
-
-  .sidebar{
-    position:static;
-  }
-
-}
-
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-  header{
-    flex-direction:column;
-    gap:15px;
-    padding:20px;
-  }
-
-  nav{
-    flex-wrap:wrap;
-    justify-content:center;
-  }
-
-  .container{
-    padding:20px;
-  }
-
-  .top-bar{
-    flex-direction:column;
-    align-items:stretch;
-  }
-
-  .top-bar h1{
-    font-size:30px;
-    text-align:center;
-  }
-
-  #search{
-    width:100%;
-  }
-
-  .products-grid{
-    grid-template-columns:1fr;
-  }
-
-  .slider-image{
-    height:220px;
-  }
-
-  .buttons{
-    flex-direction:column;
-  }
-
-}
-
-
-
-
-.toast {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #28a745;
-  color: white;
-  padding: 14px 18px;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  font-size: 14px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 0.3s ease;
-  z-index: 9999;
-}
-
-.toast.show {
-  opacity: 1;
-  transform: translateY(0);
-}
+    /* RESET */
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#222;
+      overflow-x:hidden;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header{
+      background:#111;
+      color:white;
+      padding:18px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:999;
+      gap:20px;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#00bcd4;
+      white-space:nowrap;
+    }
+
+    nav{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-size:16px;
+      transition:0.3s;
+      white-space:nowrap;
+    }
+
+    nav a:hover{
+      color:#00bcd4;
+    }
+
+    /* =========================
+       MAIN CONTAINER
+    ========================== */
+
+    .container{
+      display:grid;
+      grid-template-columns:280px 1fr;
+      gap:30px;
+      padding:40px;
+      max-width:1600px;
+      margin:auto;
+    }
+
+    /* =========================
+       SIDEBAR
+    ========================== */
+
+    .sidebar{
+      background:white;
+      padding:25px;
+      border-radius:16px;
+      height:fit-content;
+      box-shadow:0 4px 15px rgba(0,0,0,.08);
+      position:sticky;
+      top:100px;
+    }
+
+    .filter-group{
+      margin-bottom:35px;
+    }
+
+    .filter-group h3{
+      margin-bottom:18px;
+      font-size:22px;
+      color:#111;
+    }
+
+    .filter-group label{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:14px;
+      cursor:pointer;
+      font-size:16px;
+      color:#555;
+    }
+
+    .filter-group input{
+      accent-color:#00bcd4;
+    }
+
+    /* =========================
+       PRODUCTS SECTION
+    ========================== */
+
+    .products-section{
+      width:100%;
+    }
+
+    .top-bar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:35px;
+      gap:20px;
+    }
+
+    .top-bar h1{
+      font-size:38px;
+      color:#111;
+    }
+
+    #search{
+      width:320px;
+      padding:14px 18px;
+      border:none;
+      border-radius:10px;
+      background:white;
+      box-shadow:0 2px 10px rgba(0,0,0,.08);
+      font-size:16px;
+      outline:none;
+    }
+
+    #search:focus{
+      border:2px solid #00bcd4;
+    }
+
+    /* =========================
+       GRID
+    ========================== */
+
+    .products-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+      gap:28px;
+    }
+
+    .product-card{
+      background:white;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 5px 18px rgba(0,0,0,.08);
+      transition:0.3s;
+    }
+
+    .product-card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 28px rgba(0,0,0,.15);
+    }
+
+    /* IMAGE */
+    .product-slider{
+      width:100%;
+      overflow-x:auto;
+      display:flex;
+      scroll-snap-type:x mandatory;
+      scroll-behavior:smooth;
+      background:#eee;
+    }
+
+    .slider-image{
+      min-width:100%;
+      height:260px;
+      object-fit:cover;
+      scroll-snap-align:start;
+    }
+
+    /* INFO */
+    .product-info{
+      padding:20px;
+    }
+
+    .product-info h3{
+      font-size:22px;
+      margin-bottom:12px;
+      color:#111;
+      min-height:55px;
+    }
+
+    .price{
+      color:#00bcd4;
+      font-size:24px;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+
+    /* BUTTONS */
+    .buttons{
+      display:flex;
+      gap:12px;
+    }
+
+    .buttons button,
+    .details-btn{
+      flex:1;
+      border:none;
+      text-decoration:none;
+      text-align:center;
+      padding:12px;
+      border-radius:10px;
+      cursor:pointer;
+      font-size:15px;
+      transition:0.3s;
+    }
+
+    .buttons button{
+      background:#111;
+      color:white;
+    }
+
+    .buttons button:hover{
+      background:#00bcd4;
+    }
+
+    .details-btn{
+      background:#00bcd4;
+      color:white;
+    }
+
+    .details-btn:hover{
+      background:#0097a7;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:60px;
+    }
+
+    /* =========================
+       TABLET
+    ========================== */
+
+    @media(max-width:1100px){
+
+      .container{
+        grid-template-columns:1fr;
+        padding:25px;
+      }
+
+      .sidebar{
+        position:static;
+      }
+
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:20px;
+      }
+
+      nav{
+        justify-content:flex-start;
+      }
+
+      .top-bar{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .top-bar h1{
+        font-size:28px;
+        text-align:center;
+      }
+
+      #search{
+        width:100%;
+      }
+
+      .slider-image{
+        height:220px;
+      }
+
+      .buttons{
+        flex-direction:column;
+      }
+
+      .sidebar{
+        padding:18px;
+      }
+
+    }
+
+    /* =========================
+       SMALL MOBILE
+    ========================== */
+
+    @media(max-width:480px){
+
+      .container{
+        padding:18px;
+      }
+
+      .top-bar h1{
+        font-size:24px;
+      }
+
+      .filter-group h3{
+        font-size:18px;
+      }
+
+      .filter-group label{
+        font-size:14px;
+      }
+
+      .slider-image{
+        height:200px;
+      }
+
+      .product-info h3{
+        font-size:18px;
+      }
+
+      .price{
+        font-size:20px;
+      }
+
+    }
 
   </style>
 </head>
 
 <body>
-
 
 <header>
 
@@ -377,58 +374,48 @@ footer{
 
   <nav>
     <a href="index.html">Начало</a>
-      <a href="products.html">Продукти</a>
-      <a href="cart.html">Количка</a>
-            <a href="track-order.html">проследяване на поръчка</a>
-
-      <a id="authLink" href="login.html">Вход</a>
-
+    <a href="products.html">Продукти</a>
+    <a href="cart.html">Количка</a>
+    <a href="track-order.html">Проследяване</a>
+    <a id="authLink" href="login.html">Вход</a>
   </nav>
 
 </header>
 
 <div class="container">
 
-  <!-- 🔥 SIDEBAR FILTERS -->
+  <!-- SIDEBAR -->
   <aside class="sidebar">
 
     <div class="filter-group">
       <h3>Категории</h3>
 
-    <label><input type="checkbox" value="electronics" class="cat"> Electronics</label>
-<label><input type="checkbox" value="fashion" class="cat"> Fashion</label>
-<label><input type="checkbox" value="accessories" class="cat"> Accessories</label>
-<label><input type="checkbox" value="games" class="cat"> Games</label>
-<label><input type="checkbox" value="home" class="cat"> Home & Kitchen</label>
-<label><input type="checkbox" value="beauty" class="cat"> Beauty</label>
-<label><input type="checkbox" value="sports" class="cat"> Sports</label>
-<label><input type="checkbox" value="books" class="cat"> Books</label>
-<label><input type="checkbox" value="toys" class="cat"> Toys</label>
-<label><input type="checkbox" value="automotive" class="cat"> Automotive</label>
-
+      <label><input type="checkbox" value="electronics" class="cat"> Electronics</label>
+      <label><input type="checkbox" value="fashion" class="cat"> Fashion</label>
+      <label><input type="checkbox" value="accessories" class="cat"> Accessories</label>
+      <label><input type="checkbox" value="games" class="cat"> Games</label>
+      <label><input type="checkbox" value="home" class="cat"> Home</label>
+      <label><input type="checkbox" value="beauty" class="cat"> Beauty</label>
+      <label><input type="checkbox" value="sports" class="cat"> Sports</label>
     </div>
 
     <div class="filter-group">
       <h3>Цена</h3>
 
-      <label><input type="radio" name="price" value="0-100"> 0 - 100</label>
-      <label><input type="radio" name="price" value="100-500"> 100 - 500</label>
+      <label><input type="radio" name="price" value="0-100"> 0-100</label>
+      <label><input type="radio" name="price" value="100-500"> 100-500</label>
       <label><input type="radio" name="price" value="500+"> 500+</label>
-
       <label><input type="radio" name="price" value="" checked> Всички</label>
     </div>
 
   </aside>
 
-  <!-- 🔥 PRODUCTS -->
+  <!-- PRODUCTS -->
   <section class="products-section">
 
     <div class="top-bar">
-
       <h1>Всички продукти</h1>
-
       <input type="text" id="search" placeholder="Търсене...">
-
     </div>
 
     <div class="products-grid" id="products"></div>
@@ -438,50 +425,10 @@ footer{
 </div>
 
 <footer>
-  © 2026 Nova Store
+  ©️ 2026 Nova Store
 </footer>
 
-
-<div id="toast" class="toast"></div>
- <script type="module">
-import { db, auth } from "./js/firebase-config.js";
-
-    import {
-      onAuthStateChanged
-    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-
-    import {
-      collection,
-      getDocs
-    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
-
-
-    const authLink = document.getElementById("authLink");
-
-    const container = document.getElementById("products");
-
-
-
-    // 🔥 auth state
-    onAuthStateChanged(auth, (user) => {
-
-      if(user){
-
-        authLink.textContent = "Профил";
-
-        authLink.href = "profile.html";
-
-      } else {
-
-        authLink.textContent = "Вход";
-
-        authLink.href = "login.html";
-
-      }
-
-    });
-    </script>
 <script type="module" src="js/products.js"></script>
+
 </body>
 </html>
