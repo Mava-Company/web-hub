@@ -48,7 +48,7 @@ function renderOrders() {
   container.innerHTML = "";
 
   if (orders.length === 0) {
-    container.innerHTML = "<p>لا توجد طلبات</p>";
+    container.innerHTML = "<p> Няма заявки</p>";
     return;
   }
 
