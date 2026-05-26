@@ -573,3 +573,116 @@ tbody tr:hover{
   color: #aaa;
 }
 
+
+/* FAB CONTAINER */
+
+.admin-fab {
+  position: fixed;
+
+  bottom: 20px;
+  right: 20px;
+
+  z-index: 9999;
+}
+
+/* BUTTON */
+
+#adminToggle {
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+
+  transition: 0.3s;
+}
+
+#adminToggle:hover {
+  transform: scale(1.08);
+  background: #1d4ed8;
+}
+
+/* MENU */
+
+.admin-menu {
+  position: absolute;
+
+  bottom: 75px;
+  right: 0;
+
+  width: 220px;
+
+  background: white;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(10px);
+
+  transition: 0.3s;
+}
+
+/* ACTIVE */
+
+.admin-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* LINKS */
+
+.admin-menu a {
+  display: block;
+
+  padding: 14px 18px;
+
+  text-decoration: none;
+
+  color: #1e293b;
+
+  font-weight: 500;
+
+  border-bottom: 1px solid #eee;
+
+  transition: 0.2s;
+}
+
+.admin-menu a:hover {
+  background: #f1f5f9;
+  padding-left: 24px;
+}
+
+.admin-menu a:last-child {
+  border-bottom: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  #adminToggle {
+    width: 55px;
+    height: 55px;
+  }
+
+  .admin-menu {
+    width: 190px;
+  }
+
+}
