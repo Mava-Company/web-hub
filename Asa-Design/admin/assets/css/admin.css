@@ -507,14 +507,7 @@ z-index: 3000;
     display: inline; /* أو block */
   }
 
-  /* overlay اختياري */
-  .sidebar.active::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.4);
-    z-index:-1;
-  }
+ 
 
   .main-content{
     margin-right:0;
