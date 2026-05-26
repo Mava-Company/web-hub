@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>إدارة معرض الأعمال</title>
+
+  <link rel="stylesheet" href="assets/css/admin.css"/>
+  <link rel="stylesheet" href="assets/css/portfolio.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+
+ 
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+      <h2 id="adminSiteName"></h2>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <a href="index.html"
+      class="active">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>
+          لوحة التحكم
+        </span>
+
+      </a>
+
+      <a href="services.html">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <span>
+          الخدمات
+        </span>
+
+      </a>
+
+      <a href="orders.html">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>
+          الطلبات
+        </span>
+
+      </a>
+
+      <a href="users.html">
+
+        <i class="fa-solid fa-users"></i>
+
+        <span>
+          المستخدمين
+        </span>
+
+      </a>
+
+      <a href="portfolio.html">
+
+        <i class="fa-solid fa-image"></i>
+
+        <span>
+          معرض الأعمال
+        </span>
+
+      </a>
+
+      <a href="messages.html">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <span>
+          الرسائل
+        </span>
+
+      </a>
+
+
+      <button id="logoutBtn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        <span>
+          تسجيل الخروج
+        </span>
+
+      </button>
+
+    </nav>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+
+      <div class="topbar-left">
+        <h1>إدارة معرض الأعمال</h1>
+      </div>
+
+      <div class="topbar-right">
+        <button id="addProjectBtn" class="btn primary-btn">
+          إضافة مشروع
+        </button>
+      </div>
+
+    </header>
+
+    <!-- FILTERS -->
+    <section class="filters-section">
+
+      <div class="filters-container">
+
+        <input
+          type="text"
+          id="searchProject"
+          placeholder="بحث عن مشروع"
+        />
+
+        <select id="portfolioCategoryFilter">
+          <option value="">جميع التصنيفات</option>
+        </select>
+
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="portfolio-section">
+
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal hidden" id="projectModal">
+
+    <div class="modal-content large">
+
+      <button class="close-modal" id="closeProjectModal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <h2>إضافة مشروع</h2>
+
+      <form id="projectForm">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>اسم المشروع</label>
+            <input type="text" id="projectTitle" required/>
+          </div>
+
+
+          <div class="form-group">
+            <label>وصف المشروع</label>
+            <textarea id="projectDescription" required></textarea>
+          </div>
+
+         <div class="form-group">
+
+  <label>وسائط المشروع (صور + فيديو)</label>
+
+  <input
+    type="file"
+    id="projectMedia"
+    multiple
+    accept="image/*,video/*"
+  />
+
+  <small>يمكنك رفع صور وفيديوهات معًا</small>
+
+</div>
+
+          <div class="form-group">
+            <label>تاريخ المشروع</label>
+            <input type="date" id="projectDate" required/>
+          </div>
+
+        </div>
+
+        <button type="submit" class="btn primary-btn">
+          حفظ المشروع
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- LOADING -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loader"></div>
+  </div>
+
+  <script type="module" src="./assets/js/portfolio.js"></script>
+
+</body>
+
+</html>

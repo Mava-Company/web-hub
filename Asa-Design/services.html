@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0" />
+
+  <title>
+    الخدمات
+  </title>
+
+  <!-- CSS -->
+
+  <link rel="stylesheet"
+  href="assets/css/services.css" />
+
+  <!-- FONT AWESOME -->
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="logo">
+  <img src="assets/images/logo.jpeg" alt="Logo">
+  <a href="index.html">ASH DESIGN</a>
+</div>
+
+    <nav class="navbar">
+
+      <a href="index.html">الرئيسية</a>
+      <a href="services.html">الخدمات</a>
+      <a href="portfolio.html">معرض الأعمال</a>
+      <a href="track-order.html">تتبع الطلب</a>
+      <a href="about.html" target="_blank">من نحن</a>
+
+      <a href="contact.html" >تواصل معنا</a>
+     <div id="authLinks">
+  <a href="login.html" id="loginLink">تسجيل الدخول</a>
+  <a href="register.html" id="registerLink">إنشاء الحساب</a>
+
+  <a href="profile.html" id="profileLink" style="display:none;">
+    البروفايل
+  </a>
+
+  <a href="login.html" id="logoutLink" style="display:none;">
+    تسجيل الخروج
+  </a>
+</div>
+    </nav>
+
+    <div class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+  </header>
+
+  <!-- ===============================
+       HERO
+  ================================ -->
+
+  <section class="page-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <h1 id="servicesHeroTitle">
+
+        خدماتنا
+
+      </h1>
+
+      <p id="servicesHeroDescription">
+
+        تصفح جميع الخدمات المتوفرة لدينا
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ===============================
+       FILTERS
+  ================================ -->
+
+  <section class="filters-section">
+
+    <div class="filters-container">
+
+      <!-- SEARCH -->
+
+      <div class="search-box">
+
+        <input
+        type="text"
+        id="serviceSearchInput"
+        placeholder="ابحث عن خدمة..." />
+
+        <button id="searchBtn">
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+        </button>
+
+      </div>
+
+      <!-- CATEGORY FILTER -->
+
+      <div class="category-filter"
+      id="categoryFilterContainer">
+
+        <!-- Dynamic Categories -->
+
+      </div>
+
+      <!-- SORT -->
+
+      <div class="sort-box">
+
+        <select id="sortServices">
+
+          <option value="latest">
+
+            الأحدث
+
+          </option>
+
+          <option value="oldest">
+
+            الأقدم
+
+          </option>
+
+          <option value="price-low">
+
+            السعر الأقل
+
+          </option>
+
+          <option value="price-high">
+
+            السعر الأعلى
+
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===============================
+       SERVICES
+  ================================ -->
+
+  <section class="services-page section">
+<button id="closeModal" class="close-modal">
+  <i class="fa-solid fa-xmark"></i>
+</button>
+    <div class="services-container"
+    id="servicesContainer">
+
+      <!-- Dynamic Services -->
+
+    </div>
+
+    <!-- EMPTY -->
+
+    <div class="empty-state hidden"
+    id="emptyState">
+
+      <i class="fa-solid fa-box-open"></i>
+
+      <h3>
+
+        لا توجد خدمات حالياً
+
+      </h3>
+
+    </div>
+
+  </section>
+<!-- ===============================
+       SERVICE MODAL
+  ================================ -->
+
+<div class="service-modal hidden"
+id="serviceModal">
+  <section class="contact-cta">
+
+    <div class="cta-content">
+
+      <h2 id="ctaTitle">
+
+        هل تحتاج خدمة مخصصة؟
+
+      </h2>
+
+      <p id="ctaDescription">
+
+        تواصل معنا الآن وسنساعدك مباشرة
+
+      </p>
+
+      <a href="#"
+      id="ctaWhatsappBtn"
+      class="btn primary-btn">
+
+        تواصل معنا
+
+      </a>
+<img id="modalServiceImage" src="" alt="service" />
+    </div>
+
+  </section>
+
+  <!-- ===============================
+       FOOTER
+  ================================ -->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- ABOUT -->
+
+      <div class="footer-box">
+
+        <h2 id="footerSiteName">
+
+          اسم الموقع
+
+        </h2>
+
+        <p id="footerDescription">
+
+          أفضل الخدمات الرقمية باحترافية عالية
+
+        </p>
+
+      </div>
+
+      <!-- LINKS -->
+
+      <div class="footer-box">
+
+        <h3>
+
+          روابط سريعة
+
+        </h3>
+
+        <a href="index.html">
+
+          الرئيسية
+
+        </a>
+
+        <a href="services.html">
+
+          الخدمات
+
+        </a>
+
+        <a href="about.html">
+
+          من نحن
+
+        </a>
+
+        <a href="contact.html">
+
+          تواصل معنا
+
+        </a>
+
+      </div>
+
+      <!-- CONTACT -->
+
+      <div class="footer-box">
+
+        <h3>
+
+          تواصل معنا
+
+        </h3>
+
+        <a href="#"
+        id="footerWhatsapp">
+
+          واتساب
+
+        </a>
+
+        <a href="#"
+        id="footerEmail">
+
+          البريد الإلكتروني
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p id="copyrightText">
+
+        جميع الحقوق محفوظة © 2026
+
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- ===============================
+       FLOATING WHATSAPP
+  ================================ -->
+
+  <a href="#"
+  class="floating-whatsapp"
+  id="floatingWhatsapp"
+  target="_blank">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+  </a>
+
+  <!-- ===============================
+       LOADING
+  ================================ -->
+
+  <div class="loading-overlay"
+  id="loadingOverlay">
+
+    <div class="loader"></div>
+
+  </div>
+
+  <!-- ===============================
+       JS
+  ================================ -->
+<script type="module" src="assets/js/auth-ui.js"></script>
+  <script type="module"
+  src="assets/js/services.js"></script>
+
+</body>
+
+</html>

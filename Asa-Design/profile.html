@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الملف الشخصي</title>
+
+  <link rel="stylesheet" href="assets/css/profile.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="logo">
+  <img src="assets/images/logo.jpeg" alt="Logo">
+  <a href="index.html">ASH DESIGN</a>
+</div>
+
+    <nav class="navbar">
+
+      <a href="index.html">الرئيسية</a>
+      <a href="services.html">الخدمات</a>
+      <a href="portfolio.html">معرض الأعمال</a>
+      <a href="track-order.html">تتبع الطلب</a>
+      <a href="about.html" target="_blank">من نحن</a>
+
+      <a href="contact.html" >تواصل معنا</a>
+     <div id="authLinks">
+  <a href="login.html" id="loginLink">تسجيل الدخول</a>
+  <a href="register.html" id="registerLink">إنشاء الحساب</a>
+
+  <a href="profile.html" id="profileLink" style="display:none;">
+    البروفايل
+  </a>
+
+  <a href="login.html" id="logoutLink" style="display:none;">
+    تسجيل الخروج
+  </a>
+</div>
+    </nav>
+
+    <div class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================
+       PROFILE HEADER
+  ========================== -->
+
+  <header class="profile-header">
+
+    <div class="profile-info">
+
+      <img id="avatar" src="assets/img/default.png" alt="avatar" class="avatar"/>
+
+      <div>
+        <h2 id="name">الاسم</h2>
+        <p id="email">email</p>
+        <p id="phone">الهاتف</p>
+      </div>
+
+    </div>
+
+    <div class="profile-actions">
+
+      <button id="editBtn" class="btn">
+        تعديل الملف
+      </button>
+
+      <button id="logoutBtn" class="btn danger">
+        تسجيل الخروج
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- =========================
+       EDIT BOX
+  ========================== -->
+
+  <section id="editBox" class="edit-box" style="display:none">
+
+    <h3>تعديل البيانات</h3>
+
+    <input type="text" id="editName" placeholder="الاسم الجديد"/>
+    <input type="text" id="editPhone" placeholder="رقم الهاتف"/>
+
+    <input type="file" id="avatarInput"/>
+
+    <button id="saveProfileBtn" class="btn primary">
+      حفظ
+    </button>
+
+  </section>
+
+  <!-- =========================
+       ORDERS SECTION
+  ========================== -->
+<section class="orders-section">
+
+  <h2>طلباتي</h2>
+
+  <table class="orders-table">
+
+    <thead>
+      <tr>
+        <th>كود الطلب</th>
+        <th>الخدمة</th>
+        <th>الحالة</th>
+      
+        <th>السعر</th>
+        <th>التاريخ</th>
+      </tr>
+    </thead>
+
+    <tbody id="ordersTableBody">
+      <!-- Dynamic Orders -->
+    </tbody>
+
+  </table>
+
+</section>
+
+  <!-- =========================
+       JS
+  ========================== -->
+
+  <script>
+const menuBtn = document.querySelector(".menu-btn");
+const navbar = document.querySelector(".navbar");
+
+menuBtn.onclick = () => {
+  navbar.classList.toggle("active");
+};
+</script>
+
+  <script type="module" src="assets/js/auth-ui.js"></script>
+
+  <script type="module" src="assets/js/profile.js"></script>
+
+</body>
+
+</html>

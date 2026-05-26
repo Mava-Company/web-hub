@@ -1,0 +1,208 @@
+/* =======================
+   GLOBAL
+======================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  direction: rtl;
+  color: #333;
+}
+
+/* =======================
+   HEADER
+======================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #111;
+  color: #fff;
+}
+
+.header .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00c896;
+}
+
+/* =======================
+   PAGE TITLE
+======================= */
+
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  color: #222;
+}
+
+/* =======================
+   SERVICE BOX
+======================= */
+
+#serviceBox {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* =======================
+   FORM
+======================= */
+
+form#orderForm {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #00c896;
+}
+
+/* =======================
+   BUTTON
+======================= */
+
+form button {
+  padding: 12px;
+  border: none;
+  background: #00c896;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #00a77a;
+}
+
+/* =======================
+   RESULT BOX
+======================= */
+
+#resultBox {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+#orderCode {
+  color: #00c896;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+/* =======================
+   COPY BUTTON
+======================= */
+
+#copyCodeBtn {
+  padding: 10px 15px;
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#copyCodeBtn:hover {
+  background: #333;
+}
+
+/* =======================
+   WHATSAPP BUTTON
+======================= */
+
+#whatsappBtn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#whatsappBtn:hover {
+  background: #1ebe5d;
+}
+
+/* =======================
+   MOBILE
+======================= */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;        /* حجم الصورة */
+  height: 50px;
+  border-radius: 50%; /* يجعلها دائرية */
+  object-fit: cover;  /* يمنع تشوه الصورة */
+  border: 2px solid #fff; /* إطار أبيض اختياري */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}

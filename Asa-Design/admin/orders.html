@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8"/>
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0"/>
+
+  <title>إدارة الطلبات</title>
+
+  <link rel="stylesheet"
+  href="assets/css/admin.css"/>
+
+  <link rel="stylesheet"
+  href="assets/css/orders.css"/>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+<body>
+
+ 
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+      <h2 id="adminSiteName"></h2>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <a href="index.html"
+      class="active">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>
+          لوحة التحكم
+        </span>
+
+      </a>
+
+      <a href="services.html">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <span>
+          الخدمات
+        </span>
+
+      </a>
+
+      <a href="orders.html">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>
+          الطلبات
+        </span>
+
+      </a>
+
+      <a href="users.html">
+
+        <i class="fa-solid fa-users"></i>
+
+        <span>
+          المستخدمين
+        </span>
+
+      </a>
+
+      <a href="portfolio.html">
+
+        <i class="fa-solid fa-image"></i>
+
+        <span>
+          معرض الأعمال
+        </span>
+
+      </a>
+
+      <a href="messages.html">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <span>
+          الرسائل
+        </span>
+
+      </a>
+
+
+      <button id="logoutBtn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        <span>
+          تسجيل الخروج
+        </span>
+
+      </button>
+
+    </nav>
+
+  </aside>
+
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+      <div class="topbar-left">
+
+        <h1>
+          إدارة الطلبات
+        </h1>
+
+      </div>
+
+    </header>
+
+    <!-- FILTERS -->
+
+    <section class="filters-section">
+
+      <div class="filters-container">
+
+        <input
+        type="text"
+        id="searchOrder"
+        placeholder="بحث برقم الطلب"/>
+
+        <select id="statusFilter">
+
+          <option value="">
+            جميع الحالات
+          </option>
+
+          <option value="Pending">
+            Pending
+          </option>
+
+          <option value="Reviewing">
+            Reviewing
+          </option>
+
+          <option value="In Progress">
+            In Progress
+          </option>
+
+          <option value="Completed">
+            Completed
+          </option>
+
+          <option value="Delivered">
+            Delivered
+          </option>
+
+          <option value="Cancelled">
+            Cancelled
+          </option>
+
+        </select>
+
+      </div>
+
+    </section>
+
+    <!-- TABLE -->
+
+    <section class="table-section">
+
+      <div class="table-container">
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>
+                رقم الطلب
+              </th>
+
+              <th>
+                العميل
+              </th>
+
+              <th>
+                الخدمة
+              </th>
+
+              <th>
+                الحالة
+              </th>
+
+              <th>
+                نسبة الإنجاز
+              </th>
+
+              <th>
+                التاريخ
+              </th>
+
+              <th>
+                الإجراءات
+              </th>
+
+            </tr>
+
+          </thead>
+
+          <tbody id="ordersTable">
+
+            <!-- Dynamic Orders -->
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ORDER MODAL -->
+
+  <div class="modal hidden"
+  id="orderModal">
+
+    <div class="modal-content large">
+
+      <button class="close-modal"
+      id="closeOrderModal">
+
+        <i class="fa-solid fa-xmark"></i>
+
+      </button>
+
+      <h2>
+        تفاصيل الطلب
+      </h2>
+
+      <div class="order-details">
+
+        <div class="details-grid">
+
+          <div class="detail-box">
+
+            <span>
+              رقم الطلب
+            </span>
+
+            <strong id="modalOrderNumber"></strong>
+
+          </div>
+
+          <div class="detail-box">
+
+            <span>
+              العميل
+            </span>
+
+            <strong id="modalCustomerName"></strong>
+
+          </div>
+
+          <div class="detail-box">
+
+            <span>
+              الخدمة
+            </span>
+
+            <strong id="modalServiceName"></strong>
+
+          </div>
+
+          <div class="detail-box">
+
+            <span>
+              الهاتف
+            </span>
+
+            <strong id="modalCustomerPhone"></strong>
+
+          </div>
+
+        </div>
+
+        <div class="form-group">
+
+          <label>
+            حالة الطلب
+          </label>
+
+          <select id="updateOrderStatus">
+
+            <option value="Pending">
+              Pending
+            </option>
+
+            <option value="Reviewing">
+              Reviewing
+            </option>
+
+            <option value="In Progress">
+              In Progress
+            </option>
+
+            <option value="Completed">
+              Completed
+            </option>
+
+            <option value="Delivered">
+              Delivered
+            </option>
+
+            <option value="Cancelled">
+              Cancelled
+            </option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+
+          <label>
+            نسبة الإنجاز
+          </label>
+
+          <input
+          type="range"
+          id="progressRange"
+          min="0"
+          max="100"/>
+
+        </div>
+
+        <div class="form-group">
+
+          <label>
+            ملاحظات الإدارة
+          </label>
+
+          <textarea
+          id="adminNotes"></textarea>
+
+        </div>
+
+        <button id="saveOrderChanges"
+        class="btn primary-btn">
+
+          حفظ التغييرات
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- LOADING -->
+
+
+  <div class="loading-overlay"
+  id="loadingOverlay">
+
+    <div class="loader"></div>
+
+  </div>
+  <script type="module"
+  src="./assets/js/orders.js"></script>
+
+</body>
+
+</html>
