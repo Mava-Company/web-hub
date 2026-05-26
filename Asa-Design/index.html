@@ -302,13 +302,8 @@ const modal = document.getElementById("welcomeModal");
 const closeBtn = document.getElementById("closeModal");
 
 // تحقق إذا المستخدم شاهد المودال سابقاً
-if(!localStorage.getItem("mavaWelcomeShown")){
-
   modal.style.display = "flex";
 
-  // حفظ أنه تم عرض المودال
-  localStorage.setItem("mavaWelcomeShown", "true");
-}
 
 // إغلاق المودال
 closeBtn.onclick = function(){
