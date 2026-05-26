@@ -313,6 +313,63 @@
   </div>
 -->
 
+
+    <!-- ADMIN FLOAT BUTTON -->
+
+<div class="admin-fab">
+
+  <button id="adminToggle">
+
+    <i class="fa-solid fa-user-shield"></i>
+
+  </button>
+
+  <div class="admin-menu" id="adminMenu">
+
+    <a href="/admin/index.html">
+      Dashboard
+    </a>
+
+    <a href="/admin/services.html">
+      Services
+    </a>
+
+    <a href="/admin/orders.html">
+      Orders
+    </a>
+
+    <a href="/admin/users.html">
+      Users
+    </a>
+
+    <a href="/admin/messages.html">
+      Messages
+    </a>
+
+    <a href="/admin/settings.html">
+      Settings
+    </a>
+
+  </div>
+
+</div>
+
+
+    
+<script>
+const adminToggle = document.getElementById("adminToggle");
+
+const adminMenu = document.getElementById("adminMenu");
+
+adminToggle.addEventListener("click", () => {
+
+  adminMenu.classList.toggle("active");
+
+});
+
+
+</script>
+    
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
