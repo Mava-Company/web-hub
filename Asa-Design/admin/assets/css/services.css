@@ -272,6 +272,19 @@ th, td {
   }
 }
 
+/* زر الموبايل */
+.menu-btn{
+  display:none;
+  background:#2563eb;
+  color:#fff;
+
+  border:none;
+  padding:10px 12px;
+z-index: 3000;
+  border-radius:10px;
+  cursor:pointer;
+}
+
 @media(max-width:768px){
 
   .menu-btn{
