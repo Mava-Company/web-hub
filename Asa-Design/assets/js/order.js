@@ -42,29 +42,47 @@ loadService();
 // =======================
 // ORDER FORM
 // =======================
-
 document.getElementById("orderForm").addEventListener("submit", async (e) => {
+
   e.preventDefault();
+
+  // التحقق من تسجيل الدخول
+  const user = auth.currentUser;
+
+  if (!user) {
+
+    alert("يجب تسجيل الدخول أولاً");
+
+    // تحويل لصفحة تسجيل الدخول
+    window.location.href = "login.html";
+
+    return;
+  }
 
   const name = document.getElementById("name").value;
   const phone = document.getElementById("phone").value;
   const email1 = document.getElementById("email").value;
   const address = document.getElementById("address").value;
-const user = auth.currentUser;
 
-const email = user.email;
-const uid = user.uid;
-  // 🔥 generate order code
-  const orderCode = "ORD-" + Math.random().toString(36).substr(2, 8).toUpperCase();
+  const email = user.email;
+  const uid = user.uid;
+
+  // generate order code
+  const orderCode =
+    "ORD-" +
+    Math.random().toString(36).substr(2, 8).toUpperCase();
 
   const orderData = {
+
     orderCode,
     name,
     phone,
     email1,
     address,
- email: user.email,   // من الحساب مباشرة
-  uid: user.uid,       // مهم جدًا
+
+    email,
+    uid,
+
     serviceId,
     serviceTitle: serviceData.title,
     price: serviceData.price,
@@ -74,6 +92,7 @@ const uid = user.uid;
   };
 
   await addDoc(collection(db, "orders"), orderData);
+
   // SHOW RESULT
   document.getElementById("orderForm").style.display = "none";
   document.getElementById("resultBox").style.display = "block";
@@ -82,11 +101,14 @@ const uid = user.uid;
 
   // COPY
   document.getElementById("copyCodeBtn").onclick = () => {
+
     navigator.clipboard.writeText(orderCode);
+
     alert("تم نسخ الكود");
   };
 
   // WHATSAPP
   document.getElementById("whatsappBtn").href =
     `https://wa.me/967773645841?text=طلبي رقم: ${orderCode} - خدمة: ${serviceData.title}`;
+
 });
