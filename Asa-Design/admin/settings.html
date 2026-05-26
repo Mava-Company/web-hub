@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8"/>
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0"/>
+
+  <title>الإعدادات</title>
+
+  <link rel="stylesheet"
+  href="assets/css/admin.css"/>
+
+  <link rel="stylesheet"
+  href="assets/css/settings.css"/>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+<body>
+
+ 
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+      <h2 id="adminSiteName"></h2>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <a href="index.html"
+      class="active">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>
+          لوحة التحكم
+        </span>
+
+      </a>
+
+      <a href="services.html">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <span>
+          الخدمات
+        </span>
+
+      </a>
+
+      <a href="orders.html">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>
+          الطلبات
+        </span>
+
+      </a>
+
+      <a href="users.html">
+
+        <i class="fa-solid fa-users"></i>
+
+        <span>
+          المستخدمين
+        </span>
+
+      </a>
+
+      <a href="portfolio.html">
+
+        <i class="fa-solid fa-image"></i>
+
+        <span>
+          معرض الأعمال
+        </span>
+
+      </a>
+
+      <a href="messages.html">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <span>
+          الرسائل
+        </span>
+
+      </a>
+
+
+      <button id="logoutBtn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        <span>
+          تسجيل الخروج
+        </span>
+
+      </button>
+
+    </nav>
+
+  </aside>
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+      <div class="topbar-left">
+
+        <h1>
+          إعدادات الموقع
+        </h1>
+
+      </div>
+
+    </header>
+
+    <!-- SETTINGS FORM -->
+
+    <section class="settings-section">
+
+      <form id="settingsForm">
+
+        <!-- GENERAL -->
+
+        <div class="settings-card">
+
+          <h2>
+            المعلومات العامة
+          </h2>
+
+          <div class="form-grid">
+
+            <div class="form-group">
+
+              <label>
+                اسم الموقع
+              </label>
+
+              <input
+              type="text"
+              id="siteName"/>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>
+                البريد الإلكتروني
+              </label>
+
+              <input
+              type="email"
+              id="siteEmail"/>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>
+                رقم الهاتف
+              </label>
+
+              <input
+              type="text"
+              id="sitePhone"/>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>
+                واتساب
+              </label>
+
+              <input
+              type="text"
+              id="siteWhatsapp"/>
+
+            </div>
+
+          </div>
+
+          <div class="form-group">
+
+            <label>
+              وصف الموقع
+            </label>
+
+            <textarea
+            id="siteDescription"></textarea>
+
+          </div>
+
+        </div>
+
+        <!-- HERO -->
+
+        <div class="settings-card">
+
+          <h2>
+            إعدادات الصفحة الرئيسية
+          </h2>
+
+          <div class="form-group">
+
+            <label>
+              عنوان Hero
+            </label>
+
+            <input
+            type="text"
+            id="heroTitle"/>
+
+          </div>
+
+          <div class="form-group">
+
+            <label>
+              وصف Hero
+            </label>
+
+            <textarea
+            id="heroDescription"></textarea>
+
+          </div>
+
+          <div class="form-group">
+
+            <label>
+              صورة Hero
+            </label>
+
+            <input
+            type="file"
+            id="heroImage"/>
+
+          </div>
+
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div class="settings-card">
+
+          <h2>
+            روابط التواصل
+          </h2>
+
+          <div class="form-grid">
+
+            <div class="form-group">
+
+              <label>
+                Facebook
+              </label>
+
+              <input
+              type="text"
+              id="facebookLink"/>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>
+                Instagram
+              </label>
+
+              <input
+              type="text"
+              id="instagramLink"/>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>
+                LinkedIn
+              </label>
+
+              <input
+              type="text"
+              id="linkedinLink"/>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>
+                Telegram
+              </label>
+
+              <input
+              type="text"
+              id="telegramLink"/>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- SEO -->
+
+        <div class="settings-card">
+
+          <h2>
+            SEO
+          </h2>
+
+          <div class="form-group">
+
+            <label>
+              Meta Title
+            </label>
+
+            <input
+            type="text"
+            id="metaTitle"/>
+
+          </div>
+
+          <div class="form-group">
+
+            <label>
+              Meta Description
+            </label>
+
+            <textarea
+            id="metaDescription"></textarea>
+
+          </div>
+
+          <div class="form-group">
+
+            <label>
+              Keywords
+            </label>
+
+            <textarea
+            id="metaKeywords"></textarea>
+
+          </div>
+
+        </div>
+
+        <!-- SAVE -->
+
+        <div class="submit-box">
+
+          <button type="submit"
+          class="btn primary-btn">
+
+            حفظ الإعدادات
+
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- LOADING -->
+
+  <div class="loading-overlay"
+  id="loadingOverlay">
+
+    <div class="loader"></div>
+
+  </div>
+-->
+  <script type="module"
+  src="./assets/js/settings.js"></script>
+
+</body>
+
+</html>

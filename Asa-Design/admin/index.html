@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8"/>
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0"/>
+
+  <title>لوحة التحكم</title>
+
+  <link rel="stylesheet"
+  href="assets/css/admin.css"/>
+
+
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<meta name="theme-color" content="#111827">
+
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+      <h2 id="adminSiteName"></h2>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <a href="index.html"
+      class="active">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>
+          لوحة التحكم
+        </span>
+
+      </a>
+
+      <a href="services.html">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <span>
+          الخدمات
+        </span>
+
+      </a>
+
+      <a href="orders.html">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>
+          الطلبات
+        </span>
+
+      </a>
+
+      <a href="users.html">
+
+        <i class="fa-solid fa-users"></i>
+
+        <span>
+          المستخدمين
+        </span>
+
+      </a>
+
+      <a href="portfolio.html">
+
+        <i class="fa-solid fa-image"></i>
+
+        <span>
+          معرض الأعمال
+        </span>
+
+      </a>
+
+      <a href="messages.html">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <span>
+          الرسائل
+        </span>
+
+      </a>
+
+
+      <button id="logoutBtn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        <span>
+          تسجيل الخروج
+        </span>
+
+      </button>
+
+    </nav>
+
+  </aside>
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+      <div class="topbar-left">
+
+        <button id="toggleSidebar">
+
+          <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <h1>
+          لوحة التحكم
+        </h1>
+
+      </div>
+
+      <div class="topbar-right">
+
+        <div class="admin-profile">
+
+  <div class="admin-avatar-wrapper">
+
+    <img
+    id="adminAvatar"
+    src="https://via.placeholder.com/100"
+    alt="admin"/>
+
+    <div class="avatar-overlay"
+    id="avatarOverlay">
+
+      <i class="fa-solid fa-camera"></i>
+
+      <span>
+        تعديل
+      </span>
+
+    </div>
+
+    <input
+    type="file"
+    id="avatarInput"
+    accept="image/*"
+    hidden/>
+
+  </div>
+
+  <div>
+
+    <h4 id="adminName"></h4>
+
+    <p id="adminRole"></p>
+
+  </div>
+
+</div>
+            <h4 id="adminName"></h4>
+
+            <p id="adminRole"></p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- STATS -->
+
+    <section class="stats-section">
+
+      <div class="stats-container">
+
+        <div class="stat-card">
+
+          <div class="stat-icon">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+          </div>
+
+          <div class="stat-info">
+
+            <h3 id="servicesCount"></h3>
+
+            <p>
+              الخدمات
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="stat-card">
+
+          <div class="stat-icon">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+          </div>
+
+          <div class="stat-info">
+
+            <h3 id="ordersCount"></h3>
+
+            <p>
+              الطلبات
+            </p>
+
+          </div>
+           
+
+        </div>
+
+        <div class="stat-card">
+
+          <div class="stat-icon">
+
+            <i class="fa-solid fa-users"></i>
+
+          </div>
+
+          <div class="stat-info">
+
+            <h3 id="usersCount"></h3>
+
+            <p>
+              المستخدمين
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="stat-card">
+
+          <div class="stat-icon">
+
+            <i class="fa-solid fa-envelope"></i>
+
+          </div>
+
+          <div class="stat-info">
+
+            <h3 id="messagesCount"></h3>
+
+            <p>
+              الرسائل
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- RECENT ORDERS -->
+
+    <section class="dashboard-section">
+
+      <div class="section-header">
+
+        <h2>
+          أحدث الطلبات
+        </h2>
+
+      </div>
+
+      <div class="table-container">
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>
+                رقم الطلب
+              </th>
+
+              <th>
+                العميل
+              </th>
+
+              <th>
+                الخدمة
+              </th>
+
+              <th>
+                الحالة
+              </th>
+
+              <th>
+                التاريخ
+              </th>
+
+            </tr>
+
+          </thead>
+
+          <tbody id="recentOrdersTable">
+
+            <!-- Dynamic Orders -->
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+    <!-- RECENT SERVICES -->
+
+    <section class="dashboard-section">
+
+      <div class="section-header">
+
+        <h2>
+          أحدث الخدمات
+        </h2>
+
+      </div>
+
+      <div class="dashboard-services"
+      id="dashboardServices">
+
+        <!-- Dynamic Services -->
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- LOADING -->
+
+  <div class="loading-overlay"
+  id="loadingOverlay">
+
+    <div class="loader"></div>
+
+  </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const sidebar = document.querySelector(".sidebar");
+  const btn = document.getElementById("toggleSidebar");
+
+  if (!sidebar || !btn) return;
+
+  btn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+  });
+
+});
+</script>
+
+  <script type="module"
+  src="./assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

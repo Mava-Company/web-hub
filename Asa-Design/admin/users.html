@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8"/>
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0"/>
+
+  <title>إدارة المستخدمين</title>
+
+  <link rel="stylesheet"
+  href="assets/css/admin.css"/>
+
+  <link rel="stylesheet"
+  href="assets/css/users.css"/>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+<body>
+
+  
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+      <h2 id="adminSiteName"></h2>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <a href="index.html"
+      class="active">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>
+          لوحة التحكم
+        </span>
+
+      </a>
+
+      <a href="services.html">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <span>
+          الخدمات
+        </span>
+
+      </a>
+
+      <a href="orders.html">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>
+          الطلبات
+        </span>
+
+      </a>
+
+      <a href="users.html">
+
+        <i class="fa-solid fa-users"></i>
+
+        <span>
+          المستخدمين
+        </span>
+
+      </a>
+
+      <a href="portfolio.html">
+
+        <i class="fa-solid fa-image"></i>
+
+        <span>
+          معرض الأعمال
+        </span>
+
+      </a>
+
+      <a href="messages.html">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <span>
+          الرسائل
+        </span>
+
+      </a>
+
+
+      <button id="logoutBtn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        <span>
+          تسجيل الخروج
+        </span>
+
+      </button>
+
+    </nav>
+
+  </aside>
+
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+      <div class="topbar-left">
+
+        <button class="menu-btn" id="toggleSidebar">
+  <i class="fa-solid fa-bars"></i>
+</button>
+        <h1>
+          إدارة المستخدمين
+        </h1>
+
+      </div>
+
+    </header>
+
+    <!-- FILTERS -->
+
+    <section class="filters-section">
+
+      <div class="filters-container">
+
+        <input
+        type="text"
+        id="searchUser"
+        placeholder="بحث عن مستخدم"/>
+
+        <select id="roleFilter">
+
+          <option value="">
+            جميع الصلاحيات
+          </option>
+
+          <option value="admin">
+            Admin
+          </option>
+
+          <option value="user">
+            User
+          </option>
+
+        </select>
+
+      </div>
+
+    </section>
+
+    <!-- TABLE -->
+
+    <section class="table-section">
+
+      <div class="table-container">
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>
+                الصورة
+              </th>
+
+              <th>
+                الاسم
+              </th>
+
+              <th>
+                البريد الإلكتروني
+              </th>
+
+              <th>
+                الهاتف
+              </th>
+
+              <th>
+                الصلاحية
+              </th>
+
+              <th>
+                تاريخ التسجيل
+              </th>
+
+              <th>
+                الإجراءات
+              </th>
+
+            </tr>
+
+          </thead>
+
+          <tbody id="usersTable">
+
+            <!-- Dynamic Users -->
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- USER MODAL -->
+
+  <div class="modal hidden"
+  id="userModal">
+
+    <div class="modal-content">
+
+      <button class="close-modal"
+      id="closeUserModal">
+
+        <i class="fa-solid fa-xmark"></i>
+
+      </button>
+
+      <h2>
+        بيانات المستخدم
+      </h2>
+
+      <div class="user-details">
+
+        <div class="user-avatar">
+
+          <img
+          id="modalUserImage"
+          src=""
+          alt="user"/>
+
+        </div>
+
+        <div class="details-grid">
+
+          <div class="detail-box">
+
+            <span>
+              الاسم
+            </span>
+
+            <strong id="modalUserName"></strong>
+
+          </div>
+
+          <div class="detail-box">
+
+            <span>
+              البريد الإلكتروني
+            </span>
+
+            <strong id="modalUserEmail"></strong>
+
+          </div>
+
+          <div class="detail-box">
+
+            <span>
+              الهاتف
+            </span>
+
+            <strong id="modalUserPhone"></strong>
+
+          </div>
+
+          <div class="detail-box">
+
+            <span>
+              الصلاحية
+            </span>
+
+            <strong id="modalUserRole"></strong>
+
+          </div>
+
+        </div>
+
+        <div class="form-group">
+
+          <label>
+            تعديل الصلاحية
+          </label>
+
+          <select id="updateUserRole">
+
+            <option value="user">
+              User
+            </option>
+
+            <option value="admin">
+              Admin
+            </option>
+
+          </select>
+
+        </div>
+
+        <button id="saveUserChanges"
+        class="btn primary-btn">
+
+          حفظ التغييرات
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- LOADING -->
+
+
+ <div class="loading-overlay"
+  id="loadingOverlay">
+
+    <div class="loader"></div>
+
+  </div>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const sidebar = document.querySelector(".sidebar");
+  const btn = document.getElementById("toggleSidebar");
+
+  if (!sidebar || !btn) return;
+
+  btn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+  });
+
+});
+</script>
+  <script type="module"
+  src="./assets/js/users.js"></script>
+
+</body>
+
+</html>

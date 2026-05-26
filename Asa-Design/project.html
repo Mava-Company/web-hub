@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تفاصيل المشروع</title>
+
+  <link rel="stylesheet" href="assets/css/project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<meta name="theme-color" content="#111827">
+
+
+</head>
+
+<body>
+
+  
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="logo">
+  <img src="assets/images/logo.jpeg" alt="Logo">
+  <a href="index.html">ASH DESIGN</a>
+</div>
+
+    <nav class="navbar">
+
+      <a href="index.html">الرئيسية</a>
+      <a href="services.html">الخدمات</a>
+      <a href="portfolio.html">معرض الأعمال</a>
+      <a href="track-order.html">تتبع الطلب</a>
+      <a href="about.html" target="_blank">من نحن</a>
+
+      <a href="contact.html" >تواصل معنا</a>
+     <div id="authLinks">
+  <a href="login.html" id="loginLink">تسجيل الدخول</a>
+  <a href="register.html" id="registerLink">إنشاء الحساب</a>
+
+  <a href="profile.html" id="profileLink" style="display:none;">
+    البروفايل
+  </a>
+
+  <a href="login.html" id="logoutLink" style="display:none;">
+    تسجيل الخروج
+  </a>
+</div>
+    </nav>
+
+    <div class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+  </header>
+
+  
+  <div class="project-page">
+
+    <h1 id="projectTitle"></h1>
+
+    <p id="projectDescription"></p>
+
+    <span id="projectCategory"></span>
+    <span id="projectDate"></span>
+
+    <div id="projectGallery" class="project-gallery"></div>
+
+  </div>
+
+  <footer class="footer">
+
+  <p>
+    © 2026 ASH DESIGN - جميع الحقوق محفوظة
+  </p>
+
+</footer>
+<script>
+const menuBtn = document.querySelector(".menu-btn");
+const navbar = document.querySelector(".navbar");
+
+menuBtn.onclick = () => {
+  navbar.classList.toggle("active");
+};
+</script>
+  <script type="module" src="./assets/js/project.js"></script>
+
+</body>
+</html>

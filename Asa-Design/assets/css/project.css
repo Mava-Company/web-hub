@@ -1,0 +1,389 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Cairo',sans-serif;
+    background:#f5f7fb;
+    color:#111827;
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --dark:#111827;
+    --gray:#6b7280;
+
+    --white:#fff;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.3s ease;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    z-index:1000;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.logo a{
+    color:var(--dark);
+    font-size:22px;
+    font-weight:800;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.navbar a{
+    color:var(--dark);
+    font-weight:600;
+
+    transition:var(--transition);
+}
+
+.navbar a:hover{
+    color:var(--primary);
+}
+
+.menu-btn{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* =========================
+   PROJECT PAGE
+========================= */
+
+.project-page{
+
+    width:min(1200px,92%);
+    margin:auto;
+
+    padding-top:150px;
+    padding-bottom:80px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+#projectTitle{
+
+    font-size:52px;
+    font-weight:800;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:var(--dark);
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+#projectDescription{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:var(--gray);
+
+    font-size:18px;
+
+    margin-bottom:35px;
+}
+
+/* =========================
+   META
+========================= */
+
+#projectCategory,
+#projectDate{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 18px;
+
+    background:#fff;
+
+    border-radius:40px;
+
+    box-shadow:var(--shadow);
+
+    margin:10px;
+
+    color:var(--primary);
+
+    font-weight:700;
+}
+
+.project-page{
+    text-align:center;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.project-gallery{
+
+    margin-top:50px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+}
+
+.project-gallery img,
+.project-gallery video{
+
+    width:100%;
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+    box-shadow:var(--shadow);
+
+    background:#ddd;
+}
+
+.project-gallery img:hover,
+.project-gallery video:hover{
+
+    transform:translateY(-8px) scale(1.02);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+/* =========================
+   LIGHTBOX EFFECT
+========================= */
+
+.project-gallery img:active{
+    transform:scale(.98);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    background:#0f172a;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:60px;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.loading-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.9);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    z-index:2000;
+}
+
+.loader{
+
+    width:55px;
+    height:55px;
+
+    border:5px solid #ddd;
+    border-top:5px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        position:absolute;
+
+        top:100%;
+        right:0;
+
+        width:100%;
+
+        background:#fff;
+
+        flex-direction:column;
+
+        padding:20px;
+
+        display:none;
+
+        box-shadow:0 10px 20px rgba(0,0,0,.08);
+    }
+
+    .navbar.active{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    #projectTitle{
+        font-size:34px;
+    }
+
+    #projectDescription{
+        font-size:16px;
+    }
+
+    .project-gallery{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:500px){
+
+    .header{
+        padding:15px 5%;
+    }
+
+    .logo img{
+        width:45px;
+        height:45px;
+    }
+
+    .logo a{
+        font-size:18px;
+    }
+
+    #projectTitle{
+        font-size:28px;
+    }
+
+    .project-gallery img,
+    .project-gallery video{
+        height:240px;
+    }
+
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8"/>
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0"/>
+
+  <title>تعديل الخدمة</title>
+
+  <link rel="stylesheet"
+  href="assets/css/admin.css"/>
+
+  <link rel="stylesheet"
+  href="assets/css/edit-service.css"/>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<meta name="theme-color" content="#111827">
+
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+      <h2 id="adminSiteName"></h2>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <a href="index.html"
+      class="active">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>
+          لوحة التحكم
+        </span>
+
+      </a>
+
+      <a href="services.html">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <span>
+          الخدمات
+        </span>
+
+      </a>
+
+      <a href="orders.html">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>
+          الطلبات
+        </span>
+
+      </a>
+
+      <a href="users.html">
+
+        <i class="fa-solid fa-users"></i>
+
+        <span>
+          المستخدمين
+        </span>
+
+      </a>
+
+      <a href="portfolio.html">
+
+        <i class="fa-solid fa-image"></i>
+
+        <span>
+          معرض الأعمال
+        </span>
+
+      </a>
+
+      <a href="messages.html">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <span>
+          الرسائل
+        </span>
+
+      </a>
+
+
+      <button id="logoutBtn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        <span>
+          تسجيل الخروج
+        </span>
+
+      </button>
+
+    </nav>
+
+  </aside>
+
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+      <div class="topbar-left">
+
+          <button class="menu-btn" id="toggleSidebar">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+        <h1>
+          تعديل الخدمة
+        </h1>
+
+      </div>
+
+    </header>
+
+    <!-- FORM -->
+
+    <section class="form-section">
+
+      <form id="editServiceForm">
+
+        <!-- BASIC INFO -->
+
+        <div class="form-card">
+
+          <h2>
+            المعلومات الأساسية
+          </h2>
+
+          <div class="form-grid">
+
+            <div class="form-group">
+
+              <label>
+                اسم الخدمة
+              </label>
+
+              <input
+              type="text"
+              id="serviceTitle"/>
+
+            </div>
+
+           
+
+            <div class="form-group">
+
+              <label>
+                السعر
+              </label>
+
+              <input
+              type="number"
+              id="servicePrice"/>
+
+            </div>
+
+           
+
+          </div>
+
+          
+
+          <div class="form-group">
+
+            <label>
+              الوصف الكامل
+            </label>
+
+            <textarea
+            id="serviceDescription"></textarea>
+
+          </div>
+
+        </div>
+
+        <!-- CURRENT IMAGES -->
+
+        <div class="form-card">
+
+          <h2>
+            الصور الحالية
+          </h2>
+
+          <div class="current-images"
+          id="currentImages">
+
+            <!-- Dynamic Images -->
+
+          </div>
+
+        </div>
+
+        <!-- NEW IMAGES -->
+
+        <div class="form-card">
+
+          <h2>
+            تحديث الصور
+          </h2>
+
+          <!-- الصورة الرئيسية -->
+
+<div class="form-group">
+
+  <label>
+    صورة رئيسية جديدة
+  </label>
+
+  <input
+    type="file"
+    id="serviceImage"
+    accept="image/*"/>
+
+</div>
+
+<img id="previewImage" src="" alt="preview" />
+
+<!-- معرض الصور -->
+
+<div class="form-group">
+
+  <label>
+    معرض صور جديد
+  </label>
+
+  <input
+    type="file"
+    id="galleryImages"
+    multiple
+    accept="image/*"/>
+
+</div>
+
+<div id="galleryPreview"></div>
+
+<!-- الفيديوهات -->
+
+<div class="form-group">
+
+  <label>
+    فيديوهات جديدة
+  </label>
+
+  <input
+    type="file"
+    id="serviceVideos"
+    multiple
+    accept="video/*"/>
+
+</div>
+
+<div id="videoPreviewContainer"></div>
+      
+
+        <!-- STATUS -->
+
+        <div class="form-card">
+
+          <h2>
+            حالة الخدمة
+          </h2>
+
+          <div class="switch-box">
+
+            <label class="switch">
+
+              <input
+              type="checkbox"
+              id="serviceStatus"/>
+
+              <span class="slider"></span>
+
+            </label>
+
+            <span>
+              تفعيل الخدمة
+            </span>
+
+          </div>
+
+        </div>
+
+        <!-- SAVE -->
+
+        <div class="submit-box">
+
+          <button type="submit" id="submitBtn"
+          class="btn primary-btn">
+
+            حفظ التعديلات
+
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- LOADING -->
+
+  <div class="loading-overlay"
+  id="loadingOverlay">
+
+    <div class="loader"></div>
+
+  </div>
+
+  
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const sidebar = document.querySelector(".sidebar");
+  const btn = document.getElementById("toggleSidebar");
+
+  if (!sidebar || !btn) return;
+
+  btn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+  });
+
+});
+</script>
+  <script type="module"
+  src="./assets/js/edit-service.js"></script>
+
+</body>
+
+</html>
