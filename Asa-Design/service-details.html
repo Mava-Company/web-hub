@@ -16,7 +16,11 @@
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#111827">
 
 </head>
 
@@ -83,11 +87,7 @@
 
       <!-- GALLERY -->
 
-    <div class="service-media-slider">
-
-  <!-- الصورة الرئيسية -->
-
-  <div class="service-media-slider" id="serviceMediaSlider">
+   <div class="service-media-slider" id="serviceMediaSlider">
 
   <button class="slider-btn prev" id="prevMedia">
     <i class="fa-solid fa-chevron-right"></i>
@@ -248,6 +248,14 @@
     <div class="loader"></div>
 
   </div>
+  <script>
+const menuBtn = document.querySelector(".menu-btn");
+const navbar = document.querySelector(".navbar");
+
+menuBtn.onclick = () => {
+  navbar.classList.toggle("active");
+};
+</script>
 <script type="module" src="assets/js/auth-ui.js"></script>
   <script type="module"
   src="assets/js/service-details.js"></script>
