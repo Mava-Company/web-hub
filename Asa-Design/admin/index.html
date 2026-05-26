@@ -121,72 +121,6 @@
 
     <!-- TOPBAR -->
 
-    <header class="topbar">
-
-      <div class="topbar-left">
-
-        <button id="toggleSidebar">
-
-          <i class="fa-solid fa-bars"></i>
-
-        </button>
-
-        <h1>
-          لوحة التحكم
-        </h1>
-
-      </div>
-
-      <div class="topbar-right">
-
-        <div class="admin-profile">
-
-  <div class="admin-avatar-wrapper">
-
-    <img
-    id="adminAvatar"
-    src="https://via.placeholder.com/100"
-    alt="admin"/>
-
-    <div class="avatar-overlay"
-    id="avatarOverlay">
-
-      <i class="fa-solid fa-camera"></i>
-
-      <span>
-        تعديل
-      </span>
-
-    </div>
-
-    <input
-    type="file"
-    id="avatarInput"
-    accept="image/*"
-    hidden/>
-
-  </div>
-
-  <div>
-
-    <h4 id="adminName"></h4>
-
-    <p id="adminRole"></p>
-
-  </div>
-
-</div>
-            <h4 id="adminName"></h4>
-
-            <p id="adminRole"></p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </header>
 
     <!-- STATS -->
 
@@ -359,46 +293,68 @@
   </main>
 
 
-  
-  <!-- FOOTER -->
-  <footer class="footer">
+  <!-- ADMIN FLOAT BUTTON -->
 
-    <div class="footer-container">
+<div class="admin-fab">
 
-      <div class="footer-logo">
+  <button id="adminToggle">
 
-        <h2 id="footerSiteName"></h2>
+    <i class="fa-solid fa-user-shield"></i>
 
-        <p id="footerDescription"></p>
+  </button>
 
-      </div>
+  <div class="admin-menu" id="adminMenu">
 
-      <div class="footer-links">
+     <a href="index.html"
+      class="active">
 
-        <h3>روابط</h3>
 
-        <a href="index.html">الرئيسية</a>
-        <a href="services.html">الخدمات</a>
-        <a href="add-service.html">add service </a>
-        <a href="messages.html">messages</a>
-        <a href="orders.html">orders</a>
-        <a href="portfolio.html">portfolio</a>
-        <a href="users.html"> users</a>
-        
-   
-      </div>
+          لوحة التحكم
 
-     
+      </a>
 
-    </div>
+      <a href="services.html">
 
-    <div class="footer-bottom">
 
-      <p id="copyrightText"></p>
+          الخدمات
 
-    </div>
+      </a>
 
-  </footer>
+      <a href="orders.html">
+
+
+          الطلبات
+
+      </a>
+
+      <a href="users.html">
+
+
+          المستخدمين
+
+      </a>
+
+      <a href="portfolio.html">
+
+
+          معرض الأعمال
+
+      </a>
+
+      <a href="messages.html">
+
+
+          الرسائل
+
+      </a>
+
+
+      
+
+  </div>
+
+</div>
+
   <!-- LOADING -->
 
   <div class="loading-overlay"
@@ -407,6 +363,20 @@
     <div class="loader"></div>
 
   </div>
+  <script>
+const adminToggle = document.getElementById("adminToggle");
+
+const adminMenu = document.getElementById("adminMenu");
+
+adminToggle.addEventListener("click", () => {
+
+  adminMenu.classList.toggle("active");
+
+});
+
+
+</script>
+  
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
