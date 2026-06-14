@@ -399,3 +399,13 @@ z-index: 3000;
     margin-right:0;
   }
 }
+
+
+.delete-btn{
+  background:#e53935;
+  color:#fff;
+}
+
+.delete-btn:hover{
+  background:#c62828;
+}
