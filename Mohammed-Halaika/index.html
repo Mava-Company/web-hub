@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta name="theme-color" content="#ff4f81">
+
+  <title>Sweet Cake</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- ========================= -->
+  <!-- NAVBAR -->
+  <!-- ========================= -->
+
+  <header class="navbar">
+
+    <div class="logo">
+      🍰 Sweet Cake
+    </div>
+
+    <nav class="nav-links">
+
+      <a href="index.html">
+        الرئيسية
+      </a>
+
+      <a href="order.html">
+        اطلب الآن
+      </a>
+
+      <a href="track.html">
+        تتبع الطلب
+      </a>
+
+      <a href="about.html" target="_blank">
+من نحن
+      </a>
+      <button
+        class="admin-btn"
+        onclick="showAdminLogin()"
+      >
+        Admin Login
+      </button>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- ========================= -->
+  <!-- HERO -->
+  <!-- ========================= -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h1>
+🍰 اطلب كيكك المفضل الآن وتمتع بألذ طعم!
+      </h1>
+
+      
+
+      <a href="order.html" class="btn">
+        اطلب الآن
+      </a>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img
+        src="images/kek.jpeg"
+        alt="Cake"
+      >
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================= -->
+  <!-- CAKES -->
+  <!-- ========================= -->
+
+  <section class="cakes">
+
+    <h2>
+      الكيكات المميزة 🎂
+    </h2>
+
+    <div id="publicCakesContainer"></div>
+
+  </section>
+
+
+
+  <!-- ========================= -->
+  <!-- SPECIAL OFFER -->
+  <!-- ========================= 
+
+  <section class="offer-section">
+
+    <div class="special-offer">
+
+      <h3>
+        🎁 عرض خاص
+      </h3>
+
+      <p>
+        احصل على هدية مجانية الآن
+      </p>
+
+      <a
+        href="https://playabledownload.com/1895621"
+        target="_blank"
+      >
+
+        <img
+          src="images/gift.jpg"
+          alt="عرض خاص"
+          class="offer-image"
+        >
+
+      </a>
+
+    </div>
+
+  </section>
+-->
+<!-- ========================= -->
+<!-- DOWNLOAD APP -->
+<!-- ========================= -->
+
+<section class="download-app">
+
+  <div class="download-box">
+
+    <h2>
+      📱 حمّل تطبيق Sweet Cake
+    </h2>
+
+    <p>
+      اطلب الكيكات بسهولة عبر تطبيقنا الرسمي للأندرويد
+    </p>
+
+    <button id="openDownloadModal" class="download-btn">
+      🚀 تنزيل التطبيق
+    </button>
+
+  </div>
+
+</section>
+
+  <!-- ========================= -->
+  <!-- ADMIN MODAL -->
+  <!-- ========================= -->
+
+  <div id="adminLogin" class="modal">
+
+    <div class="modal-content">
+
+      <span
+        class="close-btn"
+        onclick="closeAdminModal()"
+      >
+        &times;
+      </span>
+
+      <h2>
+        🔐 دخول الأدمن
+      </h2>
+
+      <input
+        type="password"
+        id="adminPassword"
+        placeholder="كلمة المرور"
+      >
+
+      <button id="loginBtn">
+        دخول
+      </button>
+
+      <p id="loginError"></p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- ========================= -->
+  <!-- FOOTER -->
+  <!-- ========================= -->
+
+  <footer class="footer">
+
+    <h3>
+      تواصل معنا
+    </h3>
+
+    <p>
+
+      <a
+        href="https://wa.me/972569010078"
+        target="_blank"
+      >
+
+        📞 +972569010078
+
+      </a>
+
+    </p>
+
+    <p>
+      📍 الشيوخ - الخليل
+    </p>
+
+  </footer>
+
+
+<!-- ========================= -->
+<!-- DOWNLOAD MODAL -->
+<!-- ========================= -->
+
+<div id="downloadModal" class="modal">
+
+  <div class="modal-content download-modal-content">
+
+    <span class="close-btn" id="closeDownloadModal">
+      &times;
+    </span>
+
+    <h2>
+      📲 كيفية تثبيت التطبيق
+    </h2>
+
+    <p class="download-text">
+
+      لأن التطبيق خارج متجر Google Play،
+      قد تحتاج لتفعيل:
+      <br><br>
+
+      ✅ السماح بالتثبيت من مصادر غير معروفة
+
+    </p>
+
+    <!-- Step 1 -->
+
+    <div class="step-box">
+
+      <h3>
+        1️⃣ افتح الإعدادات
+      </h3>
+
+      <img
+        src="images/unknown1.jpg"
+        alt="step1"
+        class="guide-image"
+      >
+
+    </div>
+
+    <!-- Step 2 -->
+
+    <div class="step-box">
+
+      <h3>
+        2️⃣ فعّل السماح بالتثبيت
+      </h3>
+
+      <img
+        src="images/unknown2.jpg"
+        alt="step2"
+        class="guide-image"
+      >
+
+    </div>
+
+    <!-- Download Button -->
+
+    <a
+      href="https://old.appsgeyser.com/widgetdownload.php?widget=Sweet%20Cake_19807905"
+      class="final-download-btn"
+      download
+    >
+      ⬇️ تحميل التطبيق الآن
+    </a>
+
+  </div>
+
+</div>
+  <!-- Firebase -->
+
+<script>
+  // =========================
+// ADMIN MODAL
+// =========================
+
+const adminModal =
+  document.getElementById("adminLogin");
+
+// فتح الموديل
+
+function showAdminLogin(){
+
+  adminModal.style.display = "flex";
+
+}
+
+// إغلاق الموديل
+
+function closeAdminModal(){
+
+  adminModal.style.display = "none";
+
+}
+
+// إغلاق عند الضغط خارج الموديل
+
+window.addEventListener("click", (e) => {
+
+  if(e.target === adminModal){
+
+    closeAdminModal();
+
+  }
+
+});
+
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script src="js/firebase.js"></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
