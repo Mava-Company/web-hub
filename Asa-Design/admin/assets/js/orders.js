@@ -14,6 +14,7 @@ import {
   getDocs,
   doc,
   updateDoc,
+   deleteDoc,
   query,
   orderBy
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
@@ -135,12 +136,15 @@ function renderOrders(orders) {
         </td>
 
         <td>${formatDate(order.createdAt)}</td>
+<td>
+  <button class="action-btn view-btn" data-id="${order.id}">
+    👁
+  </button>
 
-        <td>
-          <button class="action-btn view-btn" data-id="${order.id}">
-            👁
-          </button>
-        </td>
+  <button class="action-btn delete-btn" data-id="${order.id}">
+    🗑
+  </button>
+</td>
       </tr>
     `;
   });
@@ -150,15 +154,55 @@ function renderOrders(orders) {
 // EVENT DELEGATION (أفضل من attach)
 // ===============================
 
-document.addEventListener("click", (e) => {
 
-  const btn = e.target.closest(".view-btn");
+document.addEventListener("click", async (e) => {
 
-  if (btn) {
-    openOrderModal(btn.dataset.id);
+  const viewBtn = e.target.closest(".view-btn");
+  const deleteBtn = e.target.closest(".delete-btn");
+
+  if (viewBtn) {
+    openOrderModal(viewBtn.dataset.id);
+  }
+
+  if (deleteBtn) {
+    await deleteOrder(deleteBtn.dataset.id);
   }
 
 });
+
+
+async function deleteOrder(orderId) {
+
+  const confirmDelete = confirm(
+    "هل أنت متأكد من حذف هذا الطلب؟"
+  );
+
+  if (!confirmDelete) return;
+
+  try {
+
+    loadingOverlay.style.display = "flex";
+
+    await deleteDoc(doc(db, "orders", orderId));
+
+    allOrders = allOrders.filter(
+      order => order.id !== orderId
+    );
+
+    renderOrders(allOrders);
+
+    alert("تم حذف الطلب بنجاح");
+
+  } catch (error) {
+
+    console.error(error);
+    alert("حدث خطأ أثناء الحذف");
+
+  } finally {
+
+    loadingOverlay.style.display = "none";
+  }
+}
 
 // ===============================
 // OPEN MODAL
