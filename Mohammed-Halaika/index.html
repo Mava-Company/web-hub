@@ -308,6 +308,89 @@
 </div>
   <!-- Firebase -->
 
+   <!-- Modal Overlay -->
+<div id="welcomeModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close-btn" id="closeModal">&times;</span>
+
+   <h2>مرحباً بك في Mava ✨</h2>
+
+<p>
+🌍 هل تخطط للسفر، الدراسة، أو تبحث عن سكن مناسب؟
+في <strong>Mava</strong> نحن معك في كل خطوة.
+</p>
+
+<div class="services">
+
+  <p>🎓 التقديم على الجامعات</p>
+  <p>🏡 خدمات السكن والإيجار</p>
+  <p>✈️ حجوزات الطيران والبرامج السياحية</p>
+
+</div>
+
+<p class="highlight">
+استشارة مجانية • دعم كامل • خيارات تناسبك
+</p>
+
+<div class="modal-buttons">
+  <p class="highlight">
+ساعدنا العديد من الطلاب والمسافرين في الوصول إلى أفضل الخيارات التعليمية والسكنية والسياحية.
+</p>
+
+  <a href="https://mava-b838.onrender.com/" target="_blank" class="btn primary-btn">
+    زيارة المنصة
+  </a>
+
+  <a href="about.html" class="btn secondary-btn">
+    من نحن
+  </a>
+
+</div>
+
+<div class="contact-box">
+
+<a href="https://wa.me/905073410436" target="_blank" class="btn whatsapp-btn">
+  التواصل عبر واتساب
+</a>
+  <p>تواصل على Mava مع: <strong>BasemHalaika</strong></p>
+
+</div>
+  </div>
+
+</div>
+
+<script>
+
+const modal = document.getElementById("welcomeModal");
+const closeBtn = document.getElementById("closeModal");
+
+// تحقق إذا المستخدم شاهد المودال سابقاً
+if(!localStorage.getItem("mavaWelcomeShown")){
+
+  modal.style.display = "flex";
+
+  // حفظ أنه تم عرض المودال
+  localStorage.setItem("mavaWelcomeShown", "true");
+}
+
+// إغلاق المودال
+closeBtn.onclick = function(){
+  modal.style.display = "none";
+}
+
+// إغلاق عند الضغط خارج الصندوق
+window.onclick = function(e){
+
+  if(e.target == modal){
+    modal.style.display = "none";
+  }
+
+}
+
+</script>
+
 <script>
   // =========================
 // ADMIN MODAL
