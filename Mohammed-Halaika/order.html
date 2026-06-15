@@ -188,78 +188,7 @@
 
   </section>
 
-  <!-- ========================= -->
-  <!-- ADMIN MODAL -->
-  <!-- ========================= -->
-
-  <div id="adminLogin" class="modal">
-
-    <div class="modal-content">
-
-      <span
-        class="close-btn"
-        onclick="closeAdminModal()"
-      >
-        &times;
-      </span>
-
-      <h2>
-        🔐 دخول الأدمن
-      </h2>
-
-      <input
-        type="password"
-        id="adminPassword"
-        placeholder="كلمة المرور"
-      >
-
-      <button id="loginBtn">
-        دخول
-      </button>
-
-      <p id="loginError"></p>
-
-    </div>
-
-  </div>
-  
-<script>
-  // =========================
-// ADMIN MODAL
-// =========================
-
-const adminModal =
-  document.getElementById("adminLogin");
-
-// فتح الموديل
-
-function showAdminLogin(){
-
-  adminModal.style.display = "flex";
-
-}
-
-// إغلاق الموديل
-
-function closeAdminModal(){
-
-  adminModal.style.display = "none";
-
-}
-
-// إغلاق عند الضغط خارج الموديل
-
-window.addEventListener("click", (e) => {
-
-  if(e.target === adminModal){
-
-    closeAdminModal();
-
-  }
-
-});
-
-  </script>
+ 
   
   <script src="js/order.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
