@@ -48,7 +48,7 @@ document.addEventListener(
 // ======================================
 
 const adminPassword =
-  "MamaAndJenanAndRetajAndBesanHalaika11";
+  "mozambiqueGirlMOZAmNbVCDG46G5FhkgtuALKasdf";
 
 
 const loginModal =
