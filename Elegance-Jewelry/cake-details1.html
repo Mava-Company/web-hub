@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Product Details
+  </title>
+
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+
+    body {
+      background: #f5f5f5;
+      padding: 30px;
+    }
+
+
+    .cake-details {
+
+      max-width: 700px;
+
+      margin: auto;
+
+      background: white;
+
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    .cake-details img {
+
+      width: 100%;
+
+      height: 350px;
+
+      object-fit: cover;
+
+    }
+
+
+    .cake-content {
+
+      padding: 25px;
+
+    }
+
+
+    .cake-content h1 {
+
+      margin-bottom: 15px;
+
+      color: #222;
+
+    }
+
+
+    .cake-content p {
+
+      margin-bottom: 12px;
+
+      color: #555;
+
+      line-height: 1.7;
+
+    }
+
+
+    .price {
+
+      font-size: 22px;
+
+      font-weight: bold;
+
+      color: #d4af37;
+
+    }
+
+
+    .order-form {
+
+      margin-top: 30px;
+
+    }
+
+
+    .order-form input,
+    .order-form textarea {
+
+      width: 100%;
+
+      padding: 14px;
+
+      margin-bottom: 15px;
+
+      border-radius: 10px;
+
+      border: 1px solid #ddd;
+
+      font-size: 16px;
+
+    }
+
+
+    .order-btn {
+
+      width: 100%;
+
+      padding: 15px;
+
+      border: none;
+
+      border-radius: 12px;
+
+      background: #111827;
+
+      color: white;
+
+      font-size: 18px;
+
+      cursor: pointer;
+
+      transition: 0.3s;
+
+    }
+
+
+    .order-btn:hover {
+
+      background: #d4af37;
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- ========================= -->
+  <!-- PRODUCT DETAILS -->
+  <!-- ========================= -->
+
+  <div class="cake-details">
+
+
+    <img
+      id="cakeImage"
+      alt="Product Image"
+    />
+
+
+    <div class="cake-content">
+
+
+      <h1 id="cakeName"></h1>
+
+
+      <p id="cakeDescription"></p>
+
+
+      <p
+        class="price"
+        id="cakePrice"
+      ></p>
+
+
+      <p id="cakeCategory"></p>
+
+
+
+      <!-- ========================= -->
+      <!-- ORDER FORM -->
+      <!-- ========================= -->
+
+      <div class="order-form">
+
+
+        <h2 style="margin-bottom:20px;">
+
+          Order This Product 💎
+
+        </h2>
+
+
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Full Name"
+        />
+
+
+        <input
+          type="tel"
+          id="customerPhone"
+          placeholder="Phone Number"
+        />
+
+
+        <textarea
+          id="customerNote"
+          placeholder="Order Notes"
+        ></textarea>
+
+
+        <button
+          class="order-btn"
+          id="sendOrderBtn"
+        >
+
+          Place Order 🚀
+
+        </button>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- ========================= -->
+  <!-- FIREBASE -->
+  <!-- ========================= -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+
+  <script>
+
+
+    const firebaseConfig = {
+
+      apiKey: "YOUR_API_KEY",
+
+      authDomain: "YOUR_AUTH_DOMAIN",
+
+      projectId: "YOUR_PROJECT_ID",
+
+    };
+
+
+    firebase.initializeApp(firebaseConfig);
+
+
+    const db = firebase.firestore();
+
+
+  </script>
+
+
+
+  <script>
+
+
+    // =========================
+    // GET PRODUCT ID FROM URL
+    // =========================
+
+    const params =
+      new URLSearchParams(
+        window.location.search
+      );
+
+
+    const cakeId =
+      params.get("cakeId");
+
+
+
+    // =========================
+    // PRODUCT ELEMENTS
+    // =========================
+
+    const cakeImage =
+      document.getElementById(
+        "cakeImage"
+      );
+
+
+    const cakeName =
+      document.getElementById(
+        "cakeName"
+      );
+
+
+    const cakeDescription =
+      document.getElementById(
+        "cakeDescription"
+      );
+
+
+    const cakePrice =
+      document.getElementById(
+        "cakePrice"
+      );
+
+
+    const cakeCategory =
+      document.getElementById(
+        "cakeCategory"
+      );
+
+
+
+    // =========================
+    // LOAD PRODUCT DATA
+    // =========================
+
+    db.collection("cakes")
+
+      .doc(cakeId)
+
+      .get()
+
+      .then(doc => {
+
+
+        if (doc.exists) {
+
+
+          const product =
+            doc.data();
+
+
+          cakeImage.src =
+            product.image;
+
+
+          cakeName.textContent =
+            product.name;
+
+
+          cakeDescription.textContent =
+            product.description;
+
+
+          cakePrice.textContent =
+            "💰 " + product.price;
+
+
+          cakeCategory.textContent =
+            "📂 " + product.category;
+
+
+        }
+
+      });
+
+
+
+    // =========================
+    // SEND ORDER
+    // =========================
+
+    document
+
+      .getElementById(
+        "sendOrderBtn"
+      )
+
+      .addEventListener(
+        "click",
+        () => {
+
+
+          const customerName =
+            document.getElementById(
+              "customerName"
+            ).value;
+
+
+          const customerPhone =
+            document.getElementById(
+              "customerPhone"
+            ).value;
+
+
+          const customerNote =
+            document.getElementById(
+              "customerNote"
+            ).value;
+
+
+
+          if (
+            !customerName ||
+            !customerPhone
+          ) {
+
+
+            alert(
+              "Please fill in all required information."
+            );
+
+
+            return;
+
+          }
+
+
+
+          db.collection("orders")
+
+            .add({
+
+              cakeId: cakeId,
+
+              customerName,
+
+              customerPhone,
+
+              customerNote,
+
+              createdAt:
+                new Date()
+
+            })
+
+
+            .then(() => {
+
+
+              alert(
+                "Your order has been submitted successfully! 🎉"
+              );
+
+
+              window.location.href =
+                "index.html";
+
+
+            });
+
+
+        }
+      );
+
+
+  </script>
+
+
+</body>
+
+</html>

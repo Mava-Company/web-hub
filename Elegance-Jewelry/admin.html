@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Admin Dashboard
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="css/admin.css"
+  />
+
+</head>
+
+<body>
+
+  <!-- ========================= -->
+  <!-- NAVBAR -->
+  <!-- ========================= -->
+
+  <header class="navbar">
+
+    <div class="logo">
+      💎 Admin Dashboard
+    </div>
+
+    <nav>
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="admin.html">
+        Admin Dashboard
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- ========================= -->
+  <!-- ADMIN SECTION -->
+  <!-- ========================= -->
+
+  <section class="admin-section">
+
+
+
+    <!-- ========================= -->
+    <!-- ADD PRODUCT -->
+    <!-- ========================= -->
+
+    <div class="admin-box">
+
+      <h2>
+        Add New Product 💎
+      </h2>
+
+      <form
+        id="cakeForm"
+        class="cake-form"
+      >
+
+        <input
+          type="text"
+          id="cakeName"
+          placeholder="Product Name"
+          required
+        >
+
+        <input
+          type="number"
+          id="cakePrice"
+          placeholder="Price"
+          required
+        >
+
+        <input
+          type="file"
+          id="cakeImage"
+          accept="image/*"
+          required
+        >
+
+        
+        <textarea
+          id="cakeDescription"
+          placeholder="Product Description"
+        ></textarea>
+
+        <select id="cakeCategory">
+
+          <option value="Necklaces">
+            Necklaces
+          </option>
+
+          <option value="Earrings">
+            Earrings
+          </option>
+
+          <option value="Bracelets">
+            Bracelets
+          </option>
+
+          <option value="Rings">
+            Rings
+          </option>
+
+          <option value="Women's Accessories">
+            Women's Accessories
+          </option>
+
+          <option value="Bags">
+            Bags
+          </option>
+
+          <option value="Watches">
+            Watches
+          </option>
+
+          <option value="Gifts">
+            Gifts
+          </option>
+
+        </select>
+
+        <button type="submit">
+          Add Product
+        </button>
+
+      </form>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- PRODUCTS -->
+    <!-- ========================= -->
+
+    <div class="admin-box">
+
+      <h2>
+        Added Products 💎
+      </h2>
+
+      <div
+        id="cakesContainer"
+        class="cakes-admin-container"
+      ></div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- ORDERS -->
+    <!-- ========================= -->
+
+    <div class="admin-box">
+
+      <h2>
+        Orders 🧾
+      </h2>
+
+      <div
+        id="ordersContainer"
+        class="orders-container"
+      ></div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- ========================= -->
+  <!-- ADMIN PROTECTION -->
+  <!-- ========================= -->
+
+  <script>
+
+    if (
+      localStorage.getItem("isAdmin")
+      !== "true"
+    ) {
+
+      alert("❌ Access Denied");
+
+      window.location.href =
+        "index.html";
+
+    }
+
+  </script>
+
+
+
+  <!-- ========================= -->
+  <!-- FIREBASE -->
+  <!-- ========================= -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script src="js/firebase.js"></script>
+
+
+
+  <!-- ========================= -->
+  <!-- ADMIN JS -->
+  <!-- ========================= -->
+
+  <script src="js/admin.js"></script>
+
+</body>
+
+</html>
