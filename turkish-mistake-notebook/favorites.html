@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="الأخطاء والقواعد التركية التي حفظتها في المفضلة في دفتر أخطاء التركي."
+    >
+
+    <meta
+        name="keywords"
+        content="المفضلة, تعلم التركية, أخطاء التركية, قواعد التركية"
+    >
+
+    <meta
+        name="author"
+        content="دفتر أخطاء التركي"
+    >
+
+    <title>
+        المفضلة | دفتر أخطاء التركي
+    </title>
+
+
+    <!-- =================================
+         الخطوط
+    ================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =================================
+         ملفات التصميم
+    ================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         شريط التنقل
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+
+                <!-- الشعار -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        ✎
+                    </span>
+
+                    <span class="logo-text">
+                        دفتر أخطاء التركي
+                    </span>
+
+                </a>
+
+
+                <!-- زر القائمة في الهاتف -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="فتح القائمة"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+
+                <!-- روابط الموقع -->
+
+                <div
+                    class="nav-menu"
+                    id="navMenu"
+                >
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        الرئيسية
+                    </a>
+
+
+                    <a
+                        href="mistakes.html"
+                        class="nav-link"
+                    >
+                        الأخطاء
+                    </a>
+
+
+                    <a
+                        href="categories.html"
+                        class="nav-link"
+                    >
+                        التصنيفات
+                    </a>
+
+
+                    <a
+                        href="quiz.html"
+                        class="nav-link"
+                    >
+                        اختبر نفسك
+                    </a>
+
+
+                    <a
+                        href="daily.html"
+                        class="nav-link"
+                    >
+                        خطأ اليوم
+                    </a>
+
+
+                    <a
+                        href="favorites.html"
+                        class="nav-link active"
+                    >
+                        المفضلة
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         المحتوى الرئيسي
+    ================================== -->
+
+    <main>
+
+
+        <!-- =================================
+             رأس الصفحة
+        ================================== -->
+
+        <section class="page-header favorites-page-header">
+
+            <div class="container">
+
+                <div class="page-header-content">
+
+
+                    <span class="page-label">
+                        ❤️ الأشياء التي تريد تذكرها
+                    </span>
+
+
+                    <h1>
+                        المفضلة
+                    </h1>
+
+
+                    <p>
+                        هنا تجد الأخطاء والقواعد التي حفظتها
+                        لتعود إليها وتراجعها في أي وقت.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             شريط معلومات المفضلة
+        ================================== -->
+
+        <section class="favorites-toolbar-section">
+
+            <div class="container">
+
+                <div class="favorites-toolbar">
+
+
+                    <!-- عدد العناصر -->
+
+                    <div class="favorites-count">
+
+                        <span class="favorites-count-icon">
+                            ❤️
+                        </span>
+
+                        <div>
+
+                            <strong id="favoritesCount">
+                                0
+                            </strong>
+
+                            <span>
+                                عنصر في المفضلة
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- البحث -->
+
+                    <div class="favorites-search">
+
+                        <span>
+                            🔍
+                        </span>
+
+                        <input
+                            type="search"
+                            id="favoritesSearch"
+                            placeholder="ابحث في المفضلة..."
+                            aria-label="البحث في المفضلة"
+                        >
+
+                    </div>
+
+
+
+                    <!-- الترتيب -->
+
+                    <div class="favorites-sort">
+
+                        <label for="favoritesSort">
+                            ترتيب:
+                        </label>
+
+                        <select id="favoritesSort">
+
+                            <option value="newest">
+                                الأحدث
+                            </option>
+
+                            <option value="oldest">
+                                الأقدم
+                            </option>
+
+                            <option value="alphabetical">
+                                أبجديًا
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             محتوى المفضلة
+        ================================== -->
+
+        <section class="favorites-section">
+
+            <div class="container">
+
+
+                <!-- =================================
+                     حالة وجود مفضلة
+                ================================== -->
+
+                <div
+                    class="favorites-grid"
+                    id="favoritesGrid"
+                >
+
+                    <!--
+                        سيتم إنشاء بطاقات المفضلة
+                        بواسطة JavaScript.
+                    -->
+
+                </div>
+
+
+
+                <!-- =================================
+                     الحالة الفارغة
+                ================================== -->
+
+                <div
+                    class="favorites-empty"
+                    id="favoritesEmpty"
+                    style="display: none;"
+                >
+
+                    <div class="favorites-empty-icon">
+                        🤍
+                    </div>
+
+
+                    <span class="section-label">
+                        المفضلة فارغة
+                    </span>
+
+
+                    <h2>
+                        لم تحفظ أي خطأ بعد
+                    </h2>
+
+
+                    <p>
+                        عندما تجد خطأ أو قاعدة تريد مراجعتها لاحقًا،
+                        اضغط على ❤️ لإضافتها إلى المفضلة.
+                    </p>
+
+
+                    <a
+                        href="mistakes.html"
+                        class="btn btn-primary"
+                    >
+                        تصفح الأخطاء
+                        ←
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================
+                     لا توجد نتائج للبحث
+                ================================== -->
+
+                <div
+                    class="favorites-no-results"
+                    id="favoritesNoResults"
+                    style="display: none;"
+                >
+
+                    <div class="no-results-icon">
+                        🔎
+                    </div>
+
+
+                    <h3>
+                        لم نجد ما تبحث عنه
+                    </h3>
+
+
+                    <p>
+                        جرّب استخدام كلمة بحث مختلفة.
+                    </p>
+
+
+                    <button
+                        type="button"
+                        id="clearFavoritesSearch"
+                        class="btn btn-secondary"
+                    >
+                        إلغاء البحث
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             نصيحة
+        ================================== -->
+
+        <section class="favorites-tip-section">
+
+            <div class="container">
+
+                <div class="favorites-tip">
+
+
+                    <div class="favorites-tip-icon">
+                        💡
+                    </div>
+
+
+                    <div class="favorites-tip-content">
+
+                        <span>
+                            نصيحة للتعلم
+                        </span>
+
+                        <h2>
+                            لا تحفظ الخطأ فقط، افهمه!
+                        </h2>
+
+                        <p>
+                            أضف الأخطاء التي تتكرر معك إلى المفضلة،
+                            ثم ارجع إليها بعد عدة أيام وحاول كتابة
+                            أمثلة جديدة من عندك.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="practice.html"
+                        class="btn btn-light"
+                    >
+                        ابدأ التدريب
+                        ←
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             تصفح التصنيفات
+        ================================== -->
+
+        <section class="favorites-categories-section">
+
+            <div class="container">
+
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">
+                        📚 واصل التعلم
+                    </span>
+
+                    <h2>
+                        تصفح الأخطاء حسب الموضوع
+                    </h2>
+
+                    <p>
+                        ابحث عن الأخطاء التي تريد مراجعتها
+                        حسب التصنيف.
+                    </p>
+
+                </div>
+
+
+
+                <div class="mini-categories-grid">
+
+
+                    <a
+                        href="mistakes.html?category=suffixes"
+                        class="mini-category-card"
+                    >
+
+                        <span>
+                            🔤
+                        </span>
+
+                        <strong>
+                            اللواحق
+                        </strong>
+
+                    </a>
+
+
+                    <a
+                        href="mistakes.html?category=cases"
+                        class="mini-category-card"
+                    >
+
+                        <span>
+                            📍
+                        </span>
+
+                        <strong>
+                            حالات الاسم
+                        </strong>
+
+                    </a>
+
+
+                    <a
+                        href="mistakes.html?category=tenses"
+                        class="mini-category-card"
+                    >
+
+                        <span>
+                            ⏰
+                        </span>
+
+                        <strong>
+                            الأزمنة
+                        </strong>
+
+                    </a>
+
+
+                    <a
+                        href="mistakes.html?category=sentence-order"
+                        class="mini-category-card"
+                    >
+
+                        <span>
+                            🧩
+                        </span>
+
+                        <strong>
+                            ترتيب الجملة
+                        </strong>
+
+                    </a>
+
+
+                    <a
+                        href="mistakes.html?category=arabic-translation"
+                        class="mini-category-card"
+                    >
+
+                        <span>
+                            🇸🇦
+                        </span>
+
+                        <strong>
+                            الترجمة من العربية
+                        </strong>
+
+                    </a>
+
+
+                    <a
+                        href="categories.html"
+                        class="mini-category-card more"
+                    >
+
+                        <span>
+                            ➕
+                        </span>
+
+                        <strong>
+                            جميع التصنيفات
+                        </strong>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         تذييل الموقع
+    ================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="footer-content">
+
+
+                <!-- معلومات الموقع -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo footer-logo"
+                    >
+
+                        <span class="logo-icon">
+                            ✎
+                        </span>
+
+                        <span class="logo-text">
+                            دفتر أخطاء التركي
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        نتعلم التركية من الأخطاء،
+                        ونحوّل كل خطأ إلى فرصة للتعلم.
+                    </p>
+
+                </div>
+
+
+
+                <!-- روابط الموقع -->
+
+                <div class="footer-links">
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            الموقع
+                        </h3>
+
+                        <a href="index.html">
+                            الرئيسية
+                        </a>
+
+                        <a href="mistakes.html">
+                            الأخطاء
+                        </a>
+
+                        <a href="categories.html">
+                            التصنيفات
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            تعلم
+                        </h3>
+
+                        <a href="quiz.html">
+                            اختبر نفسك
+                        </a>
+
+                        <a href="practice.html">
+                            التدريب
+                        </a>
+
+                        <a href="daily.html">
+                            خطأ اليوم
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            حسابك
+                        </h3>
+
+                        <a href="favorites.html">
+                            المفضلة
+                        </a>
+
+                        <a href="login.html">
+                            تسجيل الدخول
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- أسفل التذييل -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 دفتر أخطاء التركي. جميع الحقوق محفوظة.
+                </p>
+
+                <p>
+                    صُنع بحب لتعلّم اللغة التركية 🇹🇷
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================
+         رسالة التنبيه
+    ================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+
+        <span id="toastIcon">
+            ✓
+        </span>
+
+        <span id="toastMessage">
+            تمت العملية بنجاح
+        </span>
+
+    </div>
+
+
+
+    <!-- =================================
+         JavaScript
+    ================================== -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/favorites.js"></script>
+
+
+</body>
+
+</html>

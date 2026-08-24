@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="تدرب على اللغة التركية من خلال تمارين تفاعلية تساعدك على التخلص من الأخطاء الشائعة."
+    >
+
+    <meta
+        name="keywords"
+        content="تمارين تركية, تعلم التركية, تدريب اللغة التركية, قواعد التركية, أخطاء التركية"
+    >
+
+    <meta
+        name="author"
+        content="دفتر أخطاء التركي"
+    >
+
+    <title>
+        التدريب | دفتر أخطاء التركي
+    </title>
+
+
+    <!-- =================================
+         الخطوط
+    ================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =================================
+         ملفات التصميم
+    ================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         شريط التنقل
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+
+                <!-- الشعار -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        ✎
+                    </span>
+
+                    <span class="logo-text">
+                        دفتر أخطاء التركي
+                    </span>
+
+                </a>
+
+
+                <!-- زر القائمة -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="فتح القائمة"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+
+                <!-- روابط الموقع -->
+
+                <div
+                    class="nav-menu"
+                    id="navMenu"
+                >
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        الرئيسية
+                    </a>
+
+
+                    <a
+                        href="mistakes.html"
+                        class="nav-link"
+                    >
+                        الأخطاء
+                    </a>
+
+
+                    <a
+                        href="categories.html"
+                        class="nav-link"
+                    >
+                        التصنيفات
+                    </a>
+
+
+                    <a
+                        href="quiz.html"
+                        class="nav-link"
+                    >
+                        اختبر نفسك
+                    </a>
+
+
+                    <a
+                        href="daily.html"
+                        class="nav-link"
+                    >
+                        خطأ اليوم
+                    </a>
+
+
+                    <a
+                        href="favorites.html"
+                        class="nav-link"
+                    >
+                        المفضلة
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         المحتوى الرئيسي
+    ================================== -->
+
+    <main>
+
+
+        <!-- =================================
+             رأس صفحة التدريب
+        ================================== -->
+
+        <section class="page-header practice-page-header">
+
+            <div class="container">
+
+                <div class="page-header-content">
+
+
+                    <span class="page-label">
+                        ✏️ تدرب بنفسك
+                    </span>
+
+
+                    <h1>
+                        حان وقت التطبيق!
+                    </h1>
+
+
+                    <p>
+                        المعرفة وحدها لا تكفي.
+                        حل التمارين وطبّق القواعد التي تعلمتها
+                        حتى تصبح اللغة التركية طبيعية بالنسبة لك.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             إحصائيات التدريب
+        ================================== -->
+
+        <section class="practice-stats-section">
+
+            <div class="container">
+
+                <div class="practice-stats">
+
+
+                    <div class="practice-stat-card">
+
+                        <div class="practice-stat-icon">
+                            🎯
+                        </div>
+
+                        <div>
+
+                            <strong id="practiceCompleted">
+                                0
+                            </strong>
+
+                            <span>
+                                تمرين مكتمل
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="practice-stat-card">
+
+                        <div class="practice-stat-icon">
+                            ⭐
+                        </div>
+
+                        <div>
+
+                            <strong id="practiceScore">
+                                0
+                            </strong>
+
+                            <span>
+                                إجابة صحيحة
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="practice-stat-card">
+
+                        <div class="practice-stat-icon">
+                            🔥
+                        </div>
+
+                        <div>
+
+                            <strong id="practiceStreak">
+                                0
+                            </strong>
+
+                            <span>
+                                أيام متتالية
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             اختيار نوع التدريب
+        ================================== -->
+
+        <section class="practice-types-section">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            اختر طريقة التدريب
+                        </span>
+
+                        <h2>
+                            ماذا تريد أن تتدرب؟
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="practice-types-grid">
+
+
+                    <!-- =================================
+                         صح أم خطأ
+                    ================================== -->
+
+                    <button
+                        type="button"
+                        class="practice-type-card"
+                        data-practice-type="true-false"
+                    >
+
+                        <div class="practice-type-icon red">
+                            ✓
+                        </div>
+
+
+                        <div class="practice-type-content">
+
+                            <h3>
+                                صح أم خطأ
+                            </h3>
+
+                            <p>
+                                اقرأ الجملة التركية وحدد
+                                هل هي صحيحة أم تحتوي على خطأ.
+                            </p>
+
+                        </div>
+
+
+                        <span class="practice-type-arrow">
+                            ←
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- =================================
+                         اختر الإجابة
+                    ================================== -->
+
+                    <button
+                        type="button"
+                        class="practice-type-card"
+                        data-practice-type="multiple-choice"
+                    >
+
+                        <div class="practice-type-icon blue">
+                            🔘
+                        </div>
+
+
+                        <div class="practice-type-content">
+
+                            <h3>
+                                اختر الإجابة الصحيحة
+                            </h3>
+
+                            <p>
+                                اختر الصيغة الصحيحة من بين
+                                مجموعة من الخيارات.
+                            </p>
+
+                        </div>
+
+
+                        <span class="practice-type-arrow">
+                            ←
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- =================================
+                         أكمل الجملة
+                    ================================== -->
+
+                    <button
+                        type="button"
+                        class="practice-type-card"
+                        data-practice-type="fill-blank"
+                    >
+
+                        <div class="practice-type-icon green">
+                            ✏️
+                        </div>
+
+
+                        <div class="practice-type-content">
+
+                            <h3>
+                                أكمل الجملة
+                            </h3>
+
+                            <p>
+                                املأ الفراغ بالكلمة أو اللاحقة
+                                المناسبة.
+                            </p>
+
+                        </div>
+
+
+                        <span class="practice-type-arrow">
+                            ←
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- =================================
+                         صحح الخطأ
+                    ================================== -->
+
+                    <button
+                        type="button"
+                        class="practice-type-card"
+                        data-practice-type="correct-error"
+                    >
+
+                        <div class="practice-type-icon orange">
+                            🔧
+                        </div>
+
+
+                        <div class="practice-type-content">
+
+                            <h3>
+                                صحح الخطأ
+                            </h3>
+
+                            <p>
+                                اكتشف الخطأ في الجملة واكتب
+                                الصيغة الصحيحة.
+                            </p>
+
+                        </div>
+
+
+                        <span class="practice-type-arrow">
+                            ←
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             إعدادات التدريب
+        ================================== -->
+
+        <section
+            class="practice-settings-section"
+            id="practiceSettings"
+        >
+
+            <div class="container">
+
+                <div class="practice-settings-card">
+
+
+                    <div class="practice-settings-header">
+
+                        <span class="section-label">
+                            ⚙️ إعداد التدريب
+                        </span>
+
+                        <h2>
+                            اختر مستوى التدريب
+                        </h2>
+
+                        <p>
+                            يمكنك تخصيص التمارين حسب مستواك والتصنيف
+                            الذي تريد مراجعته.
+                        </p>
+
+                    </div>
+
+
+                    <div class="practice-settings-grid">
+
+
+                        <!-- المستوى -->
+
+                        <div class="practice-setting">
+
+                            <label for="practiceLevel">
+                                مستوى اللغة
+                            </label>
+
+                            <select id="practiceLevel">
+
+                                <option value="all">
+                                    جميع المستويات
+                                </option>
+
+                                <option value="A1">
+                                    A1 - مبتدئ
+                                </option>
+
+                                <option value="A2">
+                                    A2 - مبتدئ متقدم
+                                </option>
+
+                                <option value="B1">
+                                    B1 - متوسط
+                                </option>
+
+                                <option value="B2">
+                                    B2 - متوسط متقدم
+                                </option>
+
+                                <option value="C1">
+                                    C1 - متقدم
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- التصنيف -->
+
+                        <div class="practice-setting">
+
+                            <label for="practiceCategory">
+                                التصنيف
+                            </label>
+
+                            <select id="practiceCategory">
+
+                                <option value="all">
+                                    جميع التصنيفات
+                                </option>
+
+                                <option value="suffixes">
+                                    اللواحق
+                                </option>
+
+                                <option value="cases">
+                                    حالات الاسم
+                                </option>
+
+                                <option value="tenses">
+                                    الأزمنة
+                                </option>
+
+                                <option value="sentence-order">
+                                    ترتيب الجملة
+                                </option>
+
+                                <option value="prepositions">
+                                    حروف الجر والأدوات
+                                </option>
+
+                                <option value="similar-words">
+                                    كلمات متشابهة
+                                </option>
+
+                                <option value="arabic-translation">
+                                    أخطاء الترجمة من العربية
+                                </option>
+
+                                <option value="negation">
+                                    النفي
+                                </option>
+
+                                <option value="questions">
+                                    السؤال
+                                </option>
+
+                                <option value="conversation">
+                                    المحادثة
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- عدد التمارين -->
+
+                        <div class="practice-setting">
+
+                            <label for="practiceCount">
+                                عدد التمارين
+                            </label>
+
+                            <select id="practiceCount">
+
+                                <option value="5">
+                                    5 تمارين
+                                </option>
+
+                                <option
+                                    value="10"
+                                    selected
+                                >
+                                    10 تمارين
+                                </option>
+
+                                <option value="15">
+                                    15 تمرينًا
+                                </option>
+
+                                <option value="20">
+                                    20 تمرينًا
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="practice-selected-type">
+
+                        <span>
+                            نوع التدريب:
+                        </span>
+
+                        <strong id="selectedPracticeType">
+                            اختر نوع التدريب من الأعلى
+                        </strong>
+
+                    </div>
+
+
+                    <div class="practice-settings-actions">
+
+                        <button
+                            type="button"
+                            id="startPracticeButton"
+                            class="btn btn-primary"
+                            disabled
+                        >
+                            ابدأ التدريب
+                            ←
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             منطقة التمرين
+        ================================== -->
+
+        <section
+            class="practice-play-section"
+            id="practicePlay"
+            style="display: none;"
+        >
+
+            <div class="container">
+
+
+                <!-- شريط التقدم -->
+
+                <div class="practice-topbar">
+
+
+                    <div class="practice-progress-info">
+
+                        <span>
+                            التمرين
+                        </span>
+
+                        <strong id="currentPracticeNumber">
+                            1
+                        </strong>
+
+                        <span>
+                            من
+                        </span>
+
+                        <strong id="totalPracticeQuestions">
+                            10
+                        </strong>
+
+                    </div>
+
+
+                    <div class="practice-score">
+
+                        <span>
+                            النقاط
+                        </span>
+
+                        <strong id="practiceCurrentScore">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="practice-progress">
+
+                    <div
+                        class="practice-progress-bar"
+                        id="practiceProgressBar"
+                    ></div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     بطاقة التمرين
+                ================================== -->
+
+                <div
+                    class="practice-question-card"
+                    id="practiceQuestionCard"
+                >
+
+
+                    <!-- رأس التمرين -->
+
+                    <div class="practice-question-header">
+
+
+                        <div class="practice-question-category">
+
+                            <span id="practiceCategoryIcon">
+                                📖
+                            </span>
+
+                            <span id="practiceQuestionCategory">
+                                القواعد
+                            </span>
+
+                        </div>
+
+
+                        <span
+                            class="practice-question-level"
+                            id="practiceQuestionLevel"
+                        >
+                            A1
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- السؤال -->
+
+                    <div class="practice-question-content">
+
+
+                        <span class="question-label">
+                            تمرين
+                        </span>
+
+
+                        <h2 id="practiceQuestionTitle">
+                            هل الجملة التالية صحيحة؟
+                        </h2>
+
+
+                        <div
+                            class="practice-turkish-sentence"
+                            id="practiceTurkishSentence"
+                        >
+                            Ben 20 yaşındayım değil.
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         منطقة الإجابة
+                    ================================== -->
+
+                    <div
+                        class="practice-answer-area"
+                        id="practiceAnswerArea"
+                    >
+
+                        <!--
+                            سيتم وضع نوع السؤال هنا
+                            بواسطة JavaScript.
+                        -->
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         التغذية الراجعة
+                    ================================== -->
+
+                    <div
+                        class="practice-feedback"
+                        id="practiceFeedback"
+                        style="display: none;"
+                    >
+
+                        <div
+                            class="practice-feedback-icon"
+                            id="practiceFeedbackIcon"
+                        >
+                            ✓
+                        </div>
+
+
+                        <div>
+
+                            <strong
+                                id="practiceFeedbackTitle"
+                            >
+                                ممتاز!
+                            </strong>
+
+
+                            <p
+                                id="practiceFeedbackText"
+                            >
+                                إجابة صحيحة.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         الشرح
+                    ================================== -->
+
+                    <div
+                        class="practice-explanation"
+                        id="practiceExplanation"
+                        style="display: none;"
+                    >
+
+                        <div class="explanation-title">
+
+                            <span>
+                                💡
+                            </span>
+
+                            <strong>
+                                لماذا؟
+                            </strong>
+
+                        </div>
+
+
+                        <p id="practiceExplanationText">
+                            سيظهر شرح الإجابة هنا.
+                        </p>
+
+
+                        <a
+                            href="#"
+                            id="practiceMistakeLink"
+                            class="practice-mistake-link"
+                        >
+                            قراءة شرح الخطأ كاملًا
+                            ←
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- أزرار التحكم -->
+
+                    <div class="practice-actions">
+
+                        <button
+                            type="button"
+                            id="checkPracticeButton"
+                            class="btn btn-primary"
+                        >
+                            تحقق من الإجابة
+                        </button>
+
+
+                        <button
+                            type="button"
+                            id="nextPracticeButton"
+                            class="btn btn-primary"
+                            style="display: none;"
+                        >
+                            التمرين التالي
+                            ←
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- إنهاء التدريب -->
+
+                <div class="practice-exit">
+
+                    <button
+                        type="button"
+                        id="exitPracticeButton"
+                    >
+                        إنهاء التدريب
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             نتيجة التدريب
+        ================================== -->
+
+        <section
+            class="practice-result-section"
+            id="practiceResult"
+            style="display: none;"
+        >
+
+            <div class="container">
+
+                <div class="practice-result-card">
+
+
+                    <div class="practice-result-icon">
+                        🎉
+                    </div>
+
+
+                    <span class="result-label">
+                        أحسنت!
+                    </span>
+
+
+                    <h1>
+                        لقد أكملت التدريب
+                    </h1>
+
+
+                    <div class="practice-final-score">
+
+                        <strong id="practiceFinalScore">
+                            0
+                        </strong>
+
+                        <span>
+                            نقطة
+                        </span>
+
+                    </div>
+
+
+                    <p id="practiceResultMessage">
+                        استمر في التدريب لتحسين مستواك.
+                    </p>
+
+
+
+                    <!-- إحصائيات -->
+
+                    <div class="practice-result-stats">
+
+
+                        <div>
+
+                            <span class="result-stat-icon">
+                                ✓
+                            </span>
+
+                            <strong id="practiceCorrectAnswers">
+                                0
+                            </strong>
+
+                            <small>
+                                صحيحة
+                            </small>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="result-stat-icon">
+                                ×
+                            </span>
+
+                            <strong id="practiceWrongAnswers">
+                                0
+                            </strong>
+
+                            <small>
+                                خاطئة
+                            </small>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="result-stat-icon">
+                                📊
+                            </span>
+
+                            <strong id="practiceTotalAnswers">
+                                0
+                            </strong>
+
+                            <small>
+                                إجمالي
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- أزرار -->
+
+                    <div class="practice-result-actions">
+
+
+                        <button
+                            type="button"
+                            id="retryPracticeButton"
+                            class="btn btn-primary"
+                        >
+                            تدريب مرة أخرى
+                        </button>
+
+
+                        <a
+                            href="mistakes.html"
+                            class="btn btn-secondary"
+                        >
+                            مراجعة الأخطاء
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             نصيحة التدريب
+        ================================== -->
+
+        <section class="practice-tip-section">
+
+            <div class="container">
+
+                <div class="practice-tip-card">
+
+
+                    <div class="practice-tip-icon">
+                        🧠
+                    </div>
+
+
+                    <div class="practice-tip-content">
+
+                        <span>
+                            طريقة أفضل للتعلم
+                        </span>
+
+                        <h2>
+                            كرر الخطأ حتى لا تكرره!
+                        </h2>
+
+                        <p>
+                            عندما تخطئ في تمرين، لا تنتقل مباشرة.
+                            اقرأ الشرح، ثم حاول كتابة جملة جديدة
+                            باستخدام القاعدة نفسها.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="quiz.html"
+                        class="btn btn-light"
+                    >
+                        اختبر نفسك
+                        ←
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         تذييل الموقع
+    ================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="footer-content">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo footer-logo"
+                    >
+
+                        <span class="logo-icon">
+                            ✎
+                        </span>
+
+                        <span class="logo-text">
+                            دفتر أخطاء التركي
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        نتعلم التركية من الأخطاء،
+                        ونحوّل كل خطأ إلى فرصة للتعلم.
+                    </p>
+
+                </div>
+
+
+
+                <div class="footer-links">
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            الموقع
+                        </h3>
+
+                        <a href="index.html">
+                            الرئيسية
+                        </a>
+
+                        <a href="mistakes.html">
+                            الأخطاء
+                        </a>
+
+                        <a href="categories.html">
+                            التصنيفات
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            تعلم
+                        </h3>
+
+                        <a href="quiz.html">
+                            اختبر نفسك
+                        </a>
+
+                        <a href="practice.html">
+                            التدريب
+                        </a>
+
+                        <a href="daily.html">
+                            خطأ اليوم
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            حسابك
+                        </h3>
+
+                        <a href="favorites.html">
+                            المفضلة
+                        </a>
+
+                        <a href="login.html">
+                            تسجيل الدخول
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 دفتر أخطاء التركي. جميع الحقوق محفوظة.
+                </p>
+
+                <p>
+                    صُنع بحب لتعلّم اللغة التركية 🇹🇷
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================
+         رسالة التنبيه
+    ================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+
+        <span id="toastIcon">
+            ✓
+        </span>
+
+        <span id="toastMessage">
+            تم تنفيذ العملية بنجاح
+        </span>
+
+    </div>
+
+
+
+    <!-- =================================
+         JavaScript
+    ================================== -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/practice.js"></script>
+
+
+</body>
+
+</html>

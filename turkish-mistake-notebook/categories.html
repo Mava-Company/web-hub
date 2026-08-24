@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="تصفح تصنيفات أخطاء اللغة التركية وتعلم القواعد واللواحق والأزمنة وحالات الاسم وغيرها."
+    >
+
+    <meta
+        name="keywords"
+        content="تعلم التركية, أخطاء التركية, تصنيفات اللغة التركية, قواعد التركية, التركية للعرب"
+    >
+
+    <meta
+        name="author"
+        content="دفتر أخطاء التركي"
+    >
+
+    <title>
+        تصنيفات الأخطاء | دفتر أخطاء التركي
+    </title>
+
+
+    <!-- =================================
+         الخطوط
+    ================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =================================
+         ملفات التصميم
+    ================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         شريط التنقل
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+
+                <!-- الشعار -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        ✎
+                    </span>
+
+                    <span class="logo-text">
+                        دفتر أخطاء التركي
+                    </span>
+
+                </a>
+
+
+                <!-- زر القائمة في الهاتف -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="فتح القائمة"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+
+                <!-- روابط الموقع -->
+
+                <div
+                    class="nav-menu"
+                    id="navMenu"
+                >
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        الرئيسية
+                    </a>
+
+
+                    <a
+                        href="mistakes.html"
+                        class="nav-link"
+                    >
+                        الأخطاء
+                    </a>
+
+
+                    <a
+                        href="categories.html"
+                        class="nav-link active"
+                    >
+                        التصنيفات
+                    </a>
+
+
+                    <a
+                        href="quiz.html"
+                        class="nav-link"
+                    >
+                        اختبر نفسك
+                    </a>
+
+
+                    <a
+                        href="daily.html"
+                        class="nav-link"
+                    >
+                        خطأ اليوم
+                    </a>
+
+
+                    <a
+                        href="favorites.html"
+                        class="nav-link"
+                    >
+                        المفضلة
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         المحتوى الرئيسي
+    ================================== -->
+
+    <main>
+
+
+        <!-- =================================
+             رأس الصفحة
+        ================================== -->
+
+        <section class="page-header categories-page-header">
+
+            <div class="container">
+
+                <div class="page-header-content">
+
+
+                    <span class="page-label">
+                        🗂️ نظّم تعلمك
+                    </span>
+
+
+                    <h1>
+                        تصنيفات الأخطاء
+                    </h1>
+
+
+                    <p>
+                        اختر الموضوع الذي تريد مراجعته، واكتشف
+                        الأخطاء الشائعة فيه بطريقة سهلة ومنظمة.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             إحصائيات التصنيفات
+        ================================== -->
+
+        <section class="categories-stats-section">
+
+            <div class="container">
+
+                <div class="categories-stats">
+
+
+                    <div class="category-stat">
+
+                        <div class="category-stat-icon">
+                            📚
+                        </div>
+
+                        <div>
+
+                            <strong id="totalCategories">
+                                10
+                            </strong>
+
+                            <span>
+                                تصنيفات
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="category-stat">
+
+                        <div class="category-stat-icon">
+                            ❌
+                        </div>
+
+                        <div>
+
+                            <strong id="totalMistakes">
+                                0
+                            </strong>
+
+                            <span>
+                                خطأ مسجل
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="category-stat">
+
+                        <div class="category-stat-icon">
+                            🇹🇷
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                A1 - C1
+                            </strong>
+
+                            <span>
+                                مستويات التعلم
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             جميع التصنيفات
+        ================================== -->
+
+        <section class="all-categories-section">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            اختر موضوعًا
+                        </span>
+
+                        <h2>
+                            ماذا تريد أن تتعلم؟
+                        </h2>
+
+                    </div>
+
+
+                    <div class="category-search">
+
+                        <span>
+                            🔍
+                        </span>
+
+                        <input
+                            type="search"
+                            id="categorySearch"
+                            placeholder="ابحث عن تصنيف..."
+                            aria-label="البحث عن تصنيف"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     شبكة التصنيفات
+                ================================== -->
+
+                <div
+                    class="categories-large-grid"
+                    id="categoriesGrid"
+                >
+
+
+                    <!-- =================================
+                         اللواحق
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=suffixes"
+                        class="large-category-card"
+                        data-category="suffixes"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon red">
+                                🔤
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            اللواحق
+                        </h3>
+
+
+                        <p>
+                            تعلّم كيفية استخدام اللواحق التركية
+                            وتجنب الأخطاء في إضافتها إلى الكلمات.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                أخطاء اللواحق
+                            </span>
+
+                            <strong
+                                data-count-category="suffixes"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         حالات الاسم
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=cases"
+                        class="large-category-card"
+                        data-category="cases"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon blue">
+                                📍
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            حالات الاسم
+                        </h3>
+
+
+                        <p>
+                            الفرق بين
+                            <strong>-i</strong>
+                            و
+                            <strong>-e</strong>
+                            و
+                            <strong>-de</strong>
+                            و
+                            <strong>-den</strong>
+                            وكيفية استخدامها.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                أخطاء حالات الاسم
+                            </span>
+
+                            <strong
+                                data-count-category="cases"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         الأزمنة
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=tenses"
+                        class="large-category-card"
+                        data-category="tenses"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon yellow">
+                                ⏰
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            الأزمنة
+                        </h3>
+
+
+                        <p>
+                            أخطاء استخدام الماضي والمضارع
+                            والمستقبل والأزمنة الأخرى.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                أخطاء الأزمنة
+                            </span>
+
+                            <strong
+                                data-count-category="tenses"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         ترتيب الجملة
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=sentence-order"
+                        class="large-category-card"
+                        data-category="sentence-order"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon green">
+                                🧩
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            ترتيب الجملة
+                        </h3>
+
+
+                        <p>
+                            تعلّم ترتيب الكلمات الصحيح في الجملة
+                            التركية وتجنب الترجمة الحرفية.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                أخطاء ترتيب الجملة
+                            </span>
+
+                            <strong
+                                data-count-category="sentence-order"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         حروف الجر والأدوات
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=prepositions"
+                        class="large-category-card"
+                        data-category="prepositions"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon purple">
+                                🔗
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            حروف الجر والأدوات
+                        </h3>
+
+
+                        <p>
+                            تعلّم استخدام الكلمات والأدوات مثل
+                            <strong>ile</strong> و
+                            <strong>için</strong> و
+                            <strong>gibi</strong>.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                أخطاء الأدوات
+                            </span>
+
+                            <strong
+                                data-count-category="prepositions"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         الكلمات المتشابهة
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=similar-words"
+                        class="large-category-card"
+                        data-category="similar-words"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon orange">
+                                🔀
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            كلمات متشابهة
+                        </h3>
+
+
+                        <p>
+                            فرّق بين الكلمات التركية التي تبدو
+                            متشابهة ولكن تختلف في المعنى أو الاستخدام.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                كلمات مربكة
+                            </span>
+
+                            <strong
+                                data-count-category="similar-words"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         أخطاء الترجمة من العربية
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=arabic-translation"
+                        class="large-category-card featured-category"
+                        data-category="arabic-translation"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon red">
+                                🇸🇦
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <div class="featured-badge">
+                            ⭐ مهم للناطقين بالعربية
+                        </div>
+
+
+                        <h3>
+                            أخطاء الترجمة من العربية
+                        </h3>
+
+
+                        <p>
+                            أخطاء تحدث عندما نحاول ترجمة الجملة
+                            العربية إلى التركية كلمة بكلمة.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                أخطاء الترجمة
+                            </span>
+
+                            <strong
+                                data-count-category="arabic-translation"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         النفي
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=negation"
+                        class="large-category-card"
+                        data-category="negation"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon dark">
+                                ❌
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            النفي
+                        </h3>
+
+
+                        <p>
+                            الفرق بين أدوات النفي واستخدام
+                            <strong>değil</strong> و
+                            <strong>-ma / -me</strong>.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                أخطاء النفي
+                            </span>
+
+                            <strong
+                                data-count-category="negation"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         السؤال
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=questions"
+                        class="large-category-card"
+                        data-category="questions"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon teal">
+                                ❓
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            السؤال
+                        </h3>
+
+
+                        <p>
+                            تعلم استخدام
+                            <strong>mi / mı / mu / mü</strong>
+                            وصياغة الأسئلة بشكل صحيح.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                أخطاء السؤال
+                            </span>
+
+                            <strong
+                                data-count-category="questions"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         المحادثة
+                    ================================== -->
+
+                    <a
+                        href="mistakes.html?category=conversation"
+                        class="large-category-card"
+                        data-category="conversation"
+                    >
+
+                        <div class="large-category-top">
+
+                            <div class="large-category-icon pink">
+                                🗣️
+                            </div>
+
+                            <span class="large-category-arrow">
+                                ←
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            المحادثة اليومية
+                        </h3>
+
+
+                        <p>
+                            أخطاء شائعة في الكلام اليومي والتعبيرات
+                            التي يستخدمها الأتراك بشكل طبيعي.
+                        </p>
+
+
+                        <div class="large-category-bottom">
+
+                            <span>
+                                أخطاء المحادثة
+                            </span>
+
+                            <strong
+                                data-count-category="conversation"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- لا توجد نتائج -->
+
+                <div
+                    class="empty-state"
+                    id="categoryEmptyState"
+                    style="display: none;"
+                >
+
+                    <div class="empty-icon">
+                        🔎
+                    </div>
+
+                    <h3>
+                        لم نجد هذا التصنيف
+                    </h3>
+
+                    <p>
+                        جرّب البحث باسم تصنيف آخر.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             مستويات اللغة
+        ================================== -->
+
+        <section class="levels-section">
+
+            <div class="container">
+
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">
+                        🎯 اختر مستواك
+                    </span>
+
+                    <h2>
+                        الأخطاء حسب مستوى اللغة
+                    </h2>
+
+                    <p>
+                        يمكنك التركيز على الأخطاء المناسبة لمستواك الحالي.
+                    </p>
+
+                </div>
+
+
+
+                <div class="levels-grid">
+
+
+                    <!-- A1 -->
+
+                    <a
+                        href="mistakes.html?level=A1"
+                        class="level-card level-a1"
+                    >
+
+                        <div class="level-number">
+                            A1
+                        </div>
+
+                        <div class="level-info">
+
+                            <h3>
+                                مبتدئ
+                            </h3>
+
+                            <p>
+                                أساسيات اللغة والجمل البسيطة
+                            </p>
+
+                        </div>
+
+                        <span>
+                            ←
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- A2 -->
+
+                    <a
+                        href="mistakes.html?level=A2"
+                        class="level-card level-a2"
+                    >
+
+                        <div class="level-number">
+                            A2
+                        </div>
+
+                        <div class="level-info">
+
+                            <h3>
+                                مبتدئ متقدم
+                            </h3>
+
+                            <p>
+                                توسيع المفردات والقواعد الأساسية
+                            </p>
+
+                        </div>
+
+                        <span>
+                            ←
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- B1 -->
+
+                    <a
+                        href="mistakes.html?level=B1"
+                        class="level-card level-b1"
+                    >
+
+                        <div class="level-number">
+                            B1
+                        </div>
+
+                        <div class="level-info">
+
+                            <h3>
+                                متوسط
+                            </h3>
+
+                            <p>
+                                بناء جمل أكثر تعقيدًا
+                            </p>
+
+                        </div>
+
+                        <span>
+                            ←
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- B2 -->
+
+                    <a
+                        href="mistakes.html?level=B2"
+                        class="level-card level-b2"
+                    >
+
+                        <div class="level-number">
+                            B2
+                        </div>
+
+                        <div class="level-info">
+
+                            <h3>
+                                متوسط متقدم
+                            </h3>
+
+                            <p>
+                                التعبير الطبيعي وفهم التفاصيل
+                            </p>
+
+                        </div>
+
+                        <span>
+                            ←
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- C1 -->
+
+                    <a
+                        href="mistakes.html?level=C1"
+                        class="level-card level-c1"
+                    >
+
+                        <div class="level-number">
+                            C1
+                        </div>
+
+                        <div class="level-info">
+
+                            <h3>
+                                متقدم
+                            </h3>
+
+                            <p>
+                                الفروق الدقيقة والتعبيرات المتقدمة
+                            </p>
+
+                        </div>
+
+                        <span>
+                            ←
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             دعوة للاختبار
+        ================================== -->
+
+        <section class="quiz-section">
+
+            <div class="container">
+
+                <div class="quiz-banner">
+
+
+                    <div class="quiz-icon">
+                        🧠
+                    </div>
+
+
+                    <div class="quiz-text">
+
+                        <span>
+                            جاهز للتحدي؟
+                        </span>
+
+                        <h2>
+                            اختبر معلوماتك
+                        </h2>
+
+                        <p>
+                            اختر الإجابة الصحيحة واكتشف
+                            الأخطاء التي تحتاج إلى مراجعتها.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="quiz.html"
+                        class="btn btn-primary"
+                    >
+                        ابدأ الاختبار
+                        ←
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         تذييل الموقع
+    ================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="footer-content">
+
+
+                <!-- معلومات الموقع -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo footer-logo"
+                    >
+
+                        <span class="logo-icon">
+                            ✎
+                        </span>
+
+                        <span class="logo-text">
+                            دفتر أخطاء التركي
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        نتعلم التركية من الأخطاء،
+                        ونحوّل كل خطأ إلى فرصة للتعلم.
+                    </p>
+
+                </div>
+
+
+
+                <!-- روابط الموقع -->
+
+                <div class="footer-links">
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            الموقع
+                        </h3>
+
+                        <a href="index.html">
+                            الرئيسية
+                        </a>
+
+                        <a href="mistakes.html">
+                            الأخطاء
+                        </a>
+
+                        <a href="categories.html">
+                            التصنيفات
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            تعلم
+                        </h3>
+
+                        <a href="quiz.html">
+                            اختبر نفسك
+                        </a>
+
+                        <a href="practice.html">
+                            التدريب
+                        </a>
+
+                        <a href="daily.html">
+                            خطأ اليوم
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            حسابك
+                        </h3>
+
+                        <a href="favorites.html">
+                            المفضلة
+                        </a>
+
+                        <a href="login.html">
+                            تسجيل الدخول
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- أسفل التذييل -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 دفتر أخطاء التركي. جميع الحقوق محفوظة.
+                </p>
+
+                <p>
+                    صُنع بحب لتعلّم اللغة التركية 🇹🇷
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================
+         JavaScript
+    ================================== -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/categories.js"></script>
+
+
+</body>
+
+</html>

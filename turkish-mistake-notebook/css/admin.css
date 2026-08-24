@@ -1,0 +1,2677 @@
+/* =========================================================
+   دفتر أخطاء التركي
+   admin.css
+   تنسيقات لوحة تحكم المدير
+========================================================= */
+
+
+/* =========================================================
+   متغيرات الإدارة
+========================================================= */
+
+:root {
+
+    --admin-sidebar-width: 260px;
+
+    --admin-bg: #f7f7f5;
+
+    --admin-card: #ffffff;
+
+    --admin-border: #e7e4df;
+
+    --admin-text: #242424;
+
+    --admin-muted: #777;
+
+    --admin-primary: #b4233c;
+
+    --admin-primary-dark: #8f1830;
+
+    --admin-success: #238b57;
+
+    --admin-danger: #c93636;
+
+    --admin-warning: #c58a17;
+
+    --admin-info: #1f6f78;
+
+    --admin-shadow:
+        0 5px 20px
+        rgba(30, 25, 20, 0.07);
+
+}
+
+
+/* =========================================================
+   الصفحة الرئيسية للإدارة
+========================================================= */
+
+.admin-layout {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    background:
+        var(--admin-bg);
+
+}
+
+
+/* =========================================================
+   الشريط الجانبي
+========================================================= */
+
+.admin-sidebar {
+
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+    z-index: 2000;
+
+    width:
+        var(--admin-sidebar-width);
+
+    height: 100vh;
+
+    overflow-y: auto;
+
+    background:
+        #242222;
+
+    color: white;
+
+    border-left:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.05
+        );
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+.admin-sidebar::-webkit-scrollbar {
+
+    width: 5px;
+
+}
+
+
+.admin-sidebar::-webkit-scrollbar-thumb {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.2
+        );
+
+    border-radius: 20px;
+
+}
+
+
+/* =========================================================
+   شعار الإدارة
+========================================================= */
+
+.admin-brand {
+
+    min-height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding:
+        18px 20px;
+
+    border-bottom:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+
+}
+
+
+.admin-brand-icon {
+
+    width: 43px;
+
+    height: 43px;
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background:
+        var(--admin-primary);
+
+    font-size: 20px;
+
+}
+
+
+.admin-brand-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.3;
+
+}
+
+
+.admin-brand-text strong {
+
+    font-size: 15px;
+
+}
+
+
+.admin-brand-text span {
+
+    color:
+        #aaa;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   قائمة الإدارة
+========================================================= */
+
+.admin-nav {
+
+    padding:
+        22px 12px;
+
+}
+
+
+.admin-nav-title {
+
+    padding:
+        0 10px 10px;
+
+    color:
+        #777;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.admin-nav a {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding:
+        11px 13px;
+
+    margin-bottom: 4px;
+
+    border-radius:
+        9px;
+
+    color:
+        #bdbdbd;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.admin-nav a:hover {
+
+    color: white;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.07
+        );
+
+}
+
+
+.admin-nav a.active {
+
+    color: white;
+
+    background:
+        var(--admin-primary);
+
+}
+
+
+.admin-nav a.active::before {
+
+    content: "";
+
+    position: absolute;
+
+    right: -12px;
+
+    width: 3px;
+
+    height: 22px;
+
+    background:
+        #fff;
+
+    border-radius:
+        4px;
+
+}
+
+
+.admin-nav-icon {
+
+    width: 22px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================================
+   أسفل القائمة الجانبية
+========================================================= */
+
+.admin-sidebar-footer {
+
+    padding:
+        18px 15px;
+
+    margin-top: 20px;
+
+    border-top:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+
+}
+
+
+.admin-user-mini {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.admin-avatar {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        var(--admin-primary);
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+}
+
+
+.admin-user-info {
+
+    min-width: 0;
+
+}
+
+
+.admin-user-info strong {
+
+    display: block;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+
+}
+
+
+.admin-user-info span {
+
+    color:
+        #888;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   زر تسجيل الخروج
+========================================================= */
+
+.admin-logout {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    min-height: 38px;
+
+    padding:
+        7px 10px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.1
+        );
+
+    border-radius: 8px;
+
+    background:
+        transparent;
+
+    color:
+        #aaa;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.admin-logout:hover {
+
+    background:
+        rgba(
+            201,
+            54,
+            54,
+            0.15
+        );
+
+    border-color:
+        rgba(
+            201,
+            54,
+            54,
+            0.3
+        );
+
+    color:
+        #ff8585;
+
+}
+
+
+/* =========================================================
+   المحتوى الرئيسي
+========================================================= */
+
+.admin-main {
+
+    width: calc(
+        100% -
+        var(--admin-sidebar-width)
+    );
+
+    margin-right:
+        var(--admin-sidebar-width);
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================================
+   شريط الإدارة العلوي
+========================================================= */
+
+.admin-topbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    min-height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding:
+        12px 30px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.95
+        );
+
+    border-bottom:
+        1px solid
+        var(--admin-border);
+
+    backdrop-filter:
+        blur(10px);
+
+}
+
+
+.admin-topbar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.admin-topbar-title {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.admin-topbar-title strong {
+
+    font-size: 17px;
+
+}
+
+
+.admin-topbar-title span {
+
+    color:
+        var(--admin-muted);
+
+    font-size: 11px;
+
+}
+
+
+/* زر فتح القائمة */
+
+.admin-menu-toggle {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: none;
+
+    place-items: center;
+
+    border:
+        1px solid
+        var(--admin-border);
+
+    border-radius: 9px;
+
+    background:
+        white;
+
+    color:
+        var(--admin-text);
+
+    font-size: 19px;
+
+}
+
+
+/* =========================================================
+   محتوى لوحة التحكم
+========================================================= */
+
+.admin-content {
+
+    padding:
+        30px;
+
+}
+
+
+/* =========================================================
+   عنوان الصفحة
+========================================================= */
+
+.admin-page-title {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.admin-page-title h1 {
+
+    font-size:
+        clamp(
+            25px,
+            3vw,
+            35px
+        );
+
+    line-height: 1.3;
+
+    margin-bottom: 4px;
+
+}
+
+
+.admin-page-title p {
+
+    color:
+        var(--admin-muted);
+
+    font-size: 13px;
+
+}
+
+
+.admin-page-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* =========================================================
+   إحصائيات الإدارة
+========================================================= */
+
+.admin-dashboard-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            1fr
+        );
+
+    gap: 16px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.admin-dashboard-stat {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        20px;
+
+    background:
+        var(--admin-card);
+
+    border:
+        1px solid
+        var(--admin-border);
+
+    border-radius:
+        13px;
+
+    box-shadow:
+        var(--admin-shadow);
+
+}
+
+
+.admin-dashboard-stat::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 75px;
+
+    height: 75px;
+
+    left: -20px;
+
+    bottom: -30px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(
+            180,
+            35,
+            60,
+            0.05
+        );
+
+}
+
+
+.admin-dashboard-stat-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-bottom: 13px;
+
+    border-radius: 11px;
+
+    background:
+        #fbe8ec;
+
+    color:
+        var(--admin-primary);
+
+    font-size: 18px;
+
+}
+
+
+.admin-dashboard-stat:nth-child(2)
+.admin-dashboard-stat-icon {
+
+    color:
+        var(--admin-success);
+
+    background:
+        #e8f7ef;
+
+}
+
+
+.admin-dashboard-stat:nth-child(3)
+.admin-dashboard-stat-icon {
+
+    color:
+        var(--admin-info);
+
+    background:
+        #e7f5f6;
+
+}
+
+
+.admin-dashboard-stat:nth-child(4)
+.admin-dashboard-stat-icon {
+
+    color:
+        var(--admin-warning);
+
+    background:
+        #fff6dc;
+
+}
+
+
+.admin-dashboard-stat strong {
+
+    display: block;
+
+    font-size: 28px;
+
+    line-height: 1.2;
+
+    margin-bottom: 3px;
+
+}
+
+
+.admin-dashboard-stat span {
+
+    color:
+        var(--admin-muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   تخطيط لوحة التحكم
+========================================================= */
+
+.admin-dashboard-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================================
+   صندوق الإدارة
+========================================================= */
+
+.admin-box {
+
+    background:
+        var(--admin-card);
+
+    border:
+        1px solid
+        var(--admin-border);
+
+    border-radius:
+        13px;
+
+    box-shadow:
+        var(--admin-shadow);
+
+    overflow: hidden;
+
+}
+
+
+.admin-box-header {
+
+    min-height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding:
+        15px 20px;
+
+    border-bottom:
+        1px solid
+        var(--admin-border);
+
+}
+
+
+.admin-box-header h2 {
+
+    font-size: 16px;
+
+}
+
+
+.admin-box-header p {
+
+    color:
+        var(--admin-muted);
+
+    font-size: 11px;
+
+}
+
+
+.admin-box-body {
+
+    padding:
+        20px;
+
+}
+
+
+/* =========================================================
+   جدول الأخطاء
+========================================================= */
+
+.admin-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+.admin-table {
+
+    width: 100%;
+
+    min-width: 700px;
+
+    border-collapse:
+        collapse;
+
+}
+
+
+.admin-table th {
+
+    padding:
+        12px 14px;
+
+    background:
+        #faf9f7;
+
+    color:
+        #777;
+
+    text-align:
+        right;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    border-bottom:
+        1px solid
+        var(--admin-border);
+
+}
+
+
+.admin-table td {
+
+    padding:
+        14px;
+
+    text-align:
+        right;
+
+    font-size: 12px;
+
+    border-bottom:
+        1px solid
+        var(--admin-border);
+
+    vertical-align:
+        middle;
+
+}
+
+
+.admin-table tbody tr {
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.admin-table tbody tr:hover {
+
+    background:
+        #fcfbfa;
+
+}
+
+
+.admin-table tbody tr:last-child td {
+
+    border-bottom: none;
+
+}
+
+
+.admin-table-title {
+
+    font-weight: 800;
+
+    color:
+        var(--admin-text);
+
+}
+
+
+.admin-table-subtitle {
+
+    display: block;
+
+    max-width: 250px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    color:
+        var(--admin-muted);
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   حالة الخطأ
+========================================================= */
+
+.admin-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding:
+        4px 9px;
+
+    border-radius:
+        50px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+}
+
+
+.admin-status::before {
+
+    content: "";
+
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background:
+        currentColor;
+
+}
+
+
+.admin-status.published {
+
+    color:
+        var(--admin-success);
+
+    background:
+        #e8f7ef;
+
+}
+
+
+.admin-status.draft {
+
+    color:
+        var(--admin-warning);
+
+    background:
+        #fff6dc;
+
+}
+
+
+.admin-status.pending {
+
+    color:
+        var(--admin-info);
+
+    background:
+        #e7f5f6;
+
+}
+
+
+/* =========================================================
+   أزرار الإجراءات
+========================================================= */
+
+.admin-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.admin-action-btn {
+
+    width: 33px;
+
+    height: 33px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background:
+        #f5f3f0;
+
+    color:
+        #666;
+
+    font-size: 13px;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.admin-action-btn:hover {
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+.admin-action-btn.edit:hover {
+
+    color:
+        var(--admin-info);
+
+    background:
+        #e7f5f6;
+
+}
+
+
+.admin-action-btn.delete:hover {
+
+    color:
+        var(--admin-danger);
+
+    background:
+        #fdeaea;
+
+}
+
+
+.admin-action-btn.view:hover {
+
+    color:
+        var(--admin-success);
+
+    background:
+        #e8f7ef;
+
+}
+
+
+/* =========================================================
+   شريط البحث في الإدارة
+========================================================= */
+
+.admin-search {
+
+    position: relative;
+
+    width:
+        min(
+            320px,
+            100%
+        );
+
+}
+
+
+.admin-search input {
+
+    width: 100%;
+
+    height: 40px;
+
+    padding:
+        8px 38px 8px 12px;
+
+    border:
+        1px solid
+        var(--admin-border);
+
+    border-radius:
+        8px;
+
+    outline: none;
+
+    background:
+        white;
+
+    font-size: 12px;
+
+}
+
+
+.admin-search input:focus {
+
+    border-color:
+        var(--admin-primary);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(
+            180,
+            35,
+            60,
+            0.08
+        );
+
+}
+
+
+.admin-search-icon {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 12px;
+
+    transform:
+        translateY(-50%);
+
+    color:
+        #999;
+
+}
+
+
+/* =========================================================
+   أدوات الفلترة
+========================================================= */
+
+.admin-filters {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+
+}
+
+
+.admin-filter {
+
+    min-height: 40px;
+
+    padding:
+        7px 12px;
+
+    border:
+        1px solid
+        var(--admin-border);
+
+    border-radius:
+        8px;
+
+    background:
+        white;
+
+    color:
+        #555;
+
+    font-size: 12px;
+
+    outline: none;
+
+}
+
+
+.admin-filter:focus {
+
+    border-color:
+        var(--admin-primary);
+
+}
+
+
+/* =========================================================
+   نموذج إضافة / تعديل خطأ
+========================================================= */
+
+.admin-form {
+
+    display: grid;
+
+    gap: 17px;
+
+}
+
+
+.admin-form-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+
+}
+
+
+.admin-form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+}
+
+
+.admin-form-group.full {
+
+    grid-column:
+        1 / -1;
+
+}
+
+
+.admin-form-group label {
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    color:
+        #444;
+
+}
+
+
+.admin-form-group label span {
+
+    color:
+        var(--admin-danger);
+
+}
+
+
+.admin-form-control {
+
+    width: 100%;
+
+    min-height: 44px;
+
+    padding:
+        9px 12px;
+
+    border:
+        1px solid
+        var(--admin-border);
+
+    border-radius:
+        8px;
+
+    background:
+        white;
+
+    color:
+        var(--admin-text);
+
+    outline: none;
+
+    font-size: 13px;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+textarea.admin-form-control {
+
+    min-height: 120px;
+
+    resize:
+        vertical;
+
+}
+
+
+.admin-form-control:focus {
+
+    border-color:
+        var(--admin-primary);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(
+            180,
+            35,
+            60,
+            0.08
+        );
+
+}
+
+
+/* =========================================================
+   محرر النص التركي
+========================================================= */
+
+.admin-turkish-input {
+
+    direction: ltr;
+
+    text-align: left;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+}
+
+
+.admin-form-help {
+
+    color:
+        #999;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   Checkbox
+========================================================= */
+
+.admin-checkbox {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+}
+
+
+.admin-checkbox input {
+
+    width: 17px;
+
+    height: 17px;
+
+    accent-color:
+        var(--admin-primary);
+
+}
+
+
+/* =========================================================
+   أزرار النموذج
+========================================================= */
+
+.admin-form-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 8px;
+
+    padding-top:
+        5px;
+
+}
+
+
+.admin-submit {
+
+    min-height: 43px;
+
+    padding:
+        9px 20px;
+
+    border: none;
+
+    border-radius:
+        8px;
+
+    background:
+        var(--admin-primary);
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.admin-submit:hover {
+
+    background:
+        var(--admin-primary-dark);
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+.admin-cancel {
+
+    min-height: 43px;
+
+    padding:
+        9px 18px;
+
+    border:
+        1px solid
+        var(--admin-border);
+
+    border-radius:
+        8px;
+
+    background:
+        white;
+
+    color:
+        #555;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   معاينة الخطأ
+========================================================= */
+
+.admin-preview {
+
+    padding:
+        18px;
+
+    border:
+        1px dashed
+        #d7d2cc;
+
+    border-radius:
+        10px;
+
+    background:
+        #faf9f7;
+
+}
+
+
+.admin-preview-title {
+
+    color:
+        #999;
+
+    font-size: 10px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.admin-preview-wrong {
+
+    padding:
+        11px 13px;
+
+    margin-bottom:
+        8px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--admin-danger);
+
+    background:
+        #fdeaea;
+
+}
+
+
+.admin-preview-correct {
+
+    padding:
+        11px 13px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--admin-success);
+
+    background:
+        #e8f7ef;
+
+}
+
+
+/* =========================================================
+   قائمة النشاطات
+========================================================= */
+
+.admin-activity-list {
+
+    display: grid;
+
+}
+
+
+.admin-activity {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 11px;
+
+    padding:
+        13px 0;
+
+    border-bottom:
+        1px solid
+        var(--admin-border);
+
+}
+
+
+.admin-activity:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.admin-activity-icon {
+
+    width: 32px;
+
+    height: 32px;
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background:
+        #fbe8ec;
+
+    color:
+        var(--admin-primary);
+
+    font-size: 13px;
+
+}
+
+
+.admin-activity-content {
+
+    min-width: 0;
+
+}
+
+
+.admin-activity-content strong {
+
+    display: block;
+
+    font-size: 11px;
+
+}
+
+
+.admin-activity-content span {
+
+    display: block;
+
+    color:
+        var(--admin-muted);
+
+    font-size: 10px;
+
+    margin-top: 2px;
+
+}
+
+
+/* =========================================================
+   الإحصائيات الجانبية
+========================================================= */
+
+.admin-chart-bars {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    height: 180px;
+
+    gap: 10px;
+
+    padding-top:
+        20px;
+
+}
+
+
+.admin-chart-bar {
+
+    flex: 1;
+
+    min-width: 12px;
+
+    height: var(--height, 50%);
+
+    background:
+        var(--admin-primary);
+
+    border-radius:
+        5px 5px 0 0;
+
+    opacity: 0.8;
+
+    transition:
+        0.25s ease;
+
+}
+
+
+.admin-chart-bar:hover {
+
+    opacity: 1;
+
+}
+
+
+.admin-chart-labels {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 8px;
+
+    color:
+        #999;
+
+    font-size: 9px;
+
+}
+
+
+/* =========================================================
+   الصفحة الفارغة
+========================================================= */
+
+.admin-empty {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 280px;
+
+    text-align: center;
+
+}
+
+
+.admin-empty-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 18px;
+
+    background:
+        #f5f3f0;
+
+    color:
+        #999;
+
+    font-size: 27px;
+
+}
+
+
+.admin-empty h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.admin-empty p {
+
+    max-width: 400px;
+
+    color:
+        var(--admin-muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   Pagination
+========================================================= */
+
+.admin-pagination {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding-top:
+        20px;
+
+}
+
+
+.admin-page-number {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid
+        var(--admin-border);
+
+    border-radius: 7px;
+
+    background:
+        white;
+
+    color:
+        #666;
+
+    font-size: 11px;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.admin-page-number:hover {
+
+    border-color:
+        var(--admin-primary);
+
+    color:
+        var(--admin-primary);
+
+}
+
+
+.admin-page-number.active {
+
+    border-color:
+        var(--admin-primary);
+
+    background:
+        var(--admin-primary);
+
+    color:
+        white;
+
+}
+
+
+/* =========================================================
+   النافذة المنبثقة
+========================================================= */
+
+.admin-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 5000;
+
+    display: grid;
+
+    place-items: center;
+
+    padding: 20px;
+
+    background:
+        rgba(
+            20,
+            18,
+            18,
+            0.58
+        );
+
+    backdrop-filter:
+        blur(4px);
+
+}
+
+
+.admin-modal[hidden] {
+
+    display: none;
+
+}
+
+
+.admin-modal-content {
+
+    width:
+        min(
+            100%,
+            720px
+        );
+
+    max-height:
+        90vh;
+
+    overflow-y: auto;
+
+    background:
+        white;
+
+    border-radius:
+        15px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(
+            0,
+            0,
+            0,
+            0.22
+        );
+
+}
+
+
+.admin-modal-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding:
+        17px 20px;
+
+    border-bottom:
+        1px solid
+        var(--admin-border);
+
+}
+
+
+.admin-modal-header h2 {
+
+    font-size: 17px;
+
+}
+
+
+.admin-modal-close {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background:
+        #f5f3f0;
+
+    color:
+        #555;
+
+    font-size: 17px;
+
+}
+
+
+.admin-modal-body {
+
+    padding:
+        22px;
+
+}
+
+
+/* =========================================================
+   إشعارات الإدارة
+========================================================= */
+
+.admin-toast {
+
+    position: fixed;
+
+    z-index: 7000;
+
+    left: 25px;
+
+    bottom: 25px;
+
+    min-width:
+        280px;
+
+    max-width:
+        400px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding:
+        13px 16px;
+
+    border:
+        1px solid
+        var(--admin-border);
+
+    border-radius:
+        9px;
+
+    background:
+        white;
+
+    box-shadow:
+        0 15px 40px
+        rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
+
+    transform:
+        translateY(20px);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        0.3s ease;
+
+}
+
+
+.admin-toast.show {
+
+    transform:
+        translateY(0);
+
+    opacity: 1;
+
+}
+
+
+.admin-toast.success {
+
+    border-right:
+        4px solid
+        var(--admin-success);
+
+}
+
+
+.admin-toast.error {
+
+    border-right:
+        4px solid
+        var(--admin-danger);
+
+}
+
+
+.admin-toast.warning {
+
+    border-right:
+        4px solid
+        var(--admin-warning);
+
+}
+
+
+.admin-toast.info {
+
+    border-right:
+        4px solid
+        var(--admin-info);
+
+}
+
+
+.admin-toast-icon {
+
+    width: 30px;
+
+    height: 30px;
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    background:
+        #f5f3f0;
+
+}
+
+
+/* =========================================================
+   Overlay للجوال
+========================================================= */
+
+.admin-sidebar-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1900;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.45
+        );
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        0.3s ease;
+
+}
+
+
+.admin-sidebar-overlay.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* =========================================================
+   Responsive - Tablet
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    :root {
+
+        --admin-sidebar-width: 230px;
+
+    }
+
+
+    .admin-dashboard-stats {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+    }
+
+
+    .admin-dashboard-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .admin-content {
+
+        padding:
+            25px;
+
+    }
+
+
+    .admin-topbar {
+
+        padding-inline:
+            25px;
+
+    }
+
+}
+
+
+/* =========================================================
+   Responsive - Mobile
+========================================================= */
+
+@media (max-width: 800px) {
+
+    :root {
+
+        --admin-sidebar-width: 260px;
+
+    }
+
+
+    .admin-sidebar {
+
+        transform:
+            translateX(
+                100%
+            );
+
+    }
+
+
+    .admin-sidebar.open {
+
+        transform:
+            translateX(0);
+
+    }
+
+
+    .admin-main {
+
+        width: 100%;
+
+        margin-right: 0;
+
+    }
+
+
+    .admin-menu-toggle {
+
+        display: grid;
+
+    }
+
+
+    .admin-topbar {
+
+        min-height:
+            65px;
+
+        padding:
+            10px 17px;
+
+    }
+
+
+    .admin-content {
+
+        padding:
+            22px 15px;
+
+    }
+
+
+    .admin-page-title {
+
+        align-items:
+            stretch;
+
+        flex-direction:
+            column;
+
+        gap: 12px;
+
+    }
+
+
+    .admin-page-actions {
+
+        width: 100%;
+
+    }
+
+
+    .admin-page-actions .btn {
+
+        flex: 1;
+
+    }
+
+
+    .admin-dashboard-stats {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+        gap: 10px;
+
+    }
+
+
+    .admin-dashboard-stat {
+
+        padding:
+            16px;
+
+    }
+
+
+    .admin-dashboard-stat strong {
+
+        font-size:
+            24px;
+
+    }
+
+
+    .admin-box-header {
+
+        padding:
+            13px 16px;
+
+    }
+
+
+    .admin-box-body {
+
+        padding:
+            16px;
+
+    }
+
+
+    .admin-form-row {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .admin-form-group.full {
+
+        grid-column:
+            auto;
+
+    }
+
+
+    .admin-search {
+
+        width:
+            100%;
+
+    }
+
+
+    .admin-filters {
+
+        align-items:
+            stretch;
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .admin-filter {
+
+        width:
+            100%;
+
+    }
+
+}
+
+
+/* =========================================================
+   Responsive - Small Mobile
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .admin-topbar-title strong {
+
+        font-size:
+            14px;
+
+    }
+
+
+    .admin-topbar-title span {
+
+        font-size:
+            9px;
+
+    }
+
+
+    .admin-dashboard-stats {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .admin-dashboard-stat {
+
+        display:
+            flex;
+
+        align-items:
+            center;
+
+        gap:
+            13px;
+
+    }
+
+
+    .admin-dashboard-stat-icon {
+
+        margin-bottom:
+            0;
+
+        flex-shrink:
+            0;
+
+    }
+
+
+    .admin-dashboard-stat strong {
+
+        font-size:
+            21px;
+
+    }
+
+
+    .admin-form-actions {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+    }
+
+
+    .admin-submit,
+    .admin-cancel {
+
+        width:
+            100%;
+
+    }
+
+
+    .admin-modal {
+
+        padding:
+            10px;
+
+    }
+
+
+    .admin-modal-content {
+
+        max-height:
+            94vh;
+
+        border-radius:
+            12px;
+
+    }
+
+
+    .admin-modal-header {
+
+        padding:
+            14px 15px;
+
+    }
+
+
+    .admin-modal-body {
+
+        padding:
+            16px;
+
+    }
+
+
+    .admin-toast {
+
+        left:
+            12px;
+
+        right:
+            12px;
+
+        bottom:
+            12px;
+
+        min-width:
+            0;
+
+        max-width:
+            none;
+
+    }
+
+}
+
+
+/* =========================================================
+   Reduced Motion
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .admin-sidebar,
+    .admin-toast,
+    .admin-sidebar-overlay,
+    * {
+
+        transition:
+            none !important;
+
+        animation:
+            none !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   نهاية admin.css
+========================================================= */

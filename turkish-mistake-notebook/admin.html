@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="لوحة تحكم مدير دفتر أخطاء التركي لإدارة الأخطاء والاختبارات والتصنيفات."
+    >
+
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <meta
+        name="author"
+        content="دفتر أخطاء التركي"
+    >
+
+    <title>
+        لوحة التحكم | دفتر أخطاء التركي
+    </title>
+
+
+    <!-- =================================
+         الخطوط
+    ================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =================================
+         ملفات التصميم
+    ================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body class="admin-page">
+
+
+    <!-- =================================
+         تخطيط لوحة التحكم
+    ================================== -->
+
+    <div class="admin-layout">
+
+
+        <!-- =================================
+             الشريط الجانبي
+        ================================== -->
+
+        <aside
+            class="admin-sidebar"
+            id="adminSidebar"
+        >
+
+
+            <!-- الشعار -->
+
+            <div class="admin-sidebar-header">
+
+                <a
+                    href="admin.html"
+                    class="logo admin-logo"
+                >
+
+                    <span class="logo-icon">
+                        ✎
+                    </span>
+
+                    <span class="logo-text">
+                        دفتر أخطاء التركي
+                    </span>
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="admin-sidebar-close"
+                    id="adminSidebarClose"
+                    aria-label="إغلاق القائمة"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+
+            <!-- معلومات المدير -->
+
+            <div class="admin-profile">
+
+                <div class="admin-avatar">
+                    👤
+                </div>
+
+
+                <div class="admin-profile-info">
+
+                    <strong id="adminName">
+                        المدير
+                    </strong>
+
+                    <span id="adminEmail">
+                        admin@example.com
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 قائمة لوحة التحكم
+            ================================== -->
+
+            <nav class="admin-nav">
+
+
+                <span class="admin-nav-title">
+                    الرئيسية
+                </span>
+
+
+                <a
+                    href="#dashboard"
+                    class="admin-nav-link active"
+                    data-section="dashboard"
+                >
+
+                    <span>
+                        📊
+                    </span>
+
+                    <span>
+                        لوحة المعلومات
+                    </span>
+
+                </a>
+
+
+
+                <span class="admin-nav-title">
+                    المحتوى
+                </span>
+
+
+                <a
+                    href="#mistakes"
+                    class="admin-nav-link"
+                    data-section="mistakes"
+                >
+
+                    <span>
+                        📖
+                    </span>
+
+                    <span>
+                        الأخطاء
+                    </span>
+
+                    <strong id="sidebarMistakesCount">
+                        0
+                    </strong>
+
+                </a>
+
+
+                <a
+                    href="#categories"
+                    class="admin-nav-link"
+                    data-section="categories"
+                >
+
+                    <span>
+                        🗂️
+                    </span>
+
+                    <span>
+                        التصنيفات
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#quizzes"
+                    class="admin-nav-link"
+                    data-section="quizzes"
+                >
+
+                    <span>
+                        🧠
+                    </span>
+
+                    <span>
+                        أسئلة الاختبارات
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#practice"
+                    class="admin-nav-link"
+                    data-section="practice"
+                >
+
+                    <span>
+                        ✏️
+                    </span>
+
+                    <span>
+                        التمارين
+                    </span>
+
+                </a>
+
+
+
+                <span class="admin-nav-title">
+                    الإدارة
+                </span>
+
+
+                <a
+                    href="#users"
+                    class="admin-nav-link"
+                    data-section="users"
+                >
+
+                    <span>
+                        👥
+                    </span>
+
+                    <span>
+                        المستخدمون
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#activity"
+                    class="admin-nav-link"
+                    data-section="activity"
+                >
+
+                    <span>
+                        🔔
+                    </span>
+
+                    <span>
+                        النشاطات
+                    </span>
+
+                </a>
+
+
+
+                <span class="admin-nav-title">
+                    الموقع
+                </span>
+
+
+                <a
+                    href="index.html"
+                    class="admin-nav-link"
+                >
+
+                    <span>
+                        🌐
+                    </span>
+
+                    <span>
+                        زيارة الموقع
+                    </span>
+
+                </a>
+
+            </nav>
+
+
+
+            <!-- تسجيل الخروج -->
+
+            <div class="admin-sidebar-footer">
+
+                <button
+                    type="button"
+                    id="adminLogoutButton"
+                    class="admin-logout-button"
+                >
+
+                    <span>
+                        🚪
+                    </span>
+
+                    <span>
+                        تسجيل الخروج
+                    </span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================
+             المحتوى
+        ================================== -->
+
+        <div class="admin-content-wrapper">
+
+
+            <!-- =================================
+                 الشريط العلوي
+            ================================== -->
+
+            <header class="admin-topbar">
+
+
+                <button
+                    type="button"
+                    class="admin-menu-toggle"
+                    id="adminMenuToggle"
+                    aria-label="فتح قائمة لوحة التحكم"
+                >
+                    ☰
+                </button>
+
+
+                <div class="admin-topbar-title">
+
+                    <span id="adminPageIcon">
+                        📊
+                    </span>
+
+                    <h1 id="adminPageTitle">
+                        لوحة المعلومات
+                    </h1>
+
+                </div>
+
+
+                <div class="admin-topbar-actions">
+
+
+                    <!-- إشعارات -->
+
+                    <button
+                        type="button"
+                        class="admin-icon-button"
+                        id="adminNotificationsButton"
+                        aria-label="الإشعارات"
+                    >
+
+                        🔔
+
+                        <span
+                            class="notification-badge"
+                            id="notificationBadge"
+                        >
+                            0
+                        </span>
+
+                    </button>
+
+
+                    <!-- فتح الموقع -->
+
+                    <a
+                        href="index.html"
+                        class="admin-view-site"
+                        target="_blank"
+                    >
+                        عرض الموقع ↗
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================
+                 المحتوى الرئيسي
+            ================================== -->
+
+            <main class="admin-main">
+
+
+                <!-- =================================
+                     لوحة المعلومات
+                ================================== -->
+
+                <section
+                    id="dashboardSection"
+                    class="admin-section active"
+                    data-admin-section="dashboard"
+                >
+
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-section-label">
+                                👋 مرحبًا بك
+                            </span>
+
+                            <h2>
+                                لوحة المعلومات
+                            </h2>
+
+                            <p>
+                                نظرة سريعة على محتوى ونشاط
+                                دفتر أخطاء التركي.
+                            </p>
+
+                        </div>
+
+
+                        <div class="admin-date">
+
+                            <span>
+                                📅
+                            </span>
+
+                            <strong id="adminCurrentDate">
+                                اليوم
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         بطاقات الإحصائيات
+                    ================================== -->
+
+                    <div class="admin-stats-grid">
+
+
+                        <div class="admin-stat-card">
+
+                            <div class="admin-stat-icon purple">
+                                📖
+                            </div>
+
+                            <div class="admin-stat-content">
+
+                                <span>
+                                    إجمالي الأخطاء
+                                </span>
+
+                                <strong id="totalMistakes">
+                                    0
+                                </strong>
+
+                                <small class="stat-change positive">
+                                    +0 هذا الشهر
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="admin-stat-card">
+
+                            <div class="admin-stat-icon blue">
+                                👥
+                            </div>
+
+                            <div class="admin-stat-content">
+
+                                <span>
+                                    المستخدمون
+                                </span>
+
+                                <strong id="totalUsers">
+                                    0
+                                </strong>
+
+                                <small class="stat-change positive">
+                                    +0 هذا الشهر
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="admin-stat-card">
+
+                            <div class="admin-stat-icon green">
+                                🧠
+                            </div>
+
+                            <div class="admin-stat-content">
+
+                                <span>
+                                    أسئلة الاختبار
+                                </span>
+
+                                <strong id="totalQuizzes">
+                                    0
+                                </strong>
+
+                                <small class="stat-change">
+                                    جاهزة للاستخدام
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="admin-stat-card">
+
+                            <div class="admin-stat-icon orange">
+                                ✏️
+                            </div>
+
+                            <div class="admin-stat-content">
+
+                                <span>
+                                    التمارين
+                                </span>
+
+                                <strong id="totalPractice">
+                                    0
+                                </strong>
+
+                                <small class="stat-change">
+                                    جاهزة للتدريب
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         إجراءات سريعة
+                    ================================== -->
+
+                    <div class="admin-dashboard-grid">
+
+
+                        <div class="admin-panel">
+
+                            <div class="admin-panel-header">
+
+                                <div>
+
+                                    <span>
+                                        ⚡
+                                    </span>
+
+                                    <h3>
+                                        إجراءات سريعة
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="quick-actions">
+
+
+                                <button
+                                    type="button"
+                                    class="quick-action"
+                                    data-action="add-mistake"
+                                >
+
+                                    <span>
+                                        ➕
+                                    </span>
+
+                                    <div>
+
+                                        <strong>
+                                            إضافة خطأ
+                                        </strong>
+
+                                        <small>
+                                            أضف خطأً جديدًا إلى الدفتر
+                                        </small>
+
+                                    </div>
+
+                                </button>
+
+
+
+                                <button
+                                    type="button"
+                                    class="quick-action"
+                                    data-action="add-quiz"
+                                >
+
+                                    <span>
+                                        🧠
+                                    </span>
+
+                                    <div>
+
+                                        <strong>
+                                            إضافة سؤال
+                                        </strong>
+
+                                        <small>
+                                            أضف سؤالًا للاختبار
+                                        </small>
+
+                                    </div>
+
+                                </button>
+
+
+
+                                <button
+                                    type="button"
+                                    class="quick-action"
+                                    data-action="add-practice"
+                                >
+
+                                    <span>
+                                        ✏️
+                                    </span>
+
+                                    <div>
+
+                                        <strong>
+                                            إضافة تمرين
+                                        </strong>
+
+                                        <small>
+                                            أنشئ تمرينًا جديدًا
+                                        </small>
+
+                                    </div>
+
+                                </button>
+
+
+
+                                <button
+                                    type="button"
+                                    class="quick-action"
+                                    data-action="add-category"
+                                >
+
+                                    <span>
+                                        🗂️
+                                    </span>
+
+                                    <div>
+
+                                        <strong>
+                                            إضافة تصنيف
+                                        </strong>
+
+                                        <small>
+                                            أنشئ تصنيفًا جديدًا
+                                        </small>
+
+                                    </div>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================
+                             آخر النشاطات
+                        ================================== -->
+
+                        <div class="admin-panel">
+
+                            <div class="admin-panel-header">
+
+                                <div>
+
+                                    <span>
+                                        🔔
+                                    </span>
+
+                                    <h3>
+                                        آخر النشاطات
+                                    </h3>
+
+                                </div>
+
+
+                                <button
+                                    type="button"
+                                    class="admin-panel-link"
+                                    data-section-link="activity"
+                                >
+                                    عرض الكل
+                                </button>
+
+                            </div>
+
+
+                            <div
+                                class="admin-activity-list"
+                                id="recentActivityList"
+                            >
+
+                                <!--
+                                    يتم تحميل النشاطات
+                                    بواسطة JavaScript.
+                                -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         أكثر التصنيفات استخدامًا
+                    ================================== -->
+
+                    <div class="admin-panel">
+
+                        <div class="admin-panel-header">
+
+                            <div>
+
+                                <span>
+                                    📈
+                                </span>
+
+                                <h3>
+                                    الأخطاء حسب التصنيف
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="admin-category-chart"
+                            id="categoryChart"
+                        >
+
+                            <!-- يتم إنشاء البيانات بواسطة JavaScript -->
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     قسم الأخطاء
+                ================================== -->
+
+                <section
+                    id="mistakesSection"
+                    class="admin-section"
+                    data-admin-section="mistakes"
+                >
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-section-label">
+                                📖 المحتوى
+                            </span>
+
+                            <h2>
+                                إدارة الأخطاء
+                            </h2>
+
+                            <p>
+                                أضف وعدّل واحذف الأخطاء الموجودة
+                                في دفتر أخطاء التركي.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            id="addMistakeButton"
+                            class="btn btn-primary"
+                        >
+                            + إضافة خطأ جديد
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="admin-filters">
+
+
+                        <div class="admin-search">
+
+                            <span>
+                                🔍
+                            </span>
+
+                            <input
+                                type="search"
+                                id="mistakeSearch"
+                                placeholder="ابحث عن خطأ..."
+                            >
+
+                        </div>
+
+
+                        <select id="mistakeCategoryFilter">
+
+                            <option value="all">
+                                جميع التصنيفات
+                            </option>
+
+                        </select>
+
+
+                        <select id="mistakeLevelFilter">
+
+                            <option value="all">
+                                جميع المستويات
+                            </option>
+
+                            <option value="A1">
+                                A1
+                            </option>
+
+                            <option value="A2">
+                                A2
+                            </option>
+
+                            <option value="B1">
+                                B1
+                            </option>
+
+                            <option value="B2">
+                                B2
+                            </option>
+
+                            <option value="C1">
+                                C1
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="admin-table-wrapper">
+
+                        <table class="admin-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        الخطأ
+                                    </th>
+
+                                    <th>
+                                        التصنيف
+                                    </th>
+
+                                    <th>
+                                        المستوى
+                                    </th>
+
+                                    <th>
+                                        تاريخ الإضافة
+                                    </th>
+
+                                    <th>
+                                        الحالة
+                                    </th>
+
+                                    <th>
+                                        الإجراءات
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="mistakesTableBody">
+
+                                <!-- البيانات من JavaScript -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     قسم التصنيفات
+                ================================== -->
+
+                <section
+                    id="categoriesSection"
+                    class="admin-section"
+                    data-admin-section="categories"
+                >
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-section-label">
+                                🗂️ التنظيم
+                            </span>
+
+                            <h2>
+                                إدارة التصنيفات
+                            </h2>
+
+                            <p>
+                                نظّم الأخطاء حسب الموضوع والمجال.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            id="addCategoryButton"
+                            class="btn btn-primary"
+                        >
+                            + إضافة تصنيف
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="admin-categories-grid"
+                        id="adminCategoriesGrid"
+                    >
+
+                        <!-- التصنيفات من JavaScript -->
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     قسم الاختبارات
+                ================================== -->
+
+                <section
+                    id="quizzesSection"
+                    class="admin-section"
+                    data-admin-section="quizzes"
+                >
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-section-label">
+                                🧠 الاختبارات
+                            </span>
+
+                            <h2>
+                                إدارة أسئلة الاختبار
+                            </h2>
+
+                            <p>
+                                أضف أسئلة جديدة أو عدّل الأسئلة الموجودة.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            id="addQuizButton"
+                            class="btn btn-primary"
+                        >
+                            + إضافة سؤال
+                        </button>
+
+                    </div>
+
+
+                    <div class="admin-filters">
+
+                        <div class="admin-search">
+
+                            <span>
+                                🔍
+                            </span>
+
+                            <input
+                                type="search"
+                                id="quizSearch"
+                                placeholder="ابحث في الأسئلة..."
+                            >
+
+                        </div>
+
+
+                        <select id="quizTypeFilter">
+
+                            <option value="all">
+                                جميع الأنواع
+                            </option>
+
+                            <option value="multiple-choice">
+                                اختيار من متعدد
+                            </option>
+
+                            <option value="true-false">
+                                صح أو خطأ
+                            </option>
+
+                            <option value="fill-blank">
+                                إكمال الفراغ
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div
+                        class="admin-quiz-list"
+                        id="adminQuizList"
+                    >
+
+                        <!-- الأسئلة من JavaScript -->
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     قسم التمارين
+                ================================== -->
+
+                <section
+                    id="practiceSection"
+                    class="admin-section"
+                    data-admin-section="practice"
+                >
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-section-label">
+                                ✏️ التدريب
+                            </span>
+
+                            <h2>
+                                إدارة التمارين
+                            </h2>
+
+                            <p>
+                                أنشئ تمارين تساعد المتعلم على تثبيت القواعد.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            id="addPracticeButton"
+                            class="btn btn-primary"
+                        >
+                            + إضافة تمرين
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="admin-practice-list"
+                        id="adminPracticeList"
+                    >
+
+                        <!-- التمارين من JavaScript -->
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     قسم المستخدمين
+                ================================== -->
+
+                <section
+                    id="usersSection"
+                    class="admin-section"
+                    data-admin-section="users"
+                >
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-section-label">
+                                👥 المستخدمون
+                            </span>
+
+                            <h2>
+                                إدارة المستخدمين
+                            </h2>
+
+                            <p>
+                                عرض المستخدمين المسجلين في الموقع.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-filters">
+
+                        <div class="admin-search">
+
+                            <span>
+                                🔍
+                            </span>
+
+                            <input
+                                type="search"
+                                id="userSearch"
+                                placeholder="ابحث عن مستخدم..."
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-table-wrapper">
+
+                        <table class="admin-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        المستخدم
+                                    </th>
+
+                                    <th>
+                                        البريد الإلكتروني
+                                    </th>
+
+                                    <th>
+                                        تاريخ التسجيل
+                                    </th>
+
+                                    <th>
+                                        آخر دخول
+                                    </th>
+
+                                    <th>
+                                        الحالة
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="usersTableBody">
+
+                                <!-- المستخدمون من Firebase -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     قسم النشاطات
+                ================================== -->
+
+                <section
+                    id="activitySection"
+                    class="admin-section"
+                    data-admin-section="activity"
+                >
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-section-label">
+                                🔔 سجل النشاطات
+                            </span>
+
+                            <h2>
+                                النشاطات الأخيرة
+                            </h2>
+
+                            <p>
+                                تابع التغييرات والعمليات التي تمت
+                                داخل لوحة التحكم.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            id="clearActivityButton"
+                            class="btn btn-secondary"
+                        >
+                            مسح السجل
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="full-activity-list"
+                        id="fullActivityList"
+                    >
+
+                        <!-- النشاطات من JavaScript -->
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         نافذة إضافة / تعديل خطأ
+    ================================== -->
+
+    <div
+        class="admin-modal"
+        id="mistakeModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="mistakeModalTitle"
+        style="display: none;"
+    >
+
+        <div class="admin-modal-overlay"></div>
+
+
+        <div class="admin-modal-content">
+
+
+            <div class="admin-modal-header">
+
+                <div>
+
+                    <span>
+                        📖
+                    </span>
+
+                    <h2 id="mistakeModalTitle">
+                        إضافة خطأ جديد
+                    </h2>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="admin-modal-close"
+                    id="closeMistakeModal"
+                    aria-label="إغلاق"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+
+            <form
+                id="mistakeForm"
+                class="admin-form"
+            >
+
+
+                <input
+                    type="hidden"
+                    id="mistakeId"
+                >
+
+
+                <!-- العنوان -->
+
+                <div class="admin-form-group">
+
+                    <label for="mistakeTitle">
+                        عنوان الخطأ
+                    </label>
+
+                    <input
+                        type="text"
+                        id="mistakeTitle"
+                        placeholder="مثال: استخدام değil بطريقة خاطئة"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- التصنيف والمستوى -->
+
+                <div class="admin-form-row">
+
+                    <div class="admin-form-group">
+
+                        <label for="mistakeCategory">
+                            التصنيف
+                        </label>
+
+                        <select
+                            id="mistakeCategory"
+                            required
+                        >
+
+                            <option value="">
+                                اختر التصنيف
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="admin-form-group">
+
+                        <label for="mistakeLevel">
+                            المستوى
+                        </label>
+
+                        <select
+                            id="mistakeLevel"
+                            required
+                        >
+
+                            <option value="">
+                                اختر المستوى
+                            </option>
+
+                            <option value="A1">
+                                A1
+                            </option>
+
+                            <option value="A2">
+                                A2
+                            </option>
+
+                            <option value="B1">
+                                B1
+                            </option>
+
+                            <option value="B2">
+                                B2
+                            </option>
+
+                            <option value="C1">
+                                C1
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- الجملة الخاطئة -->
+
+                <div class="admin-form-group">
+
+                    <label for="mistakeWrong">
+                        ❌ الجملة الخاطئة
+                    </label>
+
+                    <textarea
+                        id="mistakeWrong"
+                        rows="3"
+                        placeholder="اكتب الجملة الخاطئة بالتركية..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- الترجمة -->
+
+                <div class="admin-form-group">
+
+                    <label for="mistakeWrongTranslation">
+                        ترجمة الجملة
+                    </label>
+
+                    <input
+                        type="text"
+                        id="mistakeWrongTranslation"
+                        placeholder="الترجمة العربية..."
+                    >
+
+                </div>
+
+
+
+                <!-- الجملة الصحيحة -->
+
+                <div class="admin-form-group">
+
+                    <label for="mistakeCorrect">
+                        ✅ الجملة الصحيحة
+                    </label>
+
+                    <textarea
+                        id="mistakeCorrect"
+                        rows="3"
+                        placeholder="اكتب الجملة الصحيحة بالتركية..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- شرح الخطأ -->
+
+                <div class="admin-form-group">
+
+                    <label for="mistakeExplanation">
+                        💡 شرح الخطأ
+                    </label>
+
+                    <textarea
+                        id="mistakeExplanation"
+                        rows="6"
+                        placeholder="اشرح لماذا الجملة خاطئة وكيف نستخدم الصيغة الصحيحة..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- القاعدة -->
+
+                <div class="admin-form-group">
+
+                    <label for="mistakeRule">
+                        📌 القاعدة باختصار
+                    </label>
+
+                    <textarea
+                        id="mistakeRule"
+                        rows="3"
+                        placeholder="اكتب القاعدة بشكل مختصر..."
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- أمثلة -->
+
+                <div class="admin-form-group">
+
+                    <label>
+                        📝 أمثلة إضافية
+                    </label>
+
+
+                    <div
+                        class="admin-examples-container"
+                        id="adminExamplesContainer"
+                    >
+
+                        <div class="admin-example-input">
+
+                            <input
+                                type="text"
+                                placeholder="الجملة التركية"
+                                class="example-turkish"
+                            >
+
+                            <input
+                                type="text"
+                                placeholder="الترجمة العربية"
+                                class="example-arabic"
+                            >
+
+                            <button
+                                type="button"
+                                class="remove-example"
+                                aria-label="حذف المثال"
+                            >
+                                ×
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="addExampleButton"
+                        class="add-example-button"
+                    >
+                        + إضافة مثال
+                    </button>
+
+                </div>
+
+
+
+                <!-- الحالة -->
+
+                <div class="admin-form-group">
+
+                    <label class="admin-checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="mistakePublished"
+                            checked
+                        >
+
+                        <span>
+                            نشر الخطأ على الموقع
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- الأزرار -->
+
+                <div class="admin-modal-actions">
+
+                    <button
+                        type="button"
+                        id="cancelMistakeButton"
+                        class="btn btn-secondary"
+                    >
+                        إلغاء
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        id="saveMistakeButton"
+                        class="btn btn-primary"
+                    >
+                        حفظ الخطأ
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         نافذة تأكيد الحذف
+    ================================== -->
+
+    <div
+        class="admin-modal"
+        id="deleteModal"
+        role="dialog"
+        aria-modal="true"
+        style="display: none;"
+    >
+
+        <div class="admin-modal-overlay"></div>
+
+
+        <div class="admin-confirm-modal">
+
+
+            <div class="confirm-icon">
+                ⚠️
+            </div>
+
+
+            <h2>
+                هل أنت متأكد؟
+            </h2>
+
+
+            <p id="deleteMessage">
+                هل تريد حذف هذا العنصر؟ لا يمكن التراجع عن هذه العملية.
+            </p>
+
+
+            <div class="admin-modal-actions">
+
+                <button
+                    type="button"
+                    id="cancelDeleteButton"
+                    class="btn btn-secondary"
+                >
+                    إلغاء
+                </button>
+
+
+                <button
+                    type="button"
+                    id="confirmDeleteButton"
+                    class="btn btn-danger"
+                >
+                    نعم، احذف
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         رسالة Toast
+    ================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+
+        <span id="toastIcon">
+            ✓
+        </span>
+
+        <span id="toastMessage">
+            تمت العملية بنجاح
+        </span>
+
+    </div>
+
+
+
+    <!-- =================================
+         JavaScript
+    ================================== -->
+
+    <script src="js/app.js"></script>
+
+<script
+    type="module"
+    src="js/admin.js"
+></script>
+
+</body>
+
+</html>

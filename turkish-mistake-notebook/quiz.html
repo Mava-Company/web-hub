@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="اختبر معلوماتك في اللغة التركية من خلال أسئلة تفاعلية عن الأخطاء الشائعة."
+    >
+
+    <meta
+        name="keywords"
+        content="اختبار التركية, تعلم التركية, قواعد التركية, أخطاء اللغة التركية"
+    >
+
+    <meta
+        name="author"
+        content="دفتر أخطاء التركي"
+    >
+
+    <title>
+        اختبر نفسك | دفتر أخطاء التركي
+    </title>
+
+
+    <!-- =================================
+         الخطوط
+    ================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =================================
+         ملفات التصميم
+    ================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         شريط التنقل
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+
+                <!-- الشعار -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        ✎
+                    </span>
+
+                    <span class="logo-text">
+                        دفتر أخطاء التركي
+                    </span>
+
+                </a>
+
+
+                <!-- زر القائمة -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="فتح القائمة"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+
+                <!-- روابط الموقع -->
+
+                <div
+                    class="nav-menu"
+                    id="navMenu"
+                >
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        الرئيسية
+                    </a>
+
+
+                    <a
+                        href="mistakes.html"
+                        class="nav-link"
+                    >
+                        الأخطاء
+                    </a>
+
+
+                    <a
+                        href="categories.html"
+                        class="nav-link"
+                    >
+                        التصنيفات
+                    </a>
+
+
+                    <a
+                        href="quiz.html"
+                        class="nav-link active"
+                    >
+                        اختبر نفسك
+                    </a>
+
+
+                    <a
+                        href="daily.html"
+                        class="nav-link"
+                    >
+                        خطأ اليوم
+                    </a>
+
+
+                    <a
+                        href="favorites.html"
+                        class="nav-link"
+                    >
+                        المفضلة
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         المحتوى الرئيسي
+    ================================== -->
+
+    <main>
+
+
+        <!-- =================================
+             مقدمة الاختبار
+        ================================== -->
+
+        <section
+            class="quiz-intro-section"
+            id="quizIntro"
+        >
+
+            <div class="container">
+
+                <div class="quiz-intro">
+
+
+                    <div class="quiz-intro-content">
+
+
+                        <span class="page-label">
+                            🧠 اختبر معلوماتك
+                        </span>
+
+
+                        <h1>
+                            هل تستطيع اكتشاف الخطأ؟
+                        </h1>
+
+
+                        <p>
+                            اختبر فهمك للغة التركية من خلال مجموعة
+                            من الأسئلة المبنية على الأخطاء الشائعة
+                            التي يقع فيها المتعلمون.
+                        </p>
+
+
+                        <div class="quiz-features">
+
+
+                            <div class="quiz-feature">
+
+                                <span>
+                                    ❓
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        أسئلة متنوعة
+                                    </strong>
+
+                                    <small>
+                                        قواعد ومفردات وترجمة
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="quiz-feature">
+
+                                <span>
+                                    ⏱️
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        اختبار سريع
+                                    </strong>
+
+                                    <small>
+                                        لا يحتاج إلى وقت طويل
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="quiz-feature">
+
+                                <span>
+                                    🎯
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        نتيجة فورية
+                                    </strong>
+
+                                    <small>
+                                        اعرف نقاط قوتك وضعفك
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            id="startQuizButton"
+                            class="btn btn-primary quiz-start-button"
+                        >
+                            ابدأ الاختبار
+                            <span>
+                                ←
+                            </span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="quiz-intro-illustration">
+
+                        <div class="quiz-illustration-card">
+
+                            <div class="illustration-top">
+                                <span>
+                                    اختبار التركية
+                                </span>
+
+                                <span>
+                                    🧠
+                                </span>
+                            </div>
+
+
+                            <div class="illustration-question">
+
+                                <span>
+                                    السؤال 01
+                                </span>
+
+                                <p>
+                                    اختر الجملة الصحيحة:
+                                </p>
+
+                                <div class="fake-option">
+                                    Ben İstanbul'a gidiyorum.
+                                </div>
+
+                                <div class="fake-option wrong">
+                                    Ben İstanbul'da gidiyorum.
+                                </div>
+
+                            </div>
+
+
+                            <div class="illustration-result">
+                                ✓ إجابتك صحيحة!
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             إعدادات الاختبار
+        ================================== -->
+
+        <section
+            class="quiz-settings-section"
+            id="quizSettings"
+            style="display: none;"
+        >
+
+            <div class="container">
+
+                <div class="quiz-settings-card">
+
+
+                    <div class="quiz-settings-header">
+
+                        <span class="section-label">
+                            ⚙️ إعداد الاختبار
+                        </span>
+
+                        <h2>
+                            اختر طريقة الاختبار
+                        </h2>
+
+                        <p>
+                            اختر المستوى والتصنيف وعدد الأسئلة
+                            التي تريد الإجابة عنها.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-settings-grid">
+
+
+                        <!-- المستوى -->
+
+                        <div class="quiz-setting">
+
+                            <label for="quizLevel">
+                                مستوى اللغة
+                            </label>
+
+                            <select id="quizLevel">
+
+                                <option value="all">
+                                    جميع المستويات
+                                </option>
+
+                                <option value="A1">
+                                    A1 - مبتدئ
+                                </option>
+
+                                <option value="A2">
+                                    A2 - مبتدئ متقدم
+                                </option>
+
+                                <option value="B1">
+                                    B1 - متوسط
+                                </option>
+
+                                <option value="B2">
+                                    B2 - متوسط متقدم
+                                </option>
+
+                                <option value="C1">
+                                    C1 - متقدم
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- التصنيف -->
+
+                        <div class="quiz-setting">
+
+                            <label for="quizCategory">
+                                التصنيف
+                            </label>
+
+                            <select id="quizCategory">
+
+                                <option value="all">
+                                    جميع التصنيفات
+                                </option>
+
+                                <option value="suffixes">
+                                    اللواحق
+                                </option>
+
+                                <option value="cases">
+                                    حالات الاسم
+                                </option>
+
+                                <option value="tenses">
+                                    الأزمنة
+                                </option>
+
+                                <option value="sentence-order">
+                                    ترتيب الجملة
+                                </option>
+
+                                <option value="prepositions">
+                                    حروف الجر والأدوات
+                                </option>
+
+                                <option value="similar-words">
+                                    كلمات متشابهة
+                                </option>
+
+                                <option value="arabic-translation">
+                                    أخطاء الترجمة من العربية
+                                </option>
+
+                                <option value="negation">
+                                    النفي
+                                </option>
+
+                                <option value="questions">
+                                    السؤال
+                                </option>
+
+                                <option value="conversation">
+                                    المحادثة
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- عدد الأسئلة -->
+
+                        <div class="quiz-setting">
+
+                            <label for="questionCount">
+                                عدد الأسئلة
+                            </label>
+
+                            <select id="questionCount">
+
+                                <option value="5">
+                                    5 أسئلة
+                                </option>
+
+                                <option value="10" selected>
+                                    10 أسئلة
+                                </option>
+
+                                <option value="15">
+                                    15 سؤالًا
+                                </option>
+
+                                <option value="20">
+                                    20 سؤالًا
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="quiz-settings-actions">
+
+                        <button
+                            type="button"
+                            id="beginQuizButton"
+                            class="btn btn-primary"
+                        >
+                            ابدأ الاختبار
+                            ←
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             منطقة الاختبار
+        ================================== -->
+
+        <section
+            class="quiz-play-section"
+            id="quizPlay"
+            style="display: none;"
+        >
+
+            <div class="container">
+
+
+                <!-- رأس الاختبار -->
+
+                <div class="quiz-topbar">
+
+
+                    <div class="quiz-progress-info">
+
+                        <span>
+                            السؤال
+                        </span>
+
+                        <strong id="currentQuestionNumber">
+                            1
+                        </strong>
+
+                        <span>
+                            من
+                        </span>
+
+                        <strong id="totalQuestions">
+                            10
+                        </strong>
+
+                    </div>
+
+
+                    <div class="quiz-score-display">
+
+                        <span>
+                            النقاط
+                        </span>
+
+                        <strong id="currentScore">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- شريط التقدم -->
+
+                <div class="quiz-progress">
+
+                    <div
+                        class="quiz-progress-bar"
+                        id="quizProgressBar"
+                    ></div>
+
+                </div>
+
+
+
+                <!-- بطاقة السؤال -->
+
+                <div class="quiz-question-card">
+
+
+                    <div class="question-header">
+
+
+                        <div class="question-category">
+
+                            <span id="questionCategoryIcon">
+                                📖
+                            </span>
+
+                            <span id="questionCategory">
+                                قواعد
+                            </span>
+
+                        </div>
+
+
+                        <span
+                            class="question-level"
+                            id="questionLevel"
+                        >
+                            A1
+                        </span>
+
+                    </div>
+
+
+                    <div class="question-content">
+
+
+                        <span class="question-label">
+                            اختر الإجابة الصحيحة
+                        </span>
+
+
+                        <h2 id="questionText">
+                            أي جملة صحيحة؟
+                        </h2>
+
+
+                        <div
+                            class="turkish-question"
+                            id="turkishQuestion"
+                        >
+                            Ben İstanbul ___ gidiyorum.
+                        </div>
+
+                    </div>
+
+
+                    <!-- خيارات الإجابة -->
+
+                    <div
+                        class="quiz-options"
+                        id="quizOptions"
+                    >
+
+                        <!--
+                            يتم إنشاء الخيارات
+                            بواسطة JavaScript
+                        -->
+
+                    </div>
+
+
+                    <!-- نتيجة السؤال -->
+
+                    <div
+                        class="question-feedback"
+                        id="questionFeedback"
+                        style="display: none;"
+                    >
+
+                        <div
+                            class="feedback-icon"
+                            id="questionFeedbackIcon"
+                        >
+                            ✓
+                        </div>
+
+
+                        <div class="feedback-content">
+
+                            <strong id="questionFeedbackTitle">
+                                إجابة صحيحة!
+                            </strong>
+
+                            <p id="questionFeedbackText">
+                                أحسنت! هذه هي الصيغة الصحيحة.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- زر السؤال التالي -->
+
+                    <div class="question-actions">
+
+                        <button
+                            type="button"
+                            id="nextQuestionButton"
+                            class="btn btn-primary"
+                            style="display: none;"
+                        >
+                            السؤال التالي
+                            ←
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- الخروج من الاختبار -->
+
+                <div class="quiz-exit">
+
+                    <button
+                        type="button"
+                        id="exitQuizButton"
+                    >
+                        إنهاء الاختبار
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             نتيجة الاختبار
+        ================================== -->
+
+        <section
+            class="quiz-result-section"
+            id="quizResult"
+            style="display: none;"
+        >
+
+            <div class="container">
+
+                <div class="quiz-result-card">
+
+
+                    <div class="result-decoration">
+                        🎉
+                    </div>
+
+
+                    <span class="result-label">
+                        انتهى الاختبار
+                    </span>
+
+
+                    <h1>
+                        أحسنت! لقد أكملت الاختبار
+                    </h1>
+
+
+                    <!-- النتيجة -->
+
+                    <div class="result-score">
+
+                        <div class="score-circle">
+
+                            <strong id="finalScore">
+                                0
+                            </strong>
+
+                            <span>
+                                %
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-message">
+
+                        <h2 id="resultTitle">
+                            نتيجة الاختبار
+                        </h2>
+
+                        <p id="resultDescription">
+                            سيتم عرض تقييمك هنا.
+                        </p>
+
+                    </div>
+
+
+                    <!-- إحصائيات النتيجة -->
+
+                    <div class="result-stats">
+
+
+                        <div class="result-stat correct">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            <strong id="correctAnswers">
+                                0
+                            </strong>
+
+                            <small>
+                                إجابة صحيحة
+                            </small>
+
+                        </div>
+
+
+                        <div class="result-stat wrong">
+
+                            <span>
+                                ×
+                            </span>
+
+                            <strong id="wrongAnswers">
+                                0
+                            </strong>
+
+                            <small>
+                                إجابة خاطئة
+                            </small>
+
+                        </div>
+
+
+                        <div class="result-stat">
+
+                            <span>
+                                📊
+                            </span>
+
+                            <strong id="answeredQuestions">
+                                0
+                            </strong>
+
+                            <small>
+                                مجموع الأسئلة
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- أزرار النتيجة -->
+
+                    <div class="result-actions">
+
+
+                        <button
+                            type="button"
+                            id="retryQuizButton"
+                            class="btn btn-primary"
+                        >
+                            إعادة الاختبار
+                        </button>
+
+
+                        <a
+                            href="mistakes.html"
+                            class="btn btn-secondary"
+                        >
+                            مراجعة الأخطاء
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             مراجعة الأخطاء
+        ================================== -->
+
+        <section
+            class="quiz-review-section"
+            id="quizReview"
+            style="display: none;"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            📚 راجع إجاباتك
+                        </span>
+
+                        <h2>
+                            الأسئلة التي تحتاج إلى مراجعتها
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="quiz-review-list"
+                    id="quizReviewList"
+                >
+
+                    <!--
+                        يتم إنشاء المراجعة
+                        بواسطة JavaScript
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             نصائح التعلم
+        ================================== -->
+
+        <section class="quiz-tips-section">
+
+            <div class="container">
+
+                <div class="quiz-tips-card">
+
+
+                    <div class="quiz-tips-icon">
+                        💡
+                    </div>
+
+
+                    <div class="quiz-tips-content">
+
+                        <span>
+                            تذكّر
+                        </span>
+
+                        <h2>
+                            الخطأ ليس فشلًا!
+                        </h2>
+
+                        <p>
+                            كل إجابة خاطئة هي فرصة لمعرفة شيء جديد.
+                            بعد الاختبار، راجع الأخطاء التي لم تعرفها
+                            ثم حاول مرة أخرى.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="mistakes.html"
+                        class="btn btn-light"
+                    >
+                        تصفح دفتر الأخطاء
+                        ←
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         تذييل الموقع
+    ================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="footer-content">
+
+
+                <!-- معلومات الموقع -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo footer-logo"
+                    >
+
+                        <span class="logo-icon">
+                            ✎
+                        </span>
+
+                        <span class="logo-text">
+                            دفتر أخطاء التركي
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        نتعلم التركية من الأخطاء،
+                        ونحوّل كل خطأ إلى فرصة للتعلم.
+                    </p>
+
+                </div>
+
+
+
+                <!-- روابط الموقع -->
+
+                <div class="footer-links">
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            الموقع
+                        </h3>
+
+                        <a href="index.html">
+                            الرئيسية
+                        </a>
+
+                        <a href="mistakes.html">
+                            الأخطاء
+                        </a>
+
+                        <a href="categories.html">
+                            التصنيفات
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            تعلم
+                        </h3>
+
+                        <a href="quiz.html">
+                            اختبر نفسك
+                        </a>
+
+                        <a href="practice.html">
+                            التدريب
+                        </a>
+
+                        <a href="daily.html">
+                            خطأ اليوم
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            حسابك
+                        </h3>
+
+                        <a href="favorites.html">
+                            المفضلة
+                        </a>
+
+                        <a href="login.html">
+                            تسجيل الدخول
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- أسفل التذييل -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 دفتر أخطاء التركي. جميع الحقوق محفوظة.
+                </p>
+
+                <p>
+                    صُنع بحب لتعلّم اللغة التركية 🇹🇷
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================
+         رسائل التنبيه
+    ================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+
+        <span id="toastIcon">
+            ✓
+        </span>
+
+        <span id="toastMessage">
+            تم تنفيذ العملية بنجاح
+        </span>
+
+    </div>
+
+
+
+    <!-- =================================
+         JavaScript
+    ================================== -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/quiz.js"></script>
+
+
+</body>
+
+</html>

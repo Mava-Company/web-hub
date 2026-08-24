@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="خطأ اليوم في اللغة التركية. تعلم خطأ تركيًا شائعًا كل يوم مع التصحيح والشرح والأمثلة."
+    >
+
+    <meta
+        name="keywords"
+        content="خطأ اليوم, تعلم التركية, أخطاء التركية, قواعد اللغة التركية, التركية للعرب"
+    >
+
+    <meta
+        name="author"
+        content="دفتر أخطاء التركي"
+    >
+
+    <title>
+        خطأ اليوم | دفتر أخطاء التركي
+    </title>
+
+
+    <!-- =================================
+         الخطوط
+    ================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =================================
+         ملفات التصميم
+    ================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         شريط التنقل
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+
+                <!-- الشعار -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        ✎
+                    </span>
+
+                    <span class="logo-text">
+                        دفتر أخطاء التركي
+                    </span>
+
+                </a>
+
+
+                <!-- زر القائمة في الهاتف -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="فتح القائمة"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+
+                <!-- روابط الموقع -->
+
+                <div
+                    class="nav-menu"
+                    id="navMenu"
+                >
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        الرئيسية
+                    </a>
+
+
+                    <a
+                        href="mistakes.html"
+                        class="nav-link"
+                    >
+                        الأخطاء
+                    </a>
+
+
+                    <a
+                        href="categories.html"
+                        class="nav-link"
+                    >
+                        التصنيفات
+                    </a>
+
+
+                    <a
+                        href="quiz.html"
+                        class="nav-link"
+                    >
+                        اختبر نفسك
+                    </a>
+
+
+                    <a
+                        href="daily.html"
+                        class="nav-link active"
+                    >
+                        خطأ اليوم
+                    </a>
+
+
+                    <a
+                        href="favorites.html"
+                        class="nav-link"
+                    >
+                        المفضلة
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         المحتوى الرئيسي
+    ================================== -->
+
+    <main>
+
+
+        <!-- =================================
+             رأس الصفحة
+        ================================== -->
+
+        <section class="daily-header">
+
+            <div class="container">
+
+                <div class="daily-header-content">
+
+
+                    <div class="daily-calendar-icon">
+
+                        <span>
+                            📅
+                        </span>
+
+                        <strong id="dailyDay">
+                            23
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            🇹🇷 تعلم شيئًا جديدًا كل يوم
+                        </span>
+
+
+                        <h1>
+                            خطأ اليوم
+                        </h1>
+
+
+                        <p>
+                            خطأ واحد كل يوم، ومع الوقت ستلاحظ
+                            فرقًا كبيرًا في لغتك التركية.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             تاريخ اليوم
+        ================================== -->
+
+        <section class="daily-date-section">
+
+            <div class="container">
+
+                <div class="daily-date-card">
+
+
+                    <div class="daily-date-icon">
+                        📆
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            خطأ اليوم
+                        </span>
+
+                        <strong id="dailyDate">
+                            الأحد، 23 أغسطس 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div class="daily-streak">
+
+                        <span>
+                            🔥
+                        </span>
+
+                        <div>
+
+                            <strong id="dailyStreak">
+                                0
+                            </strong>
+
+                            <small>
+                                أيام متتالية
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             بطاقة خطأ اليوم
+        ================================== -->
+
+        <section class="daily-mistake-section">
+
+            <div class="container">
+
+                <article
+                    class="daily-mistake-card"
+                    id="dailyMistakeCard"
+                >
+
+
+                    <!-- =================================
+                         رأس البطاقة
+                    ================================== -->
+
+                    <div class="daily-mistake-top">
+
+
+                        <div class="daily-mistake-meta">
+
+
+                            <span
+                                class="mistake-category-badge"
+                                id="dailyCategory"
+                            >
+                                النفي
+                            </span>
+
+
+                            <span
+                                class="mistake-level-badge"
+                                id="dailyLevel"
+                            >
+                                A1
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="favorite-button"
+                            id="dailyFavoriteButton"
+                            aria-label="إضافة خطأ اليوم إلى المفضلة"
+                            title="إضافة إلى المفضلة"
+                        >
+
+                            <span id="favoriteIcon">
+                                ♡
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         عنوان الخطأ
+                    ================================== -->
+
+                    <div class="daily-mistake-title">
+
+                        <span class="section-label">
+                            ❌ الخطأ الشائع
+                        </span>
+
+
+                        <h2 id="dailyMistakeTitle">
+                            استخدام değil بطريقة خاطئة
+                        </h2>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         الخطأ والصحيح
+                    ================================== -->
+
+                    <div class="daily-comparison">
+
+
+                        <!-- الخطأ -->
+
+                        <div class="comparison-box wrong-box">
+
+                            <div class="comparison-header">
+
+                                <span class="comparison-icon">
+                                    ❌
+                                </span>
+
+                                <strong>
+                                    خطأ
+                                </strong>
+
+                            </div>
+
+
+                            <div
+                                class="turkish-text wrong-text"
+                                id="dailyWrongSentence"
+                            >
+                                Ben 20 yaşındayım değil.
+                            </div>
+
+
+                            <p
+                                id="dailyWrongTranslation"
+                            >
+                                أنا لست بعمر 20 سنة.
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- سهم -->
+
+                        <div class="comparison-arrow">
+                            ←
+                        </div>
+
+
+
+                        <!-- الصحيح -->
+
+                        <div class="comparison-box correct-box">
+
+                            <div class="comparison-header">
+
+                                <span class="comparison-icon">
+                                    ✅
+                                </span>
+
+                                <strong>
+                                    الصحيح
+                                </strong>
+
+                            </div>
+
+
+                            <div
+                                class="turkish-text correct-text"
+                                id="dailyCorrectSentence"
+                            >
+                                Ben 20 yaşında değilim.
+                            </div>
+
+
+                            <p
+                                id="dailyCorrectTranslation"
+                            >
+                                أنا لست بعمر 20 سنة.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         سبب الخطأ
+                    ================================== -->
+
+                    <div class="daily-explanation">
+
+
+                        <div class="explanation-icon">
+                            💡
+                        </div>
+
+
+                        <div class="explanation-content">
+
+                            <span>
+                                لماذا هذا خطأ؟
+                            </span>
+
+
+                            <h3>
+                                افهم القاعدة، لا تحفظ الجملة فقط
+                            </h3>
+
+
+                            <p id="dailyExplanation">
+                                في اللغة التركية، عند نفي الجملة
+                                الاسمية نستخدم
+                                <strong>değil</strong>
+                                مع التصريف المناسب للشخص.
+                                لذلك نقول
+                                <strong>değilim</strong>
+                                مع المتكلم بدل وضع
+                                <strong>değil</strong>
+                                في نهاية الجملة فقط.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         أمثلة إضافية
+                    ================================== -->
+
+                    <div class="daily-examples">
+
+
+                        <div class="daily-examples-header">
+
+                            <span>
+                                📝
+                            </span>
+
+                            <h3>
+                                أمثلة إضافية
+                            </h3>
+
+                        </div>
+
+
+                        <div
+                            class="examples-grid"
+                            id="dailyExamples"
+                        >
+
+
+                            <div class="daily-example">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Ben öğrenci değilim.
+                                    </strong>
+
+                                    <p>
+                                        أنا لست طالبًا.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="daily-example">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        O doktor değil.
+                                    </strong>
+
+                                    <p>
+                                        هو/هي ليس طبيبًا.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         القاعدة المختصرة
+                    ================================== -->
+
+                    <div class="daily-rule">
+
+                        <div class="daily-rule-icon">
+                            📌
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                القاعدة باختصار
+                            </span>
+
+
+                            <p id="dailyRule">
+                                مع الفعل أو الصفة الاسمية المنفية،
+                                يتغير شكل
+                                <strong>değil</strong>
+                                بحسب الشخص:
+                                değilim، değilsin، değil، değiliz...
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         أزرار البطاقة
+                    ================================== -->
+
+                    <div class="daily-actions">
+
+
+                        <a
+                            href="#"
+                            id="dailyMistakeLink"
+                            class="btn btn-primary"
+                        >
+                            قراءة شرح الخطأ كاملًا
+                            ←
+                        </a>
+
+
+                        <button
+                            type="button"
+                            id="dailyShareButton"
+                            class="btn btn-secondary"
+                        >
+                            🔗 مشاركة خطأ اليوم
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             هل تعلم؟
+        ================================== -->
+
+        <section class="daily-did-you-know">
+
+            <div class="container">
+
+                <div class="did-you-know-card">
+
+
+                    <div class="did-you-know-icon">
+                        💭
+                    </div>
+
+
+                    <div class="did-you-know-content">
+
+                        <span>
+                            هل تعلم؟
+                        </span>
+
+
+                        <h2>
+                            الأخطاء تختلف من متعلم لآخر
+                        </h2>
+
+
+                        <p>
+                            بعض الأخطاء تكون بسبب ترجمة الجملة
+                            من العربية حرفيًا، وبعضها بسبب اختلاف
+                            ترتيب الكلمات أو طريقة استخدام اللواحق
+                            في التركية.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             التنقل بين الأيام
+        ================================== -->
+
+        <section class="daily-navigation-section">
+
+            <div class="container">
+
+                <div class="daily-navigation">
+
+
+                    <button
+                        type="button"
+                        id="previousDailyMistake"
+                        class="daily-nav-button"
+                    >
+
+                        <span>
+                            → 
+                        </span>
+
+                        <div>
+
+                            <small>
+                                الخطأ السابق
+                            </small>
+
+                            <strong>
+                                مراجعة الخطأ السابق
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <div class="daily-navigation-center">
+
+                        <span>
+                            📚
+                        </span>
+
+                        <strong>
+                            خطأ جديد كل يوم
+                        </strong>
+
+                    </div>
+
+
+
+                    <button
+                        type="button"
+                        id="nextDailyMistake"
+                        class="daily-nav-button"
+                    >
+
+                        <div>
+
+                            <small>
+                                الخطأ التالي
+                            </small>
+
+                            <strong>
+                                تعلم المزيد
+                            </strong>
+
+                        </div>
+
+                        <span>
+                            ←
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             دعوة للتدريب
+        ================================== -->
+
+        <section class="daily-practice-section">
+
+            <div class="container">
+
+                <div class="daily-practice-banner">
+
+
+                    <div class="daily-practice-icon">
+                        🧠
+                    </div>
+
+
+                    <div class="daily-practice-content">
+
+                        <span>
+                            هل فهمت القاعدة؟
+                        </span>
+
+
+                        <h2>
+                            جرّب حل تمرين عليها
+                        </h2>
+
+
+                        <p>
+                            لا تكتفِ بقراءة الخطأ.
+                            طبّق القاعدة بنفسك حتى تثبت في ذاكرتك.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="practice.html"
+                        class="btn btn-light"
+                    >
+                        ابدأ التدريب
+                        ←
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         تذييل الموقع
+    ================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="footer-content">
+
+
+                <!-- معلومات الموقع -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo footer-logo"
+                    >
+
+                        <span class="logo-icon">
+                            ✎
+                        </span>
+
+                        <span class="logo-text">
+                            دفتر أخطاء التركي
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        نتعلم التركية من الأخطاء،
+                        ونحوّل كل خطأ إلى فرصة للتعلم.
+                    </p>
+
+                </div>
+
+
+
+                <!-- روابط الموقع -->
+
+                <div class="footer-links">
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            الموقع
+                        </h3>
+
+                        <a href="index.html">
+                            الرئيسية
+                        </a>
+
+                        <a href="mistakes.html">
+                            الأخطاء
+                        </a>
+
+                        <a href="categories.html">
+                            التصنيفات
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            تعلم
+                        </h3>
+
+                        <a href="quiz.html">
+                            اختبر نفسك
+                        </a>
+
+                        <a href="practice.html">
+                            التدريب
+                        </a>
+
+                        <a href="daily.html">
+                            خطأ اليوم
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            حسابك
+                        </h3>
+
+                        <a href="favorites.html">
+                            المفضلة
+                        </a>
+
+                        <a href="login.html">
+                            تسجيل الدخول
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 أسفل التذييل
+            ================================== -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 دفتر أخطاء التركي. جميع الحقوق محفوظة.
+                </p>
+
+                <p>
+                    صُنع بحب لتعلّم اللغة التركية 🇹🇷
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================
+         رسالة التنبيه
+    ================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+
+        <span id="toastIcon">
+            ✓
+        </span>
+
+        <span id="toastMessage">
+            تمت العملية بنجاح
+        </span>
+
+    </div>
+
+
+
+    <!-- =================================
+         JavaScript
+    ================================== -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/daily.js"></script>
+
+
+</body>
+
+</html>

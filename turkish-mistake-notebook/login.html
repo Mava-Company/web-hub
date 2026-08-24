@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="تسجيل الدخول إلى دفتر أخطاء التركي"
+    >
+
+    <title>
+        تسجيل الدخول | دفتر أخطاء التركي
+    </title>
+
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <span class="logo-icon">
+                    ✎
+                </span>
+
+                <span class="logo-text">
+                    دفتر أخطاء التركي
+                </span>
+
+            </a>
+
+
+            <a
+                href="index.html"
+                class="btn btn-secondary"
+            >
+                الرئيسية
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<section class="login-section">
+
+    <div class="container">
+
+
+        <div class="login-container">
+
+
+            <!-- =========================================
+                 بطاقة تسجيل الدخول
+            ========================================== -->
+
+            <div
+                class="login-card"
+                id="loginCard"
+            >
+
+                <div class="login-header">
+
+                    <div class="login-icon">
+                        🔐
+                    </div>
+
+                    <span class="section-label">
+                        مرحبًا بعودتك
+                    </span>
+
+                    <h1>
+                        تسجيل الدخول
+                    </h1>
+
+                    <p>
+                        سجّل دخولك للوصول إلى حسابك
+                        ومفضلاتك.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="loginForm"
+                    novalidate
+                >
+
+
+                    <!-- البريد -->
+
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            البريد الإلكتروني
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- كلمة المرور -->
+
+                    <div class="form-group">
+
+                        <label for="loginPassword">
+                            كلمة المرور
+                        </label>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            placeholder="أدخل كلمة المرور"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- تذكرني -->
+
+                    <div class="form-options">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>
+                                تذكرني
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- الرسالة -->
+
+                    <div
+                        id="loginMessage"
+                        class="auth-message"
+                        hidden
+                    ></div>
+
+
+                    <!-- زر الدخول -->
+
+                    <button
+                        type="submit"
+                        id="loginButton"
+                        class="btn btn-primary login-button"
+                    >
+
+                        <span id="loginButtonText">
+                            تسجيل الدخول
+                        </span>
+
+                    </button>
+
+
+                </form>
+
+
+                <!-- إنشاء حساب -->
+
+                <div class="login-footer">
+
+                    <p>
+                        ليس لديك حساب؟
+                    </p>
+
+                    <button
+                        type="button"
+                        id="showRegisterButton"
+                        class="text-button"
+                    >
+                        إنشاء حساب جديد
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 بطاقة إنشاء حساب
+            ========================================== -->
+
+            <div
+                class="login-card"
+                id="registerCard"
+                hidden
+            >
+
+                <div class="login-header">
+
+                    <div class="login-icon">
+                        👤
+                    </div>
+
+                    <span class="section-label">
+                        انضم إلينا
+                    </span>
+
+                    <h1>
+                        إنشاء حساب
+                    </h1>
+
+                    <p>
+                        أنشئ حسابًا جديدًا لحفظ أخطائك المفضلة
+                        ومتابعة تقدمك.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="registerForm"
+                    novalidate
+                >
+
+
+                    <div class="form-group">
+
+                        <label for="registerName">
+                            الاسم
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registerName"
+                            placeholder="اكتب اسمك"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="registerEmail">
+                            البريد الإلكتروني
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            كلمة المرور
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            placeholder="6 أحرف على الأقل"
+                            autocomplete="new-password"
+                            minlength="6"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="registerPasswordConfirm">
+                            تأكيد كلمة المرور
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPasswordConfirm"
+                            placeholder="أعد كتابة كلمة المرور"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div
+                        id="registerMessage"
+                        class="auth-message"
+                        hidden
+                    ></div>
+
+
+                    <button
+                        type="submit"
+                        id="registerButton"
+                        class="btn btn-primary login-button"
+                    >
+
+                        إنشاء الحساب
+
+                    </button>
+
+
+                </form>
+
+
+                <div class="login-footer">
+
+                    <p>
+                        لديك حساب بالفعل؟
+                    </p>
+
+                    <button
+                        type="button"
+                        id="showLoginButton"
+                        class="text-button"
+                    >
+                        تسجيل الدخول
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 دفتر أخطاء التركي
+            </p>
+
+            <p>
+                تعلم التركية من أخطائك 🇹🇷
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- مهم جدًا: type="module" -->
+
+<script
+    type="module"
+    src="js/auth.js"
+></script>
+
+
+</body>
+
+</html>

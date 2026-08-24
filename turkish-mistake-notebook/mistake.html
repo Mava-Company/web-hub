@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="شرح مفصل لخطأ تركي شائع، مع التصحيح والقاعدة والأمثلة."
+    >
+
+    <meta
+        name="keywords"
+        content="تعلم التركية, أخطاء التركية, قواعد التركية, شرح اللغة التركية"
+    >
+
+    <meta name="author" content="دفتر أخطاء التركي">
+
+    <title>شرح الخطأ | دفتر أخطاء التركي</title>
+
+
+    <!-- =================================
+         الخطوط
+    ================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =================================
+         ملفات التصميم
+    ================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         شريط التنقل
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+
+                <!-- الشعار -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        ✎
+                    </span>
+
+                    <span class="logo-text">
+                        دفتر أخطاء التركي
+                    </span>
+
+                </a>
+
+
+                <!-- زر القائمة -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="فتح القائمة"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+
+                <!-- روابط الموقع -->
+
+                <div
+                    class="nav-menu"
+                    id="navMenu"
+                >
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        الرئيسية
+                    </a>
+
+
+                    <a
+                        href="mistakes.html"
+                        class="nav-link active"
+                    >
+                        الأخطاء
+                    </a>
+
+
+                    <a
+                        href="categories.html"
+                        class="nav-link"
+                    >
+                        التصنيفات
+                    </a>
+
+
+                    <a
+                        href="quiz.html"
+                        class="nav-link"
+                    >
+                        اختبر نفسك
+                    </a>
+
+
+                    <a
+                        href="daily.html"
+                        class="nav-link"
+                    >
+                        خطأ اليوم
+                    </a>
+
+
+                    <a
+                        href="favorites.html"
+                        class="nav-link"
+                    >
+                        المفضلة
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         المحتوى الرئيسي
+    ================================== -->
+
+    <main>
+
+
+        <!-- =================================
+             مسار التنقل
+        ================================== -->
+
+        <section class="breadcrumb-section">
+
+            <div class="container">
+
+                <div class="breadcrumb">
+
+                    <a href="index.html">
+                        الرئيسية
+                    </a>
+
+                    <span>
+                        /
+                    </span>
+
+                    <a href="mistakes.html">
+                        الأخطاء
+                    </a>
+
+                    <span>
+                        /
+                    </span>
+
+                    <span id="breadcrumbTitle">
+                        تفاصيل الخطأ
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             حالة التحميل
+        ================================== -->
+
+        <section
+            class="mistake-loading-section"
+            id="mistakeLoading"
+        >
+
+            <div class="container">
+
+                <div class="loading-page">
+
+                    <span class="loading-spinner"></span>
+
+                    <p>
+                        جاري تحميل الخطأ...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             حالة الخطأ غير موجود
+        ================================== -->
+
+        <section
+            class="mistake-not-found-section"
+            id="mistakeNotFound"
+            style="display: none;"
+        >
+
+            <div class="container">
+
+                <div class="not-found-card">
+
+                    <div class="not-found-icon">
+                        🔎
+                    </div>
+
+                    <h1>
+                        لم يتم العثور على الخطأ
+                    </h1>
+
+                    <p>
+                        يبدو أن الخطأ الذي تبحث عنه غير موجود
+                        أو أن الرابط غير صحيح.
+                    </p>
+
+                    <a
+                        href="mistakes.html"
+                        class="btn btn-primary"
+                    >
+                        العودة إلى الأخطاء
+                        ←
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             تفاصيل الخطأ
+        ================================== -->
+
+        <section
+            class="mistake-detail-section"
+            id="mistakeContent"
+            style="display: none;"
+        >
+
+            <div class="container">
+
+
+                <!-- =================================
+                     رأس الخطأ
+                ================================== -->
+
+                <div class="mistake-detail-header">
+
+
+                    <div class="mistake-detail-meta">
+
+
+                        <span
+                            class="mistake-category"
+                            id="mistakeCategory"
+                        >
+                            التصنيف
+                        </span>
+
+
+                        <span
+                            class="mistake-level"
+                            id="mistakeLevel"
+                        >
+                            A1
+                        </span>
+
+
+                        <span
+                            class="mistake-date"
+                            id="mistakeDate"
+                        >
+                            خطأ شائع
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="mistake-actions">
+
+
+                        <!-- المفضلة -->
+
+                        <button
+                            type="button"
+                            class="favorite-button"
+                            id="favoriteButton"
+                            aria-label="إضافة إلى المفضلة"
+                        >
+
+                            <span id="favoriteIcon">
+                                ♡
+                            </span>
+
+                            <span id="favoriteText">
+                                حفظ
+                            </span>
+
+                        </button>
+
+
+                        <!-- مشاركة -->
+
+                        <button
+                            type="button"
+                            class="share-button"
+                            id="shareButton"
+                            aria-label="مشاركة الخطأ"
+                        >
+
+                            <span>
+                                ↗
+                            </span>
+
+                            مشاركة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     عنوان الخطأ
+                ================================== -->
+
+                <div class="mistake-title-area">
+
+                    <span class="mistake-label-large">
+                        ❌ الخطأ
+                    </span>
+
+
+                    <h1
+                        class="wrong-sentence"
+                        id="wrongSentence"
+                    >
+                        Ben 20 yaşındayım değil.
+                    </h1>
+
+                </div>
+
+
+
+                <!-- =================================
+                     التصحيح
+                ================================== -->
+
+                <div class="correct-answer-card">
+
+
+                    <div class="correct-answer-header">
+
+                        <span class="correct-icon">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <span>
+                                الصيغة الصحيحة
+                            </span>
+
+                            <h2>
+                                التصحيح
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="correct-sentence-wrapper">
+
+                        <p
+                            class="correct-sentence"
+                            id="correctSentence"
+                        >
+                            Ben 20 yaşında değilim.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="copy-button"
+                            id="copyCorrectButton"
+                            aria-label="نسخ الجملة الصحيحة"
+                        >
+                            📋 نسخ
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     المحتوى الرئيسي والجانب
+                ================================== -->
+
+                <div class="mistake-layout">
+
+
+                    <!-- =================================
+                         المحتوى الرئيسي
+                    ================================== -->
+
+                    <div class="mistake-main-content">
+
+
+                        <!-- لماذا الخطأ؟ -->
+
+                        <article class="explanation-card">
+
+
+                            <div class="content-card-header">
+
+                                <span class="content-card-icon">
+                                    💡
+                                </span>
+
+                                <div>
+
+                                    <span>
+                                        فهم الخطأ
+                                    </span>
+
+                                    <h2>
+                                        لماذا هذه الجملة خاطئة؟
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                class="explanation-text"
+                                id="mistakeExplanation"
+                            >
+
+                                <p>
+                                    يتم تحميل شرح الخطأ هنا.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- القاعدة -->
+
+                        <article class="rule-card">
+
+
+                            <div class="content-card-header">
+
+                                <span class="content-card-icon">
+                                    📖
+                                </span>
+
+                                <div>
+
+                                    <span>
+                                        القاعدة
+                                    </span>
+
+                                    <h2>
+                                        القاعدة التي يجب تذكرها
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="rule-box">
+
+                                <div class="rule-formula">
+                                    <span id="ruleFormula">
+                                        القاعدة
+                                    </span>
+                                </div>
+
+
+                                <div
+                                    class="rule-explanation"
+                                    id="ruleExplanation"
+                                >
+                                    شرح القاعدة سيظهر هنا.
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- أمثلة إضافية -->
+
+                        <article class="examples-card">
+
+
+                            <div class="content-card-header">
+
+                                <span class="content-card-icon">
+                                    ✏️
+                                </span>
+
+                                <div>
+
+                                    <span>
+                                        أمثلة
+                                    </span>
+
+                                    <h2>
+                                        أمثلة إضافية
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                class="examples-list"
+                                id="examplesList"
+                            >
+
+                                <!-- الأمثلة يتم تحميلها بواسطة JavaScript -->
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- خطأ مشابه -->
+
+                        <article class="similar-mistakes-card">
+
+
+                            <div class="content-card-header">
+
+                                <span class="content-card-icon">
+                                    🔗
+                                </span>
+
+                                <div>
+
+                                    <span>
+                                        للتدريب أكثر
+                                    </span>
+
+                                    <h2>
+                                        أخطاء مشابهة
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                class="similar-mistakes-list"
+                                id="similarMistakesList"
+                            >
+
+                                <!-- الأخطاء المشابهة تظهر هنا -->
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         الشريط الجانبي
+                    ================================== -->
+
+                    <aside class="mistake-sidebar">
+
+
+                        <!-- بطاقة المستوى -->
+
+                        <div class="sidebar-card level-card">
+
+                            <span class="sidebar-label">
+                                مستوى الخطأ
+                            </span>
+
+
+                            <div class="level-display">
+
+                                <strong id="sidebarLevel">
+                                    A1
+                                </strong>
+
+                                <span id="sidebarLevelName">
+                                    مبتدئ
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- التصنيف -->
+
+                        <div class="sidebar-card">
+
+                            <span class="sidebar-label">
+                                التصنيف
+                            </span>
+
+
+                            <a
+                                href="#"
+                                id="categoryLink"
+                                class="sidebar-category"
+                            >
+
+                                <span id="sidebarCategoryIcon">
+                                    🔤
+                                </span>
+
+                                <span id="sidebarCategory">
+                                    اللواحق
+                                </span>
+
+                                <span>
+                                    ←
+                                </span>
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- الكلمات المفتاحية -->
+
+                        <div class="sidebar-card">
+
+                            <span class="sidebar-label">
+                                كلمات مرتبطة
+                            </span>
+
+
+                            <div
+                                class="tags-list"
+                                id="mistakeTags"
+                            >
+
+                                <!-- الكلمات تظهر هنا -->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- نصيحة -->
+
+                        <div class="sidebar-tip">
+
+                            <span class="tip-icon">
+                                💡
+                            </span>
+
+
+                            <h3>
+                                نصيحة
+                            </h3>
+
+
+                            <p>
+                                لا تكتفِ بقراءة التصحيح.
+                                حاول أن تكتب جملة جديدة بنفس القاعدة.
+                            </p>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+
+
+                <!-- =================================
+                     اختبار سريع
+                ================================== -->
+
+                <section class="quick-quiz-section">
+
+
+                    <div class="quick-quiz-header">
+
+                        <span class="section-label">
+                            🧠 تحقق من فهمك
+                        </span>
+
+                        <h2>
+                            هل تستطيع اختيار الجملة الصحيحة؟
+                        </h2>
+
+                        <p>
+                            اختبر نفسك قبل الانتقال إلى الخطأ التالي.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="quick-quiz-card"
+                        id="quickQuizCard"
+                    >
+
+
+                        <div class="quick-question">
+
+                            <span>
+                                اختر الجملة الصحيحة:
+                            </span>
+
+                            <h3 id="quickQuizQuestion">
+                                أي جملة صحيحة؟
+                            </h3>
+
+                        </div>
+
+
+                        <div
+                            class="quiz-options"
+                            id="quickQuizOptions"
+                        >
+
+                            <!-- الخيارات يتم تحميلها بواسطة JavaScript -->
+
+                        </div>
+
+
+                        <div
+                            class="quiz-feedback"
+                            id="quickQuizFeedback"
+                            style="display: none;"
+                        >
+
+                            <div
+                                class="feedback-icon"
+                                id="feedbackIcon"
+                            >
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <strong id="feedbackTitle">
+                                    ممتاز!
+                                </strong>
+
+                                <p id="feedbackText">
+                                    إجابة صحيحة.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     التنقل بين الأخطاء
+                ================================== -->
+
+                <div class="mistake-navigation">
+
+
+                    <a
+                        href="#"
+                        id="previousMistake"
+                        class="mistake-nav-button previous"
+                    >
+
+                        <span>
+                            →
+                        </span>
+
+                        <div>
+
+                            <small>
+                                الخطأ السابق
+                            </small>
+
+                            <strong id="previousMistakeTitle">
+                                السابق
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a
+                        href="mistakes.html"
+                        class="all-mistakes-button"
+                    >
+                        📖
+                        كل الأخطاء
+                    </a>
+
+
+
+                    <a
+                        href="#"
+                        id="nextMistake"
+                        class="mistake-nav-button next"
+                    >
+
+                        <div>
+
+                            <small>
+                                الخطأ التالي
+                            </small>
+
+                            <strong id="nextMistakeTitle">
+                                التالي
+                            </strong>
+
+                        </div>
+
+                        <span>
+                            ←
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         تذييل الموقع
+    ================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="footer-content">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo footer-logo"
+                    >
+
+                        <span class="logo-icon">
+                            ✎
+                        </span>
+
+                        <span class="logo-text">
+                            دفتر أخطاء التركي
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        نتعلم التركية من الأخطاء،
+                        ونحوّل كل خطأ إلى فرصة للتعلم.
+                    </p>
+
+                </div>
+
+
+
+                <div class="footer-links">
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            الموقع
+                        </h3>
+
+                        <a href="index.html">
+                            الرئيسية
+                        </a>
+
+                        <a href="mistakes.html">
+                            الأخطاء
+                        </a>
+
+                        <a href="categories.html">
+                            التصنيفات
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            تعلم
+                        </h3>
+
+                        <a href="quiz.html">
+                            اختبر نفسك
+                        </a>
+
+                        <a href="practice.html">
+                            التدريب
+                        </a>
+
+                        <a href="daily.html">
+                            خطأ اليوم
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            حسابك
+                        </h3>
+
+                        <a href="favorites.html">
+                            المفضلة
+                        </a>
+
+                        <a href="login.html">
+                            تسجيل الدخول
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 دفتر أخطاء التركي. جميع الحقوق محفوظة.
+                </p>
+
+                <p>
+                    صُنع بحب لتعلّم اللغة التركية 🇹🇷
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================
+         رسائل التنبيه
+    ================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+        <span id="toastIcon">
+            ✓
+        </span>
+
+        <span id="toastMessage">
+            تم تنفيذ العملية بنجاح
+        </span>
+    </div>
+
+
+
+    <!-- =================================
+         JavaScript
+    ================================== -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/mistake-details.js"></script>
+
+
+</body>
+
+</html>
