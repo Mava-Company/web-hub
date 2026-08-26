@@ -2889,7 +2889,2315 @@ const mistakes = [
 
         published: true,
         createdAt: "2026-08-24"
+    },
+       /* -----------------------------------------------------
+       الخطأ 71
+    ----------------------------------------------------- */
+    {
+        id: 71,
+        title: "استخدام حرف الجر مع وقت الساعة بشكل خاطئ",
+        category: "prepositions",
+        level: "مبتدئ",
+        wrong: "Saat üçte buluşalım.",
+        correct: "Saat üçte buluşalım.",
+        shortExplanation: "انتبه إلى أن -te هنا صحيحة لأنها تدل على وقت حدوث الفعل.",
+        explanation: "لاحقة -de / -da / -te / -ta تستخدم أيضًا مع أوقات معينة للدلالة على وقت حدوث الفعل. لذلك Saat üçte buluşalım تعني لنلتقِ الساعة الثالثة.",
+        rule: "الوقت + -de / -da / -te / -ta",
+        examples: [
+            {
+                wrong: "Saat beşte başlayacak.",
+                correct: "Saat beşte başlayacak."
+            },
+            {
+                wrong: "Saat onda geliyorum.",
+                correct: "Saat onda geliyorum."
+            }
+        ],
+        keywords: ["الوقت", "saat", "te", "ta", "de", "da"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 72
+    ----------------------------------------------------- */
+    {
+        id: 72,
+        title: "الخلط بين ile و için",
+        category: "prepositions",
+        level: "مبتدئ",
+        wrong: "Senin için geldim.",
+        correct: "Senin için geldim.",
+        shortExplanation: "الجملة صحيحة، لكن يجب التمييز بين معنى ile ومعنى için.",
+        explanation: "için تعني من أجل أو بسبب، بينما ile تعني مع أو بواسطة. لذلك Senin için geldim تعني جئت من أجلك، بينما Seninle geldim تعني جئت معك.",
+        rule: "için = من أجل / ile = مع أو بواسطة",
+        examples: [
+            {
+                wrong: "Seninle aldım.",
+                correct: "Senin için aldım."
+            },
+            {
+                wrong: "Arkadaşımla geldim.",
+                correct: "Arkadaşımla geldim."
+            }
+        ],
+        keywords: ["ile", "için", "مع", "من أجل"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 73
+    ----------------------------------------------------- */
+    {
+        id: 73,
+        title: "الخلط بين de و da كأداة إضافة",
+        category: "prepositions",
+        level: "مبتدئ",
+        wrong: "Ben de öğrenciyim.",
+        correct: "Ben de öğrenciyim.",
+        shortExplanation: "الأداة de / da بمعنى أيضًا تكتب منفصلة.",
+        explanation: "عندما تأتي de أو da بمعنى أيضًا فإنها تكتب منفصلة عن الكلمة السابقة. أما لاحقة المكان -de / -da فتكتب متصلة بالكلمة.",
+        rule: "de / da بمعنى أيضًا = منفصلة",
+        examples: [
+            {
+                wrong: "Bende öğrenciyim.",
+                correct: "Ben de öğrenciyim."
+            },
+            {
+                wrong: "Ali de geliyor.",
+                correct: "Ali de geliyor."
+            }
+        ],
+        keywords: ["de", "da", "أيضًا", "لاحقة المكان"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 74
+    ----------------------------------------------------- */
+    {
+        id: 74,
+        title: "الخلط بين ki المتصلة و ki المنفصلة",
+        category: "prepositions",
+        level: "متوسط",
+        wrong: "Benimki de güzel.",
+        correct: "Benimki de güzel.",
+        shortExplanation: "بعض استخدامات ki تكون لاحقة متصلة، وبعضها أداة تكتب منفصلة.",
+        explanation: "في التركية توجد ki في تراكيب مختلفة. اللاحقة -ki تستخدم لتكوين كلمات مثل benimki و evdeki، بينما bağlaç olan ki تكتب منفصلة في تراكيب مثل biliyorum ki.",
+        rule: "-ki اللاحقة متصلة، و ki كأداة ربط منفصلة",
+        examples: [
+            {
+                wrong: "Evde ki insanlar.",
+                correct: "Evdeki insanlar."
+            },
+            {
+                wrong: "Biliyorumki gelecek.",
+                correct: "Biliyorum ki gelecek."
+            }
+        ],
+        keywords: ["ki", "evdeki", "benimki", "biliyorum ki"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 75
+    ----------------------------------------------------- */
+    {
+        id: 75,
+        title: "استخدام çok مع الصفات بطريقة خاطئة",
+        category: "prepositions",
+        level: "مبتدئ",
+        wrong: "Çok daha güzel.",
+        correct: "Çok daha güzel.",
+        shortExplanation: "الجملة صحيحة، لكن يجب فهم الفرق بين çok و daha.",
+        explanation: "çok تعني جدًا أو كثيرًا، بينما daha تعني أكثر أو ما زال. يمكن استخدامهما معًا عندما نقول إن شيئًا أكثر جمالًا بكثير: Çok daha güzel.",
+        rule: "çok = جدًا / daha = أكثر",
+        examples: [
+            {
+                wrong: "Bu daha güzel.",
+                correct: "Bu daha güzel."
+            },
+            {
+                wrong: "Bu çok güzel.",
+                correct: "Bu çok güzel."
+            }
+        ],
+        keywords: ["çok", "daha", "أكثر", "جداً"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 76
+    ----------------------------------------------------- */
+    {
+        id: 76,
+        title: "استخدام mı بشكل متصل",
+        category: "question",
+        level: "مبتدئ",
+        wrong: "Sen öğrencimisin?",
+        correct: "Sen öğrenci misin?",
+        shortExplanation: "أداة السؤال mı / mi / mu / mü تكتب منفصلة.",
+        explanation: "أداة السؤال في التركية تكتب منفصلة عن الكلمة السابقة، لكنها تتبع قواعد انسجام الحركات: mı، mi، mu، mü.",
+        rule: "اسم + مسافة + mı / mi / mu / mü",
+        examples: [
+            {
+                wrong: "Türk müsün?",
+                correct: "Türk müsün?"
+            },
+            {
+                wrong: "Evdemisin?",
+                correct: "Evde misin?"
+            }
+        ],
+        keywords: ["mı", "mi", "mu", "mü", "السؤال"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 77
+    ----------------------------------------------------- */
+    {
+        id: 77,
+        title: "الخلط بين misin و mısın",
+        category: "question",
+        level: "مبتدئ",
+        wrong: "Sen öğrenci mısın?",
+        correct: "Sen öğrenci misin?",
+        shortExplanation: "شكل أداة السؤال يتغير حسب انسجام الحركات.",
+        explanation: "بعد كلمة تحتوي على الحرف الصوتي e أو i نستخدم mi، وبعد a أو ı نستخدم mı، وبعد o أو u نستخدم mu، وبعد ö أو ü نستخدم mü.",
+        rule: "i / ı / u / ü حسب انسجام الحركات",
+        examples: [
+            {
+                wrong: "Sen yorgun mısın?",
+                correct: "Sen yorgun musun?"
+            },
+            {
+                wrong: "Sen Türk müsün?",
+                correct: "Sen Türk müsün?"
+            }
+        ],
+        keywords: ["misin", "mısın", "musun", "müsün"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 78
+    ----------------------------------------------------- */
+    {
+        id: 78,
+        title: "استخدام أداة السؤال مع الفعل بطريقة خاطئة",
+        category: "question",
+        level: "متوسط",
+        wrong: "Sen Türkçe konuşuyor musun?",
+        correct: "Sen Türkçe konuşuyor musun?",
+        shortExplanation: "أداة السؤال تأتي بعد الجزء الذي نريد السؤال عنه، ثم تأخذ لاحقة الشخص.",
+        explanation: "في السؤال بالمضارع المستمر نستخدم الفعل بصيغته المناسبة ثم أداة السؤال ثم لاحقة الشخص: konuşuyor musun؟.",
+        rule: "الفعل + mı/mi/mu/mü + لاحقة الشخص",
+        examples: [
+            {
+                wrong: "Geliyorsun mu?",
+                correct: "Geliyor musun?"
+            },
+            {
+                wrong: "Çalışıyorsun mu?",
+                correct: "Çalışıyor musun?"
+            }
+        ],
+        keywords: ["السؤال", "المضارع", "musun", "misin"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 79
+    ----------------------------------------------------- */
+    {
+        id: 79,
+        title: "نسيان لاحقة الشخص في السؤال",
+        category: "question",
+        level: "مبتدئ",
+        wrong: "Sen öğrenci mi?",
+        correct: "Sen öğrenci misin?",
+        shortExplanation: "عند سؤال المخاطب نحتاج إلى لاحقة الشخص المناسبة.",
+        explanation: "عند تكوين سؤال مثل هل أنت طالب؟ نقول Öğrenci misin؟ وليس Öğrenci mi؟ لأن -sin هي لاحقة الشخص الثاني المفرد.",
+        rule: "mi + sin = misin",
+        examples: [
+            {
+                wrong: "Sen yorgun mu?",
+                correct: "Sen yorgun musun?"
+            },
+            {
+                wrong: "Sen doktor mü?",
+                correct: "Sen doktor musun?"
+            }
+        ],
+        keywords: ["sin", "misin", "musun", "السؤال"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 80
+    ----------------------------------------------------- */
+    {
+        id: 80,
+        title: "استخدام سؤال ne بدل hangi",
+        category: "question",
+        level: "مبتدئ",
+        wrong: "Ne kitabı okuyorsun?",
+        correct: "Hangi kitabı okuyorsun?",
+        shortExplanation: "hangi تستخدم عندما نختار شيئًا معينًا من مجموعة.",
+        explanation: "ne تعني ماذا، بينما hangi تعني أيّ. عندما يكون لدينا مجموعة محددة من الكتب ونسأل أي كتاب تقرأ؟ نستخدم hangi.",
+        rule: "ne = ماذا / hangi = أي",
+        examples: [
+            {
+                wrong: "Ne renk seviyorsun?",
+                correct: "Hangi rengi seviyorsun?"
+            },
+            {
+                wrong: "Hangi yapıyorsun?",
+                correct: "Ne yapıyorsun?"
+            }
+        ],
+        keywords: ["ne", "hangi", "أي", "ماذا"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 81
+    ----------------------------------------------------- */
+    {
+        id: 81,
+        title: "الخلط بين neden و niçin",
+        category: "question",
+        level: "متوسط",
+        wrong: "Neden için geldin?",
+        correct: "Neden geldin?",
+        shortExplanation: "neden و niçin و niye كلها تستخدم للسؤال عن السبب في سياقات مختلفة.",
+        explanation: "لا نضع için بعد neden عندما نريد السؤال مباشرة عن السبب. Neden geldin؟ تعني لماذا جئت؟ ويمكن أيضًا قول Niçin geldin؟ أو Niye geldin؟.",
+        rule: "neden / niçin / niye = لماذا",
+        examples: [
+            {
+                wrong: "Neden için üzgünsün?",
+                correct: "Neden üzgünsün?"
+            },
+            {
+                wrong: "Niye için ağlıyorsun?",
+                correct: "Niye ağlıyorsun?"
+            }
+        ],
+        keywords: ["neden", "niçin", "niye", "لماذا"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 82
+    ----------------------------------------------------- */
+    {
+        id: 82,
+        title: "استخدام soru kelimesi بشكل زائد",
+        category: "question",
+        level: "متوسط",
+        wrong: "Nereye gidiyorsun oraya?",
+        correct: "Nereye gidiyorsun?",
+        shortExplanation: "لا نحتاج إلى تكرار معنى السؤال في الجملة.",
+        explanation: "كلمة nereye تحتوي بالفعل على معنى إلى أين، لذلك لا نحتاج إلى إضافة كلمة أخرى تؤدي المعنى نفسه في نهاية السؤال.",
+        rule: "استخدم أداة السؤال المناسبة دون تكرار معناها",
+        examples: [
+            {
+                wrong: "Nerede yaşıyorsun orada?",
+                correct: "Nerede yaşıyorsun?"
+            },
+            {
+                wrong: "Ne yapıyorsun bunu?",
+                correct: "Ne yapıyorsun?"
+            }
+        ],
+        keywords: ["nereye", "nerede", "ne", "السؤال"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 83
+    ----------------------------------------------------- */
+    {
+        id: 83,
+        title: "استخدام ليس في التركية بطريقة عربية",
+        category: "negation",
+        level: "مبتدئ",
+        wrong: "Ben öğrenci değil.",
+        correct: "Ben öğrenci değilim.",
+        shortExplanation: "değil تحتاج إلى لاحقة الشخص عند استخدامها مع الجملة الاسمية.",
+        explanation: "في التركية لا نقول فقط değil مع المتكلم. يجب أن تتوافق لاحقة الشخص مع الفاعل: değilim، değilsin، değil، değiliz، değilsiniz، değiller.",
+        rule: "değil + لاحقة الشخص",
+        examples: [
+            {
+                wrong: "Sen hasta değil.",
+                correct: "Sen hasta değilsin."
+            },
+            {
+                wrong: "Biz hazır değil.",
+                correct: "Biz hazır değiliz."
+            }
+        ],
+        keywords: ["değil", "النفي", "ليس"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 84
+    ----------------------------------------------------- */
+    {
+        id: 84,
+        title: "نفي الأفعال في المضارع المستمر بطريقة خاطئة",
+        category: "negation",
+        level: "مبتدئ",
+        wrong: "Ben geliyorum değil.",
+        correct: "Ben gelmiyorum.",
+        shortExplanation: "نفي الفعل يتم باستخدام -ma / -me قبل لاحقة الزمن.",
+        explanation: "مع الأفعال نستخدم لاحقة النفي -ma أو -me، ثم تأتي لاحقة الزمن والشخص. لذلك geliyorum تصبح gelmiyorum.",
+        rule: "جذر الفعل + ma/me + الزمن + الشخص",
+        examples: [
+            {
+                wrong: "Gitiyorum değil.",
+                correct: "Gitmiyorum."
+            },
+            {
+                wrong: "Çalışıyorum değil.",
+                correct: "Çalışmıyorum."
+            }
+        ],
+        keywords: ["النفي", "miyorum", "mıyorum", "ma", "me"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 85
+    ----------------------------------------------------- */
+    {
+        id: 85,
+        title: "الخلط بين yok و değil",
+        category: "negation",
+        level: "مبتدئ",
+        wrong: "Evde kitap değil.",
+        correct: "Evde kitap yok.",
+        shortExplanation: "yok تستخدم لنفي وجود شيء، بينما değil تستخدم لنفي الصفات أو الجمل الاسمية.",
+        explanation: "عندما نريد القول لا يوجد كتاب في المنزل نستخدم yok. أما عندما نقول الكتاب ليس جديدًا فنستخدم değil.",
+        rule: "yok = لا يوجد / değil = ليس",
+        examples: [
+            {
+                wrong: "Evde araba değil.",
+                correct: "Evde araba yok."
+            },
+            {
+                wrong: "Bu kitap yok.",
+                correct: "Bu kitap değil."
+            }
+        ],
+        keywords: ["yok", "değil", "لا يوجد", "ليس"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 86
+    ----------------------------------------------------- */
+    {
+        id: 86,
+        title: "الخلط بين hiç و hiçbir",
+        category: "negation",
+        level: "متوسط",
+        wrong: "Hiçbir zaman gitmedim.",
+        correct: "Hiçbir zaman gitmedim.",
+        shortExplanation: "hiç و hiçbir لهما استخدامات مختلفة حسب الكلمة التي تأتي بعدهما.",
+        explanation: "hiç تستخدم غالبًا مع الأفعال أو للتأكيد في الأسئلة والنفي، بينما hiçbir تأتي قبل الاسم وتعني لا أيّ / ولا واحد من.",
+        rule: "hiç + فعل / hiçbir + اسم",
+        examples: [
+            {
+                wrong: "Hiçbir anlamıyorum.",
+                correct: "Hiç anlamıyorum."
+            },
+            {
+                wrong: "Hiç kitap okumadım.",
+                correct: "Hiç kitap okumadım."
+            }
+        ],
+        keywords: ["hiç", "hiçbir", "النفي"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 87
+    ----------------------------------------------------- */
+    {
+        id: 87,
+        title: "استخدام -me و -ma مع انسجام الحركات بشكل خاطئ",
+        category: "suffixes",
+        level: "متوسط",
+        wrong: "Ben gelmaiyorum.",
+        correct: "Ben gelmiyorum.",
+        shortExplanation: "لاحقة النفي تتغير حسب انسجام الحركات.",
+        explanation: "لاحقة النفي تكون -ma أو -me حسب الحرف الصوتي في جذر الفعل. ومع المضارع المستمر تتغير الصيغة وفق القواعد الصوتية، لذلك gelmek تصبح gelmiyorum.",
+        rule: "-ma / -me وفق انسجام الحركات",
+        examples: [
+            {
+                wrong: "Bakmeıyorum.",
+                correct: "Bakmıyorum."
+            },
+            {
+                wrong: "Sevmaiyorum.",
+                correct: "Sevmiyorum."
+            }
+        ],
+        keywords: ["النفي", "انسجام الحركات", "ma", "me"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 88
+    ----------------------------------------------------- */
+    {
+        id: 88,
+        title: "استخدام الماضي البسيط بدل الماضي المنقول",
+        category: "tenses",
+        level: "متوسط",
+        wrong: "Ahmet gelmiş, ben gördüm.",
+        correct: "Ahmet gelmiş, ben duydum.",
+        shortExplanation: "لاحقة -miş تستخدم عندما تكون المعلومة منقولة أو اكتشفها المتحدث.",
+        explanation: "الماضي بـ -di يستخدم عادة لما حدث وكان المتحدث شاهدًا عليه أو يتحدث عنه كحقيقة مباشرة. أما -miş فيستخدم كثيرًا للمعلومات المنقولة أو المفاجئة أو المستنتجة.",
+        rule: "-di = ماضٍ مباشر / -miş = منقول أو مستنتج",
+        examples: [
+            {
+                wrong: "Ali gelmiş, onu kendim gördüm.",
+                correct: "Ali geldi, onu kendim gördüm."
+            },
+            {
+                wrong: "Ali gelmiş, Mehmet söyledi.",
+                correct: "Ali gelmiş, Mehmet söyledi."
+            }
+        ],
+        keywords: ["miş", "di", "الماضي", "منقول"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 89
+    ----------------------------------------------------- */
+    {
+        id: 89,
+        title: "الخلط بين -iyor و -ecek في المستقبل",
+        category: "tenses",
+        level: "مبتدئ",
+        wrong: "Yarın İstanbul'a gidiyorum.",
+        correct: "Yarın İstanbul'a gideceğim.",
+        shortExplanation: "عند الحديث عن المستقبل نستخدم غالبًا -ecek / -acak.",
+        explanation: "gidiyorum تعني أذهب أو أنا ذاهب الآن/في سياق مستمر، بينما gideceğim تعني سأذهب. مع كلمة yarın يكون المستقبل أوضح.",
+        rule: "المستقبل = -ecek / -acak",
+        examples: [
+            {
+                wrong: "Yarın çalışıyorum.",
+                correct: "Yarın çalışacağım."
+            },
+            {
+                wrong: "Gelecek hafta gidiyorum.",
+                correct: "Gelecek hafta gideceğim."
+            }
+        ],
+        keywords: ["المستقبل", "iyor", "ecek", "acak"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 90
+    ----------------------------------------------------- */
+    {
+        id: 90,
+        title: "نسيان لاحقة الشخص في المستقبل",
+        category: "tenses",
+        level: "متوسط",
+        wrong: "Ben yarın geleceğim.",
+        correct: "Ben yarın geleceğim.",
+        shortExplanation: "لاحقة المستقبل تتبعها لاحقة الشخص عند الحاجة.",
+        explanation: "صيغة المستقبل لا تتوقف عند -ecek أو -acak. يجب إضافة لاحقة الشخص: geleceğim، geleceksin، gelecek، geleceğiz، geleceksiniz.",
+        rule: "-ecek/-acak + لاحقة الشخص",
+        examples: [
+            {
+                wrong: "Ben yarın gelecek.",
+                correct: "Ben yarın geleceğim."
+            },
+            {
+                wrong: "Sen yarın geleceğim.",
+                correct: "Sen yarın geleceksin."
+            }
+        ],
+        keywords: ["المستقبل", "geleceğim", "geleceksin"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 91
+    ----------------------------------------------------- */
+    {
+        id: 91,
+        title: "الخلط بين -di و -miş في الحديث عن التجربة",
+        category: "tenses",
+        level: "متقدم",
+        wrong: "Türkiye'ye hiç gitmiş değilim.",
+        correct: "Türkiye'ye hiç gitmedim.",
+        shortExplanation: "عند نفي تجربة حدثت أو لم تحدث نستخدم غالبًا صيغة الماضي المناسبة مع hiç.",
+        explanation: "للتعبير عن أنك لم تذهب إلى تركيا من قبل يمكن قول Türkiye'ye hiç gitmedim. أما تراكيب -miş و -miş değilim فلها استخدامات مختلفة ولا ينبغي استعمالها كترجمة مباشرة لكل صيغة عربية.",
+        rule: "لا تترجم صيغ الماضي حرفيًا من العربية",
+        examples: [
+            {
+                wrong: "Hiç İstanbul'a gittim.",
+                correct: "Hiç İstanbul'a gitmedim."
+            },
+            {
+                wrong: "Hiç bu filmi izledim.",
+                correct: "Hiç bu filmi izlemedim."
+            }
+        ],
+        keywords: ["miş", "di", "hiç", "التجربة"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 92
+    ----------------------------------------------------- */
+    {
+        id: 92,
+        title: "الخلط بين gelmek و gitmek في المحادثة",
+        category: "conversation",
+        level: "مبتدئ",
+        wrong: "Ben senin yanına gidiyorum. Sen de benim yanıma geliyorsun.",
+        correct: "Ben senin yanına geliyorum. Sen de benim yanıma geliyorsun.",
+        shortExplanation: "gelmek و gitmek يختلفان حسب اتجاه الحركة بالنسبة إلى نقطة الحديث.",
+        explanation: "gelmek يعني القدوم باتجاه المتحدث أو المكان الذي ينظر إليه باعتباره نقطة وصول، بينما gitmek يعني الذهاب بعيدًا عن نقطة المرجع.",
+        rule: "gelmek = يأتي / gitmek = يذهب",
+        examples: [
+            {
+                wrong: "Ben eve gidiyorum, sen de eve gidiyorsun.",
+                correct: "Ben eve gidiyorum, sen de eve geliyorsun."
+            },
+            {
+                wrong: "Ben senin yanına gidiyorum.",
+                correct: "Ben senin yanına geliyorum."
+            }
+        ],
+        keywords: ["gelmek", "gitmek", "المحادثة", "يأتي", "يذهب"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 93
+    ----------------------------------------------------- */
+    {
+        id: 93,
+        title: "استخدام teşekkürler بشكل غير مناسب",
+        category: "conversation",
+        level: "مبتدئ",
+        wrong: "Teşekkürler sana.",
+        correct: "Teşekkür ederim.",
+        shortExplanation: "Teşekkür ederim هي الصيغة الشائعة والطبيعية للتعبير عن الشكر.",
+        explanation: "يمكن استخدام teşekkürler في سياقات معينة، لكن عندما تريد أن تقول شكرًا لك بطريقة طبيعية وشائعة استخدم Teşekkür ederim.",
+        rule: "Teşekkür ederim = شكرًا لك",
+        examples: [
+            {
+                wrong: "Sana teşekkür.",
+                correct: "Sana teşekkür ederim."
+            },
+            {
+                wrong: "Teşekkür ederim.",
+                correct: "Teşekkür ederim."
+            }
+        ],
+        keywords: ["teşekkür", "شكرًا", "المحادثة"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 94
+    ----------------------------------------------------- */
+    {
+        id: 94,
+        title: "الرد على الشكر باستخدام صيغة غير طبيعية",
+        category: "conversation",
+        level: "مبتدئ",
+        wrong: "Teşekkür ederim. - Bir şey değil.",
+        correct: "Teşekkür ederim. - Rica ederim.",
+        shortExplanation: "Rica ederim من أكثر الردود شيوعًا على teşekkür ederim.",
+        explanation: "عندما يقول شخص Teşekkür ederim يمكنك الرد بـ Rica ederim بمعنى العفو أو على الرحب والسعة. Bir şey değil ممكنة أيضًا في بعض السياقات، لكن من المفيد للمتعلم معرفة الصيغة الشائعة.",
+        rule: "Teşekkür ederim → Rica ederim",
+        examples: [
+            {
+                wrong: "Sağ ol. - Teşekkür ederim.",
+                correct: "Sağ ol. - Rica ederim."
+            }
+        ],
+        keywords: ["rica ederim", "teşekkür ederim", "العفو"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 95
+    ----------------------------------------------------- */
+    {
+        id: 95,
+        title: "الخلط بين nasılsın و nasıl",
+        category: "conversation",
+        level: "مبتدئ",
+        wrong: "Sen nasıl?",
+        correct: "Sen nasılsın?",
+        shortExplanation: "عند سؤال شخص عن حاله نستخدم nasılsın.",
+        explanation: "nasıl تعني كيف، وعند سؤال شخص مباشرًا عن حاله نقول Nasılsın؟ أي كيف حالك؟ وتضاف لاحقة الشخص الثانية -sın.",
+        rule: "nasıl + sın = nasılsın",
+        examples: [
+            {
+                wrong: "Sen nasıl bugün?",
+                correct: "Bugün nasılsın?"
+            },
+            {
+                wrong: "Nasılsın?",
+                correct: "Nasılsın?"
+            }
+        ],
+        keywords: ["nasılsın", "nasıl", "كيف حالك"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 96
+    ----------------------------------------------------- */
+    {
+        id: 96,
+        title: "الخلط بين geçmiş olsun و iyi olsun",
+        category: "conversation",
+        level: "متوسط",
+        wrong: "Hasta oldun. İyi olsun.",
+        correct: "Geçmiş olsun.",
+        shortExplanation: "Geçmiş olsun تعبير شائع عند المرض أو حدوث شيء سيئ.",
+        explanation: "عندما يكون شخص مريضًا أو تعرض لموقف مؤلم نقول Geçmiş olsun. وهي عبارة ثابتة لا تترجم كلمة بكلمة إلى العربية.",
+        rule: "Geçmiş olsun = سلامتك / أتمنى أن تمر بسلام",
+        examples: [
+            {
+                wrong: "Ameliyat oldun. İyi olsun.",
+                correct: "Ameliyat oldun. Geçmiş olsun."
+            }
+        ],
+        keywords: ["geçmiş olsun", "المرض", "المحادثة"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 97
+    ----------------------------------------------------- */
+    {
+        id: 97,
+        title: "الخلط بين görüşürüz و hoşça kal",
+        category: "conversation",
+        level: "مبتدئ",
+        wrong: "Ben gidiyorum. Görüşürüz.",
+        correct: "Ben gidiyorum. Hoşça kal.",
+        shortExplanation: "العبارة المناسبة عند الوداع تختلف حسب من سيغادر ومن سيبقى.",
+        explanation: "Hoşça kal تقال عادة للشخص الذي سيبقى عندما يكون المتحدث هو المغادر، بينما Güle güle تقال عادة للمغادر من قبل الشخص الذي سيبقى. Görüşürüz تعني نراك لاحقًا ويمكن استخدامها بين الطرفين.",
+        rule: "Hoşça kal / Güle güle / Görüşürüz",
+        examples: [
+            {
+                wrong: "أنا سأبقى وأنت ذاهب: Hoşça kal.",
+                correct: "أنا سأبقى وأنت ذاهب: Güle güle."
+            }
+        ],
+        keywords: ["hoşça kal", "güle güle", "görüşürüz"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 98
+    ----------------------------------------------------- */
+    {
+        id: 98,
+        title: "ترجمة صباح الخير حرفيًا",
+        category: "arabic-translation",
+        level: "مبتدئ",
+        wrong: "Sabah iyi.",
+        correct: "Günaydın.",
+        shortExplanation: "التحية الطبيعية لصباح الخير هي Günaydın.",
+        explanation: "لا تترجم التحيات العربية حرفيًا. في التركية Günaydın هي التحية الشائعة في الصباح.",
+        rule: "صباح الخير = Günaydın",
+        examples: [
+            {
+                wrong: "Akşam iyi.",
+                correct: "İyi akşamlar."
+            },
+            {
+                wrong: "Gece iyi.",
+                correct: "İyi geceler."
+            }
+        ],
+        keywords: ["Günaydın", "صباح الخير", "التحيات"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 99
+    ----------------------------------------------------- */
+    {
+        id: 99,
+        title: "ترجمة عندي جوع حرفيًا",
+        category: "arabic-translation",
+        level: "مبتدئ",
+        wrong: "Benim açlık var.",
+        correct: "Açım.",
+        shortExplanation: "التعبير التركي الطبيعي عن الجوع هو Açım.",
+        explanation: "العربية تستخدم تركيب عندي جوع، بينما التركية تستخدم الصفة aç مع لاحقة الشخص: Açım تعني أنا جائع.",
+        rule: "Açım = أنا جائع",
+        examples: [
+            {
+                wrong: "Benim susuzluk var.",
+                correct: "Susadım."
+            },
+            {
+                wrong: "Benim uykum var.",
+                correct: "Uykum var."
+            }
+        ],
+        keywords: ["açım", "الجوع", "ترجمة حرفية"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 100
+    ----------------------------------------------------- */
+    {
+        id: 100,
+        title: "الخلط بين acıkmak و aç olmak",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Şimdi çok açıyorum.",
+        correct: "Şimdi çok acıktım.",
+        shortExplanation: "acıktım تعني أصبحت جائعًا، بينما açım تعني أنا جائع.",
+        explanation: "الفعل acıkmak يعني أن يصبح الشخص جائعًا، ولذلك نقول Acıktım عندما نشعر بالجوع. أما Açım فهي صفة بمعنى أنا جائع.",
+        rule: "Acıktım = جعت / Açım = أنا جائع",
+        examples: [
+            {
+                wrong: "Çok açıyorum.",
+                correct: "Çok acıktım."
+            },
+            {
+                wrong: "Şimdi açım.",
+                correct: "Şimdi açım."
+            }
+        ],
+        keywords: ["acıkmak", "acıktım", "açım", "الجوع"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 101
+    ----------------------------------------------------- */
+    {
+        id: 101,
+        title: "الخلط بين bilmek و öğrenmek",
+        category: "similar-words",
+        level: "مبتدئ",
+        wrong: "Türkçe öğreniyorum ve çok biliyorum.",
+        correct: "Türkçe öğreniyorum ve çok şey biliyorum.",
+        shortExplanation: "öğrenmek يعني يتعلم، بينما bilmek يعني يعرف.",
+        explanation: "عندما تقول إنك تتعلم التركية تستخدم Türkçe öğreniyorum. أما عندما تريد القول إنك تعرف معلومات أو شيئًا معينًا فتستخدم bilmek.",
+        rule: "öğrenmek = يتعلم / bilmek = يعرف",
+        examples: [
+            {
+                wrong: "Türkçe biliyorum.",
+                correct: "Türkçe biliyorum."
+            },
+            {
+                wrong: "Türkçe bilmek istiyorum.",
+                correct: "Türkçe öğrenmek istiyorum."
+            }
+        ],
+        keywords: ["bilmek", "öğrenmek", "التعلم"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 102
+    ----------------------------------------------------- */
+    {
+        id: 102,
+        title: "الخلط بين bakmak و görmek",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Seni bakıyorum.",
+        correct: "Sana bakıyorum.",
+        shortExplanation: "bakmak يأخذ غالبًا لاحقة الاتجاه -e / -a، بينما görmek يأخذ المفعول به.",
+        explanation: "bakmak يعني ينظر إلى، ولذلك نقول Sana bakıyorum. أما görmek فهو يرى شخصًا أو شيئًا، ويمكن أن يأخذ المفعول به المحدد مثل Seni görüyorum.",
+        rule: "bakmak + -e/-a / görmek + مفعول به",
+        examples: [
+            {
+                wrong: "Seni bakıyorum.",
+                correct: "Sana bakıyorum."
+            },
+            {
+                wrong: "Sana görüyorum.",
+                correct: "Seni görüyorum."
+            }
+        ],
+        keywords: ["bakmak", "görmek", "sana", "seni"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 103
+    ----------------------------------------------------- */
+    {
+        id: 103,
+        title: "الخلط بين dinlemek و duymak",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Seni duyuyorum müzik.",
+        correct: "Müzik dinliyorum.",
+        shortExplanation: "dinlemek يعني الاستماع عمدًا، بينما duymak يعني السماع أو إدراك الصوت.",
+        explanation: "عندما تستمع إلى الموسيقى نقول Müzik dinliyorum. أما duymak فيستخدم عندما تسمع صوتًا أو تدركه دون أن يكون التركيز على فعل الاستماع المقصود.",
+        rule: "dinlemek = يستمع / duymak = يسمع",
+        examples: [
+            {
+                wrong: "Müzik duyuyorum.",
+                correct: "Müzik dinliyorum."
+            },
+            {
+                wrong: "Seni dinliyorum.",
+                correct: "Seni dinliyorum."
+            }
+        ],
+        keywords: ["dinlemek", "duymak", "الموسيقى", "الاستماع"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 104
+    ----------------------------------------------------- */
+    {
+        id: 104,
+        title: "الخلط بين konuşmak و söylemek",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Bana Türkçe konuştu.",
+        correct: "Bana Türkçe konuştu.",
+        shortExplanation: "konuşmak يعني التحدث، بينما söylemek يعني قول شيء.",
+        explanation: "konuşmak يستخدم للحديث أو التحدث بلغة، بينما söylemek يستخدم عندما نقول شيئًا أو ننقل كلامًا. لذلك Bana söyledi تعني قال لي، بينما Benimle konuştu تعني تحدث معي.",
+        rule: "konuşmak = يتحدث / söylemek = يقول",
+        examples: [
+            {
+                wrong: "Bana konuştu.",
+                correct: "Benimle konuştu."
+            },
+            {
+                wrong: "Benimle bunu söyledi.",
+                correct: "Bana bunu söyledi."
+            }
+        ],
+        keywords: ["konuşmak", "söylemek", "الحديث", "القول"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 105
+    ----------------------------------------------------- */
+    {
+        id: 105,
+        title: "الخلط بين vermek و almak",
+        category: "similar-words",
+        level: "مبتدئ",
+        wrong: "Senden bir kitap verdim.",
+        correct: "Senden bir kitap aldım.",
+        shortExplanation: "vermek يعني يعطي، بينما almak يعني يأخذ أو يحصل على.",
+        explanation: "من السهل الخلط بين الفعلين. Senden bir kitap aldım تعني أخذت أو حصلت على كتاب منك، بينما Sana bir kitap verdim تعني أعطيتك كتابًا.",
+        rule: "vermek = يعطي / almak = يأخذ",
+        examples: [
+            {
+                wrong: "Sana bir hediye aldım.",
+                correct: "Sana bir hediye verdim."
+            },
+            {
+                wrong: "Senden para verdim.",
+                correct: "Senden para aldım."
+            }
+        ],
+        keywords: ["vermek", "almak", "يعطي", "يأخذ"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 106
+    ----------------------------------------------------- */
+    {
+        id: 106,
+        title: "الخلط بين ev و evde و eve",
+        category: "cases",
+        level: "مبتدئ",
+        wrong: "Ben ev gidiyorum.",
+        correct: "Ben eve gidiyorum.",
+        shortExplanation: "لاحقة الاتجاه ضرورية عندما يكون المعنى إلى المنزل.",
+        explanation: "ev تعني منزل، evde تعني في المنزل، و eve تعني إلى المنزل. مع gitmek نستخدم eve عندما نقصد الذهاب إلى المنزل.",
+        rule: "ev = منزل / evde = في المنزل / eve = إلى المنزل",
+        examples: [
+            {
+                wrong: "Ev gidiyorum.",
+                correct: "Eve gidiyorum."
+            },
+            {
+                wrong: "Evde gidiyorum.",
+                correct: "Eve gidiyorum."
+            }
+        ],
+        keywords: ["ev", "evde", "eve", "gitmek"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 107
+    ----------------------------------------------------- */
+    {
+        id: 107,
+        title: "الخلط بين -den و -e مع بعض الأفعال",
+        category: "cases",
+        level: "متوسط",
+        wrong: "Senden korkuyorum.",
+        correct: "Senden korkuyorum.",
+        shortExplanation: "الفعل korkmak يأخذ لاحقة -den / -dan عند تحديد الشيء الذي نخاف منه.",
+        explanation: "بعض الأفعال التركية تتطلب حالة إعرابية معينة. korkmak من الأفعال التي تأتي غالبًا مع ablative: Senden korkuyorum أي أخاف منك.",
+        rule: "korkmak + -den/-dan",
+        examples: [
+            {
+                wrong: "Sana korkuyorum.",
+                correct: "Senden korkuyorum."
+            },
+            {
+                wrong: "Köpekten korkuyorum.",
+                correct: "Köpekten korkuyorum."
+            }
+        ],
+        keywords: ["korkmak", "dan", "den", "من", "الخوف"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 108
+    ----------------------------------------------------- */
+    {
+        id: 108,
+        title: "الخلط بين yardım etmek و yardım yapmak",
+        category: "conversation",
+        level: "متوسط",
+        wrong: "Bana yardım yapar mısın?",
+        correct: "Bana yardım eder misin?",
+        shortExplanation: "التعبير الشائع هو yardım etmek.",
+        explanation: "في التركية توجد تراكيب ثابتة تتكون من اسم + فعل مساعد. التعبير الصحيح والشائع هو yardım etmek، لذلك نقول Bana yardım eder misin؟.",
+        rule: "yardım etmek = يساعد",
+        examples: [
+            {
+                wrong: "Bana yardım yap.",
+                correct: "Bana yardım et."
+            },
+            {
+                wrong: "Bana yardım yapabilir misin?",
+                correct: "Bana yardım edebilir misin?"
+            }
+        ],
+        keywords: ["yardım etmek", "yardım eder misin", "المساعدة"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 109
+    ----------------------------------------------------- */
+    {
+        id: 109,
+        title: "الخلط بين karar vermek و karar yapmak",
+        category: "conversation",
+        level: "متوسط",
+        wrong: "Bir karar yaptım.",
+        correct: "Bir karar verdim.",
+        shortExplanation: "التعبير الثابت هو karar vermek.",
+        explanation: "عند التعبير عن اتخاذ قرار نستخدم karar vermek، وليس karar yapmak. لذلك Bir karar verdim تعني اتخذت قرارًا.",
+        rule: "karar vermek = يتخذ قرارًا",
+        examples: [
+            {
+                wrong: "Karar yaptım.",
+                correct: "Karar verdim."
+            },
+            {
+                wrong: "Bir karar yapmalıyız.",
+                correct: "Bir karar vermeliyiz."
+            }
+        ],
+        keywords: ["karar", "vermek", "قرار"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 110
+    ----------------------------------------------------- */
+    {
+        id: 110,
+        title: "الخلط بين ders çalışmak و ders yapmak",
+        category: "conversation",
+        level: "مبتدئ",
+        wrong: "Bugün ders yapıyorum.",
+        correct: "Bugün ders çalışıyorum.",
+        shortExplanation: "التعبير الشائع للدراسة هو ders çalışmak.",
+        explanation: "عندما نقصد الدراسة أو المذاكرة نقول ders çalışmak. أما yapmak فيستخدم مع تراكيب أخرى مثل ödev yapmak أي أداء الواجب.",
+        rule: "ders çalışmak = يدرس / ödev yapmak = يؤدي الواجب",
+        examples: [
+            {
+                wrong: "Her gün ders yapıyorum.",
+                correct: "Her gün ders çalışıyorum."
+            },
+            {
+                wrong: "Ödev çalışıyorum.",
+                correct: "Ödev yapıyorum."
+            }
+        ],
+        keywords: ["ders çalışmak", "ödev yapmak", "الدراسة"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 111
+    ----------------------------------------------------- */
+    {
+        id: 111,
+        title: "استخدام sahip olmak بدل var في الملكية اليومية",
+        category: "arabic-translation",
+        level: "متوسط",
+        wrong: "Ben bir arabaya sahibim.",
+        correct: "Benim bir arabam var.",
+        shortExplanation: "sahip olmak صحيح لكنه أكثر رسمية، بينما var شائع جدًا في الملكية اليومية.",
+        explanation: "الجملة Benim bir arabam var هي الطريقة الطبيعية والشائعة جدًا للتعبير عن لدي سيارة. sahip olmak موجودة وصحيحة لكنها قد تبدو أكثر رسمية في كثير من السياقات.",
+        rule: "Benim + الاسم مع لاحقة الملكية + var",
+        examples: [
+            {
+                wrong: "Ben iki kardeşe sahibim.",
+                correct: "Benim iki kardeşim var."
+            },
+            {
+                wrong: "Bir ev sahibim.",
+                correct: "Bir evim var."
+            }
+        ],
+        keywords: ["var", "sahip olmak", "الملكية", "لدي"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 112
+    ----------------------------------------------------- */
+    {
+        id: 112,
+        title: "الخلط بين çok و birçok",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Çok insanlar geldi.",
+        correct: "Birçok insan geldi.",
+        shortExplanation: "birçok تأتي عادة مع الاسم المفرد المعدود.",
+        explanation: "birçok تعني العديد من، وتأتي عادة مع الاسم بصيغة المفرد: birçok insan، birçok kitap. أما çok فيمكن أن تأتي مع الجمع أو غير المعدود حسب التركيب.",
+        rule: "birçok + اسم مفرد",
+        examples: [
+            {
+                wrong: "Birçok insanlar geldi.",
+                correct: "Birçok insan geldi."
+            },
+            {
+                wrong: "Çok insan geldi.",
+                correct: "Çok insan geldi."
+            }
+        ],
+        keywords: ["çok", "birçok", "العديد", "الجمع"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 113
+    ----------------------------------------------------- */
+    {
+        id: 113,
+        title: "استخدام الجمع بعد بعض كلمات الكمية",
+        category: "suffixes",
+        level: "متوسط",
+        wrong: "İki kitaplar aldım.",
+        correct: "İki kitap aldım.",
+        shortExplanation: "بعد الأعداد المحددة لا نضع عادة لاحقة الجمع على الاسم.",
+        explanation: "عندما يسبق الاسم عدد محدد مثل iki أو üç، يبقى الاسم عادة بصيغة المفرد: iki kitap، üç öğrenci. لا نقول iki kitaplar.",
+        rule: "عدد + اسم مفرد",
+        examples: [
+            {
+                wrong: "Beş öğrenciler geldi.",
+                correct: "Beş öğrenci geldi."
+            },
+            {
+                wrong: "Üç arabalar var.",
+                correct: "Üç araba var."
+            }
+        ],
+        keywords: ["الجمع", "الأعداد", "iki", "üç", "lar", "ler"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 114
+    ----------------------------------------------------- */
+    {
+        id: 114,
+        title: "الخلط بين benim و benimki",
+        category: "suffixes",
+        level: "متوسط",
+        wrong: "Bu kitap benimki.",
+        correct: "Bu kitap benim.",
+        shortExplanation: "benim تعني لي/خاصتي قبل أو بعد الاسم، بينما benimki تستخدم بدل الاسم المحذوف.",
+        explanation: "إذا قلت Bu kitap benim فأنت تقول هذا الكتاب لي. أما Bu benimki فهي تعني هذا لي/هذا خاصتي عندما يكون الاسم مفهومًا من السياق.",
+        rule: "benim = لي / benimki = خاصتي",
+        examples: [
+            {
+                wrong: "Bu benimki kitabım.",
+                correct: "Bu benim kitabım."
+            },
+            {
+                wrong: "Hangisi senin? Bu senin.",
+                correct: "Hangisi senin? Bu seninki."
+            }
+        ],
+        keywords: ["benim", "benimki", "senin", "seninki"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 115
+    ----------------------------------------------------- */
+    {
+        id: 115,
+        title: "الخلط بين kendi و kendisi",
+        category: "suffixes",
+        level: "متقدم",
+        wrong: "Ben kendisi yaptım.",
+        correct: "Ben kendim yaptım.",
+        shortExplanation: "kendi تأخذ لاحقة الشخص المناسبة حسب الضمير.",
+        explanation: "عندما نقول أنا فعلت ذلك بنفسي نستخدم kendim. مع أنت: kendin، هو: kendisi، نحن: kendimiz، أنتم: kendiniz.",
+        rule: "kendi + لاحقة الشخص",
+        examples: [
+            {
+                wrong: "Sen kendisi yaptın.",
+                correct: "Sen kendin yaptın."
+            },
+            {
+                wrong: "Biz kendisi yaptık.",
+                correct: "Biz kendimiz yaptık."
+            }
+        ],
+        keywords: ["kendi", "kendim", "kendin", "kendisi"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 116
+    ----------------------------------------------------- */
+    {
+        id: 116,
+        title: "الخلط بين -ken و عندما",
+        category: "sentence-order",
+        level: "متقدم",
+        wrong: "Ben yemek yiyorum, sen geldin.",
+        correct: "Ben yemek yerken sen geldin.",
+        shortExplanation: "لاحقة -ken تستخدم للتعبير عن حدوث فعل أثناء فعل آخر.",
+        explanation: "عندما نريد القول بينما كنت آكل جاء أنت، يمكن استخدام -ken مع الفعل: yemek yerken. هذه اللاحقة مهمة جدًا في الجمل المركبة.",
+        rule: "الفعل + -(y)ken = بينما / عندما",
+        examples: [
+            {
+                wrong: "Uyuyorumken telefon çaldı.",
+                correct: "Uyurken telefon çaldı."
+            },
+            {
+                wrong: "Çalışıyorumken geldi.",
+                correct: "Çalışırken geldi."
+            }
+        ],
+        keywords: ["ken", "بينما", "عندما", "الجمل المركبة"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 117
+    ----------------------------------------------------- */
+    {
+        id: 117,
+        title: "استخدام sonra بطريقة خاطئة مع الفعل",
+        category: "sentence-order",
+        level: "متوسط",
+        wrong: "Yemek sonra dışarı çıktım.",
+        correct: "Yemekten sonra dışarı çıktım.",
+        shortExplanation: "بعد الاسم نستخدم sonra، ومع الحدث نحتاج غالبًا إلى لاحقة -den/-dan.",
+        explanation: "عند القول بعد الأكل خرجت، نستخدم yemek + ten ثم sonra: Yemekten sonra dışarı çıktım.",
+        rule: "اسم + -den/-dan + sonra",
+        examples: [
+            {
+                wrong: "Ders sonra eve gittim.",
+                correct: "Dersten sonra eve gittim."
+            },
+            {
+                wrong: "İş sonra geldim.",
+                correct: "İşten sonra geldim."
+            }
+        ],
+        keywords: ["sonra", "بعد", "den", "dan"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 118
+    ----------------------------------------------------- */
+    {
+        id: 118,
+        title: "استخدام önce بدون لاحقة مع الاسم",
+        category: "sentence-order",
+        level: "متوسط",
+        wrong: "Ders önce kahve içtim.",
+        correct: "Dersten önce kahve içtim.",
+        shortExplanation: "مع الاسم نستخدم -den/-dan قبل önce في هذا التركيب.",
+        explanation: "Dersten önce تعني قبل الدرس. لاحقة -den هنا تربط الاسم بتعبير önce.",
+        rule: "اسم + -den/-dan + önce",
+        examples: [
+            {
+                wrong: "Yemek önce ellerimi yıkadım.",
+                correct: "Yemekten önce ellerimi yıkadım."
+            },
+            {
+                wrong: "İş önce geldim.",
+                correct: "İşten önce geldim."
+            }
+        ],
+        keywords: ["önce", "قبل", "den", "dan"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 119
+    ----------------------------------------------------- */
+    {
+        id: 119,
+        title: "الخلط بين çünkü و bu yüzden",
+        category: "sentence-order",
+        level: "متوسط",
+        wrong: "Hastayım bu yüzden evde kalıyorum çünkü.",
+        correct: "Hastayım, bu yüzden evde kalıyorum.",
+        shortExplanation: "çünkü تقدم السبب، بينما bu yüzden تقدم النتيجة.",
+        explanation: "çünkü تعني لأن وتقدم سببًا: Evde kalıyorum çünkü hastayım. أما bu yüzden فتعني لذلك: Hastayım, bu yüzden evde kalıyorum.",
+        rule: "çünkü = لأن / bu yüzden = لذلك",
+        examples: [
+            {
+                wrong: "Çalışmadım, çünkü bu yüzden yorgundum.",
+                correct: "Çalışmadım çünkü yorgundum."
+            },
+            {
+                wrong: "Yorgundum, çünkü evde kaldım.",
+                correct: "Yorgundum, bu yüzden evde kaldım."
+            }
+        ],
+        keywords: ["çünkü", "bu yüzden", "لأن", "لذلك"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 120
+    ----------------------------------------------------- */
+    {
+        id: 120,
+        title: "الخلط بين rağmen و rağmen",
+        category: "prepositions",
+        level: "متقدم",
+        wrong: "Yağmur rağmen dışarı çıktım.",
+        correct: "Yağmura rağmen dışarı çıktım.",
+        shortExplanation: "كلمة rağmen تأتي عادة مع لاحقة الاتجاه -e/-a.",
+        explanation: "التعبير الصحيح هو Yağmura rağmen أي رغم المطر. rağmen من الكلمات التي تتطلب في هذا الاستخدام الاسم في صيغة الاتجاه.",
+        rule: "اسم + -e/-a + rağmen",
+        examples: [
+            {
+                wrong: "Zorluklar rağmen devam ettim.",
+                correct: "Zorluklara rağmen devam ettim."
+            },
+            {
+                wrong: "Hastalık rağmen çalıştı.",
+                correct: "Hastalığa rağmen çalıştı."
+            }
+        ],
+        keywords: ["rağmen", "رغم", "a", "e"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 121
+    ----------------------------------------------------- */
+    {
+        id: 121,
+        title: "الخلط بين gibi و kadar",
+        category: "prepositions",
+        level: "متوسط",
+        wrong: "Sen kadar hızlı koşuyor.",
+        correct: "Senin kadar hızlı koşuyor.",
+        shortExplanation: "gibi تعني مثل، و kadar تستخدم للمقارنة بمعنى بقدر.",
+        explanation: "عند مقارنة شخص بآخر نقول Senin kadar hızlı أي سريع بقدر سرعتك. أما senin gibi تعني مثلك أو على طريقتك.",
+        rule: "gibi = مثل / kadar = بقدر",
+        examples: [
+            {
+                wrong: "Sen gibi hızlı değil.",
+                correct: "Senin kadar hızlı değil."
+            },
+            {
+                wrong: "Senin kadar konuşuyor.",
+                correct: "Senin gibi konuşuyor."
+            }
+        ],
+        keywords: ["gibi", "kadar", "المقارنة", "مثل"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 122
+    ----------------------------------------------------- */
+    {
+        id: 122,
+        title: "الخلط بين daha و en",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Bu en güzel iki kitap.",
+        correct: "Bu iki kitabın en güzeli.",
+        shortExplanation: "daha تستخدم للمقارنة بين شيئين، و en للتفضيل الأعلى.",
+        explanation: "daha güzel تعني أجمل، بينما en güzel تعني الأجمل. عند الحديث عن أعلى درجة من مجموعة نستخدم en.",
+        rule: "daha = أكثر / en = الأكثر",
+        examples: [
+            {
+                wrong: "Ali en uzun Ahmet'ten.",
+                correct: "Ali Ahmet'ten daha uzun."
+            },
+            {
+                wrong: "Bu daha güzel kitap.",
+                correct: "Bu en güzel kitap."
+            }
+        ],
+        keywords: ["daha", "en", "المقارنة", "التفضيل"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 123
+    ----------------------------------------------------- */
+    {
+        id: 123,
+        title: "استخدام من المقارنة بطريقة خاطئة",
+        category: "cases",
+        level: "متوسط",
+        wrong: "Ali daha uzun Mehmet.",
+        correct: "Ali Mehmet'ten daha uzun.",
+        shortExplanation: "المقارنة بـ daha تحتاج غالبًا إلى -den/-dan للشخص أو الشيء الذي نقارن به.",
+        explanation: "عندما نقول علي أطول من محمد، نستخدم Mehmet'ten daha uzun. اللاحقة -den/-dan تعطي معنى من في المقارنة.",
+        rule: "A + B'den daha + صفة",
+        examples: [
+            {
+                wrong: "Bu araba daha hızlı o araba.",
+                correct: "Bu araba o arabadan daha hızlı."
+            },
+            {
+                wrong: "Ayşe daha genç Fatma.",
+                correct: "Ayşe Fatma'dan daha genç."
+            }
+        ],
+        keywords: ["المقارنة", "daha", "den", "dan"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 124
+    ----------------------------------------------------- */
+    {
+        id: 124,
+        title: "الخلط بين lazım و gerek",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Gitmek lazım bana.",
+        correct: "Gitmem lazım.",
+        shortExplanation: "عند التعبير عن ضرورة قيام شخص بفعل، تتغير بنية الجملة.",
+        explanation: "Gitmem lazım تعني يجب أن أذهب. لاحقة الملكية على الفعل الاسمي gitmem تحدد الشخص الذي يجب عليه القيام بالفعل.",
+        rule: "الفعل + لاحقة الشخص + lazım",
+        examples: [
+            {
+                wrong: "Çalışmak lazım bana.",
+                correct: "Çalışmam lazım."
+            },
+            {
+                wrong: "Gitmek gerek sana.",
+                correct: "Gitmen gerek."
+            }
+        ],
+        keywords: ["lazım", "gerek", "الضرورة", "يجب"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 125
+    ----------------------------------------------------- */
+    {
+        id: 125,
+        title: "استخدام zorunda بشكل خاطئ",
+        category: "suffixes",
+        level: "متقدم",
+        wrong: "Ben gitmek zorundayım.",
+        correct: "Ben gitmek zorundayım.",
+        shortExplanation: "التركيب صحيح، لكن يجب الانتباه إلى الفرق بين zorunda و lazım.",
+        explanation: "gitmek zorundayım تعني أنا مضطر للذهاب أو يجب علي الذهاب بسبب إلزام أو ضرورة قوية. أما gitmem lazım فتعني يجب أن أذهب، وقد تكون أخف من حيث الإلزام حسب السياق.",
+        rule: "الفعل + zorunda + لاحقة الشخص",
+        examples: [
+            {
+                wrong: "Gitmek zorundasın.",
+                correct: "Gitmek zorundasın."
+            },
+            {
+                wrong: "Çalışmak zorundayız.",
+                correct: "Çalışmak zorundayız."
+            }
+        ],
+        keywords: ["zorunda", "lazım", "gerek", "الإلزام"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 126
+    ----------------------------------------------------- */
+    {
+        id: 126,
+        title: "الخلط بين -ebilmek و istemek",
+        category: "suffixes",
+        level: "متوسط",
+        wrong: "Türkçe konuşmak istiyorum çünkü konuşabilirim.",
+        correct: "Türkçe konuşabilirim.",
+        shortExplanation: "يمكنني وأريد أن أفعل شيئًا معنيان مختلفان.",
+        explanation: "konuşabilirim تعني أستطيع التحدث، بينما konuşmak istiyorum تعني أريد التحدث. لاحقة -ebil/-abil تدل على القدرة أو الإمكانية.",
+        rule: "-ebil/-abil = يستطيع / istemek = يريد",
+        examples: [
+            {
+                wrong: "Gitmek istiyorum? بمعنى أستطيع الذهاب.",
+                correct: "Gidebilirim."
+            },
+            {
+                wrong: "Yüzebilirim. بمعنى أريد السباحة.",
+                correct: "Yüzmek istiyorum."
+            }
+        ],
+        keywords: ["ebil", "abil", "istemek", "القدرة", "الرغبة"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 127
+    ----------------------------------------------------- */
+    {
+        id: 127,
+        title: "نسيان لاحقة الملكية في بعض تراكيب الجسد",
+        category: "suffixes",
+        level: "مبتدئ",
+        wrong: "Benim baş ağrıyor.",
+        correct: "Başım ağrıyor.",
+        shortExplanation: "أسماء أعضاء الجسم غالبًا تأخذ لاحقة الملكية عند الحديث عن عضو الشخص نفسه.",
+        explanation: "عندما نقول رأسي يؤلمني، نستخدم Başım ağrıyor. اللاحقة -ım توضح أن الرأس يعود إلى المتحدث.",
+        rule: "عضو الجسم + لاحقة الملكية",
+        examples: [
+            {
+                wrong: "El ağrıyor.",
+                correct: "Elim ağrıyor."
+            },
+            {
+                wrong: "Göz ağrıyor.",
+                correct: "Gözüm ağrıyor."
+            }
+        ],
+        keywords: ["الملكية", "başım", "gözüm", "الجسم"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 128
+    ----------------------------------------------------- */
+    {
+        id: 128,
+        title: "الخلط بين hoşlanmak و sevmek",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Türk kahvesini hoşlanıyorum.",
+        correct: "Türk kahvesinden hoşlanıyorum.",
+        shortExplanation: "hoşlanmak يأخذ غالبًا لاحقة -den/-dan، بينما sevmek يأخذ المفعول به.",
+        explanation: "نقول Türk kahvesinden hoşlanıyorum أي تعجبني/أستمتع بالقهوة التركية. أما Türk kahvesini seviyorum فتعني أحب القهوة التركية.",
+        rule: "hoşlanmak + -den/-dan / sevmek + مفعول به",
+        examples: [
+            {
+                wrong: "Seni hoşlanıyorum.",
+                correct: "Senden hoşlanıyorum."
+            },
+            {
+                wrong: "Bu filmi hoşlanıyorum.",
+                correct: "Bu filmden hoşlanıyorum."
+            }
+        ],
+        keywords: ["hoşlanmak", "sevmek", "den", "dan"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 129
+    ----------------------------------------------------- */
+    {
+        id: 129,
+        title: "الخلط بين korkmak و korkutmak",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Bu film beni korkuyor.",
+        correct: "Bu film beni korkutuyor.",
+        shortExplanation: "korkmak يعني يخاف، بينما korkutmak يعني يخيف.",
+        explanation: "أنا أخاف من الفيلم: Bu filmden korkuyorum. الفيلم يخيفني: Bu film beni korkutuyor. الفرق هو بين الشعور بالخوف والتسبب بالخوف.",
+        rule: "korkmak = يخاف / korkutmak = يخيف",
+        examples: [
+            {
+                wrong: "Köpek beni korkuyor.",
+                correct: "Köpek beni korkutuyor."
+            },
+            {
+                wrong: "Ben seni korkutuyorum.",
+                correct: "Ben senden korkuyorum."
+            }
+        ],
+        keywords: ["korkmak", "korkutmak", "الخوف", "يخيف"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 130
+    ----------------------------------------------------- */
+    {
+        id: 130,
+        title: "الخلط بين unutmak و hatırlamak",
+        category: "similar-words",
+        level: "مبتدئ",
+        wrong: "Seni unutmuyorum mu? بمعنى أتذكرك.",
+        correct: "Seni hatırlıyorum.",
+        shortExplanation: "hatırlamak يعني يتذكر، بينما unutmamak يعني لا ينسى.",
+        explanation: "للتعبير بشكل مباشر عن التذكر نقول Seni hatırlıyorum. أما Seni unutmuyorum فتعني حرفيًا أنا لا أنساك، وهي مختلفة في التركيب والمعنى.",
+        rule: "hatırlamak = يتذكر / unutmak = ينسى",
+        examples: [
+            {
+                wrong: "Seni unutuyorum.",
+                correct: "Seni hatırlıyorum."
+            },
+            {
+                wrong: "Bu kelimeyi hatırlamıyorum.",
+                correct: "Bu kelimeyi hatırlamıyorum."
+            }
+        ],
+        keywords: ["unutmak", "hatırlamak", "يتذكر", "ينسى"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 131
+    ----------------------------------------------------- */
+    {
+        id: 131,
+        title: "الخلط بين açmak و açılmak",
+        category: "similar-words",
+        level: "متقدم",
+        wrong: "Kapı açtı.",
+        correct: "Kapı açıldı.",
+        shortExplanation: "açmak فعل متعدٍ، بينما açılmak يدل على الانفتاح أو حدوث الفعل على الشيء.",
+        explanation: "Ali kapıyı açtı تعني علي فتح الباب. أما Kapı açıldı فتعني الباب انفتح. اختيار الفعل يعتمد على وجود فاعل يقوم بالفعل أو حدوثه على الشيء.",
+        rule: "açmak = يفتح / açılmak = ينفتح",
+        examples: [
+            {
+                wrong: "Pencere açtı.",
+                correct: "Pencere açıldı."
+            },
+            {
+                wrong: "Ali açıldı kapıyı.",
+                correct: "Ali kapıyı açtı."
+            }
+        ],
+        keywords: ["açmak", "açılmak", "الباب", "الفتح"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 132
+    ----------------------------------------------------- */
+    {
+        id: 132,
+        title: "الخلط بين yapmak و olmak في الأحداث",
+        category: "similar-words",
+        level: "متقدم",
+        wrong: "Toplantı yaptık saat üçte.",
+        correct: "Saat üçte toplantı yaptık.",
+        shortExplanation: "بعض الأسماء تستخدم مع yapmak كتركيب ثابت، بينما أحداث أخرى تستخدم olmak.",
+        explanation: "toplantı yapmak تعني عقد اجتماع أو القيام باجتماع، وهي صحيحة. المهم ألا يتم ترجمة كل فعل عربي إلى yapmak بشكل آلي؛ بعض التراكيب تستخدم olmak أو etmek.",
+        rule: "احفظ التراكيب الثابتة مع الأفعال المساعدة",
+        examples: [
+            {
+                wrong: "Yardım yapmak.",
+                correct: "Yardım etmek."
+            },
+            {
+                wrong: "Karar yapmak.",
+                correct: "Karar vermek."
+            }
+        ],
+        keywords: ["yapmak", "olmak", "etmek", "vermek"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 133
+    ----------------------------------------------------- */
+    {
+        id: 133,
+        title: "استخدام الترتيب العربي للجملة الشرطية",
+        category: "sentence-order",
+        level: "متقدم",
+        wrong: "Eğer vaktim var, seni ararım.",
+        correct: "Eğer vaktim varsa seni ararım.",
+        shortExplanation: "الشرط في التركية يحتاج إلى صيغة -sa / -se.",
+        explanation: "عند التعبير عن إذا كان لدي وقت فسأتصل بك، نستخدم vaktim varsa. اللاحقة -sa/-se هي علامة الشرط.",
+        rule: "الفعل أو الجملة + -sa/-se",
+        examples: [
+            {
+                wrong: "Eğer gelir, seni ararım.",
+                correct: "Eğer gelirse seni ararım."
+            },
+            {
+                wrong: "Vaktim var, gelirsem.",
+                correct: "Vaktim varsa gelirim."
+            }
+        ],
+        keywords: ["الشرط", "sa", "se", "eğer"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 134
+    ----------------------------------------------------- */
+    {
+        id: 134,
+        title: "الخلط بين -se و -sa حسب انسجام الحركات",
+        category: "suffixes",
+        level: "متوسط",
+        wrong: "Gelirsa haber ver.",
+        correct: "Gelirse haber ver.",
+        shortExplanation: "لاحقة الشرط تتغير إلى -sa أو -se حسب انسجام الحركات.",
+        explanation: "إذا كان آخر حرف صوتي في الكلمة من المجموعة الأمامية نستخدم -se، وإذا كان من المجموعة الخلفية نستخدم -sa. لذلك gelirse صحيحة.",
+        rule: "-sa / -se وفق انسجام الحركات",
+        examples: [
+            {
+                wrong: "Bakirse.",
+                correct: "Bakarsa."
+            },
+            {
+                wrong: "Gelirsa.",
+                correct: "Gelirse."
+            }
+        ],
+        keywords: ["sa", "se", "الشرط", "انسجام الحركات"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 135
+    ----------------------------------------------------- */
+    {
+        id: 135,
+        title: "استخدام -erek/-arak بطريقة خاطئة",
+        category: "suffixes",
+        level: "متقدم",
+        wrong: "Koşerek eve gittim.",
+        correct: "Koşarak eve gittim.",
+        shortExplanation: "لاحقة -erek / -arak تعبر عن كيفية القيام بالفعل وتخضع لانسجام الحركات.",
+        explanation: "Koşarak eve gittim تعني ذهبت إلى المنزل وأنا أركض/بالركض. شكل اللاحقة يعتمد على آخر حرف صوتي في الفعل.",
+        rule: "-erek / -arak = عن طريق فعل الشيء / أثناء فعله",
+        examples: [
+            {
+                wrong: "Gülerek konuştu.",
+                correct: "Gülerek konuştu."
+            },
+            {
+                wrong: "Koşerek geldi.",
+                correct: "Koşarak geldi."
+            }
+        ],
+        keywords: ["erek", "arak", "طريقة الفعل"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 136
+    ----------------------------------------------------- */
+    {
+        id: 136,
+        title: "الخلط بين -meden و -madan",
+        category: "suffixes",
+        level: "متقدم",
+        wrong: "Kahvaltı yapmadan evden çıktım.",
+        correct: "Kahvaltı yapmadan evden çıktım.",
+        shortExplanation: "لاحقة -madan / -meden تعني دون أن يفعل.",
+        explanation: "Kahvaltı yapmadan evden çıktım تعني خرجت من المنزل دون أن أتناول الفطور. شكل اللاحقة يتغير حسب انسجام الحركات.",
+        rule: "-madan / -meden = دون أن",
+        examples: [
+            {
+                wrong: "Seni görmeden gitme.",
+                correct: "Seni görmeden gitme."
+            },
+            {
+                wrong: "Yemek yemeden uyudu.",
+                correct: "Yemek yemeden uyudu."
+            }
+        ],
+        keywords: ["madan", "meden", "دون", "النفي"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 137
+    ----------------------------------------------------- */
+    {
+        id: 137,
+        title: "الخلط بين -dikçe و كلما",
+        category: "suffixes",
+        level: "متقدم",
+        wrong: "Türkçe çalıştıkça daha iyi öğreniyorum.",
+        correct: "Türkçe çalıştıkça daha iyi öğreniyorum.",
+        shortExplanation: "-dikçe تستخدم للتعبير عن كلما أو كلما استمر الفعل.",
+        explanation: "Türkçe çalıştıkça daha iyi öğreniyorum تعني كلما درست التركية أكثر تعلمتها بشكل أفضل. هذا التركيب شائع في المستويات المتقدمة.",
+        rule: "-dikçe = كلما",
+        examples: [
+            {
+                wrong: "Daha çok okudukça daha çok kelime öğreniyorum.",
+                correct: "Daha çok okudukça daha çok kelime öğreniyorum."
+            },
+            {
+                wrong: "Yaşlandıkça değişiyor.",
+                correct: "Yaşlandıkça değişiyor."
+            }
+        ],
+        keywords: ["dikçe", "dikca", "كلما", "متقدم"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 138
+    ----------------------------------------------------- */
+    {
+        id: 138,
+        title: "الخلط بين rağmen و halde",
+        category: "prepositions",
+        level: "متقدم",
+        wrong: "Hasta rağmen işe gitti.",
+        correct: "Hasta olmasına rağmen işe gitti.",
+        shortExplanation: "مع الجمل الفعلية أو الصفات قد نحتاج إلى تركيب -masına rağmen.",
+        explanation: "عندما نقول رغم أنه مريض ذهب إلى العمل، يمكن استخدام Hasta olmasına rağmen. هذا تركيب متقدم يجمع الاسم الفعلي مع rağmen.",
+        rule: "الفعل/الصفة + -mesine/-masına rağmen",
+        examples: [
+            {
+                wrong: "Yorgun rağmen çalıştı.",
+                correct: "Yorgun olmasına rağmen çalıştı."
+            },
+            {
+                wrong: "İstemek rağmen geldi.",
+                correct: "İstememesine rağmen geldi."
+            }
+        ],
+        keywords: ["rağmen", "olmasına rağmen", "رغم"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 139
+    ----------------------------------------------------- */
+    {
+        id: 139,
+        title: "الخلط بين diye و için في الغرض",
+        category: "sentence-order",
+        level: "متقدم",
+        wrong: "Seni görmek için geldim.",
+        correct: "Seni görmek için geldim.",
+        shortExplanation: "الجملة صحيحة، لكن يجب فهم أن için يمكن أن تربط مصدر الفعل بالهدف.",
+        explanation: "Seni görmek için geldim تعني جئت لكي أراك. في التركية نستخدم المصدر görmek مع için للتعبير عن الغرض. كما توجد تراكيب بـ diye في بعض السياقات.",
+        rule: "مصدر الفعل + için = لكي / من أجل",
+        examples: [
+            {
+                wrong: "Türkçe öğrenmek için Türkiye'ye geldim.",
+                correct: "Türkçe öğrenmek için Türkiye'ye geldim."
+            },
+            {
+                wrong: "Seni görmek için aradım.",
+                correct: "Seni görmek için aradım."
+            }
+        ],
+        keywords: ["için", "diye", "الغرض", "لكي"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 140
+    ----------------------------------------------------- */
+    {
+        id: 140,
+        title: "الخلط بين diye و ki في نقل الكلام",
+        category: "sentence-order",
+        level: "متقدم",
+        wrong: "Gel diye bana söyledi.",
+        correct: "Gel dedi.",
+        shortExplanation: "diye و dedi لهما استخدامات مختلفة عند نقل الكلام والأوامر.",
+        explanation: "عند نقل أمر مباشر مثل قال لي تعال، يمكن قول Bana 'gel' dedi أو Bana gelmemi söyledi حسب التركيب. أما diye فتستخدم في تراكيب مثل Beni çağır diye söyledi، أي قال لكي يدعوني/قال أن أدعوه حسب السياق.",
+        rule: "dedi / söyledi / diye + الجملة حسب المعنى",
+        examples: [
+            {
+                wrong: "Bana gel diye söyledi.",
+                correct: "Bana gelmemi söyledi."
+            },
+            {
+                wrong: "Bana gel dedi.",
+                correct: "Bana gel dedi."
+            }
+        ],
+        keywords: ["diye", "dedi", "söyledi", "نقل الكلام"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 141
+    ----------------------------------------------------- */
+    {
+        id: 141,
+        title: "الخلط بين gerek و gerekmek",
+        category: "similar-words",
+        level: "متقدم",
+        wrong: "Gitmeye gerek ediyorum.",
+        correct: "Gitmem gerekiyor.",
+        shortExplanation: "gerekmek فعل يعني يكون ضروريًا، وله تراكيب خاصة.",
+        explanation: "Gitmem gerekiyor تعني أحتاج إلى الذهاب أو يجب أن أذهب. لا نستخدم gerek ediyorum بهذه الصورة. ويمكن أيضًا قول Gitmem gerek.",
+        rule: "الفعل + لاحقة الشخص + gerekiyor/gerek",
+        examples: [
+            {
+                wrong: "Çalışmak gerekiyor bana.",
+                correct: "Çalışmam gerekiyor."
+            },
+            {
+                wrong: "Gitmeye gerek ediyorum.",
+                correct: "Gitmem gerekiyor."
+            }
+        ],
+        keywords: ["gerekiyor", "gerek", "الضرورة"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 142
+    ----------------------------------------------------- */
+    {
+        id: 142,
+        title: "الخلط بين rağmen و fakat",
+        category: "prepositions",
+        level: "متقدم",
+        wrong: "Yağmur rağmen gitmedim.",
+        correct: "Yağmura rağmen gitmedim.",
+        shortExplanation: "fakat تعني لكن، أما rağmen فتعني رغم وتتطلب تركيبًا مختلفًا.",
+        explanation: "لا يمكن استبدال rağmen بـ fakat مباشرة. Fakat تربط بين جملتين متعارضتين بمعنى لكن، بينما rağmen تبني معنى رغم شيء ما.",
+        rule: "fakat = لكن / rağmen = رغم",
+        examples: [
+            {
+                wrong: "Yorgunum rağmen çalışıyorum.",
+                correct: "Yorgunum fakat çalışıyorum."
+            },
+            {
+                wrong: "Yağmur fakat dışarı çıktım.",
+                correct: "Yağmura rağmen dışarı çıktım."
+            }
+        ],
+        keywords: ["rağmen", "fakat", "لكن", "رغم"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 143
+    ----------------------------------------------------- */
+    {
+        id: 143,
+        title: "الخلط بين herkes و her insan",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Her insanlar bunu biliyor.",
+        correct: "Herkes bunu biliyor.",
+        shortExplanation: "herkes كلمة واحدة تعني الجميع.",
+        explanation: "عند القول الجميع يعرف هذا، نستخدم Herkes bunu biliyor. لا نستخدم her insanlar بهذه الصورة.",
+        rule: "herkes = الجميع",
+        examples: [
+            {
+                wrong: "Her insanlar geldi.",
+                correct: "Herkes geldi."
+            },
+            {
+                wrong: "Herkesler geldi.",
+                correct: "Herkes geldi."
+            }
+        ],
+        keywords: ["herkes", "الجميع", "her"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 144
+    ----------------------------------------------------- */
+    {
+        id: 144,
+        title: "الخلط بين hiç kimse و kimse",
+        category: "negation",
+        level: "متوسط",
+        wrong: "Kimse gelmedi hiç.",
+        correct: "Hiç kimse gelmedi.",
+        shortExplanation: "hiç kimse تعني لا أحد وتستخدم كثيرًا مع النفي.",
+        explanation: "Hiç kimse gelmedi تعني لم يأتِ أحد. يمكن أن تظهر kimse وحدها في تراكيب معينة، لكن ترتيب hiç kimse هو من التراكيب الأساسية التي يحتاجها المتعلم.",
+        rule: "hiç kimse + فعل منفي",
+        examples: [
+            {
+                wrong: "Hiç kimse gelmedi.",
+                correct: "Hiç kimse gelmedi."
+            },
+            {
+                wrong: "Hiçbir kimse gelmedi.",
+                correct: "Hiç kimse gelmedi."
+            }
+        ],
+        keywords: ["hiç kimse", "kimse", "لا أحد"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 145
+    ----------------------------------------------------- */
+    {
+        id: 145,
+        title: "الخلط بين bir şey و hiçbir şey",
+        category: "negation",
+        level: "مبتدئ",
+        wrong: "Hiçbir şey bilmiyorum." ,
+        correct: "Hiçbir şey bilmiyorum.",
+        shortExplanation: "hiçbir şey تعني لا شيء وتأتي عادة مع فعل منفي.",
+        explanation: "عندما نقول لا أعرف شيئًا نستخدم Hiçbir şey bilmiyorum. لا نحتاج إلى نفي آخر قبل hiçbir، لأن الفعل نفسه يكون منفيًا.",
+        rule: "hiçbir şey + فعل منفي",
+        examples: [
+            {
+                wrong: "Hiçbir şey biliyorum.",
+                correct: "Hiçbir şey bilmiyorum."
+            },
+            {
+                wrong: "Bir şey bilmiyorum.",
+                correct: "Hiçbir şey bilmiyorum."
+            }
+        ],
+        keywords: ["bir şey", "hiçbir şey", "لا شيء"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 146
+    ----------------------------------------------------- */
+    {
+        id: 146,
+        title: "الخلط بين biraz و birkaç",
+        category: "similar-words",
+        level: "مبتدئ",
+        wrong: "Biraz kitap aldım.",
+        correct: "Birkaç kitap aldım.",
+        shortExplanation: "birkaç تستخدم عادة مع الأشياء المعدودة، بينما biraz تستخدم مع الكميات غير المعدودة.",
+        explanation: "Birkaç kitap تعني عدة كتب، بينما biraz su تعني قليلًا من الماء. الفرق مهم جدًا في الاستخدام اليومي.",
+        rule: "birkaç + معدود / biraz + كمية",
+        examples: [
+            {
+                wrong: "Birkaç su içtim.",
+                correct: "Biraz su içtim."
+            },
+            {
+                wrong: "Biraz kitap aldım.",
+                correct: "Birkaç kitap aldım."
+            }
+        ],
+        keywords: ["biraz", "birkaç", "كمية", "عدد"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 147
+    ----------------------------------------------------- */
+    {
+        id: 147,
+        title: "الخلط بين bütün و tüm",
+        category: "similar-words",
+        level: "متوسط",
+        wrong: "Bütün insanlarlar geldi.",
+        correct: "Bütün insanlar geldi.",
+        shortExplanation: "بعد bütün و tüm لا نضيف الجمع بشكل إضافي إلى الكلمة إذا كان السياق يتطلب صيغة الجمع الطبيعية فقط.",
+        explanation: "Bütün insanlar تعني جميع الناس. الكلمة insanlar بالفعل جمع، لذلك لا نضيف لاحقة جمع ثانية.",
+        rule: "bütün/tüm + الاسم بالصيغة المناسبة",
+        examples: [
+            {
+                wrong: "Tüm öğrencilerler geldi.",
+                correct: "Tüm öğrenciler geldi."
+            },
+            {
+                wrong: "Bütün kitaplarlar burada.",
+                correct: "Bütün kitaplar burada."
+            }
+        ],
+        keywords: ["bütün", "tüm", "الجمع", "جميع"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 148
+    ----------------------------------------------------- */
+    {
+        id: 148,
+        title: "الخلط بين sonra و daha sonra",
+        category: "conversation",
+        level: "مبتدئ",
+        wrong: "Ben geliyorum sonra.",
+        correct: "Sonra geliyorum.",
+        shortExplanation: "مكان sonra يعتمد على المعنى وترتيب الجملة.",
+        explanation: "Sonra geliyorum تعني سأأتي لاحقًا. أما وضع sonra في نهاية الجملة قد يكون ممكنًا في بعض السياقات، لكن المتعلم يحتاج إلى معرفة الصيغة الأساسية والطبيعية.",
+        rule: "sonra = لاحقًا / بعد ذلك",
+        examples: [
+            {
+                wrong: "Sonra ne yapıyorsun şimdi?",
+                correct: "Şimdi ne yapıyorsun? Sonra ne yapacaksın?"
+            },
+            {
+                wrong: "Sonra görüşürüz.",
+                correct: "Sonra görüşürüz."
+            }
+        ],
+        keywords: ["sonra", "لاحقًا", "بعد ذلك"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 149
+    ----------------------------------------------------- */
+    {
+        id: 149,
+        title: "استخدام abi و abla مع الضمائر بطريقة غير طبيعية",
+        category: "conversation",
+        level: "متوسط",
+        wrong: "Benim abi geldi.",
+        correct: "Abim geldi.",
+        shortExplanation: "عند الحديث عن الأخ الأكبر نستخدم لاحقة الملكية على abi.",
+        explanation: "Abim geldi تعني أخي الأكبر جاء. لا نحتاج إلى Benim في هذا التركيب لأن لاحقة الملكية موجودة بالفعل في Abim.",
+        rule: "abi + m = abim / abla + m = ablam",
+        examples: [
+            {
+                wrong: "Benim abla burada.",
+                correct: "Ablam burada."
+            },
+            {
+                wrong: "Senin abi nerede?",
+                correct: "Abin nerede?"
+            }
+        ],
+        keywords: ["abi", "abla", "abim", "ablam"],
+        published: true,
+        createdAt: "2026-08-24"
+    },
+
+
+    /* -----------------------------------------------------
+       الخطأ 150
+    ----------------------------------------------------- */
+    {
+        id: 150,
+        title: "استخدام لاحقة الملكية مرتين",
+        category: "suffixes",
+        level: "متوسط",
+        wrong: "Benim kitabımım.",
+        correct: "Benim kitabım.",
+        shortExplanation: "لا نضيف لاحقة الملكية مرتين إلى الاسم.",
+        explanation: "Benim kitabım تعني كتابي. كلمة kitabım تحتوي بالفعل على لاحقة ملكية المتكلم، لذلك لا نضيف -ım مرة أخرى.",
+        rule: "Benim + الاسم + لاحقة ملكية واحدة",
+        examples: [
+            {
+                wrong: "Benim evimim.",
+                correct: "Benim evim."
+            },
+            {
+                wrong: "Senin arabanın.",
+                correct: "Senin araban."
+            }
+        ],
+        keywords: ["الملكية", "kitabım", "لاحقة الملكية"],
+        published: true,
+        createdAt: "2026-08-24"
     }
+   
+   
 
 ];
 
@@ -2998,7 +5306,1233 @@ const quizQuestions = [
 
         explanation:
             "Yarın يدل على المستقبل، ولذلك نستخدم gideceğim."
-    }
+    },
+   /* =====================================================
+   الأخطاء 151 - 180
+===================================================== */
+
+{
+    id: 151,
+    title: "الخلط بين -miş و -di في نقل الأحداث",
+    category: "tenses",
+    level: "متوسط",
+
+    wrong: "Ahmet dün gelmişti ve benimle konuştu.",
+    correct: "Ahmet dün gelmiş ve benimle konuşmuş.",
+
+    shortExplanation:
+        "اختيار -di أو -miş يعتمد على طريقة معرفة المتحدث بالحدث وسياق الكلام.",
+
+    explanation:
+        "الزمن المنقول -miş يستخدم عندما ينقل المتحدث معلومة سمعها أو استنتجها أو لم يشاهد الحدث مباشرة، بينما -di يستخدم غالبًا للحدث المعروف أو المشاهد مباشرة.",
+
+    rule:
+        "-di = ماضٍ مباشر، -miş = ماضٍ منقول أو مستنتج",
+
+    examples: [
+        {
+            wrong: "Ali gelmiş, ben onu gördüm.",
+            correct: "Ali gelmiş, ben onu görmedim."
+        },
+        {
+            wrong: "Meğer Ayşe evlenmiş.",
+            correct: "Meğer Ayşe evlenmiş."
+        }
+    ],
+
+    keywords: [
+        "-miş",
+        "-di",
+        "الماضي المنقول",
+        "الأزمنة"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 152,
+    title: "الخلط بين ki و -ki",
+    category: "suffixes",
+    level: "متوسط",
+
+    wrong: "Benim ki çok güzel.",
+    correct: "Benimki çok güzel.",
+
+    shortExplanation:
+        "اللاحقة -ki تكتب متصلة عندما تكون لاحقة ملكية أو إشارية، بينما bağlaç olan ki تكتب منفصلة.",
+
+    explanation:
+        "هناك فرق بين ki التي تأتي كأداة ربط وتكتب منفصلة، وبين -ki التي تأتي لاحقة وتكتب متصلة بالكلمة، مثل benimki، evdeki، dünkü.",
+
+    rule:
+        "اللاحقة -ki متصلة، وأداة الربط ki منفصلة",
+
+    examples: [
+        {
+            wrong: "Masada ki kitap benim.",
+            correct: "Masadaki kitap benim."
+        },
+        {
+            wrong: "Biliyorumki gelecek.",
+            correct: "Biliyorum ki gelecek."
+        }
+    ],
+
+    keywords: [
+        "ki",
+        "-ki",
+        "اللاحقة",
+        "أداة الربط"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 153,
+    title: "استخدام kadar بطريقة خاطئة",
+    category: "حروف الجر والأدوات",
+    level: "متوسط",
+
+    wrong: "Ben sen kadar uzun değilim.",
+    correct: "Ben senin kadar uzun değilim.",
+
+    shortExplanation:
+        "عند المقارنة باستخدام kadar نحتاج غالبًا إلى صيغة الملكية/الإضافة المناسبة.",
+
+    explanation:
+        "عند قول أنا لست بطولك نستخدم senin kadar. وجود لاحقة الإضافة بعد الضمير مهم في هذا التركيب.",
+
+    rule:
+        "الاسم أو الضمير + لاحقة الإضافة + kadar",
+
+    examples: [
+        {
+            wrong: "Ali benim kadar hızlı.",
+            correct: "Ali benim kadar hızlı."
+        },
+        {
+            wrong: "Sen ben kadar çalışıyorsun.",
+            correct: "Sen benim kadar çalışıyorsun."
+        }
+    ],
+
+    keywords: [
+        "kadar",
+        "المقارنة",
+        "senin kadar"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 154,
+    title: "الخلط بين rağmen و rağmen بعد الاسم",
+    category: "حروف الجر والأدوات",
+    level: "متوسط",
+
+    wrong: "Yağmur rağmen dışarı çıktık.",
+    correct: "Yağmura rağmen dışarı çıktık.",
+
+    shortExplanation:
+        "بعد rağmen نستخدم الاسم مع لاحقة الاتجاه -e / -a.",
+
+    explanation:
+        "أداة rağmen تأتي عادة مع الاسم في صيغة الاتجاه، مثل yağmura rağmen أي رغم المطر.",
+
+    rule:
+        "الاسم + -a/-e + rağmen",
+
+    examples: [
+        {
+            wrong: "Hastalığı rağmen çalıştı.",
+            correct: "Hastalığına rağmen çalıştı."
+        },
+        {
+            wrong: "Her şeye rağmen devam etti.",
+            correct: "Her şeye rağmen devam etti."
+        }
+    ],
+
+    keywords: [
+        "rağmen",
+        "رغم",
+        "الاستثناء",
+        "اللاحقة"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 155,
+    title: "الخلط بين önce و sonra مع اللواحق",
+    category: "حروف الجر والأدوات",
+    level: "متوسط",
+
+    wrong: "Yemek önce ellerimi yıkıyorum.",
+    correct: "Yemekten önce ellerimi yıkıyorum.",
+
+    shortExplanation:
+        "عند استخدام önce مع اسم نستخدم غالبًا لاحقة -den/-dan.",
+
+    explanation:
+        "للتعبير عن قبل شيء نقول yemekten önce، وبعد شيء نقول yemekten sonra.",
+
+    rule:
+        "الاسم + -den/-dan + önce/sonra",
+
+    examples: [
+        {
+            wrong: "Ders önce kahve içtim.",
+            correct: "Dersten önce kahve içtim."
+        },
+        {
+            wrong: "Ders sonra eve gittim.",
+            correct: "Dersten sonra eve gittim."
+        }
+    ],
+
+    keywords: [
+        "önce",
+        "sonra",
+        "قبل",
+        "بعد"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 156,
+    title: "استخدام için مع اللاحقة الخطأ",
+    category: "حروف الجر والأدوات",
+    level: "متوسط",
+
+    wrong: "Sen için bunu yaptım.",
+    correct: "Senin için bunu yaptım.",
+
+    shortExplanation:
+        "عند استخدام için بعد ضمير الشخص نحتاج إلى صيغة الإضافة.",
+
+    explanation:
+        "نقول benim için، senin için، onun için، bizim için، sizin için، onların için.",
+
+    rule:
+        "الضمير + لاحقة الإضافة + için",
+
+    examples: [
+        {
+            wrong: "Ben için geldim.",
+            correct: "Benim için geldim."
+        },
+        {
+            wrong: "O için aldım.",
+            correct: "Onun için aldım."
+        }
+    ],
+
+    keywords: [
+        "için",
+        "من أجل",
+        "الضمائر"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 157,
+    title: "الخلط بين benimle و benim ile",
+    category: "حروف الجر والأدوات",
+    level: "متوسط",
+
+    wrong: "Benim ile gelmek ister misin?",
+    correct: "Benimle gelmek ister misin?",
+
+    shortExplanation:
+        "ile يمكن أن تأتي منفصلة أو متصلة، والصيغة المتصلة شائعة جدًا في المحادثة.",
+
+    explanation:
+        "مع الضمائر يمكن استخدام benimle، seninle، onunla، bizimle، sizinle، onlarla. وهي تعني معي، معك، معه، معنا، معكم، معهم.",
+
+    rule:
+        "benim ile → benimle",
+
+    examples: [
+        {
+            wrong: "Senin ile konuşmak istiyorum.",
+            correct: "Seninle konuşmak istiyorum."
+        },
+        {
+            wrong: "Onun ile gittim.",
+            correct: "Onunla gittim."
+        }
+    ],
+
+    keywords: [
+        "ile",
+        "benimle",
+        "مع",
+        "المحادثة"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 158,
+    title: "نسيان لاحقة الملكية في تراكيب أجزاء الجسم",
+    category: "suffixes",
+    level: "متوسط",
+
+    wrong: "Benim baş ağrıyor.",
+    correct: "Benim başım ağrıyor.",
+
+    shortExplanation:
+        "أجزاء الجسم تحتاج إلى لاحقة الملكية عند التعبير عن أنها تخص الشخص.",
+
+    explanation:
+        "في التركية نقول başım ağrıyor أي رأسي يؤلمني، karnım ağrıyor أي بطني يؤلمني، gözüm ağrıyor أي عيني تؤلمني.",
+
+    rule:
+        "اسم عضو الجسم + لاحقة الملكية",
+
+    examples: [
+        {
+            wrong: "Benim karnı ağrıyor.",
+            correct: "Benim karnım ağrıyor."
+        },
+        {
+            wrong: "Benim göz ağrıyor.",
+            correct: "Benim gözüm ağrıyor."
+        }
+    ],
+
+    keywords: [
+        "الملكية",
+        "أجزاء الجسم",
+        "başım",
+        "karnım"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 159,
+    title: "الخلط بين kendim و kendime",
+    category: "الضمائر",
+    level: "متوسط",
+
+    wrong: "Kendim bir kahve yaptım.",
+    correct: "Kendime bir kahve yaptım.",
+
+    shortExplanation:
+        "اختيار صيغة kendim/kendime يعتمد على وظيفة الضمير في الجملة.",
+
+    explanation:
+        "Kendim تعني بنفسي، بينما kendime تعني لنفسي. لذلك نقول kendime kahve yaptım أي صنعت لنفسي قهوة.",
+
+    rule:
+        "kendim = بنفسي، kendime = لنفسي",
+
+    examples: [
+        {
+            wrong: "Kendim bir hediye aldım.",
+            correct: "Kendime bir hediye aldım."
+        },
+        {
+            wrong: "Bu işi kendime yaptım.",
+            correct: "Bu işi kendim yaptım."
+        }
+    ],
+
+    keywords: [
+        "kendi",
+        "kendim",
+        "kendime",
+        "الضمائر"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 160,
+    title: "استخدام لازم مع gerekmek بطريقة خاطئة",
+    category: "المحادثة",
+    level: "متوسط",
+
+    wrong: "Ben gitmek gerekiyor.",
+    correct: "Gitmem gerekiyor.",
+
+    shortExplanation:
+        "مع gerekmek نستخدم صيغة المصدر الاسمية المناسبة للشخص.",
+
+    explanation:
+        "عندما نقول يجب أن أذهب نستخدم gitmem gerekiyor. الشخص الذي يحتاج إلى القيام بالفعل يظهر من خلال لاحقة الملكية على الفعل المحول إلى اسم.",
+
+    rule:
+        "فعل + لاحقة الملكية + gerekiyor",
+
+    examples: [
+        {
+            wrong: "Sen çalışmak gerekiyor.",
+            correct: "Senin çalışman gerekiyor."
+        },
+        {
+            wrong: "Ben erken kalkmak gerekiyor.",
+            correct: "Benim erken kalkmam gerekiyor."
+        }
+    ],
+
+    keywords: [
+        "gerekiyor",
+        "يجب",
+        "ضرورة",
+        "المحادثة"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 161,
+    title: "الخلط بين zorunda و gerekiyor",
+    category: "المحادثة",
+    level: "متوسط",
+
+    wrong: "Yarın gitmek zorundayım gerekiyor.",
+    correct: "Yarın gitmek zorundayım.",
+
+    shortExplanation:
+        "zorunda و gerekiyor يؤديان معنى قريبًا في بعض السياقات، لكن لا نجمعهما بهذه الطريقة.",
+
+    explanation:
+        "zorunda olmak تعني أن الشخص مضطر أو ملزم بفعل شيء، بينما gerekiyor تعبر عن الحاجة أو الضرورة. يمكن استخدام أحد التركيبين حسب المعنى.",
+
+    rule:
+        "gitmek zorundayım / gitmem gerekiyor",
+
+    examples: [
+        {
+            wrong: "Çalışmam zorundayım.",
+            correct: "Çalışmak zorundayım."
+        },
+        {
+            wrong: "Gitmek gerekiyor.",
+            correct: "Gitmem gerekiyor."
+        }
+    ],
+
+    keywords: [
+        "zorunda",
+        "gerekiyor",
+        "يجب",
+        "الضرورة"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 162,
+    title: "الخلط بين istemek و istememek",
+    category: "النفي",
+    level: "متوسط",
+
+    wrong: "Ben gitmek istemiyorum değil.",
+    correct: "Ben gitmek istemiyorum.",
+
+    shortExplanation:
+        "نفي istemek يتم بإضافة -me/-ma ثم لاحقة الزمن والشخص.",
+
+    explanation:
+        "الفعل istemek يصبح istemiyorum في المضارع المستمر عند قول لا أريد. لا نحتاج إلى إضافة değil بعده.",
+
+    rule:
+        "istemek → istemiyorum",
+
+    examples: [
+        {
+            wrong: "Yemek istemiyorum değil.",
+            correct: "Yemek istemiyorum."
+        },
+        {
+            wrong: "Gitmek istemiyor değilim.",
+            correct: "Gitmek istemiyorum."
+        }
+    ],
+
+    keywords: [
+        "istemek",
+        "istemiyorum",
+        "النفي"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 163,
+    title: "استخدام değil مع الأفعال",
+    category: "النفي",
+    level: "متوسط",
+
+    wrong: "Ben bugün çalışıyor değilim.",
+    correct: "Ben bugün çalışmıyorum.",
+
+    shortExplanation:
+        "الأفعال تنفى عادة بواسطة -ma/-me، وليس بواسطة değil.",
+
+    explanation:
+        "değil تستخدم أساسًا لنفي الجمل الاسمية والصفات وبعض التراكيب، أما الفعل çalışmak في المضارع المستمر فيصبح çalışmıyorum.",
+
+    rule:
+        "الفعل + -ma/-me + الزمن + الشخص",
+
+    examples: [
+        {
+            wrong: "Ben gitmek değilim.",
+            correct: "Ben gitmiyorum."
+        },
+        {
+            wrong: "O yemek yemiyor değil.",
+            correct: "O yemek yemiyor."
+        }
+    ],
+
+    keywords: [
+        "değil",
+        "النفي",
+        "الأفعال",
+        "çalışmıyorum"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 164,
+    title: "الخلط بين hiç و hiçbir",
+    category: "النفي",
+    level: "متوسط",
+
+    wrong: "Ben hiçbir gitmedim.",
+    correct: "Ben hiç gitmedim.",
+
+    shortExplanation:
+        "hiç تستخدم مع الفعل بمعنى أبدًا، بينما hiçbir تأتي عادة قبل الاسم بمعنى لا أي/ولا أي.",
+
+    explanation:
+        "نقول hiç gitmedim أي لم أذهب أبدًا، ونقول hiçbir şey görmedim أي لم أرَ أي شيء.",
+
+    rule:
+        "hiç + فعل، hiçbir + اسم",
+
+    examples: [
+        {
+            wrong: "Hiçbir anlamıyorum.",
+            correct: "Hiç anlamıyorum."
+        },
+        {
+            wrong: "Hiç insan gelmedi.",
+            correct: "Hiçbir insan gelmedi."
+        }
+    ],
+
+    keywords: [
+        "hiç",
+        "hiçbir",
+        "النفي"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 165,
+    title: "الخلط بين kim و kimi",
+    category: "السؤال",
+    level: "متوسط",
+
+    wrong: "Kimi geldi?",
+    correct: "Kim geldi?",
+
+    shortExplanation:
+        "kim تستخدم للسؤال عن الفاعل، بينما kimi تستخدم غالبًا للسؤال عن المفعول به المحدد.",
+
+    explanation:
+        "Kim geldi? تعني من جاء؟ أما Kimi gördün? فتعني من رأيت؟ لأن الشخص هنا مفعول به.",
+
+    rule:
+        "kim = من؟ كفاعل، kimi = من؟ كمفعول به",
+
+    examples: [
+        {
+            wrong: "Kimi seni aradı?",
+            correct: "Kim seni aradı?"
+        },
+        {
+            wrong: "Kim gördün?",
+            correct: "Kimi gördün?"
+        }
+    ],
+
+    keywords: [
+        "kim",
+        "kimi",
+        "السؤال",
+        "المفعول به"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 166,
+    title: "الخلط بين ne و neyi",
+    category: "السؤال",
+    level: "متوسط",
+
+    wrong: "Neyi bu?",
+    correct: "Bu ne?",
+
+    shortExplanation:
+        "ne للسؤال عن ماهية الشيء، بينما neyi تسأل عن الشيء بوصفه مفعولًا به.",
+
+    explanation:
+        "Bu ne? تعني ما هذا؟ أما Neyi aldın? فتعني ماذا اشتريت؟",
+
+    rule:
+        "ne = ما؟، neyi = ماذا؟ كمفعول به محدد",
+
+    examples: [
+        {
+            wrong: "Neyi bu?",
+            correct: "Bu ne?"
+        },
+        {
+            wrong: "Ne aldın?",
+            correct: "Ne aldın?"
+        }
+    ],
+
+    keywords: [
+        "ne",
+        "neyi",
+        "السؤال"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 167,
+    title: "نسيان أداة السؤال mı/mi/mu/mü",
+    category: "السؤال",
+    level: "مبتدئ",
+
+    wrong: "Sen Türkçe konuşuyorsun?",
+    correct: "Sen Türkçe konuşuyor musun?",
+
+    shortExplanation:
+        "السؤال بنعم أو لا يحتاج إلى أداة السؤال المناسبة.",
+
+    explanation:
+        "في التركية تستخدم mı/mi/mu/mü لصناعة السؤال، وتتغير حسب انسجام الحروف الصوتية.",
+
+    rule:
+        "mı / mi / mu / mü",
+
+    examples: [
+        {
+            wrong: "Sen geliyor?",
+            correct: "Sen geliyor musun?"
+        },
+        {
+            wrong: "Bu güzel mi?",
+            correct: "Bu güzel mi?"
+        }
+    ],
+
+    keywords: [
+        "mı",
+        "mi",
+        "mu",
+        "mü",
+        "السؤال"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 168,
+    title: "وضع لاحقة السؤال في المكان الخطأ",
+    category: "السؤال",
+    level: "متوسط",
+
+    wrong: "Mi sen Türkçe konuşuyorsun?",
+    correct: "Sen Türkçe konuşuyor musun?",
+
+    shortExplanation:
+        "أداة السؤال تأتي بعد الجزء الذي نريد تحويله إلى سؤال وبحسب تركيب الجملة.",
+
+    explanation:
+        "في السؤال العام عن الفعل، نقول konuşuyor musun؟ وتأتي أداة السؤال بعد الفعل مع لاحقة الشخص المناسبة.",
+
+    rule:
+        "الفعل + mi/mı/mu/mü + لاحقة الشخص",
+
+    examples: [
+        {
+            wrong: "Sen geliyor mi?",
+            correct: "Sen geliyor musun?"
+        },
+        {
+            wrong: "Ali çalışıyor mu?",
+            correct: "Ali çalışıyor mu?"
+        }
+    ],
+
+    keywords: [
+        "أداة السؤال",
+        "musun",
+        "mu",
+        "السؤال"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 169,
+    title: "الخلط بين ne zaman و ne zamandır",
+    category: "السؤال",
+    level: "متوسط",
+
+    wrong: "Ne zamandır geldin?",
+    correct: "Ne zaman geldin?",
+
+    shortExplanation:
+        "ne zaman تعني متى، بينما ne zamandır تسأل غالبًا عن مدة استمرار حالة أو فعل.",
+
+    explanation:
+        "Ne zaman geldin? تعني متى أتيت؟ أما Ne zamandır burada yaşıyorsun? فتعني منذ متى تعيش هنا؟",
+
+    rule:
+        "ne zaman = متى، ne zamandır = منذ متى/منذ كم مدة",
+
+    examples: [
+        {
+            wrong: "Ne zamandır geldin?",
+            correct: "Ne zaman geldin?"
+        },
+        {
+            wrong: "Ne zaman burada yaşıyorsun?",
+            correct: "Ne zamandır burada yaşıyorsun?"
+        }
+    ],
+
+    keywords: [
+        "ne zaman",
+        "ne zamandır",
+        "متى",
+        "منذ متى"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 170,
+    title: "الخلط بين beri و önce",
+    category: "حروف الجر والأدوات",
+    level: "متوسط",
+
+    wrong: "İki yıl önce burada yaşıyorum.",
+    correct: "İki yıldır burada yaşıyorum.",
+
+    shortExplanation:
+        "beri و -dır/-dir تستخدم للتعبير عن استمرار حالة بدأت في الماضي، بينما önce تشير إلى وقت سابق.",
+
+    explanation:
+        "إذا كان الفعل بدأ في الماضي وما زال مستمرًا نقول iki yıldır أو iki yıldan beri. أما iki yıl önce فتعني قبل سنتين وتشير إلى نقطة زمنية سابقة.",
+
+    rule:
+        "iki yıldır / iki yıldan beri = منذ سنتين",
+
+    examples: [
+        {
+            wrong: "Üç ay önce burada çalışıyorum.",
+            correct: "Üç aydır burada çalışıyorum."
+        },
+        {
+            wrong: "Beş yıldır önce İstanbul'a geldim.",
+            correct: "Beş yıl önce İstanbul'a geldim."
+        }
+    ],
+
+    keywords: [
+        "beri",
+        "önce",
+        "منذ",
+        "قبل"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 171,
+    title: "الخلط بين -dır و -dir في التعبير عن المدة",
+    category: "الأزمنة",
+    level: "متوسط",
+
+    wrong: "İki yıldır önce burada yaşıyorum.",
+    correct: "İki yıldır burada yaşıyorum.",
+
+    shortExplanation:
+        "عند التعبير عن مدة مستمرة، تأتي -dır/-dir بعد مدة الزمن.",
+
+    explanation:
+        "صيغة مثل iki yıldır burada yaşıyorum تعني أعيش هنا منذ سنتين وما زلت أعيش هنا.",
+
+    rule:
+        "مدة + -dır/-dir + فعل مستمر",
+
+    examples: [
+        {
+            wrong: "Üç aydır önce Türkçe öğreniyorum.",
+            correct: "Üç aydır Türkçe öğreniyorum."
+        },
+        {
+            wrong: "Bir haftadır önce hastayım.",
+            correct: "Bir haftadır hastayım."
+        }
+    ],
+
+    keywords: [
+        "-dır",
+        "المدة",
+        "منذ",
+        "الأزمنة"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 172,
+    title: "الخلط بين -ecek و -iyor عند الحديث عن المستقبل",
+    category: "tenses",
+    level: "متوسط",
+
+    wrong: "Yarın İstanbul'a gidiyorum." ,
+    correct: "Yarın İstanbul'a gideceğim.",
+
+    shortExplanation:
+        "المضارع المستمر قد يستخدم للمستقبل المخطط، لكن في سياقات معينة يكون -ecek أوضح للتعبير عن المستقبل.",
+
+    explanation:
+        "التركية تستخدم المضارع المستمر أحيانًا للمواعيد والخطط القريبة، لذلك Yarın İstanbul'a gidiyorum ليست دائمًا خاطئة. لكن gideceğim تستخدم بشكل واضح للمستقبل.",
+
+    rule:
+        "-ecek/-acak للمستقبل، و-iyor قد يستخدم للمستقبل المخطط",
+
+    examples: [
+        {
+            wrong: "Yarın sınava gireceğim.",
+            correct: "Yarın sınava gireceğim."
+        },
+        {
+            wrong: "Bu akşam arkadaşlarımla buluşuyorum.",
+            correct: "Bu akşam arkadaşlarımla buluşuyorum."
+        }
+    ],
+
+    keywords: [
+        "المستقبل",
+        "-ecek",
+        "-iyor",
+        "الخطط"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 173,
+    title: "استخدام الماضي المستمر بدل الماضي البسيط",
+    category: "tenses",
+    level: "متوسط",
+
+    wrong: "Dün saat üçte markete gittimken...",
+    correct: "Dün saat üçte markete giderken...",
+
+    shortExplanation:
+        "عند التعبير عن فعل كان يحدث أثناء وقوع فعل آخر نستخدم غالبًا -ken مع الجذر المناسب.",
+
+    explanation:
+        "giderken تعني أثناء ذهابي/بينما كنت ذاهبًا. لا نستخدم gittimken في هذا السياق إذا كان المقصود فعلًا مستمرًا أثناء وقوع حدث آخر.",
+
+    rule:
+        "الفعل + -(y)ken",
+
+    examples: [
+        {
+            wrong: "Eve geldimken onu gördüm.",
+            correct: "Eve gelirken onu gördüm."
+        },
+        {
+            wrong: "Yemek yedimken telefon çaldı.",
+            correct: "Yemek yerken telefon çaldı."
+        }
+    ],
+
+    keywords: [
+        "ken",
+        "أثناء",
+        "الماضي المستمر"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 174,
+    title: "الخلط بين -ken و sonra",
+    category: "حروف الجر والأدوات",
+    level: "متوسط",
+
+    wrong: "Yemek yedikten yemek yaptım.",
+    correct: "Yemek yedikten sonra yemek yaptım.",
+
+    shortExplanation:
+        "عند قول بعد أن فعلت شيئًا نستخدم -dikten sonra.",
+
+    explanation:
+        "التركيب yedikten sonra يعني بعد أن أكلت. لا يكفي استخدام yedikten وحدها عندما نريد التعبير عن الترتيب الزمني بهذا الشكل.",
+
+    rule:
+        "جذر/فعل + -dik + لاحقة ablative + sonra",
+
+    examples: [
+        {
+            wrong: "Ders bitirdikten eve gittim.",
+            correct: "Ders bittikten sonra eve gittim."
+        },
+        {
+            wrong: "Uyandıktan kahvaltı yaptım.",
+            correct: "Uyandıktan sonra kahvaltı yaptım."
+        }
+    ],
+
+    keywords: [
+        "sonra",
+        "-dikten sonra",
+        "بعد أن"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 175,
+    title: "نسيان توافق حروف العلة في اللواحق",
+    category: "suffixes",
+    level: "مبتدئ",
+
+    wrong: "Evlar",
+    correct: "Evler",
+
+    shortExplanation:
+        "اللواحق التركية تتغير حسب انسجام حروف العلة.",
+
+    explanation:
+        "إذا كان آخر حرف علة في الكلمة من المجموعة الأمامية نستخدم e، وإذا كان من المجموعة الخلفية نستخدم a. لذلك ev → evler، بينما araba → arabalar.",
+
+    rule:
+        "انسجام حروف العلة",
+
+    examples: [
+        {
+            wrong: "Kitablar",
+            correct: "Kitaplar"
+        },
+        {
+            wrong: "Güllar",
+            correct: "Güller"
+        }
+    ],
+
+    keywords: [
+        "انسجام الحروف",
+        "اللواحق",
+        "ler",
+        "lar"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 176,
+    title: "نسيان التغيير الصوتي في بعض الكلمات",
+    category: "suffixes",
+    level: "متوسط",
+
+    wrong: "Kitapı",
+    correct: "Kitabı",
+
+    shortExplanation:
+        "بعض الكلمات التي تنتهي بحروف صامتة مهموسة تتغير عند إضافة لاحقة تبدأ بحرف علة.",
+
+    explanation:
+        "في بعض الكلمات يحدث تغير صوتي مثل p → b، t → d، k → ğ، ç → c عند إضافة بعض اللواحق التي تبدأ بحرف علة. لذلك kitap + ı تصبح kitabı.",
+
+    rule:
+        "p→b، t→d، k→ğ، ç→c في بعض السياقات",
+
+    examples: [
+        {
+            wrong: "Ağaçın",
+            correct: "Ağacın"
+        },
+        {
+            wrong: "Çiçeki",
+            correct: "Çiçeği"
+        }
+    ],
+
+    keywords: [
+        "التغير الصوتي",
+        "kitap",
+        "kitabı",
+        "اللواحق"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 177,
+    title: "الخلط بين -ler و -ları في الملكية",
+    category: "suffixes",
+    level: "متوسط",
+
+    wrong: "Onlar kitaplar.",
+    correct: "Onların kitapları var.",
+
+    shortExplanation:
+        "الجمع والملكية شيءان مختلفان، وقد نحتاج إلى لاحقة الجمع ثم لاحقة الملكية.",
+
+    explanation:
+        "kitaplar تعني كتب، بينما kitapları قد تعني كتبهم أو كتبه/كتبها حسب السياق. عند التعبير عن ملكية جماعية نقول onların kitapları.",
+
+    rule:
+        "الجمع لا يعني الملكية",
+
+    examples: [
+        {
+            wrong: "Biz araba var.",
+            correct: "Bizim arabamız var."
+        },
+        {
+            wrong: "Onlar ev var.",
+            correct: "Onların evleri var."
+        }
+    ],
+
+    keywords: [
+        "الملكية",
+        "الجمع",
+        "kitapları",
+        "onların"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 178,
+    title: "الخلط بين kendi و kendisi",
+    category: "كلمات متشابهة",
+    level: "فوق متوسط",
+
+    wrong: "Ali kendi söyledi.",
+    correct: "Ali kendisi söyledi.",
+
+    shortExplanation:
+        "kendi و kendisi تختلفان حسب تركيب الجملة ووظيفة الضمير.",
+
+    explanation:
+        "kendi غالبًا تحتاج إلى لاحقة أو تأتي في تركيب ملكية/انعكاسي، بينما kendisi تعني هو نفسه في بعض السياقات.",
+
+    rule:
+        "kendi + لاحقة مناسبة حسب الوظيفة",
+
+    examples: [
+        {
+            wrong: "O kendi yaptı.",
+            correct: "O kendisi yaptı."
+        },
+        {
+            wrong: "Kendisi evine gitti.",
+            correct: "Kendisi evine gitti."
+        }
+    ],
+
+    keywords: [
+        "kendi",
+        "kendisi",
+        "الضمائر"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 179,
+    title: "الخلط بين yalnız و sadece",
+    category: "كلمات متشابهة",
+    level: "متوسط",
+
+    wrong: "Sadece başıma gitmek istiyorum.",
+    correct: "Yalnız başıma gitmek istiyorum.",
+
+    shortExplanation:
+        "yalnız قد تعني وحيدًا، بينما sadece تعني فقط، رغم وجود سياقات يمكن أن تتقارب فيها المعاني.",
+
+    explanation:
+        "عندما تريد قول أريد الذهاب وحدي، يكون yalnız başıma أو tek başıma مناسبًا. أما sadece فهو يعني فقط ويستخدم للتحديد أو الحصر.",
+
+    rule:
+        "sadece = فقط، yalnız = وحيد/وحده حسب السياق",
+
+    examples: [
+        {
+            wrong: "Sadece başıma yaşamak istiyorum.",
+            correct: "Yalnız yaşamak istiyorum."
+        },
+        {
+            wrong: "Yalnız bunu istiyorum.",
+            correct: "Sadece bunu istiyorum."
+        }
+    ],
+
+    keywords: [
+        "yalnız",
+        "sadece",
+        "فقط",
+        "وحدي"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+},
+
+
+{
+    id: 180,
+    title: "استخدام حرف الجر العربي حرفيًا في التركية",
+    category: "أخطاء الترجمة من العربية",
+    level: "فوق متوسط",
+
+    wrong: "Sana göre bence bu konu hakkında göre konuşmalıyız.",
+    correct: "Bence bu konu hakkında konuşmalıyız.",
+
+    shortExplanation:
+        "التركية لا تستخدم الأدوات بنفس طريقة العربية، لذلك الترجمة الحرفية قد تنتج تركيبًا غير طبيعي.",
+
+    explanation:
+        "المتعلم العربي قد يكرر أدوات مثل عن، على، بالنسبة إلى، وفقًا لـ بشكل زائد عند ترجمة الجملة حرفيًا. الأفضل فهم وظيفة الأداة في التركية واختيار التركيب التركي الطبيعي.",
+
+    rule:
+        "لا تترجم حروف الجر العربية حرفيًا؛ افهم وظيفة التركيب التركي.",
+
+    examples: [
+        {
+            wrong: "Bu konu hakkında göre konuşalım.",
+            correct: "Bu konu hakkında konuşalım."
+        },
+        {
+            wrong: "Bana göre hakkında bu doğru.",
+            correct: "Bana göre bu doğru."
+        }
+    ],
+
+    keywords: [
+        "الترجمة",
+        "حروف الجر",
+        "العربية",
+        "الترجمة الحرفية"
+    ],
+
+    published: true,
+    createdAt: "2026-08-26"
+}
+   
 
 ];
 
