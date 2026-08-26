@@ -2890,7 +2890,7 @@ const mistakes = [
         published: true,
         createdAt: "2026-08-24"
     },
-       /* -----------------------------------------------------
+        /* -----------------------------------------------------
        الخطأ 71
     ----------------------------------------------------- */
     {
@@ -4952,7 +4952,6 @@ const mistakes = [
         rule: "fakat = لكن / rağmen = رغم",
         examples: [
             {
-               
                 wrong: "Yorgunum rağmen çalışıyorum.",
                 correct: "Yorgunum fakat çalışıyorum."
             },
@@ -5196,119 +5195,8 @@ const mistakes = [
         keywords: ["الملكية", "kitabım", "لاحقة الملكية"],
         published: true,
         createdAt: "2026-08-24"
-    }
-   
-   
-
-];
-
-
-
-/* =========================================================
-   أسئلة الاختبار
-========================================================= */
-
-const quizQuestions = [
-
-    {
-        id: 1,
-
-        question:
-            "أي جملة صحيحة؟",
-
-        options: [
-            "Ben 20 yaşındayım değil.",
-            "Ben 20 yaşında değilim.",
-            "Ben 20 yaşında değil.",
-            "Ben 20 yaşındayım değilim."
-        ],
-
-        correctAnswer: 1,
-
-        explanation:
-            "الصحيح هو Ben 20 yaşında değilim لأن النفي مع الشخص الأول المفرد يحتاج إلى لاحقة -im."
     },
-
-
-    {
-        id: 2,
-
-        question:
-            "أي جملة صحيحة؟",
-
-        options: [
-            "İstanbul'da gidiyorum.",
-            "İstanbul'dan gidiyorum.",
-            "İstanbul'a gidiyorum.",
-            "İstanbul'ı gidiyorum."
-        ],
-
-        correctAnswer: 2,
-
-        explanation:
-            "مع فعل gitmek نستخدم لاحقة الاتجاه -a / -e."
-    },
-
-
-    {
-        id: 3,
-
-        question:
-            "كيف نقول: أنا أعيش في إسطنبول؟",
-
-        options: [
-            "İstanbul'dan yaşıyorum.",
-            "İstanbul'a yaşıyorum.",
-            "İstanbul'da yaşıyorum.",
-            "İstanbul'ı yaşıyorum."
-        ],
-
-        correctAnswer: 2,
-
-        explanation:
-            "لاحقة -da / -de تستخدم للدلالة على المكان."
-    },
-
-
-    {
-        id: 4,
-
-        question:
-            "أي كلمة نستخدمها غالبًا لمعرفة شخص؟",
-
-        options: [
-            "bilmek",
-            "tanımak",
-            "gitmek",
-            "gelmek"
-        ],
-
-        correctAnswer: 1,
-
-        explanation:
-            "tanımak تستخدم للتعرف على شخص أو معرفته."
-    },
-
-
-    {
-        id: 5,
-
-        question:
-            "ما الجملة الصحيحة لـ: غدًا سأذهب إلى المدرسة؟",
-
-        options: [
-            "Yarın okula gittim.",
-            "Yarın okulda gittim.",
-            "Yarın okula gideceğim.",
-            "Yarın okuldan gittim."
-        ],
-
-        correctAnswer: 2,
-
-        explanation:
-            "Yarın يدل على المستقبل، ولذلك نستخدم gideceğim."
-    },
-   /* =====================================================
+    /* =====================================================
    الأخطاء 151 - 180
 ===================================================== */
 
@@ -6533,7 +6421,116 @@ const quizQuestions = [
     published: true,
     createdAt: "2026-08-26"
 }
-   
+
+];
+
+
+
+
+/* =========================================================
+   أسئلة الاختبار
+========================================================= */
+
+const quizQuestions = [
+
+    {
+        id: 1,
+
+        question:
+            "أي جملة صحيحة؟",
+
+        options: [
+            "Ben 20 yaşındayım değil.",
+            "Ben 20 yaşında değilim.",
+            "Ben 20 yaşında değil.",
+            "Ben 20 yaşındayım değilim."
+        ],
+
+        correctAnswer: 1,
+
+        explanation:
+            "الصحيح هو Ben 20 yaşında değilim لأن النفي مع الشخص الأول المفرد يحتاج إلى لاحقة -im."
+    },
+
+
+    {
+        id: 2,
+
+        question:
+            "أي جملة صحيحة؟",
+
+        options: [
+            "İstanbul'da gidiyorum.",
+            "İstanbul'dan gidiyorum.",
+            "İstanbul'a gidiyorum.",
+            "İstanbul'ı gidiyorum."
+        ],
+
+        correctAnswer: 2,
+
+        explanation:
+            "مع فعل gitmek نستخدم لاحقة الاتجاه -a / -e."
+    },
+
+
+    {
+        id: 3,
+
+        question:
+            "كيف نقول: أنا أعيش في إسطنبول؟",
+
+        options: [
+            "İstanbul'dan yaşıyorum.",
+            "İstanbul'a yaşıyorum.",
+            "İstanbul'da yaşıyorum.",
+            "İstanbul'ı yaşıyorum."
+        ],
+
+        correctAnswer: 2,
+
+        explanation:
+            "لاحقة -da / -de تستخدم للدلالة على المكان."
+    },
+
+
+    {
+        id: 4,
+
+        question:
+            "أي كلمة نستخدمها غالبًا لمعرفة شخص؟",
+
+        options: [
+            "bilmek",
+            "tanımak",
+            "gitmek",
+            "gelmek"
+        ],
+
+        correctAnswer: 1,
+
+        explanation:
+            "tanımak تستخدم للتعرف على شخص أو معرفته."
+    },
+
+
+    {
+        id: 5,
+
+        question:
+            "ما الجملة الصحيحة لـ: غدًا سأذهب إلى المدرسة؟",
+
+        options: [
+            "Yarın okula gittim.",
+            "Yarın okulda gittim.",
+            "Yarın okula gideceğim.",
+            "Yarın okuldan gittim."
+        ],
+
+        correctAnswer: 2,
+
+        explanation:
+            "Yarın يدل على المستقبل، ولذلك نستخدم gideceğim."
+    }
 
 ];
 
