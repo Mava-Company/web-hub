@@ -4952,6 +4952,7 @@ const mistakes = [
         rule: "fakat = لكن / rağmen = رغم",
         examples: [
             {
+               
                 wrong: "Yorgunum rağmen çalışıyorum.",
                 correct: "Yorgunum fakat çalışıyorum."
             },
