@@ -430,7 +430,7 @@ button {
       <a href="index.html">Начало</a>
       <a href="products.html">Продукти</a>
       <a href="cart.html">Количка</a>
-            <a href="track-order.html">проследяване на поръчка</a>
+            <a href="about.html">Mava в България</a>
 
       <a id="authLink" href="login.html">Вход</a>
 
@@ -471,56 +471,132 @@ button {
     ©️ 2026 Nova Store
   </footer>
 
-<!-- Welcome Popup -->
+<!-- Modal Overlay -->
+
 <div id="welcomeModal" class="modal">
 
-  <div class="modal-content">
+<div class="modal-content">
 
     <span class="close-btn" id="closeModal">&times;</span>
 
-    <h2>🌍 Добре дошли в Mava Istanbul</h2>
+    <h2>
+        Добре дошли в Mava ✨
+    </h2>
 
     <p>
-      🌍 Планирате пътуване, обучение или търсите подходящо жилище?<br><br>
-
-      В Mava сме до вас във всяка стъпка ✨<br><br>
-
-      🎓 Кандидатстване в университети<br>
-      🏡 Услуги за настаняване и наем<br>
-      ✈️ Самолетни билети и туристически програми<br><br>
-
-      <strong>Безплатна консултация | Пълна подкрепа | Опции според вашите нужди</strong><br><br>
-
-      📲 Свържете се с нас чрез WhatsApp:<br>
-
-      <a href="https://wa.me/905073410436" target="_blank">
-        +905073410436
-      </a>
-
+        🌍 Планирате пътуване, обучение или търсите подходящо
+        жилище? В <strong>Mava</strong> сме с вас на всяка стъпка.
     </p>
 
-    <br><br>
 
-    <a href="https://mava-b838.onrender.com/" target="_blank">
+    <div class="services">
 
-      <button style="
-        background:#ff4f81;
-        color:#fff;
-        border:none;
-        padding:10px 15px;
-        border-radius:8px;
-        cursor:pointer;
-        font-size:16px;
-        margin-top:10px;
-      ">
-        🚀 Вход в платформата Mava
-      </button>
+        <p>🎓 Кандидатстване в университети</p>
 
-    </a>
+        <p>🏡 Услуги за жилища и наеми</p>
 
-  </div>
+        <p>✈️ Самолетни билети и туристически програми</p>
+
+        <p>👩‍💻 Получете собствен уебсайт безплатно с нас</p>
+
+        <p>🤖 Учете програмиране, турски и английски език с нас</p>
+
+        <p>📢 Реклама в социалните мрежи</p>
+
+    </div>
+
+
+    <p class="highlight">
+        Безплатна консултация • Пълна поддръжка •
+        Опции, съобразени с вашите нужди
+    </p>
+
+
+    <div class="modal-buttons">
+
+        <p class="highlight">
+            Помогнахме на много студенти и пътуващи хора
+            да открият най-добрите образователни,
+            жилищни и туристически възможности.
+        </p>
+
+
+        <a
+            href="https://mava.world/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn primary-btn"
+        >
+            Посети платформата
+        </a>
+
+
+        <a
+            href="about.html"
+            class="btn secondary-btn"
+        >
+            За нас
+        </a>
+
+    </div>
+
+
+    <!-- YouTube -->
+
+    <div class="youtube-box">
+
+        <p class="highlight">
+            🎬 Последвайте ни в YouTube
+        </p>
+
+
+        <a
+            href="https://www.youtube.com/@basem1816"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn youtube-btn"
+        >
+            ▶️ Посети канала BasemHalaika
+        </a>
+
+
+        <a
+            href="https://www.youtube.com/@MilesMoments-y6s"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn youtube-btn"
+        >
+            ▶️ Посети канала Miles Moments
+        </a>
+
+    </div>
+
+
+    <!-- WhatsApp -->
+
+    <div class="contact-box">
+
+        <a
+            href="https://wa.me/905073410436"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn whatsapp-btn"
+        >
+            Свържете се с нас чрез WhatsApp
+        </a>
+
+
+        <p>
+            Свържете се с Mava с:
+            <strong>BasemHalaika</strong>
+        </p>
+
+    </div>
 
 </div>
+
+</div>
+
 <div id="toast" class="toast"></div>
   <!-- SCRIPT -->
   <script type="module">
@@ -767,54 +843,60 @@ function showToast(message, type = "success") {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-
-  
-// ===== Modal =====
-const modal = document.getElementById("welcomeModal");
-const closeBtn = document.getElementById("closeModal");
-
-// الوقت بالدقائق (10 دقائق)
-const SHOW_INTERVAL = 10 * 60 * 1000;
-
-// آخر وقت ظهر فيه المودال
-const lastShown = localStorage.getItem("welcomeModalLastShown");
-
-// الوقت الحالي
-const now = Date.now();
-
-// إذا ما ظهر قبل أو مرّت 10 دقائق
-if (!lastShown || now - lastShown > SHOW_INTERVAL) {
-  if (modal) {
-    modal.style.display = "flex";
-
-    // حفظ وقت الظهور
-    localStorage.setItem("welcomeModalLastShown", now);
-  }
-}
-
-// زر الإغلاق
-if (closeBtn) {
-  closeBtn.onclick = () => {
-    modal.style.display = "none";
-  };
-}
-
-// إغلاق عند الضغط خارج المودال
-window.onclick = (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
-};
-
-});
-
 
 
     // 🚀 init
     loadProducts();
 
   </script>
+ <!-- ========================= -->
+  <!-- WELCOME MODAL SCRIPT -->
+  <!-- ========================= -->
+
+  <script>
+
+    const modal = document.getElementById("welcomeModal");
+
+    const closeBtn = document.getElementById("closeModal");
+
+
+    // Check if the user has already seen the welcome modal
+
+    if (!localStorage.getItem("jewelryWelcomeShown")) {
+
+      modal.style.display = "flex";
+
+      // Save that the modal has been displayed
+
+      localStorage.setItem("jewelryWelcomeShown", "true");
+
+    }
+
+
+    // Close modal
+
+    closeBtn.onclick = function() {
+
+      modal.style.display = "none";
+
+    }
+
+
+    // Close when clicking outside the modal
+
+    window.onclick = function(e) {
+
+      if (e.target == modal) {
+
+        modal.style.display = "none";
+
+      }
+
+    }
+
+  </script>
+
+
 
 
 </body>
