@@ -120,3 +120,20 @@ footer {
     background: #020617;
     margin-top: 40px;
 }
+
+.youtube-btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  background: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.youtube-btn:hover {
+  background: #cc0000;
+}
