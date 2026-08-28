@@ -120,3 +120,27 @@ footer {
     background: #020617;
     margin-top: 40px;
 }
+
+.youtube {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.youtube .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.youtube-btn {
+    background: #ff0000;
+    color: #fff !important;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.youtube-btn:hover {
+    background: #cc0000;
+    transform: translateY(-3px);
+}
