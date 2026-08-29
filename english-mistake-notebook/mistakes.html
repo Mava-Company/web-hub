@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Search, filter, and learn from common English mistakes by category and English level."
+    >
+
+    <title>English Mistakes | English Mistake Notebook</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive Styles -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- =================================
+         Header
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    English Mistake Notebook
+                </a>
+
+                <button
+                    type="button"
+                    class="mobile-menu-toggle"
+                    id="mobileMenuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <div
+                    class="nav-menu"
+                    id="navMenu"
+                >
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="mistakes.html"
+                        class="nav-link active"
+                        aria-current="page"
+                    >
+                        Mistakes
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================
+             Page Hero
+        ================================== -->
+
+        <section class="page-hero-section">
+
+            <div class="container">
+
+                <div class="page-hero-content">
+
+                    <span class="section-label">
+                        English Learning
+                    </span>
+
+                    <h1>
+                        English Mistakes
+                    </h1>
+
+                    <p>
+                        Search, explore, and learn from common English
+                        mistakes. Find the right explanation for your
+                        level and improve your English step by step.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             Search & Filters
+        ================================== -->
+
+        <section class="mistakes-controls-section">
+
+            <div class="container">
+
+                <div class="mistakes-controls">
+
+                    <!-- Search -->
+
+                    <div class="mistakes-search">
+
+                        <span
+                            class="search-icon"
+                            aria-hidden="true"
+                        >
+                            🔍
+                        </span>
+
+                        <input
+                            type="search"
+                            id="mistakesSearch"
+                            placeholder="Search for a mistake, word, or sentence..."
+                            aria-label="Search English mistakes"
+                            autocomplete="off"
+                        >
+
+                        <button
+                            type="button"
+                            id="clearSearch"
+                            class="clear-search"
+                            aria-label="Clear search"
+                            title="Clear search"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+
+                    <!-- Filters -->
+
+                    <div class="filter-area">
+
+                        <!-- Category -->
+
+                        <div class="filter-group">
+
+                            <label for="categoryFilter">
+                                Category
+                            </label>
+
+                            <select id="categoryFilter">
+
+                                <option value="all">
+                                    All Categories
+                                </option>
+
+                                <option value="grammar">
+                                    Grammar
+                                </option>
+
+                                <option value="vocabulary">
+                                    Vocabulary
+                                </option>
+
+                                <option value="tenses">
+                                    Tenses
+                                </option>
+
+                                <option value="prepositions">
+                                    Prepositions
+                                </option>
+
+                                <option value="articles">
+                                    Articles
+                                </option>
+
+                                <option value="word-order">
+                                    Word Order
+                                </option>
+
+                                <option value="pronunciation">
+                                    Pronunciation
+                                </option>
+
+                                <option value="spelling">
+                                    Spelling
+                                </option>
+
+                                <option value="phrasal-verbs">
+                                    Phrasal Verbs
+                                </option>
+
+                                <option value="translation">
+                                    Translation Mistakes
+                                </option>
+
+                                <option value="negation">
+                                    Negation
+                                </option>
+
+                                <option value="questions">
+                                    Questions
+                                </option>
+
+                                <option value="conversation">
+                                    Conversation
+                                </option>
+
+                                <option value="common-mistakes">
+                                    Common Mistakes
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Level -->
+
+                        <div class="filter-group">
+
+                            <label for="levelFilter">
+                                Level
+                            </label>
+
+                            <select id="levelFilter">
+
+                                <option value="all">
+                                    All Levels
+                                </option>
+
+                                <option value="A1">
+                                    A1 - Beginner
+                                </option>
+
+                                <option value="A2">
+                                    A2 - Elementary
+                                </option>
+
+                                <option value="B1">
+                                    B1 - Intermediate
+                                </option>
+
+                                <option value="B2">
+                                    B2 - Upper-Intermediate
+                                </option>
+
+                                <option value="C1">
+                                    C1 - Advanced
+                                </option>
+
+                                <option value="C2">
+                                    C2 - Proficient
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Sort -->
+
+                        <div class="filter-group">
+
+                            <label for="sortFilter">
+                                Sort By
+                            </label>
+
+                            <select id="sortFilter">
+
+                                <option value="newest">
+                                    Newest
+                                </option>
+
+                                <option value="oldest">
+                                    Oldest
+                                </option>
+
+                                <option value="popular">
+                                    Most Viewed
+                                </option>
+
+                                <option value="alphabetical">
+                                    A–Z
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             Results Header
+        ================================== -->
+
+        <section class="mistakes-results-section">
+
+            <div class="container">
+
+                <div class="results-header">
+
+                    <div class="results-info">
+
+                        <h2>
+                            English Mistakes
+                        </h2>
+
+                        <p
+                            id="resultsCount"
+                            aria-live="polite"
+                        >
+                            Loading mistakes...
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        id="resetFilters"
+                        class="reset-filters"
+                    >
+                        Reset Filters
+                    </button>
+
+                </div>
+
+
+                <!-- =================================
+                     Mistakes Grid
+                ================================== -->
+
+                <div
+                    class="mistakes-grid"
+                    id="mistakesGrid"
+                >
+                    <!--
+                        Mistakes are loaded dynamically
+                        from js/data.js by js/mistakes.js
+                    -->
+                </div>
+
+
+                <!-- =================================
+                     Loading State
+                ================================== -->
+
+                <div
+                    class="mistakes-loading"
+                    id="mistakesLoading"
+                    aria-live="polite"
+                >
+                    <div class="loading-spinner"></div>
+
+                    <p>
+                        Loading mistakes...
+                    </p>
+                </div>
+
+
+                <!-- =================================
+                     Empty State
+                ================================== -->
+
+                <div
+                    class="mistakes-empty"
+                    id="mistakesEmpty"
+                    hidden
+                >
+
+                    <div class="empty-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        No Mistakes Found
+                    </h3>
+
+                    <p>
+                        We couldn't find any mistakes matching your
+                        search and filters.
+                    </p>
+
+                    <button
+                        type="button"
+                        id="emptyResetFilters"
+                        class="btn btn-primary"
+                    >
+                        Clear Filters
+                    </button>
+
+                </div>
+
+
+                <!-- =================================
+                     Load More
+                ================================== -->
+
+                <div
+                    class="load-more-wrapper"
+                    id="loadMoreWrapper"
+                    hidden
+                >
+
+                    <button
+                        type="button"
+                        id="loadMoreMistakes"
+                        class="btn btn-secondary"
+                    >
+                        Load More Mistakes
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             Learning Tip
+        ================================== -->
+
+        <section class="learning-tip-section">
+
+            <div class="container">
+
+                <div class="learning-tip-card">
+
+                    <div class="learning-tip-icon">
+                        💡
+                    </div>
+
+                    <div class="learning-tip-content">
+
+                        <span class="section-label">
+                            Learning Tip
+                        </span>
+
+                        <h2>
+                            Don't Just Memorize the Correction
+                        </h2>
+
+                        <p>
+                            Try to understand why the mistake is wrong.
+                            Then create your own example using the correct
+                            form. Understanding the reason makes it easier
+                            to remember the rule.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+         Footer
+    ================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+                        English Mistake Notebook
+                    </a>
+
+                    <p>
+                        Learn from your mistakes.
+                        Improve your English.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="mistakes.html">
+                        Mistakes
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 English Mistake Notebook.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =================================
+         JavaScript
+    ================================== -->
+
+    <!-- Data source -->
+    <script src="js/data.js"></script>
+
+    <!-- Global application logic -->
+    <script src="js/app.js"></script>
+
+    <!-- Mistakes page logic -->
+    <script src="js/mistakes.js"></script>
+
+</body>
+</html>
