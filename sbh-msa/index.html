@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+
+>
+
+  <meta name="theme-color" content="#e63920">
+
+  <title>بيتزا صبح ومسا 🍕</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- ========================= -->
+
+  <!-- NAVBAR -->
+
+  <!-- ========================= -->
+
+  <header class="navbar">
+
+<div class="logo">
+  🍕 بيتزا صبح ومسا
+</div>
+
+<nav class="nav-links">
+
+  <a href="index.html">
+    الرئيسية
+  </a>
+
+  <a href="order.html">
+    اطلب الآن
+  </a>
+
+  <a href="track.html">
+    تتبع الطلب
+  </a>
+
+  <a href="about.html" target="_blank">
+    من نحن
+  </a>
+
+  <button
+    class="admin-btn"
+    onclick="showAdminLogin()"
+  >
+    Admin Login
+  </button>
+
+</nav>
+
+  </header>
+
+  <!-- ========================= -->
+
+  <!-- HERO -->
+
+  <!-- ========================= -->
+
+  <section class="hero pizza-hero">
+
+<div class="hero-text">
+
+  <span class="hero-badge">
+    🍕 طازجة • ساخنة • لذيذة
+  </span>
+
+  <h1>
+    بيتزا على ذوقك... من صبح ومسا! 🔥
+  </h1>
+
+  <p>
+    اختر البيتزا المفضلة لديك واستمتع بطعم رائع
+    ومكونات طازجة محضّرة بحب.
+  </p>
+
+  <div class="hero-buttons">
+
+    <a href="order.html" class="btn">
+      🍕 اطلب الآن
+    </a>
+
+    <a href="#publicCakesContainer" class="btn secondary-btn">
+      👀 شاهد القائمة
+    </a>
+
+  </div>
+
+</div>
+
+<div class="hero-image">
+
+  <img
+    src="images/sbhmsa.jpeg"
+    alt="بيتزا بيتزا صبح ومسا"
+  >
+
+</div>
+
+  </section>
+
+  <!-- ========================= -->
+
+  <!-- FEATURES -->
+
+  <!-- ========================= -->
+
+  <section class="features">
+
+<div class="feature-card">
+  <div class="feature-icon">🍕</div>
+  <h3>طعم لا يُنسى</h3>
+  <p>
+    وصفات مميزة ونكهات تناسب جميع الأذواق.
+  </p>
+</div>
+
+<div class="feature-card">
+  <div class="feature-icon">🔥</div>
+  <h3>طازجة وساخنة</h3>
+  <p>
+    نحضّر طلبك بعناية لتصلك البيتزا بأفضل طعم.
+  </p>
+</div>
+
+<div class="feature-card">
+  <div class="feature-icon">⚡</div>
+  <h3>طلب سريع</h3>
+  <p>
+    اطلب بسهولة وتابع طلبك حتى يصل إليك.
+  </p>
+</div>
+
+  </section>
+
+  <!-- ========================= -->
+
+  <!-- PIZZAS -->
+
+  <!-- ========================= -->
+
+ <section class="cakes pizzas-section">
+
+  <div class="section-heading">
+
+<span>
+  🍕 قائمتنا
+</span>
+
+<h2>
+  أشهى البيتزا المميزة
+</h2>
+
+<p>
+  اختر نكهتك المفضلة ودع الباقي علينا ❤️
+</p>
+
+  </div>
+
+  <!-- ========================= -->
+
+  <!-- PIZZAS FROM FIREBASE -->
+
+  <!-- ========================= -->
+
+  <div
+    id="publicPizzasContainer"
+    class="pizzas-container"
+  ></div>
+
+</section>
+
+
+  <!-- ========================= -->
+
+  <!-- SPECIAL OFFER -->
+
+  <!-- ========================= -->
+
+  <!--
+
+  <section class="offer-section">
+
+    <div class="special-offer">
+
+      <h3>
+        🎁 عرض خاص
+      </h3>
+
+      <p>
+        اطلب الآن واحصل على عرض مميز
+      </p>
+
+      <a
+        href="#"
+        target="_blank"
+      >
+
+        <img
+          src="images/gift.jpg"
+          alt="عرض خاص"
+          class="offer-image"
+        >
+
+      </a>
+
+    </div>
+
+  </section>
+
+  -->
+
+  <!-- ========================= -->
+
+  <!-- DOWNLOAD APP -->
+
+  <!-- ========================= -->
+
+
+  <!-- ========================= -->
+
+  <!-- ADMIN MODAL -->
+
+  <!-- ========================= -->
+
+  <div id="adminLogin" class="modal">
+
+<div class="modal-content">
+
+  <span
+    class="close-btn"
+    onclick="closeAdminModal()"
+  >
+    &times;
+  </span>
+
+  <h2>
+    🔐 دخول الأدمن
+  </h2>
+
+  <input
+    type="password"
+    id="adminPassword"
+    placeholder="كلمة المرور"
+  >
+
+  <button id="loginBtn">
+    دخول
+  </button>
+
+  <p id="loginError"></p>
+
+</div>
+
+  </div>
+
+  <!-- ========================= -->
+
+  <!-- FOOTER -->
+
+  <!-- ========================= -->
+
+  <footer class="footer">
+
+<div class="footer-logo">
+  🍕 بيتزا صبح ومسا
+</div>
+
+<h3>
+  تواصل معنا
+</h3>
+
+<p>
+
+  <a
+    href="https://wa.me/972593958006"
+    target="_blank"
+  >
+    📞 +972 59-395-8006
+  </a>
+
+</p>
+
+<p>
+  📍 يطا - الخليل
+</p>
+
+<p class="footer-copy">
+  © 2026 بيتزا صبح ومسا mava — جميع الحقوق محفوظة
+</p>
+
+  </footer>
+
+  <!-- ========================= -->
+
+  <!-- DOWNLOAD MODAL -->
+
+  <!-- ========================= -->
+
+  <div id="downloadModal" class="modal">
+
+<div class="modal-content download-modal-content">
+
+  <span
+    class="close-btn"
+    id="closeDownloadModal"
+  >
+    &times;
+  </span>
+
+  <h2>
+    📲 كيفية تثبيت التطبيق
+  </h2>
+
+  <p class="download-text">
+
+    لأن التطبيق خارج متجر Google Play،
+    قد تحتاج لتفعيل:
+
+    <br><br>
+
+    ✅ السماح بالتثبيت من مصادر غير معروفة
+
+  </p>
+
+
+  <!-- Step 1 -->
+
+  <div class="step-box">
+
+    <h3>
+      1️⃣ افتح الإعدادات
+    </h3>
+
+    <img
+      src="images/unknown1.jpg"
+      alt="الخطوة الأولى"
+      class="guide-image"
+    >
+
+  </div>
+
+
+  <!-- Step 2 -->
+
+  <div class="step-box">
+
+    <h3>
+      2️⃣ فعّل السماح بالتثبيت
+    </h3>
+
+    <img
+      src="images/unknown2.jpg"
+      alt="الخطوة الثانية"
+      class="guide-image"
+    >
+
+  </div>
+
+
+  <!-- Download Button -->
+
+  <a
+    href="https://old.appsgeyser.com/widgetdownload.php?widget=Sweet%20Cake_19807905"
+    class="final-download-btn"
+    download
+  >
+    ⬇️ تحميل التطبيق الآن
+  </a>
+
+</div>
+
+  </div>
+
+ 
+   <!-- Modal Overlay -->
+<div id="welcomeModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close-btn" id="closeModal">&times;</span>
+
+   <h2>مرحباً بك في Mava ✨</h2>
+
+<p>
+🌍 هل تخطط للسفر، الدراسة، أو تبحث عن سكن مناسب؟
+في <strong>Mava</strong> نحن معك في كل خطوة.
+</p>
+
+<div class="services">
+
+  <p>🎓 التقديم على الجامعات</p>
+  <p>🏡 خدمات السكن والإيجار</p>
+  <p>✈️ حجوزات الطيران والبرامج السياحية</p>
+  <p>👩‍💻 امتلك موقعك الاكتروني مجانا معنا</p>
+  <p>🤖 تعلم برمجة وتركي وإنجليزي معنا</p>
+  <p>🏴󠁮󠁧󠁡󠁤󠁿 الإعلانات على مواقع التواصل الإجتماعي</p>
+
+</div>
+
+<p class="highlight">
+استشارة مجانية • دعم كامل • خيارات تناسبك
+</p>
+
+<div class="modal-buttons">
+  <p class="highlight">
+ساعدنا العديد من الطلاب والمسافرين في الوصول إلى أفضل الخيارات التعليمية والسكنية والسياحية.
+</p>
+
+  <a href="https://mava.world/" target="_blank" class="btn primary-btn">
+    زيارة المنصة
+  </a>
+
+  <a href="about.html" target="_blank" class="btn secondary-btn">
+    من نحن
+  </a>
+
+</div>
+    <!-- YouTube Channels --> <div class="youtube-box"> <p class="highlight">🎬 تابعنا على يوتيوب</p> <a href="https://www.youtube.com/@basem1816" target="_blank" rel="noopener noreferrer" class="btn youtube-btn"> ▶️ زيارة قناة BasemHalaika </a> <a href="https://www.youtube.com/@MilesMoments-y6s" target="_blank" rel="noopener noreferrer" class="btn youtube-btn"> ▶️ زيارة قناة Miles Moments </a> </div>
+    
+
+<div class="contact-box">
+
+<a href="https://wa.me/905073410436" target="_blank" class="btn whatsapp-btn">
+  التواصل عبر واتساب
+</a>
+  <p>تواصل على Mava مع: <strong>BasemHalaika</strong></p>
+
+</div>
+  </div>
+
+</div>
+
+<script>
+
+const modal = document.getElementById("welcomeModal");
+const closeBtn = document.getElementById("closeModal");
+
+// تحقق إذا المستخدم شاهد المودال سابقاً
+if(!localStorage.getItem("mavaWelcomeShown")){
+
+  modal.style.display = "flex";
+
+  // حفظ أنه تم عرض المودال
+  localStorage.setItem("mavaWelcomeShown", "true");
+}
+
+// إغلاق المودال
+closeBtn.onclick = function(){
+  modal.style.display = "none";
+}
+
+// إغلاق عند الضغط خارج الصندوق
+window.onclick = function(e){
+
+  if(e.target == modal){
+    modal.style.display = "none";
+  }
+
+}
+
+</script>
+  <!-- ========================= -->
+
+  <!-- ADMIN MODAL SCRIPT -->
+
+  <!-- ========================= -->
+
+  <script>
+
+    // =========================
+    // ADMIN MODAL
+    // =========================
+
+    const adminModal =
+      document.getElementById("adminLogin");
+
+
+    // فتح الموديل
+
+    function showAdminLogin() {
+
+      adminModal.style.display = "flex";
+
+    }
+
+
+    // إغلاق الموديل
+
+    function closeAdminModal() {
+
+      adminModal.style.display = "none";
+
+    }
+
+
+    // إغلاق عند الضغط خارج الموديل
+
+    window.addEventListener("click", (e) => {
+
+      if (e.target === adminModal) {
+
+        closeAdminModal();
+
+      }
+
+    });
+
+  </script>
+
+  <!-- ========================= -->
+
+  <!-- FIREBASE -->
+
+  <!-- ========================= -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script src="js/firebase.js"></script>
+
+  <!-- Main JS -->
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

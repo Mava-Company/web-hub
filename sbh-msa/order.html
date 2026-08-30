@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+
+>
+
+<meta
+name="theme-color"
+content="#e63920"
+
+>
+
+  <title>
+    طلب بيتزا | بيتزا صبح ومسا
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="css/order.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- ========================= -->
+
+  <!-- NAVBAR -->
+
+  <!-- ========================= -->
+
+  <header class="navbar">
+
+<div class="logo">
+  🍕 بيتزا صبح ومسا
+</div>
+
+<nav>
+
+  <a href="index.html">
+    الرئيسية
+  </a>
+
+  <a href="order.html">
+    اطلب الآن
+  </a>
+
+  <a href="track.html">
+    تتبع الطلب
+  </a>
+
+  <a
+    href="about.html"
+    target="_blank"
+  >
+    من نحن
+  </a>
+
+
+</nav>
+
+  </header>
+
+  <!-- ========================= -->
+
+  <!-- ORDER HERO -->
+
+  <!-- ========================= -->
+
+  <section class="order-hero">
+
+<div>
+
+  <span class="hero-badge">
+    🍕 طازجة وساخنة
+  </span>
+
+  <h1>
+    اطلب بيتزاتك المفضلة 🔥
+  </h1>
+
+  <p>
+    اختر البيتزا والحجم والإضافات،
+    وأدخل معلومات التوصيل وسنجهز طلبك بكل حب.
+  </p>
+
+</div>
+
+  </section>
+
+  <!-- ========================= -->
+
+  <!-- ORDER SECTION -->
+
+  <!-- ========================= -->
+
+  <section class="order-section">
+
+<div class="order-container">
+
+
+  <!-- FORM HEADER -->
+
+  <div class="form-header">
+
+    <div class="form-icon">
+      🍕
+    </div>
+
+    <div>
+
+      <h2>
+        إنشاء طلب جديد
+      </h2>
+
+      <p>
+        املأ البيانات التالية لإرسال طلبك
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ========================= -->
+  <!-- ORDER FORM -->
+  <!-- ========================= -->
+
+  <form id="orderForm">
+
+
+    <!-- ========================= -->
+    <!-- CUSTOMER INFORMATION -->
+    <!-- ========================= -->
+
+    <div class="form-section-title">
+
+      <span>
+        1
+      </span>
+
+      <h3>
+        معلومات العميل
+      </h3>
+
+    </div>
+
+
+    <div class="form-grid">
+
+
+      <div class="form-group">
+
+        <label for="customerName">
+          👤 الاسم الكامل
+        </label>
+
+        <input
+          type="text"
+          id="customerName"
+          placeholder="اكتب اسمك الكامل"
+          required
+        >
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="phone">
+          📞 رقم الهاتف
+        </label>
+
+        <input
+          type="tel"
+          id="phone"
+          placeholder="05XXXXXXXX"
+          required
+        >
+
+      </div>
+
+
+      <div class="form-group full-width">
+
+        <label for="address">
+          📍 عنوان التوصيل
+        </label>
+
+        <input
+          type="text"
+          id="address"
+          placeholder="اكتب عنوان التوصيل بالتفصيل"
+          required
+        >
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- PIZZA INFORMATION -->
+    <!-- ========================= -->
+
+    <div class="form-section-title">
+
+      <span>
+        2
+      </span>
+
+      <h3>
+        تفاصيل البيتزا
+      </h3>
+
+    </div>
+
+
+    <div class="form-grid">
+
+
+      <!-- PIZZA TYPE -->
+
+      <div class="form-group">
+
+        <label for="pizzaType">
+          🍕 نوع البيتزا
+        </label>
+
+        <select
+          id="pizzaType"
+          required
+        >
+
+          <option value="">
+            اختر نوع البيتزا
+          </option>
+
+          <option value="Margherita">
+            مارغريتا
+          </option>
+
+          <option value="Pepperoni">
+            بيبروني
+          </option>
+
+          <option value="Chicken">
+            دجاج
+          </option>
+
+          <option value="Meat">
+            لحوم
+          </option>
+
+          <option value="Vegetarian">
+            خضار
+          </option>
+
+          <option value="Cheese">
+            جبنة
+          </option>
+
+          <option value="Special">
+            بيتزا خاصة
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- SIZE -->
+
+      <div class="form-group">
+
+        <label for="size">
+          📏 الحجم
+        </label>
+
+        <select
+          id="size"
+          required
+        >
+
+          <option value="">
+            اختر الحجم
+          </option>
+
+          <option value="Small">
+            صغيرة
+          </option>
+
+          <option value="Medium">
+            وسط
+          </option>
+
+          <option value="Large">
+            كبيرة
+          </option>
+
+          <option value="Family">
+            عائلية
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- TOPPINGS -->
+
+      <div class="form-group full-width">
+
+        <label for="toppings">
+          🧀 الإضافات
+        </label>
+
+        <select id="toppings">
+
+          <option value="بدون إضافات">
+            بدون إضافات
+          </option>
+
+          <option value="جبنة إضافية">
+            جبنة إضافية
+          </option>
+
+          <option value="زيتون">
+            زيتون
+          </option>
+
+          <option value="فطر">
+            فطر
+          </option>
+
+          <option value="فلفل">
+            فلفل
+          </option>
+
+          <option value="ذرة">
+            ذرة
+          </option>
+
+          <option value="جبنة + زيتون">
+            جبنة + زيتون
+          </option>
+
+          <option value="إضافات مشكلة">
+            إضافات مشكلة
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- QUANTITY -->
+
+      <div class="form-group">
+
+        <label for="quantity">
+          🔢 الكمية
+        </label>
+
+        <input
+          type="number"
+          id="quantity"
+          value="1"
+          min="1"
+          max="20"
+          required
+        >
+
+      </div>
+
+
+      <!-- DELIVERY DATE -->
+
+      <div class="form-group">
+
+        <label for="deliveryDate">
+          📅 تاريخ الطلب
+        </label>
+
+        <input
+          type="date"
+          id="deliveryDate"
+        >
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- NOTES -->
+    <!-- ========================= -->
+
+    <div class="form-section-title">
+
+      <span>
+        3
+      </span>
+
+      <h3>
+        ملاحظات الطلب
+      </h3>
+
+    </div>
+
+
+    <div class="form-group">
+
+      <label for="notes">
+        📝 ملاحظات إضافية
+      </label>
+
+      <textarea
+        id="notes"
+        placeholder="مثلاً: بدون بصل، زيادة جبنة، أو أي ملاحظة أخرى..."
+      ></textarea>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- SUBMIT -->
+    <!-- ========================= -->
+
+    <div class="submit-area">
+
+      <div class="order-note">
+
+        🔥
+        سيتم تجهيز طلبك بعد الإرسال مباشرة
+
+      </div>
+
+      <button
+        type="submit"
+        class="submit-btn"
+      >
+
+        🍕 إرسال الطلب
+
+      </button>
+
+    </div>
+
+
+  </form>
+
+</div>
+
+  </section>
+
+ 
+  <!-- ========================= -->
+
+  <!-- FIREBASE -->
+
+  <!-- ========================= -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script src="js/firebase.js"></script>
+
+  <!-- ========================= -->
+
+  <!-- ORDER JS -->
+
+  <!-- ========================= -->
+
+  <script src="js/order.js"></script>
+
+</body>
+
+</html>

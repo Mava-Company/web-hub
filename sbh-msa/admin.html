@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+
+>
+
+  <title>
+    لوحة أدمن - بيتزا صبح ومسا
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="css/admin.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- ========================= -->
+
+  <!-- NAVBAR -->
+
+  <!-- ========================= -->
+
+  <header class="navbar">
+
+<div class="logo">
+  🍕 لوحة أدمن بيتزا صبح ومسا
+</div>
+
+<nav>
+
+  <a href="index.html">
+    الرئيسية
+  </a>
+
+  <a href="admin.html">
+    لوحة الأدمن
+  </a>
+
+</nav>
+
+  </header>
+
+  <!-- ========================= -->
+
+  <!-- ADMIN SECTION -->
+
+  <!-- ========================= -->
+
+  <section class="admin-section">
+
+<!-- ========================= -->
+<!-- ADD PIZZA -->
+<!-- ========================= -->
+
+<div class="admin-box">
+
+  <h2>
+    إضافة بيتزا جديدة 🍕
+  </h2>
+
+  <form
+    id="pizzaForm"
+    class="pizza-form"
+  >
+
+    <input
+      type="text"
+      id="pizzaName"
+      placeholder="اسم البيتزا"
+      required
+    >
+
+    <input
+      type="number"
+      id="pizzaPrice"
+      placeholder="السعر"
+      min="0"
+      step="0.01"
+      required
+    >
+
+    <input
+      type="file"
+      id="pizzaImage"
+      accept="image/*"
+      required
+    >
+
+    <textarea
+      id="pizzaDescription"
+      placeholder="وصف البيتزا والمكونات"
+    ></textarea>
+
+
+    <!-- CATEGORY -->
+
+    <select id="pizzaCategory" required>
+
+      <option value="">
+        اختر التصنيف
+      </option>
+
+      <option value="Classic">
+        كلاسيكية
+      </option>
+
+      <option value="Cheese">
+        جبنة
+      </option>
+
+      <option value="Chicken">
+        دجاج
+      </option>
+
+      <option value="Meat">
+        لحوم
+      </option>
+
+      <option value="Vegetarian">
+        خضار
+      </option>
+
+      <option value="Special">
+        مميزة
+      </option>
+
+    </select>
+
+
+    <button type="submit">
+      🍕 إضافة البيتزا
+    </button>
+
+  </form>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- PIZZAS -->
+<!-- ========================= -->
+
+<div class="admin-box">
+
+  <h2>
+    البيتزا المضافة 🍕
+  </h2>
+
+  <div
+    id="pizzasContainer"
+    class="pizzas-admin-container"
+  ></div>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- ORDERS -->
+<!-- ========================= -->
+
+<div class="admin-box">
+
+  <h2>
+    الطلبات 🧾
+  </h2>
+
+  <div
+    id="ordersContainer"
+    class="orders-container"
+  ></div>
+
+</div>
+
+  </section>
+
+  <!-- ========================= -->
+
+  <!-- ADMIN PROTECTION -->
+
+  <!-- ========================= -->
+
+  <script>
+
+    if (
+      localStorage.getItem("isAdmin")
+      !== "true"
+    ) {
+
+      alert("❌ غير مسموح بالدخول");
+
+      window.location.href =
+        "index.html";
+
+    }
+
+  </script>
+
+  <!-- ========================= -->
+
+  <!-- FIREBASE -->
+
+  <!-- ========================= -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script src="js/firebase.js"></script>
+
+  <!-- ========================= -->
+
+  <!-- ADMIN JS -->
+
+  <!-- ========================= -->
+
+  <script src="js/admin.js"></script>
+
+</body>
+
+</html>

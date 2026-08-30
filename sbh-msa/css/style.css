@@ -1,0 +1,2529 @@
+/* =========================================================
+PIZZA SOBH W MASA
+Main Style Sheet
+========================================================= */
+
+/* =========================
+GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+
+/* =========================
+ROOT
+========================= */
+
+:root {
+
+--red: #e63920;
+--red-dark: #b91f0d;
+--red-light: #ff5b3d;
+
+--black: #111111;
+--black-soft: #191919;
+--dark: #242424;
+
+--gold: #ffbf3f;
+--gold-light: #ffd76a;
+
+--white: #ffffff;
+--gray: #777;
+--light: #f8f8f8;
+
+--shadow:
+0 15px 40px rgba(0, 0, 0, 0.12);
+
+--radius: 20px;
+
+}
+
+/* =========================
+RESET
+========================= */
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+
+scroll-behavior: smooth;
+
+}
+
+body {
+
+font-family: 'Cairo', sans-serif;
+
+background:
+linear-gradient(
+180deg,
+#ffffff 0%,
+#fafafa 100%
+);
+
+color: var(--black);
+
+direction: rtl;
+
+overflow-x: hidden;
+
+}
+
+a {
+
+text-decoration: none;
+
+color: inherit;
+
+}
+
+button,
+input {
+
+font-family: inherit;
+
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar {
+
+width: 100%;
+
+min-height: 78px;
+
+padding:
+0 6%;
+
+background:
+rgba(17, 17, 17, 0.97);
+
+color: white;
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+position: sticky;
+
+top: 0;
+
+z-index: 1000;
+
+box-shadow:
+0 5px 25px rgba(0,0,0,.18);
+
+}
+
+/* LOGO */
+
+.logo {
+
+font-size: 24px;
+
+font-weight: 900;
+
+color: white;
+
+display: flex;
+
+align-items: center;
+
+gap: 8px;
+
+white-space: nowrap;
+
+}
+
+.logo::first-letter {
+
+color: var(--red);
+
+}
+
+/* NAV LINKS */
+
+.nav-links {
+
+display: flex;
+
+align-items: center;
+
+gap: 8px;
+
+}
+
+.nav-links a {
+
+padding:
+10px 15px;
+
+border-radius: 10px;
+
+color: #eeeeee;
+
+font-size: 15px;
+
+font-weight: 600;
+
+transition:
+.3s ease;
+
+}
+
+.nav-links a:hover {
+
+color: white;
+
+background:
+var(--red);
+
+transform:
+translateY(-2px);
+
+}
+
+/* ADMIN */
+
+.admin-btn {
+
+border: 1px solid
+rgba(255,255,255,.2);
+
+background:
+transparent;
+
+color: white;
+
+padding:
+9px 15px;
+
+border-radius: 10px;
+
+cursor: pointer;
+
+font-size: 14px;
+
+font-weight: 700;
+
+transition: .3s;
+
+}
+
+.admin-btn:hover {
+
+background:
+var(--gold);
+
+color: var(--black);
+
+border-color:
+var(--gold);
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+
+min-height: 620px;
+
+padding:
+70px 7%;
+
+display: grid;
+
+grid-template-columns:
+1fr 1fr;
+
+align-items: center;
+
+gap: 50px;
+
+position: relative;
+
+overflow: hidden;
+
+background:
+
+radial-gradient(
+  circle at 10% 20%,
+  rgba(230,57,32,.12),
+  transparent 30%
+),
+
+linear-gradient(
+  135deg,
+  #fff 0%,
+  #fff7f3 100%
+);
+
+}
+
+/* decorative circle */
+
+.hero::before {
+
+content: "";
+
+position: absolute;
+
+width: 450px;
+
+height: 450px;
+
+border-radius: 50%;
+
+background:
+rgba(230,57,32,.07);
+
+left: -180px;
+
+top: -150px;
+
+}
+
+.hero::after {
+
+content: "🍕";
+
+position: absolute;
+
+font-size: 130px;
+
+opacity: .05;
+
+left: 5%;
+
+bottom: 20px;
+
+transform:
+rotate(-15deg);
+
+}
+
+/* HERO TEXT */
+
+.hero-text {
+
+position: relative;
+
+z-index: 2;
+
+}
+
+.hero-badge {
+
+display: inline-block;
+
+background:
+rgba(230,57,32,.1);
+
+color:
+var(--red);
+
+padding:
+8px 17px;
+
+border-radius: 30px;
+
+font-weight: 800;
+
+margin-bottom: 18px;
+
+border:
+1px solid rgba(230,57,32,.15);
+
+}
+
+.hero h1 {
+
+font-size:
+clamp(38px, 5vw, 66px);
+
+line-height: 1.2;
+
+font-weight: 900;
+
+margin-bottom: 20px;
+
+color:
+var(--black);
+
+}
+
+.hero h1::first-line {
+
+color:
+var(--red);
+
+}
+
+.hero p {
+
+font-size: 18px;
+
+line-height: 2;
+
+color:
+#555;
+
+max-width: 570px;
+
+margin-bottom: 30px;
+
+}
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+
+display: flex;
+
+gap: 12px;
+
+flex-wrap: wrap;
+
+}
+
+/* =========================
+BUTTON
+========================= */
+
+.btn {
+
+display: inline-flex;
+
+align-items: center;
+
+justify-content: center;
+
+min-height: 52px;
+
+padding:
+12px 27px;
+
+border-radius: 13px;
+
+background:
+var(--red);
+
+color: white;
+
+font-weight: 800;
+
+border: none;
+
+cursor: pointer;
+
+transition:
+.3s ease;
+
+box-shadow:
+0 10px 25px
+rgba(230,57,32,.25);
+
+}
+
+.btn:hover {
+
+background:
+var(--red-dark);
+
+transform:
+translateY(-3px);
+
+box-shadow:
+0 15px 30px
+rgba(230,57,32,.3);
+
+}
+
+.secondary-btn {
+
+background:
+var(--black);
+
+color: white;
+
+box-shadow:
+0 10px 25px
+rgba(0,0,0,.15);
+
+}
+
+.secondary-btn:hover {
+
+background:
+#000;
+
+}
+
+/* =========================
+HERO IMAGE
+========================= */
+
+.hero-image {
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+position: relative;
+
+}
+
+.hero-image::before {
+
+content: "";
+
+position: absolute;
+
+width: 430px;
+
+height: 430px;
+
+border-radius: 50%;
+
+background:
+linear-gradient(
+135deg,
+var(--red),
+var(--gold)
+);
+
+opacity: .13;
+
+}
+
+.hero-image img {
+
+width: min(100%, 530px);
+
+height: 440px;
+
+object-fit: cover;
+
+border-radius:
+50%;
+
+position: relative;
+
+z-index: 2;
+
+border:
+10px solid white;
+
+box-shadow:
+0 25px 70px
+rgba(0,0,0,.22);
+
+animation:
+pizzaFloat 4s ease-in-out infinite;
+
+}
+
+@keyframes pizzaFloat {
+
+0%,
+100% {
+
+transform:
+  translateY(0)
+  rotate(0deg);
+
+}
+
+50% {
+
+transform:
+  translateY(-12px)
+  rotate(1deg);
+
+}
+
+}
+
+/* =========================
+FEATURES
+========================= */
+
+.features {
+
+padding:
+55px 7%;
+
+display:
+grid;
+
+grid-template-columns:
+repeat(3, 1fr);
+
+gap: 22px;
+
+background:
+var(--black);
+
+}
+
+.feature-card {
+
+text-align: center;
+
+color: white;
+
+padding:
+30px 20px;
+
+border-radius:
+var(--radius);
+
+background:
+rgba(255,255,255,.05);
+
+border:
+1px solid
+rgba(255,255,255,.08);
+
+transition:
+.3s ease;
+
+}
+
+.feature-card:hover {
+
+transform:
+translateY(-8px);
+
+background:
+rgba(230,57,32,.15);
+
+border-color:
+rgba(230,57,32,.35);
+
+}
+
+.feature-icon {
+
+font-size: 42px;
+
+margin-bottom: 10px;
+
+}
+
+.feature-card h3 {
+
+font-size: 20px;
+
+margin-bottom: 7px;
+
+color:
+var(--gold);
+
+}
+
+.feature-card p {
+
+color:
+#cfcfcf;
+
+line-height: 1.8;
+
+}
+
+/* =========================
+PIZZAS SECTION
+========================= */
+
+.pizzas-section {
+
+padding:
+90px 7%;
+
+min-height: 500px;
+
+background:
+#fff;
+
+}
+
+/* heading */
+
+.section-heading {
+
+text-align: center;
+
+margin-bottom: 45px;
+
+}
+
+.section-heading span {
+
+display: inline-block;
+
+color:
+var(--red);
+
+background:
+rgba(230,57,32,.08);
+
+padding:
+6px 18px;
+
+border-radius: 30px;
+
+font-weight: 800;
+
+margin-bottom: 10px;
+
+}
+
+.section-heading h2 {
+
+font-size:
+clamp(30px, 4vw, 45px);
+
+font-weight: 900;
+
+color:
+var(--black);
+
+}
+
+.section-heading p {
+
+color:
+var(--gray);
+
+margin-top: 8px;
+
+}
+
+/* =========================
+FIREBASE PRODUCT CONTAINER
+========================= */
+
+#publicCakesContainer {
+
+width: 100%;
+
+display:
+grid;
+
+grid-template-columns:
+repeat(auto-fit, minmax(240px, 1fr));
+
+gap: 25px;
+
+}
+
+/*
+دعم عدة أسماء محتملة للكروت
+*/
+
+#publicCakesContainer > div {
+
+transition:
+.3s ease;
+
+}
+
+/* =========================
+PRODUCT CARDS
+========================= */
+
+#publicCakesContainer .cake-card,
+#publicCakesContainer .pizza-card,
+#publicCakesContainer .product-card,
+#publicCakesContainer .card {
+
+background:
+white;
+
+border-radius:
+20px;
+
+overflow:
+hidden;
+
+border:
+1px solid #eeeeee;
+
+box-shadow:
+0 10px 35px
+rgba(0,0,0,.08);
+
+transition:
+.35s ease;
+
+}
+
+#publicCakesContainer .cake-card:hover,
+#publicCakesContainer .pizza-card:hover,
+#publicCakesContainer .product-card:hover,
+#publicCakesContainer .card:hover {
+
+transform:
+translateY(-9px);
+
+box-shadow:
+0 20px 45px
+rgba(0,0,0,.15);
+
+border-color:
+rgba(230,57,32,.2);
+
+}
+
+/* images */
+
+#publicCakesContainer img {
+
+width: 100%;
+
+height: 230px;
+
+object-fit: cover;
+
+display: block;
+
+transition:
+.5s ease;
+
+}
+
+#publicCakesContainer .cake-card:hover img,
+#publicCakesContainer .pizza-card:hover img,
+#publicCakesContainer .product-card:hover img,
+#publicCakesContainer .card:hover img {
+
+transform:
+scale(1.05);
+
+}
+
+/* generic text */
+
+#publicCakesContainer h3 {
+
+color:
+var(--black);
+
+font-weight: 900;
+
+}
+
+#publicCakesContainer p {
+
+color:
+#666;
+
+line-height: 1.8;
+
+}
+
+#publicCakesContainer button {
+
+background:
+var(--red);
+
+color:
+white;
+
+border: none;
+
+border-radius:
+10px;
+
+padding:
+10px 18px;
+
+cursor: pointer;
+
+font-family: inherit;
+
+font-weight: 700;
+
+transition: .3s;
+
+}
+
+#publicCakesContainer button:hover {
+
+background:
+var(--red-dark);
+
+}
+
+/* =========================
+DOWNLOAD APP
+========================= */
+
+.download-app {
+
+padding:
+80px 7%;
+
+background:
+
+linear-gradient(
+  135deg,
+  #151515,
+  #252525
+);
+
+position: relative;
+
+overflow: hidden;
+
+}
+
+.download-app::before {
+
+content: "🍕";
+
+position: absolute;
+
+font-size: 220px;
+
+opacity: .025;
+
+left: 5%;
+
+top: -40px;
+
+}
+
+.download-box {
+
+max-width: 900px;
+
+margin: auto;
+
+text-align: center;
+
+color: white;
+
+padding:
+55px 30px;
+
+border-radius:
+30px;
+
+background:
+linear-gradient(
+135deg,
+rgba(230,57,32,.2),
+rgba(255,191,63,.08)
+);
+
+border:
+1px solid
+rgba(255,255,255,.1);
+
+}
+
+.download-icon {
+
+font-size: 55px;
+
+margin-bottom: 10px;
+
+}
+
+.download-box h2 {
+
+font-size:
+clamp(28px, 4vw, 42px);
+
+font-weight: 900;
+
+margin-bottom: 12px;
+
+}
+
+.download-box p {
+
+color:
+#cccccc;
+
+line-height: 1.9;
+
+margin-bottom: 25px;
+
+}
+
+.download-btn {
+
+border: none;
+
+cursor: pointer;
+
+background:
+var(--red);
+
+color: white;
+
+padding:
+14px 30px;
+
+border-radius: 13px;
+
+font-size: 17px;
+
+font-weight: 800;
+
+box-shadow:
+0 12px 30px
+rgba(230,57,32,.25);
+
+transition: .3s;
+
+}
+
+.download-btn:hover {
+
+background:
+var(--gold);
+
+color:
+var(--black);
+
+transform:
+translateY(-3px);
+
+}
+
+/* =========================
+MODAL
+========================= */
+
+.modal {
+
+display: none;
+
+position: fixed;
+
+z-index: 5000;
+
+inset: 0;
+
+background:
+rgba(0,0,0,.72);
+
+backdrop-filter:
+blur(5px);
+
+align-items: center;
+
+justify-content: center;
+
+padding:
+20px;
+
+animation:
+fadeIn .25s ease;
+
+}
+
+@keyframes fadeIn {
+
+from {
+
+opacity: 0;
+
+}
+
+to {
+
+opacity: 1;
+
+}
+
+}
+
+/* MODAL CONTENT */
+
+.modal-content {
+
+background:
+white;
+
+width:
+min(500px, 100%);
+
+max-height:
+90vh;
+
+overflow-y:
+auto;
+
+border-radius:
+25px;
+
+padding:
+35px;
+
+position: relative;
+
+text-align: center;
+
+box-shadow:
+0 30px 80px
+rgba(0,0,0,.3);
+
+animation:
+modalUp .35s ease;
+
+}
+
+@keyframes modalUp {
+
+from {
+
+transform:
+  translateY(30px)
+  scale(.96);
+
+opacity: 0;
+
+}
+
+to {
+
+transform:
+  translateY(0)
+  scale(1);
+
+opacity: 1;
+
+}
+
+}
+
+/* CLOSE */
+
+.close-btn {
+
+position: absolute;
+
+left: 18px;
+
+top: 13px;
+
+font-size: 31px;
+
+color:
+#777;
+
+cursor: pointer;
+
+width: 40px;
+
+height: 40px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+transition: .25s;
+
+}
+
+.close-btn:hover {
+
+background:
+#f3f3f3;
+
+color:
+var(--red);
+
+}
+
+/* MODAL TITLE */
+
+.modal-content h2 {
+
+font-size: 28px;
+
+font-weight: 900;
+
+color:
+var(--black);
+
+margin-bottom: 15px;
+
+}
+
+.modal-content p {
+
+line-height: 1.9;
+
+color:
+#555;
+
+}
+
+/* =========================
+ADMIN LOGIN
+========================= */
+
+#adminLogin .modal-content {
+
+width:
+min(420px, 100%);
+
+}
+
+#adminPassword {
+
+width: 100%;
+
+padding:
+14px 17px;
+
+margin:
+18px 0 12px;
+
+border:
+1px solid #ddd;
+
+border-radius:
+12px;
+
+outline: none;
+
+font-size: 16px;
+
+text-align: center;
+
+transition: .3s;
+
+}
+
+#adminPassword:focus {
+
+border-color:
+var(--red);
+
+box-shadow:
+0 0 0 4px
+rgba(230,57,32,.1);
+
+}
+
+#loginBtn {
+
+width: 100%;
+
+border: none;
+
+background:
+var(--red);
+
+color: white;
+
+padding:
+13px;
+
+border-radius:
+12px;
+
+font-weight: 800;
+
+cursor: pointer;
+
+transition: .3s;
+
+}
+
+#loginBtn:hover {
+
+background:
+var(--red-dark);
+
+}
+
+#loginError {
+
+color:
+#d62828 !important;
+
+font-weight: 700;
+
+margin-top: 10px;
+
+}
+
+/* =========================
+WELCOME MODAL
+========================= */
+
+#welcomeModal .modal-content {
+
+border-top:
+6px solid var(--red);
+
+}
+
+#welcomeModal h2 {
+
+color:
+var(--red);
+
+}
+
+.services {
+
+margin:
+20px 0;
+
+display:
+grid;
+
+gap: 8px;
+
+}
+
+.services p {
+
+background:
+#fff6f3;
+
+padding:
+10px;
+
+border-radius:
+10px;
+
+color:
+var(--black);
+
+font-weight: 600;
+
+}
+
+.highlight {
+
+color:
+var(--red) !important;
+
+font-weight:
+800;
+
+}
+
+.modal-buttons {
+
+display:
+grid;
+
+gap: 10px;
+
+margin-top:
+20px;
+
+}
+
+.primary-btn {
+
+width: 100%;
+
+}
+
+.contact-box {
+
+margin-top:
+20px;
+
+padding-top:
+20px;
+
+border-top:
+1px solid #eee;
+
+}
+
+.whatsapp-btn {
+
+width: 100%;
+
+background:
+#25d366;
+
+box-shadow:
+0 10px 25px
+rgba(37,211,102,.2);
+
+}
+
+.whatsapp-btn:hover {
+
+background:
+#1da851;
+
+}
+
+/* =========================
+DOWNLOAD MODAL
+========================= */
+
+.download-modal-content {
+
+width:
+min(650px, 100%);
+
+}
+
+.download-text {
+
+margin-bottom:
+25px;
+
+}
+
+.step-box {
+
+background:
+#f8f8f8;
+
+border:
+1px solid #eeeeee;
+
+padding:
+18px;
+
+border-radius:
+16px;
+
+margin-bottom:
+20px;
+
+}
+
+.step-box h3 {
+
+color:
+var(--black);
+
+margin-bottom:
+12px;
+
+}
+
+.guide-image {
+
+max-width: 100%;
+
+width: 300px;
+
+border-radius:
+12px;
+
+box-shadow:
+0 8px 25px
+rgba(0,0,0,.1);
+
+}
+
+.final-download-btn {
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background:
+var(--red);
+
+color: white;
+
+padding:
+14px;
+
+border-radius:
+12px;
+
+font-weight:
+800;
+
+transition:
+.3s;
+
+}
+
+.final-download-btn:hover {
+
+background:
+var(--red-dark);
+
+transform:
+translateY(-2px);
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer {
+
+background:
+#0d0d0d;
+
+color:
+white;
+
+text-align:
+center;
+
+padding:
+55px 20px 25px;
+
+}
+
+.footer-logo {
+
+font-size:
+28px;
+
+font-weight:
+900;
+
+margin-bottom:
+20px;
+
+}
+
+.footer h3 {
+
+color:
+var(--gold);
+
+font-size:
+21px;
+
+margin-bottom:
+15px;
+
+}
+
+.footer p {
+
+color:
+#bbb;
+
+margin:
+8px 0;
+
+}
+
+.footer a {
+
+color:
+#25d366;
+
+font-weight:
+700;
+
+transition: .3s;
+
+}
+
+.footer a:hover {
+
+color:
+#54e88a;
+
+}
+
+.footer-copy {
+
+margin-top:
+30px !important;
+
+padding-top:
+20px;
+
+border-top:
+1px solid
+rgba(255,255,255,.08);
+
+font-size:
+13px;
+
+color:
+#777 !important;
+
+}
+
+/* =========================
+SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+
+width: 9px;
+
+}
+
+::-webkit-scrollbar-track {
+
+background:
+#eeeeee;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+background:
+var(--red);
+
+border-radius:
+20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+background:
+var(--red-dark);
+
+}
+
+/* =========================
+SELECTION
+========================= */
+
+::selection {
+
+background:
+var(--red);
+
+color:
+white;
+
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+/* NAV */
+
+.navbar {
+
+padding:
+  14px 20px;
+
+flex-direction:
+  column;
+
+gap: 12px;
+
+}
+
+.logo {
+
+font-size:
+  22px;
+
+}
+
+.nav-links {
+
+width: 100%;
+
+justify-content:
+  center;
+
+flex-wrap:
+  wrap;
+
+
+}
+
+.nav-links a {
+
+font-size:
+  13px;
+
+padding:
+  7px 10px;
+
+}
+
+.admin-btn {
+
+font-size:
+  12px;
+
+padding:
+  7px 10px;
+
+}
+
+/* HERO */
+
+.hero {
+
+grid-template-columns:
+  1fr;
+
+text-align:
+  center;
+
+padding:
+  55px 20px;
+
+
+}
+
+.hero-text {
+
+display:
+  flex;
+
+flex-direction:
+  column;
+
+align-items:
+  center;
+
+
+}
+
+.hero p {
+
+
+font-size:
+  16px;
+
+
+}
+
+.hero-buttons {
+
+justify-content:
+  center;
+
+
+}
+
+.hero-image {
+
+
+margin-top:
+  20px;
+
+}
+
+.hero-image img {
+
+
+width:
+  min(90vw, 400px);
+
+height:
+  min(90vw, 400px);
+
+}
+
+/* FEATURES */
+
+.features {
+
+grid-template-columns:
+  1fr;
+
+padding:
+  45px 20px;
+
+}
+
+/* PIZZAS */
+
+.pizzas-section {
+
+padding:
+  65px 20px;
+
+}
+
+#publicCakesContainer {
+
+grid-template-columns:
+  repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+
+}
+
+}
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+.navbar {
+
+position:
+  relative;
+
+}
+
+.logo {
+
+
+font-size:
+  20px;
+
+
+}
+
+.nav-links {
+
+
+gap:
+  4px;
+
+
+}
+
+.nav-links a {
+
+font-size:
+  12px;
+
+padding:
+  6px 8px;
+
+}
+
+.admin-btn {
+
+font-size:
+  11px;
+
+}
+
+.hero {
+
+padding:
+  45px 16px;
+
+}
+
+.hero h1 {
+
+font-size:
+  34px;
+
+}
+
+.hero p {
+
+font-size:
+  15px;
+
+}
+
+.hero-buttons {
+
+width:
+  100%;
+
+}
+
+.hero-buttons .btn {
+
+width:
+  100%;
+
+}
+
+.hero-image img {
+
+width:
+  290px;
+
+height:
+  290px;
+
+}
+
+.section-heading h2 {
+
+font-size:
+  29px;
+
+}
+
+#publicCakesContainer {
+
+grid-template-columns:
+  1fr;
+
+}
+
+.download-box {
+
+padding:
+  40px 18px;
+
+
+}
+
+.download-box h2 {
+
+font-size:
+  27px;
+
+}
+
+.modal {
+
+padding:
+  12px;
+
+}
+
+.modal-content {
+
+padding:
+  30px 18px 22px;
+
+border-radius:
+  20px;
+
+}
+
+.modal-content h2 {
+
+
+font-size:
+  24px;
+
+}
+
+.footer {
+
+padding:
+  45px 15px 20px;
+
+}
+
+}
+
+/* =========================
+FADE ANIMATION
+========================= */
+
+@keyframes fadeUp {
+
+from {
+
+opacity: 0;
+
+transform:
+  translateY(20px);
+
+}
+
+to {
+
+opacity: 1;
+
+transform:
+  translateY(0);
+
+}
+
+}
+
+.hero-text,
+.hero-image,
+.feature-card {
+
+animation:
+fadeUp .7s ease both;
+
+}
+
+/* =========================
+ACCESSIBILITY
+========================= */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+
+outline:
+3px solid
+rgba(230,57,32,.35);
+
+outline-offset:
+3px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+PIZZA MENU
+========================================== */
+
+.pizzas-section {
+width: 100%;
+padding: 70px 6%;
+background: #fff8f5;
+}
+
+/* ==========================================
+SECTION HEADING
+========================================== */
+
+.section-heading {
+text-align: center;
+max-width: 700px;
+margin: 0 auto 40px;
+}
+
+.section-heading span {
+display: inline-block;
+
+color: #e63920;
+
+background: #fff0eb;
+
+padding: 7px 18px;
+
+border-radius: 30px;
+
+font-size: 14px;
+
+font-weight: 800;
+
+margin-bottom: 10px;
+}
+
+.section-heading h2 {
+font-size: 34px;
+
+color: #151515;
+
+font-weight: 900;
+
+margin: 5px 0 10px;
+}
+
+.section-heading p {
+color: #777;
+
+font-size: 14px;
+
+margin: 0;
+}
+
+/* ==========================================
+PIZZA CONTAINER
+========================================== */
+
+.pizzas-container {
+
+width: 100%;
+
+max-width: 1250px;
+
+margin: 0 auto;
+
+display: grid;
+
+grid-template-columns:
+repeat(auto-fit, minmax(250px, 1fr));
+
+gap: 25px;
+
+}
+
+/* ==========================================
+PIZZA CARD
+========================================== */
+
+.pizza-card {
+
+background: #ffffff;
+
+border-radius: 22px;
+
+overflow: hidden;
+
+border: 1px solid #eeeeee;
+
+box-shadow:
+0 10px 30px
+rgba(0, 0, 0, .07);
+
+transition:
+transform .3s ease,
+box-shadow .3s ease;
+
+display: flex;
+
+flex-direction: column;
+
+min-width: 0;
+}
+
+.pizza-card:hover {
+
+transform:
+translateY(-7px);
+
+box-shadow:
+0 18px 40px
+rgba(0, 0, 0, .12);
+
+}
+
+/* ==========================================
+IMAGE
+========================================== */
+
+.pizza-image-wrapper {
+
+width: 100%;
+
+height: 220px;
+
+position: relative;
+
+overflow: hidden;
+
+background: #f1f1f1;
+}
+
+.pizza-image {
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+object-fit: cover;
+
+object-position: center;
+
+transition:
+transform .5s ease;
+}
+
+.pizza-card:hover .pizza-image {
+
+transform:
+scale(1.05);
+
+}
+
+/* ==========================================
+PIZZA BADGE
+========================================== */
+
+.pizza-badge {
+
+position: absolute;
+
+top: 13px;
+
+right: 13px;
+
+background:
+rgba(230, 57, 32, .95);
+
+color: white;
+
+padding:
+5px 10px;
+
+border-radius: 20px;
+
+font-size: 11px;
+
+font-weight: 800;
+
+box-shadow:
+0 4px 12px
+rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+CONTENT
+========================================== */
+
+.pizza-card-content {
+
+padding: 18px;
+
+display: flex;
+
+flex-direction: column;
+
+flex: 1;
+}
+
+/* ==========================================
+TITLE
+========================================== */
+
+.pizza-card-content h3 {
+
+font-size: 20px;
+
+font-weight: 900;
+
+color: #171717;
+
+margin:
+0 0 8px;
+
+line-height: 1.4;
+
+}
+
+/* ==========================================
+DESCRIPTION
+========================================== */
+
+.pizza-description {
+
+color: #777;
+
+font-size: 13px;
+
+line-height: 1.8;
+
+min-height: 47px;
+
+margin:
+0 0 15px;
+
+display:
+-webkit-box;
+
+
+-webkit-box-orient: vertical;
+
+overflow: hidden;
+
+}
+
+/* ==========================================
+INFO
+========================================== */
+
+.pizza-info-row {
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+gap: 8px;
+
+margin-bottom: 15px;
+
+flex-wrap: wrap;
+
+}
+
+/* PRICE */
+
+.pizza-price {
+
+color: #e63920;
+
+background: #fff0eb;
+
+padding:
+6px 10px;
+
+border-radius: 9px;
+
+font-size: 15px;
+
+font-weight: 900;
+
+}
+
+/* CATEGORY */
+
+.pizza-category {
+
+color: #555;
+
+background: #f5f5f5;
+
+padding:
+6px 9px;
+
+border-radius: 9px;
+
+font-size: 11px;
+
+font-weight: 700;
+
+}
+
+/* ==========================================
+ORDER BUTTON
+========================================== */
+
+.order-btn {
+
+width: 100%;
+
+height: 46px;
+
+border: none;
+
+border-radius: 12px;
+
+background:
+linear-gradient(
+135deg,
+#e63920,
+#ff5b3d
+);
+
+color: white;
+
+font-size: 14px;
+
+font-weight: 900;
+
+cursor: pointer;
+
+margin-top: auto;
+
+transition:
+.3s;
+
+box-shadow:
+0 7px 18px
+rgba(230, 57, 32, .18);
+
+}
+
+.order-btn:hover {
+
+background:
+linear-gradient(
+135deg,
+#c92510,
+#e63920
+);
+
+transform:
+translateY(-2px);
+
+}
+
+/* ==========================================
+EMPTY
+========================================== */
+
+.empty-pizzas {
+
+grid-column:
+1 / -1;
+
+text-align: center;
+
+padding: 60px 20px;
+
+background: white;
+
+border-radius: 20px;
+
+color: #777;
+
+}
+
+.empty-icon {
+
+font-size: 55px;
+
+margin-bottom: 10px;
+
+}
+
+.empty-pizzas h3 {
+
+color: #222;
+
+margin-bottom: 5px;
+
+}
+
+/* ==========================================
+MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+.pizzas-section {
+
+padding:
+  45px 15px;
+
+}
+
+.section-heading h2 {
+
+font-size: 26px;
+
+}
+
+.section-heading p {
+
+font-size: 13px;
+
+}
+
+.pizzas-container {
+
+grid-template-columns:
+  repeat(2, minmax(0, 1fr));
+
+gap: 12px;
+
+}
+
+.pizza-image-wrapper {
+
+height: 155px;
+
+}
+
+.pizza-card {
+
+border-radius: 16px;
+
+}
+
+.pizza-card-content {
+
+padding: 12px;
+
+}
+
+.pizza-card-content h3 {
+
+font-size: 16px;
+
+}
+
+.pizza-description {
+
+font-size: 11px;
+
+line-height: 1.6;
+
+min-height: 36px;
+
+}
+
+.pizza-info-row {
+
+flex-direction:
+  column;
+
+align-items:
+  stretch;
+
+gap: 5px;
+
+}
+
+.pizza-price,
+.pizza-category {
+
+text-align:
+  center;
+
+font-size:
+  11px;
+
+}
+
+.order-btn {
+
+height: 42px;
+
+font-size: 12px;
+
+}
+
+}
+
+@media (max-width: 380px) {
+
+.pizzas-container {
+
+grid-template-columns:
+  1fr;
+
+}
+
+.pizza-image-wrapper {
+
+height: 200px;
+
+}
+
+}
