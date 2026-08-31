@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Yaygın İngilizce hatalarını arayın, filtreleyin ve kategori ile İngilizce seviyesine göre öğrenin."
+    >
+
+    <title>İngilizce Hataları | English Mistake Notebook</title>
+
+    <!-- Ana Stiller -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive Stiller -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- =================================
+         Header
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    English Mistake Notebook
+                </a>
+
+                <button
+                    type="button"
+                    class="mobile-menu-toggle"
+                    id="mobileMenuToggle"
+                    aria-label="Navigasyon menüsünü aç"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <div
+                    class="nav-menu"
+                    id="navMenu"
+                >
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        Ana Sayfa
+                    </a>
+
+                    <a
+                        href="mistakes.html"
+                        class="nav-link active"
+                        aria-current="page"
+                    >
+                        Hatalar
+                    </a>
+
+                     <a href="about.html" class="nav-link" target="_blank">
+                        Hakkımızda
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================
+             Page Hero
+        ================================== -->
+
+        <section class="page-hero-section">
+
+            <div class="container">
+
+                <div class="page-hero-content">
+
+                    <span class="section-label">
+                        İngilizce Öğrenme
+                    </span>
+
+                    <h1>
+                        İngilizce Hataları
+                    </h1>
+
+                    <p>
+                        Yaygın İngilizce hatalarını arayın, keşfedin ve öğrenin.
+                        Seviyenize uygun açıklamaları bulun ve İngilizcenizi
+                        adım adım geliştirin.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             Search & Filters
+        ================================== -->
+
+        <section class="mistakes-controls-section">
+
+            <div class="container">
+
+                <div class="mistakes-controls">
+
+                    <!-- Arama -->
+
+                    <div class="mistakes-search">
+
+                        <span
+                            class="search-icon"
+                            aria-hidden="true"
+                        >
+                            🔍
+                        </span>
+
+                        <input
+                            type="search"
+                            id="mistakesSearch"
+                            placeholder="Bir hata, kelime veya cümle arayın..."
+                            aria-label="İngilizce hatalarını ara"
+                            autocomplete="off"
+                        >
+
+                        <button
+                            type="button"
+                            id="clearSearch"
+                            class="clear-search"
+                            aria-label="Aramayı temizle"
+                            title="Aramayı temizle"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+
+                    <!-- Filtreler -->
+
+                    <div class="filter-area">
+
+                        <!-- Kategori -->
+
+                        <div class="filter-group">
+
+                            <label for="categoryFilter">
+                                Kategori
+                            </label>
+
+                            <select id="categoryFilter">
+
+                                <option value="all">
+                                    Tüm Kategoriler
+                                </option>
+
+                                <option value="grammar">
+                                    Dil Bilgisi
+                                </option>
+
+                                <option value="vocabulary">
+                                    Kelime Bilgisi
+                                </option>
+
+                                <option value="tenses">
+                                    Zamanlar
+                                </option>
+
+                                <option value="prepositions">
+                                    Edatlar
+                                </option>
+
+                                <option value="articles">
+                                    Artikeller
+                                </option>
+
+                                <option value="word-order">
+                                    Kelime Sırası
+                                </option>
+
+                                <option value="pronunciation">
+                                    Telaffuz
+                                </option>
+
+                                <option value="spelling">
+                                    Yazım
+                                </option>
+
+                                <option value="phrasal-verbs">
+                                    Phrasal Verbs
+                                </option>
+
+                                <option value="translation">
+                                    Çeviri Hataları
+                                </option>
+
+                                <option value="negation">
+                                    Olumsuzluk
+                                </option>
+
+                                <option value="questions">
+                                    Sorular
+                                </option>
+
+                                <option value="conversation">
+                                    Konuşma
+                                </option>
+
+                                <option value="common-mistakes">
+                                    Yaygın Hatalar
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Seviye -->
+
+                        <div class="filter-group">
+
+                            <label for="levelFilter">
+                                Seviye
+                            </label>
+
+                            <select id="levelFilter">
+
+                                <option value="all">
+                                    Tüm Seviyeler
+                                </option>
+
+                                <option value="A1">
+                                    A1 - Başlangıç
+                                </option>
+
+                                <option value="A2">
+                                    A2 - Temel
+                                </option>
+
+                                <option value="B1">
+                                    B1 - Orta
+                                </option>
+
+                                <option value="B2">
+                                    B2 - Orta-Üstü
+                                </option>
+
+                                <option value="C1">
+                                    C1 - İleri
+                                </option>
+
+                                <option value="C2">
+                                    C2 - Yetkin
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Sıralama -->
+
+                        <div class="filter-group">
+
+                            <label for="sortFilter">
+                                Sıralama
+                            </label>
+
+                            <select id="sortFilter">
+
+                                <option value="newest">
+                                    En Yeni
+                                </option>
+
+                                <option value="oldest">
+                                    En Eski
+                                </option>
+
+                                <option value="popular">
+                                    En Çok Görüntülenen
+                                </option>
+
+                                <option value="alphabetical">
+                                    A–Z
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             Results Header
+        ================================== -->
+
+        <section class="mistakes-results-section">
+
+            <div class="container">
+
+                <div class="results-header">
+
+                    <div class="results-info">
+
+                        <h2>
+                            İngilizce Hataları
+                        </h2>
+
+                        <p
+                            id="resultsCount"
+                            aria-live="polite"
+                        >
+                            Hatalar yükleniyor...
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        id="resetFilters"
+                        class="reset-filters"
+                    >
+                        Filtreleri Sıfırla
+                    </button>
+
+                </div>
+
+
+                <!-- =================================
+                     Mistakes Grid
+                ================================== -->
+
+                <div
+                    class="mistakes-grid"
+                    id="mistakesGrid"
+                >
+                    <!--
+                        Hatalar js/data.js dosyasından
+                        js/mistakes.js tarafından dinamik olarak yüklenecek
+                    -->
+                </div>
+
+
+                <!-- =================================
+                     Loading State
+                ================================== -->
+
+                <div
+                    class="mistakes-loading"
+                    id="mistakesLoading"
+                    aria-live="polite"
+                >
+                    <div class="loading-spinner"></div>
+
+                    <p>
+                        Hatalar yükleniyor...
+                    </p>
+                </div>
+
+
+                <!-- =================================
+                     Empty State
+                ================================== -->
+
+                <div
+                    class="mistakes-empty"
+                    id="mistakesEmpty"
+                    hidden
+                >
+
+                    <div class="empty-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        Hata Bulunamadı
+                    </h3>
+
+                    <p>
+                        Aramanız ve filtrelerinizle eşleşen herhangi bir
+                        hata bulamadık.
+                    </p>
+
+                    <button
+                        type="button"
+                        id="emptyResetFilters"
+                        class="btn btn-primary"
+                    >
+                        Filtreleri Temizle
+                    </button>
+
+                </div>
+
+
+                <!-- =================================
+                     Load More
+                ================================== -->
+
+                <div
+                    class="load-more-wrapper"
+                    id="loadMoreWrapper"
+                    hidden
+                >
+
+                    <button
+                        type="button"
+                        id="loadMoreMistakes"
+                        class="btn btn-secondary"
+                    >
+                        Daha Fazla Hata Yükle
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             Learning Tip
+        ================================== -->
+
+        <section class="learning-tip-section">
+
+            <div class="container">
+
+                <div class="learning-tip-card">
+
+                    <div class="learning-tip-icon">
+                        💡
+                    </div>
+
+                    <div class="learning-tip-content">
+
+                        <span class="section-label">
+                            Öğrenme İpucu
+                        </span>
+
+                        <h2>
+                            Sadece Düzeltmeyi Ezberlemeyin
+                        </h2>
+
+                        <p>
+                            Hatanın neden yanlış olduğunu anlamaya çalışın.
+                            Daha sonra doğru şekli kullanarak kendi örneğinizi
+                            oluşturun. Nedeni anlamak, kuralı hatırlamanızı
+                            kolaylaştırır.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+         Footer
+    ================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+                        English Mistake Notebook
+                    </a>
+
+                    <p>
+                        Hatalarından öğren.
+                        İngilizceni geliştir.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="index.html">
+                        Ana Sayfa
+                    </a>
+
+                    <a href="mistakes.html">
+                        Hatalar
+                    </a>
+                     <a href="about.html"  target="_blank">
+                        Hakkımızda
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 mava English Mistake Notebook.
+                    Tüm hakları saklıdır.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =================================
+         JavaScript
+    ================================== -->
+
+    <!-- Veri kaynağı -->
+    <script src="js/data.js"></script>
+
+    <!-- Genel uygulama mantığı -->
+    <script src="js/app.js"></script>
+
+    <!-- Hatalar sayfası mantığı -->
+    <script src="js/mistakes.js"></script>
+
+</body>
+</html>
